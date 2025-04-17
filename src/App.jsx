@@ -205,7 +205,7 @@ function App() {
                 {/* Learn More Button (visible for large and up) */}
 
                 <div className="hidden lg:block">
-                  <Link to="/learnmore">
+                  <Link to="/aboutus">
                     <button className="bg-purple-100 text-purple-800 px-4 py-2 rounded-md shadow-sm hover:bg-purple-200 mt-4 lg:mt-0">
                       Learn More
                     </button>
