@@ -9,29 +9,13 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
-  const links = {
-    "Quick Links": [
-      "Home",
-      "About Us",
-      "Products & Services",
-      "Careers",
-      "Contact",
-    ],
-    "Technology Services": [
-      "Web Development",
-      "Mobile Apps",
-      "IoT Solutions",
-      "Tech Consulting",
-      "Upskilling Programs",
-    ],
-    AgriBusiness: [
-      "Coffee Products",
-      "Packaging Solutions",
-      "Agri E-commerce",
-      "Farmer Branding",
-      "Web Presence Setup",
-    ],
-  };
+  const navLinks = [
+    { name: "Home", to: "/" },
+    { name: "About Us", to: "/aboutus" },
+    { name: "Product & Services", to: "/services" },
+    // { name: "Careers", to: "/careers" },
+    { name: "ContactUs", to: "/contact", isButton: true },
+  ];
 
   return (
     <footer className="bg-[#273146] text-white py-10">
@@ -53,29 +37,28 @@ const Footer = () => {
         </div>
 
         {/* Links */}
-        {Object.entries(links).map(([title, items]) => (
-          <div key={title}>
-            <h3 className="font-bold text-lg mb-2">{title}</h3>
-            <ul className="space-y-2 text-sm">
-              {items.map((item, i) => (
-                <li key={i}>
-                  <a href="#" className="hover:underline">
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+
+        <div>
+          <h3 className="font-bold text-lg mb-2">Ouick Links</h3>
+          <ul className="space-y-2 text-sm">
+            {navLinks.map((item, i) => (
+              <li key={i}>
+                <a href={item.to} className="hover:underline">
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
         {/* Contact */}
         <div>
           <h3 className="font-bold text-lg mb-2">Contact Us</h3>
           <ul className="space-y-2 text-sm">
             {[
-              [FaMapMarkerAlt, "123 Tech Park, Nairobi"],
-              [FaPhoneAlt, "+254 700 123456"],
-              [FaEnvelope, "info@koyya.co.ke"],
+              [FaMapMarkerAlt, "Bengaluru, Karnataka, India"],
+              [FaPhoneAlt, "+91 123 456 7890"],
+              [FaEnvelope, "info@koyya.in"],
             ].map(([Icon, text], i) => (
               <li key={i} className="flex items-center">
                 <Icon className="mr-2" /> {text}

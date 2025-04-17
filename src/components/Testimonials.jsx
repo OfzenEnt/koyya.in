@@ -1,57 +1,63 @@
-import { useRef } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-
+import { useRef, useEffect } from "react";
+import { cn } from "../lib/utils";
+import { Marquee } from "./magicui/marquee";
 const testimonials = [
   {
     name: "Tony Stark",
-    image: "imgs/krishna_img.png",
-    review:
-      "Koyya's team transformed our digital presence with a beautifully designed website and a robust mobile application",
+    img: "imgs/krishna_img.png",
+    body: "Koyya's team transformed our digital presence with a beautifully designed website and a robust mobile application",
     date: "10 April",
   },
   {
-    name: "Dany Mia",
-    image: "imgs/krishna_img.png",
-    review:
-      "Koyya's team transformed our digital presence with a beautifully designed website and a robust mobile application",
+    name: "Pavan",
+    img: "imgs/krishna_img.png",
+    body: "Koyya's team transformed our digital presence with a beautifully designed website and a robust mobile application",
     date: "10 April",
   },
   {
-    name: "Messi Speed",
-    image: "imgs/krishna_img.png",
-    review:
-      "Koyya's team transformed our digital presence with a beautifully designed website and a robust mobile application",
+    name: "Messi",
+    img: "imgs/krishna_img.png",
+    body: "Koyya's team transformed our digital presence with a beautifully designed website and a robust mobile application",
     date: "10 April",
   },
   {
-    name: "Dany Mia",
-    image: "imgs/krishna_img.png",
-    review:
-      "Koyya's team transformed our digital presence with a beautifully designed website and a robust mobile application",
+    name: "Speed",
+    img: "imgs/krishna_img.png",
+    body: "Koyya's team transformed our digital presence with a beautifully designed website and a robust mobile application",
     date: "10 April",
   },
-  {
-    name: "Messi Speed",
-    image: "imgs/krishna_img.png",
-    review:
-      "Koyya's team transformed our digital presence with a beautifully designed website and a robust mobile application",
-    date: "10 April",
-  },
-  // Add more testimonials here
 ];
 
 export default function Testimonials() {
-  const scrollRef = useRef(null);
-
-  const scroll = (direction) => {
-    const { current } = scrollRef;
-    const scrollAmount = 300;
-
-    if (direction === "left") {
-      current.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-    } else {
-      current.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    }
+  const ReviewCard = ({ img, name, date, body }) => {
+    return (
+      <figure
+        className={cn(
+          "relative h-full w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+          // light styles
+          "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
+          // dark styles
+          "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
+        )}
+      >
+        <div className="flex flex-row items-center gap-2">
+          <img
+            className="rounded-full"
+            width="32"
+            height="32"
+            alt=""
+            src={img}
+          />
+          <div className="flex flex-col">
+            <figcaption className="text-sm font-medium dark:text-white">
+              {name}
+            </figcaption>
+            <p className="text-xs font-medium dark:text-white/40">{date}</p>
+          </div>
+        </div>
+        <blockquote className="mt-2 text-sm">{body}</blockquote>
+      </figure>
+    );
   };
 
   return (
@@ -64,57 +70,12 @@ export default function Testimonials() {
           Hear from businesses and partners who have worked with us.
         </p>
       </div>
-
-      <div className="relative w-[70%]">
-        {/* Left Button */}
-        <button
-          onClick={() => scroll("left")}
-          className="absolute left-0 top-1/2 -translate-y-1/2 bg-blue-800 text-white p-3 rounded-full shadow-md z-10 hover:bg-blue-900"
-        >
-          <FaChevronLeft />
-        </button>
-
-        {/* Scrollable Container */}
-        <div
-          ref={scrollRef}
-          className="flex  gap-6 overflow-x-auto scroll-smooth no-scrollbar py-1 px-10"
-        >
-          {testimonials.map((item, idx) => (
-            <div
-              key={idx}
-              className="flex-shrink-0 w-[300px] bg-white rounded-xl p-6 shadow-md"
-            >
-              <div className="flex items-center gap-4 mb-4">
-                <img
-                  src={item.image}
-                  alt={item.name}
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <h4 className="font-semibold">{item.name}</h4>
-              </div>
-              <p className="text-sm text-gray-700 mb-4">{item.review}</p>
-              <div className="flex items-center justify-between text-gray-400 text-xs">
-                <div className="flex gap-1 text-yellow-400">
-                  {/* Stars */}
-                  <span>⭐</span>
-                  <span>⭐</span>
-                  <span>⭐</span>
-                  <span>⭐</span>
-                  <span className="text-gray-300">⭐</span>
-                </div>
-                <p>{item.date}</p>
-              </div>
-            </div>
+      <div className="relative flex w-full flex-col items-center justify-center overflow-hidden">
+        <Marquee pauseOnHover className="[--duration:20s]">
+          {testimonials.map((review, index) => (
+            <ReviewCard key={index} {...review} />
           ))}
-        </div>
-
-        {/* Right Button */}
-        <button
-          onClick={() => scroll("right")}
-          className="absolute right-0 top-1/2 -translate-y-1/2 bg-blue-800 text-white p-3 rounded-full shadow-md z-10 hover:bg-blue-900"
-        >
-          <FaChevronRight />
-        </button>
+        </Marquee>
       </div>
     </div>
   );

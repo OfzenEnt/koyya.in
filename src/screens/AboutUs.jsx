@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ScrollToTop from "@/lib/ScrollToTop";
 
 const AboutUs = () => {
   useEffect(() => {
@@ -17,28 +18,29 @@ const AboutUs = () => {
       role: "CEO",
       img: "imgs/krishna_img.png",
     },
-    { name: "Maya Mathy", role: "Founder", img: "src/assets/team1.jpg" },
-    { name: "Alexis Jensen", role: "CTO", img: "src/assets/team2.jpg" },
+    { name: "Maya Mathy", role: "Founder", img: "imgs/krishna_img.png" },
+    { name: "Alexis Jensen", role: "CTO", img: "imgs/krishna_img.png" },
     {
       name: "Keira Battye",
       role: "Product Designer",
-      img: "src/assets/team3.jpg",
+      img: "imgs/krishna_img.png",
     },
-    { name: "Dominic Game", role: "3D Artist", img: "src/assets/team4.jpg" },
+    { name: "Dominic Game", role: "3D Artist", img: "imgs/krishna_img.png" },
     {
       name: "James Vial",
       role: "Head of Front-End",
-      img: "src/assets/team3.jpg",
+      img: "imgs/krishna_img.png",
     },
   ];
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       <header className="h-[150px] relative lg:h-[400px] bg-cover bg-center  overflow-clip flex items-center justify-center ">
         <img
-          src="imgs/workplace.jpg"
+          src="imgs/aboutheader.png"
           alt=""
-          className="absolute opacity-35 blur-[1px]"
+          className="absolute w-full object-cover opacity-35 blur-[1px]"
         />
         <div className="p-6 flex flex-col justify-center items-center rounded-md">
           <h1 className="text-black relative text-5xl font-bold">About us</h1>
@@ -48,23 +50,29 @@ const AboutUs = () => {
 
       <div className="px-2 lg:px-16 py-5 ">
         {/* About Koyya */}
-        <section className="flex flex-col md:flex-row gap-32 p-10 ">
+        <section className="flex flex-col md:flex-row gap-16 lg:gap-32 p-10 ">
           <div className="flex-1/2 grid grid-cols-3 gap-4 overflow-hidden">
             <img
               src="imgs/empolyees.jpg"
               className="rounded-lg col-span-1 h-full object-cover"
+              data-aos="fade-right"
             />
             <div className="col-span-2 grid grid-rows-2 gap-4">
               <img
                 src="imgs/workplace.jpg"
                 className="rounded-lg w-full h-full row-span-1 object-cover"
+                data-aos="fade-down"
               />
               <div className="grid grid-cols-2 row-span-2 gap-4">
                 <img
                   src="imgs/2149241221.jpg"
                   className="rounded-lg object-cover h-full"
+                  data-aos="fade-up"
                 />
-                <div className="bg-blue-600 text-white text-center flex items-center justify-center lg:text-xl text-xs font-semibold p-5 rounded-lg ">
+                <div
+                  className="bg-blue-400 text-white text-center flex items-center justify-center lg:text-xl text-xs font-semibold p-5 rounded-lg"
+                  data-aos="fade-up"
+                >
                   25+
                   <br />
                   Years of Experience
@@ -72,18 +80,16 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1/2 flex flex-col bg-blue-100 lg:p-8 p-4 rounded-lg justify-center w-full lg:gap-6 lg:text-lg text-sm">
-            <div>
-              <h3 className="text-blue-800 text-left lg:text-3xl text-xl">
-                About Koyya
-              </h3>
-              <h2 className="text-400 lg:mb-4 mb:3 text-left lg:text-4xl text-2xl">
-                Digitally rooted.
-                <br /> Naturally driven.That’s
-                <br /> the Koyya way.
-              </h2>
-            </div>
-            <p className="mb-4 font-sans text-lg text-justify">
+          <div className="flex-1/2 flex flex-col bg-blue-100 lg:p-8 p-4 rounded-lg justify-center w-full gap-4 lg:gap-6 lg:text-lg text-sm">
+            <h3 className="text-blue-800 text-center  lg:text-3xl text-xl">
+              About Koyya
+            </h3>
+            <h2 className="text-400 lg:mb-4 mb:3 font-semibold text-left lg:text-4xl text-2xl">
+              Digitally rooted. Naturally driven. <br />
+              That’s the Koyya way.
+            </h2>
+
+            <p className="mb-4 text-lg text-justify">
               Koyya is a dual-vertical company bridging Technology and
               AgriBusiness, delivering innovative digital solutions and
               empowering agricultural brands through modern tech and marketing.
@@ -117,7 +123,7 @@ const AboutUs = () => {
                 sustainable solutions that shape a brighter tomorrow.
               </p>
               <div
-                className=" bg-blue-50 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:mr-16 flex items-center hover:scale-102"
+                className=" bg-blue-50 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:mr-16 flex items-center"
                 data-aos="fade-right"
               >
                 <img
@@ -137,7 +143,7 @@ const AboutUs = () => {
                 </div>
               </div>
               <div
-                className=" bg-blue-50 p-3 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:ml-16 flex items-center hover:scale-102"
+                className=" bg-blue-50 p-3 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:ml-16 flex items-center"
                 data-aos="fade-left"
               >
                 <img
@@ -157,7 +163,7 @@ const AboutUs = () => {
                 </div>
               </div>
               <div
-                className="bg-blue-50 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:mr-16 flex items-center hover:scale-102"
+                className="bg-blue-50 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:mr-16 flex items-center"
                 data-aos="fade-right"
               >
                 <img
@@ -290,10 +296,10 @@ const AboutUs = () => {
               >
                 <img
                   src={member.img}
-                  className="w-16 h-14 object-cover rounded-full lg:w-36 lg:h-36 lg:rounded-lg lg:float-start lg:ml-0 ml-8"
+                  className="w-16 h-16 object-cover m-auto md:m-0 rounded-full lg:w-36 lg:h-36 lg:rounded-lg lg:float-start lg:ml-0"
                 />
-                <div>
-                  <h3 className="font-bold lg:mt-4 items-center ">
+                <div className="md:ml-3">
+                  <h3 className="font-bold lg:mt-4 items-center">
                     {member.name}
                   </h3>
                   <p className="text-blue-600 lg:text:xl text-sm">

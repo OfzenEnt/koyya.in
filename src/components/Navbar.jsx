@@ -37,7 +37,7 @@ const Navbar = () => {
       to={to}
       className={`text-base flex items-center font-medium ${
         isButton
-          ? "text-blue-500 hover:text-blue-700 border border-blue-500 place-content-center rounded-md px-3 py-1"
+          ? "text-blue-500 hover:text-white hover:bg-blue-700 border border-blue-500 place-content-center rounded-md px-3 py-1"
           : "text-gray-600 hover:text-black"
       }`}
     >
@@ -46,7 +46,10 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
+    <nav
+      id="nav"
+      className="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50"
+    >
       <div className="px-4 md:mx-8 lg:mx-20 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link to="/">

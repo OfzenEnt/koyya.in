@@ -1,12 +1,17 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
 import Testimonials from "./components/Testimonials";
 import CountUp from "react-countup";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import ScrollToTop from "./lib/ScrollToTop";
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   const NumberCounter = ({ endValue }) => {
     return (
       <div>
@@ -24,6 +29,7 @@ function App() {
   };
   return (
     <>
+      <ScrollToTop />
       <Navbar />
       {/* Hero section */}
       <section className="bg-gradient-to-br from-white to-[#d2f3ec] flex items-center h-[93vh] py-16 px-6 md:px-12">
@@ -70,7 +76,7 @@ function App() {
         </div>
       </section>
       {/* Announcements Section */}
-      <section className="py-16 bg-white px-6 md:px-12">
+      <section className="py-16 bg-white px-6 md:px-12" data-aos="fade-up">
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-12">
@@ -86,11 +92,11 @@ function App() {
           {/* Cards Grid */}
           <div className="grid gap-8 md:grid-cols-3">
             {/* Card 1 */}
-            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg ">
               <img
                 src="/imgs/2149241221.jpg"
                 alt="Coffee Launch"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover hover:scale-105 transition"
               />
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900">
@@ -101,18 +107,18 @@ function App() {
                   Discover our new line of premium single-origin coffee beans
                   sourced directly from sustainable farms.
                 </p>
-                <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-50 transition">
+                <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-700 hover:text-white transition">
                   Read More
                 </button>
               </div>
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
               <img
                 src="/imgs/2149313746.jpg"
                 alt="Tech Summit"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover hover:scale-105 transition"
               />
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900">
@@ -123,18 +129,18 @@ function App() {
                   Join us for our annual technology summit featuring workshops
                   on IoT, AI, and digital transformation.
                 </p>
-                <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-50 transition">
+                <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-700 hover:text-white transition">
                   Read More
                 </button>
               </div>
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
               <img
                 src="/imgs/behind_koyya.jpg"
                 alt="Partnership"
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover hover:scale-105 transition"
               />
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900">
@@ -145,7 +151,7 @@ function App() {
                   We're proud to announce our new partnership with FarmTech
                   Alliance to develop agricultural IoT solutions.
                 </p>
-                <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-50 transition">
+                <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-700 hover:text-white transition">
                   Read More
                 </button>
               </div>
@@ -176,9 +182,9 @@ function App() {
               <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-center lg:mb-6 items-center py-3">
                 <div>
                   <div>
-                    <p className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center">
+                    <div className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center">
                       <NumberCounter endValue={50} /> +
-                    </p>
+                    </div>
                   </div>
                   <p className="text-gray-600 text-sm md:text-base">
                     Employees
@@ -186,9 +192,9 @@ function App() {
                 </div>
                 <div>
                   <div>
-                    <p className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center">
+                    <div className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center">
                       <NumberCounter endValue={25} /> +
-                    </p>
+                    </div>
                   </div>
                   <p className="text-gray-600 text-sm md:text-base ">
                     Years Experience
@@ -196,9 +202,9 @@ function App() {
                 </div>
                 <div>
                   <div>
-                    <p className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center">
+                    <div className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center">
                       <NumberCounter endValue={100} /> +
-                    </p>
+                    </div>
                   </div>
                   <p className="text-gray-600 text-sm md:text-base"> Smiles</p>
                 </div>
@@ -216,7 +222,7 @@ function App() {
 
             {/* Learn More Button for small devices */}
             <div className="block lg:hidden text-center mb-4">
-              <Link to="/about">
+              <Link to="/aboutus">
                 <button className="bg-purple-100 text-purple-800 px-4 py-2 rounded-md shadow hover:bg-purple-200 transition">
                   Learn More
                 </button>
