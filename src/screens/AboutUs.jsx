@@ -7,29 +7,65 @@ import Footer from "../components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "@/lib/ScrollToTop";
+import { Marquee } from "@/components/magicui/marquee";
 
 const AboutUs = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
+  const clientLogos = [
+    { src: "imgs/clients/samsung_logo.svg", alt: "Samsung" },
+    { src: "imgs/clients/cisco_logo.svg", alt: "Cisco" },
+    { src: "imgs/clients/bosch_logo.svg", alt: "Bosch" },
+    { src: "imgs/clients/rakuten_logo.svg", alt: "Rakuten" },
+    { src: "imgs/clients/hsbc_logo.svg", alt: "HSBC" },
+    { src: "imgs/clients/flipkart_logo.svg", alt: "Flipkart" },
+    { src: "imgs/clients/arcesium_logo.svg", alt: "Arcesium" },
+  ];
+  const managementTeam = [
+    {
+      name: "Krishna Mohan Koyya",
+      title: "Chief Executive Officer & Managing Director",
+      image: "imgs/krishna_img.png", // Replace with the correct path to your image
+      description:
+        "Koyya Enterprises is led by Krishna Mohan Koyya (Krishna), a seasoned technologist with over 25 years of experience in the IT industry. He holds a Master’s degree in Computer Science and Technology from Andhra University, Visakhapatnam. Krishna has held key roles at leading organizations such as Wipro and Cisco Systems, working across domains like GSM, Network Management, Distributed Computing, and E-commerce. In addition to his industry experience, Krishna has been a mentor and trainer to thousands of midcareer engineers at top multinational companies including Robert Bosch, Cisco, Samsung, Arcesium, and Intuit through corporate upskilling and training programs. His leadership combines deep technical expertise with a strong focus on building practical, impactful solutions.",
+    },
+    {
+      name: "Karuna Koyya",
+      title: "Founder Director",
+      image: "imgs/krishna_img.png", // Replace with the correct path to your image
+      description:
+        "Karuna brings the human touch to Koyya Enterprises. As a key leader, she oversees people-related initiatives and ensures a work environment where individuals feel valued, respected, and motivated. A graduate in Arts from Andhra University, Karuna also has deep knowledge and hands-on experience in horticulture, which adds a unique dimension to the company’s perspective — especially in areas related to agriculture and sustainability. Her ability to nurture talent and promote a people-first culture makes her an essential pillar of the organization’s growth and wellbeing.",
+    },
+    {
+      name: "Amol Sriram Koyya",
+      title: "Product Marketing Manager",
+      image: "imgs/krishna_img.png", // Replace with the correct path to your image
+      description:
+        "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor’s degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings freshideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
+    },
+  ];
   const teamMembers = [
     {
       name: "Krishna Mohan Koyya",
-      role: "CEO",
-      img: "imgs/krishna_img.png",
+      title: "Chief Executive Officer & Managing Director",
+      image: "imgs/krishna_img.png", // Replace with the correct path to your image
+      description:
+        "Koyya Enterprises is led by Krishna Mohan Koyya (Krishna), a seasoned technologist with over 25 years of experience in the IT industry. He holds a Master’s degree in Computer Science and Technology from Andhra University, Visakhapatnam. Krishna has held key roles at leading organizations such as Wipro and Cisco Systems, working across domains like GSM, Network Management, Distributed Computing, and E-commerce. In addition to his industry experience, Krishna has been a mentor and trainer to thousands of midcareer engineers at top multinational companies including Robert Bosch, Cisco, Samsung, Arcesium, and Intuit through corporate upskilling and training programs. His leadership combines deep technical expertise with a strong focus on building practical, impactful solutions.",
     },
-    { name: "Maya Mathy", role: "Founder", img: "imgs/krishna_img.png" },
-    { name: "Alexis Jensen", role: "CTO", img: "imgs/krishna_img.png" },
     {
-      name: "Keira Battye",
-      role: "Product Designer",
-      img: "imgs/krishna_img.png",
+      name: "Karuna Koyya",
+      title: "Founder Director",
+      image: "imgs/krishna_img.png", // Replace with the correct path to your image
+      description:
+        "Karuna brings the human touch to Koyya Enterprises. As a key leader, she oversees people-related initiatives and ensures a work environment where individuals feel valued, respected, and motivated. A graduate in Arts from Andhra University, Karuna also has deep knowledge and hands-on experience in horticulture, which adds a unique dimension to the company’s perspective — especially in areas related to agriculture and sustainability. Her ability to nurture talent and promote a people-first culture makes her an essential pillar of the organization’s growth and wellbeing.",
     },
-    { name: "Dominic Game", role: "3D Artist", img: "imgs/krishna_img.png" },
     {
-      name: "James Vial",
-      role: "Head of Front-End",
-      img: "imgs/krishna_img.png",
+      name: "Amol Sriram Koyya",
+      title: "Product Marketing Manager",
+      image: "imgs/krishna_img.png", // Replace with the correct path to your image
+      description:
+        "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor’s degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings freshideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
     },
   ];
   return (
@@ -283,45 +319,104 @@ const AboutUs = () => {
             </div>
           </div>
         </section>
-
-        <section className="lg:p-10 p-5 bg-blue-50 mb-4 ml-11 mr-11 rounded-lg ">
-          <h2 className="text-blue-600 text-4xl font-bold mb-8 text-center ">
-            Meet our team members
+        <div className="py-16 px-4 md:px-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] mb-12">
+            Our Management
           </h2>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 ">
-            {teamMembers.map((member, i) => (
+          <div className="space-y-5">
+            {managementTeam.map((member, idx) => (
               <div
-                key={i}
-                className=" bg-white rounded-lg shadow p-2 flex lg:flex-row lg:text-left lg:space-x-4 flex-col"
+                key={idx}
+                className={`flex flex-col ${
+                  idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                } items-start gap-6`}
               >
-                <img
-                  src={member.img}
-                  className="w-16 h-16 object-cover m-auto md:m-0 rounded-full lg:w-36 lg:h-36 lg:rounded-lg lg:float-start lg:ml-0"
-                />
-                <div className="md:ml-3">
-                  <h3 className="font-bold lg:mt-4 items-center">
-                    {member.name}
-                  </h3>
-                  <p className="text-blue-600 lg:text:xl text-sm">
-                    {member.role}
-                  </p>
-
-                  <div className="flex space-x-4 mt-4 justify-center ">
-                    <a href="#">
-                      <FaFacebook />
-                    </a>
-                    <a href="#">
-                      <FaGithub />
-                    </a>
-                    <a href="#">
-                      <FaLinkedin />
-                    </a>
+                <div className="bg-white rounded-xl shadow-md p-6 md:p-8 lg:w-[80%]">
+                  <div
+                    className={`${
+                      idx % 2 !== 0 && "justify-self-end flex-row-reverse"
+                    } flex items-center gap-4 mb-4`}
+                  >
+                    <img
+                      src="/imgs/krishna_img.png" // Use the same image as in your uploaded file
+                      alt={member.name}
+                      className="w-32 h-32 lg:w-48 lg:h-48 rounded-full object-cover shadow-md "
+                    />
+                    <div className={`flex flex-col`}>
+                      <h3 className="text-xl font-semibold text-[#154C8C]">
+                        {member.name}
+                      </h3>
+                      <p className="text-sm font-medium text-[#7b7b7b] mb-2">
+                        {member.title}
+                      </p>
+                      <p className="text-gray-700 hidden lg:flex text-sm leading-relaxed">
+                        {member.description}
+                      </p>
+                    </div>
                   </div>
+                  <p className="text-gray-700 flex lg:hidden text-sm leading-relaxed">
+                    {member.description}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
-        </section>
+        </div>
+      </div>
+      <section className="lg:px-20 p-5 bg-blue-50 mb-4 rounded-lg ">
+        <h2 className="text-blue-600 text-4xl font-bold mb-8 text-center ">
+          Meet our team members
+        </h2>
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 ">
+          {teamMembers.map((member, i) => (
+            <div
+              key={i}
+              className=" bg-white rounded-lg shadow p-2 flex lg:flex-row lg:text-left lg:space-x-4 flex-col"
+            >
+              <img
+                src={member.image}
+                className="w-16 h-16 object-cover m-auto md:m-0 rounded-full lg:w-36 lg:h-36 lg:rounded-lg lg:float-start lg:ml-0"
+              />
+              <div className="md:ml-3">
+                <h3 className="font-bold lg:mt-4 items-center">
+                  {member.name}
+                </h3>
+                <p className="text-blue-600 lg:text:xl text-sm">
+                  {member.role}
+                </p>
+
+                <div className="flex space-x-4 mt-4 justify-start ">
+                  <a href="#">
+                    <FaFacebook />
+                  </a>
+                  <a href="#">
+                    <FaGithub />
+                  </a>
+                  <a href="#">
+                    <FaLinkedin />
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+      <div className="py-10 px-4 md:px-16 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#1f2c56] mb-10">
+          Our Clients
+        </h2>
+        <div className="flex flex-wrap justify-center items-center ">
+          <Marquee pauseOnHover className="[--duration:20s]">
+            {clientLogos.map((client, idx) => (
+              <img
+                key={idx}
+                src={client.src}
+                alt={client.alt}
+                className="h-8 md:h-10 object-contain px-5 hover:grayscale-0 transition duration-300"
+              />
+            ))}
+          </Marquee>
+        </div>
       </div>
       <Footer />
     </>
