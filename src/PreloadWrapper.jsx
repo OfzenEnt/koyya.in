@@ -10,7 +10,8 @@ const assetsToLoad = [
   "/imgs/2149241221.jpg",
   "/imgs/2149313746.jpg",
   "/imgs/aboutheader.png",
-  "/imgs/employees.jpg",
+  "/imgs/empolyees.jpg",
+  "/imgs/workplace.jpg",
 ];
 
 export default function PreloadWrapper({ children }) {

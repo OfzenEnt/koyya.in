@@ -7,6 +7,7 @@ import {
   FaPhoneAlt,
   FaEnvelope,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const navLinks = [
@@ -60,9 +61,9 @@ const Footer = () => {
           <ul className="space-y-2 text-sm">
             {navLinks.map((item, i) => (
               <li key={i}>
-                <a href={item.to} className="hover:underline">
+                <Link to={item.to} className="hover:underline">
                   {item.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
