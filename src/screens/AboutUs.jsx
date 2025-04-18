@@ -87,7 +87,9 @@ const AboutUs = () => {
         />
         <div className="p-6 flex flex-col justify-center items-center rounded-md">
           <h1 className="text-black relative text-5xl font-bold">About us</h1>
-          <p className="text-gray-600 relative mt-1">Home → About</p>
+          <p className="text-gray-600 relative mt-1">
+            <Link to="/">Home</Link> → About
+          </p>
         </div>
       </header>
 

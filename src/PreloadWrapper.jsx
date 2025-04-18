@@ -41,7 +41,7 @@ export default function PreloadWrapper({ children }) {
         )
       );
 
-      setTimeout(() => setLoading(false), 300); // slight delay for smooth UX
+      setTimeout(() => setLoading(false), 800); // slight delay for smooth UX
     };
 
     loadAssets();
