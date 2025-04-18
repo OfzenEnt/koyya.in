@@ -8,22 +8,30 @@ import CountUp from "react-countup";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "./lib/ScrollToTop";
+import { useInView } from 'react-intersection-observer';
+
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 1000, once: false });
   }, []);
   const NumberCounter = ({ endValue }) => {
+    const { ref, inView } = useInView({
+      triggerOnce: true, // only trigger once
+      threshold: 1,     // trigger when 30% of component is visible
+    });
+
     return (
-      <div>
-        <CountUp
-          start={0}
-          end={endValue}
-          duration={2} // duration in seconds
-          separator=","
-          suffix=" "
-          leadingZeros={false}
-          className="text-2xl font-semibold text-center text-blue-700"
-        />
+      <div ref={ref}>
+        {inView && (
+          <CountUp
+            start={0}
+            end={endValue}
+            duration={2}
+            separator=","
+            suffix=" "
+            className="text-2xl font-semibold text-center text-blue-700"
+          />
+        )}
       </div>
     );
   };
@@ -99,7 +107,7 @@ function App() {
                 className="w-full h-48 object-cover hover:scale-105 transition"
               />
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-lg font-semibold text-gray-900 z-10">
                   New Single-Origin Coffee Launch
                 </h3>
                 <p className="text-sm text-gray-500 mt-1">June 15, 2023</p>
@@ -107,7 +115,7 @@ function App() {
                   Discover our new line of premium single-origin coffee beans
                   sourced directly from sustainable farms.
                 </p>
-                <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-700 hover:text-white transition">
+                <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-700 hover:text-white transition cursor-pointer">
                   Read More
                 </button>
               </div>
@@ -129,7 +137,7 @@ function App() {
                   Join us for our annual technology summit featuring workshops
                   on IoT, AI, and digital transformation.
                 </p>
-                <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-700 hover:text-white transition">
+                <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-700 hover:text-white transition cursor-pointer">
                   Read More
                 </button>
               </div>
@@ -151,7 +159,7 @@ function App() {
                   We're proud to announce our new partnership with FarmTech
                   Alliance to develop agricultural IoT solutions.
                 </p>
-                <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-700 hover:text-white transition">
+                <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-700 hover:text-white transition cursor-pointer">
                   Read More
                 </button>
               </div>
@@ -243,7 +251,7 @@ function App() {
               <img
                 src="imgs/krishna_img.png"
                 alt="Krishna Mohan Koyya"
-                className="rounded-full w-[80px] h-[80px] object-cover shadow-lg"
+                className="rounded-full w-[80px] h-[80px] object-cover shadow-lg border-2 border-white"
               />
               <div>
                 <p className="text-lg font-semibold">Krishna Mohan Koyya</p>
