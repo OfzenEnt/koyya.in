@@ -11,7 +11,7 @@ import { Marquee } from "@/components/magicui/marquee";
 
 const AboutUs = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+    AOS.init({ duration: 1000, once: false, });
   }, []);
   const clientLogos = [
     { src: "imgs/clients/samsung_logo.svg", alt: "Samsung" },
@@ -116,7 +116,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1/2 flex flex-col bg-blue-100 lg:p-8 p-4 rounded-lg justify-center w-full gap-4 lg:gap-6 lg:text-lg text-sm">
+          <div className="flex-1/2 flex flex-col bg-blue-100 lg:p-8 p-4 rounded-lg justify-center w-full gap-4 lg:gap-6 lg:text-lg text-sm ">
             <h3 className="text-blue-800 text-center  lg:text-3xl text-xl">
               About Koyya
             </h3>
@@ -159,7 +159,7 @@ const AboutUs = () => {
                 sustainable solutions that shape a brighter tomorrow.
               </p>
               <div
-                className=" bg-blue-50 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:mr-16 flex items-center"
+                className=" bg-blue-50 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:mr-16 flex items-center hover:shadow-lg transition-all duration-300"
                 data-aos="fade-right"
               >
                 <img
@@ -179,7 +179,7 @@ const AboutUs = () => {
                 </div>
               </div>
               <div
-                className=" bg-blue-50 p-3 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:ml-16 flex items-center"
+                className=" bg-blue-50 p-3 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:ml-16 flex items-center hover:shadow-lg transition-all duration-300"
                 data-aos="fade-left"
               >
                 <img
@@ -199,7 +199,7 @@ const AboutUs = () => {
                 </div>
               </div>
               <div
-                className="bg-blue-50 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:mr-16 flex items-center"
+                className="bg-blue-50 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:mr-16 flex items-center hover:shadow-lg transition-all duration-300"
                 data-aos="fade-right"
               >
                 <img
@@ -224,7 +224,7 @@ const AboutUs = () => {
             <div className="hidden md:flex justify-center items-center flex-1/3 h-full flex-col gap-10">
               <img
                 src="imgs/2149313746.jpg"
-                className="rounded-lg self-center w-full 2xl:w-[70%] object-cover"
+                className="rounded-lg self-center w-full 2xl:w-[70%] object-cover hover:shadow-xl transition-all duration-300"
               />
             </div>
           </div>
@@ -320,22 +320,20 @@ const AboutUs = () => {
           </div>
         </section>
         <div className="py-16 px-4 md:px-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] mb-12 ">
             Our Management
           </h2>
           <div className="space-y-5">
             {managementTeam.map((member, idx) => (
               <div
                 key={idx}
-                className={`flex flex-col ${
-                  idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                } items-start gap-6`}
+                className={`flex flex-col ${idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  } items-start gap-6`}
               >
-                <div className="bg-white rounded-xl shadow-md p-6 md:p-8 lg:w-[80%]">
+                <div className="bg-white rounded-xl shadow-md hover:shadow-lg p-6 md:p-8 lg:w-[80%]">
                   <div
-                    className={`${
-                      idx % 2 !== 0 && "justify-self-end flex-row-reverse"
-                    } flex items-center gap-4 mb-4`}
+                    className={`${idx % 2 !== 0 && "justify-self-end flex-row-reverse"
+                      } flex items-center gap-4 mb-4`}
                   >
                     <img
                       src="/imgs/krishna_img.png" // Use the same image as in your uploaded file
@@ -386,13 +384,16 @@ const AboutUs = () => {
                 </p>
 
                 <div className="flex space-x-4 mt-4 justify-start ">
-                  <a href="#">
+                  <a href="#"
+                    className="hover:text-blue-500 ">
                     <FaFacebook />
                   </a>
-                  <a href="#">
+                  <a href="#"
+                    className="hover:opacity-100  bg-white hover:bg-black hover:rounded-full hover:text-white text-black ">
                     <FaGithub />
                   </a>
-                  <a href="#">
+                  <a href="#"
+                    className="hover:text-blue-800 ">
                     <FaLinkedin />
                   </a>
                 </div>
