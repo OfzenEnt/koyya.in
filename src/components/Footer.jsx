@@ -28,11 +28,28 @@ const Footer = () => {
             innovative solutions for a better future.
           </p>
           <div className="flex space-x-4 text-lg">
-            {[FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram].map(
-              (Icon, i) => (
-                <Icon key={i} className="hover:text-gray-300 cursor-pointer" />
-              )
-            )}
+            {[
+              // { Icon: FaFacebookF, link: "https://facebook.com" },
+              // { Icon: FaTwitter, link: "https://twitter.com" },
+              {
+                Icon: FaLinkedinIn,
+                link: "https://www.linkedin.com/company/koyya-enterprises-private-limited/",
+              },
+              {
+                Icon: FaInstagram,
+                link: "https://www.instagram.com/koyya.enterprises",
+              },
+            ].map(({ Icon, link }, i) => (
+              <a
+                key={i}
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-300 cursor-pointer"
+              >
+                <Icon />
+              </a>
+            ))}
           </div>
         </div>
 
@@ -56,12 +73,24 @@ const Footer = () => {
           <h3 className="font-bold text-lg mb-2">Contact Us</h3>
           <ul className="space-y-2 text-sm">
             {[
-              [FaMapMarkerAlt, "Bengaluru, Karnataka, India"],
-              [FaPhoneAlt, "+91 123 456 7890"],
-              [FaEnvelope, "info@koyya.in"],
-            ].map(([Icon, text], i) => (
+              [FaMapMarkerAlt, "Bengaluru, Karnataka, India", null],
+              [FaPhoneAlt, "+91 123 456 7890", "tel:+911234567890"],
+              [FaEnvelope, "info@koyya.in", "mailto:info@koyya.in"],
+            ].map(([Icon, text, link], i) => (
               <li key={i} className="flex items-center">
-                <Icon className="mr-2" /> {text}
+                <Icon className="mr-2" />
+                {link ? (
+                  <a
+                    href={link}
+                    className="hover:underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {text}
+                  </a>
+                ) : (
+                  text
+                )}
               </li>
             ))}
           </ul>

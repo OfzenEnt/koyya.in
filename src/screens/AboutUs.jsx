@@ -11,7 +11,7 @@ import { Marquee } from "@/components/magicui/marquee";
 
 const AboutUs = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: false, });
+    AOS.init({ duration: 1000, once: false });
   }, []);
   const clientLogos = [
     { src: "imgs/clients/samsung_logo.svg", alt: "Samsung" },
@@ -59,6 +59,13 @@ const AboutUs = () => {
       image: "imgs/krishna_img.png", // Replace with the correct path to your image
       description:
         "Karuna brings the human touch to Koyya Enterprises. As a key leader, she oversees people-related initiatives and ensures a work environment where individuals feel valued, respected, and motivated. A graduate in Arts from Andhra University, Karuna also has deep knowledge and hands-on experience in horticulture, which adds a unique dimension to the company’s perspective — especially in areas related to agriculture and sustainability. Her ability to nurture talent and promote a people-first culture makes her an essential pillar of the organization’s growth and wellbeing.",
+    },
+    {
+      name: "Amol Sriram Koyya",
+      title: "Product Marketing Manager",
+      image: "imgs/krishna_img.png", // Replace with the correct path to your image
+      description:
+        "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor’s degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings freshideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
     },
     {
       name: "Amol Sriram Koyya",
@@ -327,13 +334,15 @@ const AboutUs = () => {
             {managementTeam.map((member, idx) => (
               <div
                 key={idx}
-                className={`flex flex-col ${idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  } items-start gap-6`}
+                className={`flex flex-col ${
+                  idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                } items-start gap-6`}
               >
                 <div className="bg-white rounded-xl shadow-md hover:shadow-lg p-6 md:p-8 lg:w-[80%]">
                   <div
-                    className={`${idx % 2 !== 0 && "justify-self-end flex-row-reverse"
-                      } flex items-center gap-4 mb-4`}
+                    className={`${
+                      idx % 2 !== 0 && "justify-self-end flex-row-reverse"
+                    } flex items-center gap-4 mb-4`}
                   >
                     <img
                       src="/imgs/krishna_img.png" // Use the same image as in your uploaded file
@@ -365,7 +374,7 @@ const AboutUs = () => {
         <h2 className="text-blue-600 text-4xl font-bold mb-8 text-center ">
           Meet our team members
         </h2>
-        <div className="grid  grid-cols-1 lg:grid-cols-3 gap-4 ">
+        <div className="grid  grid-cols-2 lg:grid-cols-4 gap-4 ">
           {teamMembers.map((member, i) => (
             <div
               key={i}
@@ -384,16 +393,16 @@ const AboutUs = () => {
                 </p>
 
                 <div className="flex space-x-4 mt-4 justify-start ">
-                  <a href="#"
-                    className="hover:text-blue-500 ">
+                  <a href="#" className="hover:text-blue-500 ">
                     <FaFacebook />
                   </a>
-                  <a href="#"
-                    className="hover:opacity-100  bg-white hover:bg-black hover:rounded-full hover:text-white text-black ">
+                  <a
+                    href="#"
+                    className="hover:opacity-100  bg-white hover:bg-black hover:rounded-full hover:text-white text-black "
+                  >
                     <FaGithub />
                   </a>
-                  <a href="#"
-                    className="hover:text-blue-800 ">
+                  <a href="#" className="hover:text-blue-800 ">
                     <FaLinkedin />
                   </a>
                 </div>

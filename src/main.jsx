@@ -5,6 +5,8 @@ import App from "./App.jsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AboutUs from "./screens/AboutUs.jsx";
 import ErrorPage from "./screens/ErrorPage.jsx";
+import PreloadWrapper from "./PreloadWrapper.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,6 +34,8 @@ const router = createBrowserRouter([
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <PreloadWrapper>
+      <RouterProvider router={router} />
+    </PreloadWrapper>
   </StrictMode>
 );

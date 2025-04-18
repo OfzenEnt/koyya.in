@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -8,7 +8,7 @@ import CountUp from "react-countup";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "./lib/ScrollToTop";
-import { useInView } from 'react-intersection-observer';
+import { useInView } from "react-intersection-observer";
 
 function App() {
   useEffect(() => {
@@ -17,7 +17,7 @@ function App() {
   const NumberCounter = ({ endValue }) => {
     const { ref, inView } = useInView({
       triggerOnce: true, // only trigger once
-      threshold: 1,     // trigger when 30% of component is visible
+      threshold: 1, // trigger when 30% of component is visible
     });
 
     return (
