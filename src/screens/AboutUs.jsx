@@ -275,57 +275,65 @@ const AboutUs = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
-            <div
-              className="bg-blue-100 p-6 lg:rounded-bl-4xl rounded-lg overflow-hidden"
-              data-aos="fade-right"
-            >
-              <div className="flex justify-between w-full">
-                <div>
-                  <h3 className="font-bold text-xl mb-2">
-                    Glarimy – The Spirit of Innovation
-                  </h3>
-                  <p className="italic">Curious | Creative | Tech-savvy</p>
+            <Link to="https://www.glarimy.com " target="_blank">
+              <div
+                className="bg-blue-100 p-6 lg:rounded-bl-4xl rounded-lg overflow-hidden"
+                data-aos="fade-right"
+              >
+                <div className="flex justify-between w-full">
+                  <div>
+                    <h3 className="font-bold text-xl mb-2">
+                      Glarimy – The Spirit of Innovation
+                    </h3>
+                    <p className="italic">Curious | Creative | Tech-savvy</p>
+                  </div>
+                  <img
+                    src="imgs/glarify logo.png"
+                    alt=""
+                    className="w-12 md:mr-10"
+                  />
                 </div>
-                <img
-                  src="imgs/glarify logo.png"
-                  alt=""
-                  className="w-12 md:mr-10"
-                />
+                <p className="mt-4 text-justify">
+                  Glarimy symbolizes our technology vertical a young, agile, and
+                  curious mind constantly exploring new possibilities. She
+                  represents our approach to solving modern business problems
+                  through SaaS, mobile apps, consulting, and upskilling
+                  programs. Her energy drives digital transformation across
+                  enterprises.
+                </p>
               </div>
-              <p className="mt-4 text-justify">
-                Glarimy symbolizes our technology vertical a young, agile, and
-                curious mind constantly exploring new possibilities. She
-                represents our approach to solving modern business problems
-                through SaaS, mobile apps, consulting, and upskilling programs.
-                Her energy drives digital transformation across enterprises.
-              </p>
-            </div>
-            <div
-              className="bg-green-100 p-6 lg:rounded-tr-4xl rounded-lg overflow-hidden"
-              data-aos="fade-left"
-            >
-              <div className="flex justify-between w-full">
-                <div>
-                  <h3 className="font-bold text-xl mb-2">
-                    Krissaco – The Heart of Agriculture
-                  </h3>
-                  <p className="italic">Grounded | Visionary | Future-Ready</p>
+            </Link>
+            <Link to="https://www.krissaco.com  " target="_blank">
+              <div
+                className="bg-green-100 p-6 lg:rounded-tr-4xl rounded-lg overflow-hidden"
+                data-aos="fade-left"
+              >
+                <div className="flex justify-between w-full">
+                  <div>
+                    <h3 className="font-bold text-xl mb-2">
+                      Krissaco – The Heart of Agriculture
+                    </h3>
+                    <p className="italic">
+                      Grounded | Visionary | Future-Ready
+                    </p>
+                  </div>
+                  <img
+                    src="imgs/krissaco logo.png"
+                    alt=""
+                    className="w-12 md:mr-10"
+                  />
                 </div>
-                <img
-                  src="imgs/krissaco logo.png"
-                  alt=""
-                  className="w-12 md:mr-10"
-                />
-              </div>
 
-              <p className="mt-4 text-justify">
-                Krissaco stands for the modern agriculturist rooted in
-                tradition, yet empowered by technology. He leads our
-                agribusiness initiatives with a focus on IoT, AI, cloud-based
-                tools, and food product innovation. His mission is to add value
-                to agriculture through sustainable, tech-driven solutions.
-              </p>
-            </div>
+                <p className="mt-4 text-justify">
+                  Krissaco stands for the modern agriculturist rooted in
+                  tradition, yet empowered by technology. He leads our
+                  agribusiness initiatives with a focus on IoT, AI, cloud-based
+                  tools, and food product innovation. His mission is to add
+                  value to agriculture through sustainable, tech-driven
+                  solutions.
+                </p>
+              </div>
+            </Link>
           </div>
         </section>
         <div className="py-16 px-4 md:px-16">
