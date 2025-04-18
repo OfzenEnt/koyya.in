@@ -97,7 +97,7 @@ const AboutUs = () => {
               <img
                 src="imgs/workplace.jpg"
                 className="rounded-lg w-full h-full row-span-1 object-cover"
-                data-aos="fade-down"
+                data-aos="fade"
               />
               <div className="grid grid-cols-2 row-span-2 gap-4">
                 <img
@@ -367,7 +367,7 @@ const AboutUs = () => {
         <h2 className="text-blue-600 text-4xl font-bold mb-8 text-center ">
           Meet our team members
         </h2>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 ">
+        <div className="grid  grid-cols-1 lg:grid-cols-3 gap-4 ">
           {teamMembers.map((member, i) => (
             <div
               key={i}
