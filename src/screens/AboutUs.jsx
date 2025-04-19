@@ -48,28 +48,28 @@ const AboutUs = () => {
   const teamMembers = [
     {
       name: "Krishna Mohan Koyya",
-      title: "Chief Executive Officer & Managing Director",
+      title: "CEO",
       image: "imgs/krishna_img.png", // Replace with the correct path to your image
       description:
         "Koyya Enterprises is led by Krishna Mohan Koyya (Krishna), a seasoned technologist with over 25 years of experience in the IT industry. He holds a Master’s degree in Computer Science and Technology from Andhra University, Visakhapatnam. Krishna has held key roles at leading organizations such as Wipro and Cisco Systems, working across domains like GSM, Network Management, Distributed Computing, and E-commerce. In addition to his industry experience, Krishna has been a mentor and trainer to thousands of midcareer engineers at top multinational companies including Robert Bosch, Cisco, Samsung, Arcesium, and Intuit through corporate upskilling and training programs. His leadership combines deep technical expertise with a strong focus on building practical, impactful solutions.",
     },
     {
       name: "Karuna Koyya",
-      title: "Founder Director",
+      title: "CTO",
       image: "imgs/krishna_img.png", // Replace with the correct path to your image
       description:
         "Karuna brings the human touch to Koyya Enterprises. As a key leader, she oversees people-related initiatives and ensures a work environment where individuals feel valued, respected, and motivated. A graduate in Arts from Andhra University, Karuna also has deep knowledge and hands-on experience in horticulture, which adds a unique dimension to the company’s perspective — especially in areas related to agriculture and sustainability. Her ability to nurture talent and promote a people-first culture makes her an essential pillar of the organization’s growth and wellbeing.",
     },
     {
       name: "Amol Sriram Koyya",
-      title: "Product Marketing Manager",
+      title: "CMO",
       image: "imgs/krishna_img.png", // Replace with the correct path to your image
       description:
         "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor’s degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings freshideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
     },
     {
       name: " speed",
-      title: "Manager",
+      title: "CFO",
       image: "imgs/krishna_img.png", // Replace with the correct path to your image
       description:
         "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor’s degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings freshideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
@@ -401,7 +401,7 @@ const AboutUs = () => {
                   {member.name}
                 </h3>
                 <p className="text-blue-600 lg:text:xl text-sm">
-                  {member.role}
+                  {member.title}
                 </p>
 
                 <div className="flex space-x-4 mt-4 justify-center lg:justify-start">
