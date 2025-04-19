@@ -230,7 +230,7 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden md:flex justify-center items-center flex-1/3 h-full flex-col gap-10">
+            <div className="hidden lg:flex justify-center items-center flex-1/3 h-full flex-col gap-10">
               <img
                 src="imgs/2149313746.jpg"
                 className="rounded-lg self-center w-full 2xl:w-[70%] object-cover hover:shadow-xl transition-all duration-300"
@@ -382,29 +382,29 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <section className="lg:px-20 p-5 bg-blue-50 mb-4 rounded-lg ">
+      <section className="md:px-20 p-5 bg-blue-50 mb-4 rounded-md ">
         <h2 className="text-blue-600 text-4xl font-bold mb-8 text-center ">
           Meet our team members
         </h2>
-        <div className="grid  grid-cols-2 lg:grid-cols-4 gap-4 ">
+        <div className="grid  grid-cols-2 :grid-cols-4 gap-4 ">
           {teamMembers.map((member, i) => (
             <div
               key={i}
-              className=" bg-white rounded-lg shadow p-2 flex lg:flex-row lg:text-left lg:space-x-4 flex-col"
+              className=" bg-white rounded-md shadow p-2 flex md:flex-row md:text-left md:space-x-4 flex-col"
             >
               <img
                 src={member.image}
-                className="w-16 h-16 object-cover m-auto md:m-0 rounded-full lg:w-36 lg:h-36 lg:rounded-lg lg:float-start lg:ml-0"
+                className="w-16 h-16 object-cover m-auto md:m-0 rounded-full md:w-36 md:h-36 md:rounded-md md:float-start md:ml-0"
               />
-              <div className="md:ml-3 text-center lg:text-left">
-                <h3 className="font-bold lg:mt-4 items-center">
+              <div className="md:ml-3 text-center md:text-left">
+                <h3 className="font-bold md:mt-4 items-center">
                   {member.name}
                 </h3>
-                <p className="text-blue-600 lg:text:xl text-sm">
+                <p className="text-blue-600 md:text:xl text-sm">
                   {member.title}
                 </p>
 
-                <div className="flex space-x-4 mt-4 justify-center lg:justify-start">
+                <div className="flex space-x-4 mt-4 justify-center md:justify-start">
                   <a href="#" className="hover:text-blue-500 ">
                     <FaFacebook />
                   </a>

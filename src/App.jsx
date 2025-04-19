@@ -98,7 +98,7 @@ function App() {
           </div>
 
           {/* Cards Grid */}
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* Card 1 */}
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg ">
               <img
@@ -113,7 +113,7 @@ function App() {
                   New Single-Origin Coffee Launch
                 </h3>
                 <p className="text-sm text-gray-500 mt-1">June 15, 2023</p>
-                <p className="text-gray-600 mt-3">
+                <p className="text-gray-600 mt-3 text-justify">
                   Discover our new line of premium single-origin coffee beans
                   sourced directly from sustainable farms.
                 </p>
@@ -135,9 +135,9 @@ function App() {
                   Tech Summit 2023
                 </h3>
                 <p className="text-sm text-gray-500 mt-1">July 22-24, 2023</p>
-                <p className="text-gray-600 mt-3">
+                <p className="text-gray-600 mt-3 text-justify">
                   Join us for our annual technology summit featuring workshops
-                  on IoT, AI, and digital transformation.
+                  on IoT, AI, Cloud technologies and digital transformation.
                 </p>
                 <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-700 hover:text-white transition cursor-pointer">
                   Read More
@@ -153,11 +153,11 @@ function App() {
                 className="w-full h-48 object-cover hover:scale-105 transition"
               />
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-lg font-semibold text-gray-900 ">
                   Strategic Partnership Announcement
                 </h3>
                 <p className="text-sm text-gray-500 mt-1">May 5, 2023</p>
-                <p className="text-gray-600 mt-3">
+                <p className="text-gray-600 mt-3 text-justify">
                   We're proud to announce our new partnership with FarmTech
                   Alliance to develop agricultural IoT solutions.
                 </p>
