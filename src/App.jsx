@@ -78,7 +78,7 @@ function App() {
               playsInline
               src="/vids/agri.mp4"
               alt="farm"
-              className="w-[60%] h-[60%] object-cover rounded-tl-[50px] rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-md absolute bottom-0 left-0"
+              className="w-[60%] h-[60%] object-cover rounded-tl-[50px] rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-md absolute bottom-0 left-0 "
             />
           </div>
         </div>
@@ -104,7 +104,9 @@ function App() {
               <img
                 src="/imgs/2149241221.jpg"
                 alt="Coffee Launch"
-                className="w-full h-48 object-cover hover:scale-105 transition"
+                className="w-full h-48 object-cover hover:scale-105 transition "
+
+
               />
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 z-10">

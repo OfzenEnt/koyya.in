@@ -336,28 +336,30 @@ const AboutUs = () => {
             </Link>
           </div>
         </section>
-        <div className="py-16 px-4 md:px-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] mb-12 ">
+        <div className="py-16 px-4 md:px-16"
+
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] mb-12 underline-[#1f2c56] underline decoration-4">
             Our Management
           </h2>
           <div className="space-y-5">
             {managementTeam.map((member, idx) => (
               <div
                 key={idx}
-                className={`flex flex-col ${
-                  idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                } items-start gap-6`}
+                className={`flex flex-col ${idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                  } items-start gap-6`}
               >
-                <div className="bg-white rounded-xl shadow-md hover:shadow-lg p-6 md:p-8 lg:w-[80%]">
+                <div className="bg-white rounded-xl shadow-md hover:shadow-lg p-6 md:p-8 lg:w-[80%]"
+                >
                   <div
-                    className={`${
-                      idx % 2 !== 0 && "justify-self-end flex-row-reverse"
-                    } flex items-center gap-4 mb-4`}
+                    className={`${idx % 2 !== 0 && "justify-self-end flex-row-reverse"
+                      } flex items-center gap-4 mb-4`}
+
                   >
                     <img
                       src="/imgs/krishna_img.png" // Use the same image as in your uploaded file
                       alt={member.name}
-                      className="w-32 h-32 lg:w-48 lg:h-48 rounded-full object-cover shadow-md "
+                      className="w-32 h-32 lg:w-48 lg:h-48 rounded-full object-cover shadow-md border-2 border-white"
                     />
                     <div className={`flex flex-col`}>
                       <h3 className="text-xl font-semibold text-[#154C8C]">
@@ -366,12 +368,12 @@ const AboutUs = () => {
                       <p className="text-sm font-medium text-[#7b7b7b] mb-2">
                         {member.title}
                       </p>
-                      <p className="text-gray-700 hidden lg:flex text-sm leading-relaxed">
+                      <p className="text-gray-700 hidden lg:flex text-sm leading-relaxed ">
                         {member.description}
                       </p>
                     </div>
                   </div>
-                  <p className="text-gray-700 flex lg:hidden text-sm leading-relaxed">
+                  <p className="text-gray-700 flex lg:hidden text-sm leading-relaxed text-justify">
                     {member.description}
                   </p>
                 </div>
@@ -394,7 +396,7 @@ const AboutUs = () => {
                 src={member.image}
                 className="w-16 h-16 object-cover m-auto md:m-0 rounded-full lg:w-36 lg:h-36 lg:rounded-lg lg:float-start lg:ml-0"
               />
-              <div className="md:ml-3">
+              <div className="md:ml-3 text-center lg:text-left">
                 <h3 className="font-bold lg:mt-4 items-center">
                   {member.name}
                 </h3>
@@ -402,13 +404,13 @@ const AboutUs = () => {
                   {member.role}
                 </p>
 
-                <div className="flex space-x-4 mt-4 justify-start ">
+                <div className="flex space-x-4 mt-4 justify-center lg:justify-start">
                   <a href="#" className="hover:text-blue-500 ">
                     <FaFacebook />
                   </a>
                   <a
                     href="#"
-                    className="hover:opacity-100  bg-white hover:bg-black hover:rounded-full hover:text-white text-black "
+                    className="hover:opacity-100  bg-white hover:bg-black hover:rounded-full hover:text-white text-black transition-all duration-300 "
                   >
                     <FaGithub />
                   </a>
@@ -420,9 +422,9 @@ const AboutUs = () => {
             </div>
           ))}
         </div>
-      </section>
+      </section >
       <div className="py-10 px-4 md:px-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#1f2c56] mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#1f2c56] mb-10 ">
           Our Clients
         </h2>
         <div className="flex flex-wrap justify-center items-center ">
