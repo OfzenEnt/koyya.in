@@ -46,7 +46,7 @@ const Footer = () => {
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-gray-300 cursor-pointer"
+                className="opacity-85 hover:text-white text-gray-200 hover:opacity-100 cursor-pointer"
               >
                 <Icon />
               </a>

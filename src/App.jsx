@@ -190,16 +190,7 @@ function App() {
             {/* Stats + Button */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-center mb-6">
               <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-center lg:mb-6 items-center py-3">
-                <div>
-                  <div>
-                    <div className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center">
-                      <NumberCounter endValue={50} /> +
-                    </div>
-                  </div>
-                  <p className="text-gray-600 text-sm md:text-base">
-                    Employees
-                  </p>
-                </div>
+
                 <div>
                   <div>
                     <div className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center">
@@ -208,6 +199,16 @@ function App() {
                   </div>
                   <p className="text-gray-600 text-sm md:text-base ">
                     Years Experience
+                  </p>
+                </div>
+                <div>
+                  <div>
+                    <div className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center">
+                      <NumberCounter endValue={50} /> +
+                    </div>
+                  </div>
+                  <p className="text-gray-600 text-sm md:text-base">
+                    Employees
                   </p>
                 </div>
                 <div>

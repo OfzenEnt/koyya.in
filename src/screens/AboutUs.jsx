@@ -68,8 +68,8 @@ const AboutUs = () => {
         "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor’s degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings freshideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
     },
     {
-      name: "Amol Sriram Koyya",
-      title: "Product Marketing Manager",
+      name: " speed",
+      title: "Manager",
       image: "imgs/krishna_img.png", // Replace with the correct path to your image
       description:
         "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor’s degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings freshideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
@@ -220,7 +220,7 @@ const AboutUs = () => {
                   <h3 className="text-blue-700 font-semibold lg:mb-2 ml-3 lg:text-xl">
                     Core Values
                   </h3>
-                  <ul className="list-disc list-inside ml-10 flex flex-wrap -space-y-3 gap-4">
+                  <ul className="list-disc list-inside lg:ml-3 ml-3 flex flex-wrap -space-y-3 gap-4">
                     <li>Innovation</li>
                     <li>Integrity </li>
                     <li>Sustainability </li>
@@ -368,7 +368,7 @@ const AboutUs = () => {
                       <p className="text-sm font-medium text-[#7b7b7b] mb-2">
                         {member.title}
                       </p>
-                      <p className="text-gray-700 hidden lg:flex text-sm leading-relaxed ">
+                      <p className="text-gray-700 hidden lg:flex text-sm leading-relaxed text-justify">
                         {member.description}
                       </p>
                     </div>
