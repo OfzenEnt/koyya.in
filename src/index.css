@@ -3,6 +3,10 @@
 .root {
   scroll-behavior: smooth;
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 @custom-variant dark (&:is(.dark *));
 /* styles/globals.css or your custom CSS file */
 .no-scrollbar::-webkit-scrollbar {

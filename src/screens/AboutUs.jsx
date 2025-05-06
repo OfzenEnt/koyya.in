@@ -117,7 +117,7 @@ const AboutUs = () => {
         </div>
       </header> */}
 
-      <div className="px-2 lg:px-16 py-5 " id="top">
+      <div className="px-2 lg:px-16 py-5" id="top">
         {/* About Koyya */}
         <section className="flex flex-col lg:flex-row gap-16 md:gap-5 2xl:gap-32 p-10 ">
           <div className="flex-1/2 grid grid-cols-3 gap-4 overflow-hidden">
