@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         {/* About */}
         <div>
-          <h3 className="font-bold text-lg mb-2">About KOYYA</h3>
+          <h3 className="font-medium text-lg mb-2">About KOYYA</h3>
           <p className="text-sm mb-4">
             Bridging technology and agriculture to create sustainable,
             innovative solutions for a better future.
@@ -57,7 +57,7 @@ const Footer = () => {
         {/* Links */}
 
         <div>
-          <h3 className="font-bold text-lg mb-2">Ouick Links</h3>
+          <h3 className="font-medium text-lg mb-2">Ouick Links</h3>
           <ul className="space-y-2 text-sm">
             {navLinks.map((item, i) => (
               <li key={i}>
@@ -71,7 +71,7 @@ const Footer = () => {
 
         {/* Contact */}
         <div>
-          <h3 className="font-bold text-lg mb-2">Contact Us</h3>
+          <h3 className="font-medium text-lg mb-2">Contact Us</h3>
           <ul className="space-y-2 text-sm">
             {[
               [FaMapMarkerAlt, "Bengaluru, Karnataka, India", null],

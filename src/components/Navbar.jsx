@@ -13,7 +13,7 @@ const navLinks = [
     dropdownItems: [
       { name: "About Koyya", to: "/aboutus#top" },
       { name: "Behind Koyya", to: "/aboutus#behind" },
-      { name: "Our Management", to: "/aboutus#management" },
+      { name: "Leadership", to: "/aboutus#leadership" },
     ],
   },
   { name: "Product & Services", to: "/services" },

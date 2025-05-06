@@ -22,7 +22,7 @@ const AboutUs = () => {
           const elementPosition =
             element.getBoundingClientRect().top + window.scrollY;
           window.scrollTo({
-            top: elementPosition - 50,
+            top: elementPosition - 80,
             behavior: "smooth",
           });
         } else {
@@ -150,7 +150,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="flex-1/2 flex flex-col bg-blue-100 xl:p-8 p-4 rounded-lg  w-full gap-4 xl:gap-6 xl:text-lg text-sm ">
-            <h3 className="text-blue-800 text-center  lg:text-3xl text-xl">
+            <h3 className="text-blue-800 text-center  lg:text-3xl text-xl font-bold">
               About Koyya
             </h3>
 
@@ -250,8 +250,11 @@ const AboutUs = () => {
           </div>
         </section> */}
 
-        <section className="px-10 gap-6 flex flex-col items-center" id="behind">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] underline-[#1f2c56] underline decoration-4">
+        <section
+          className="px-10 gap-6 flex flex-col  lg:mt-10 items-center"
+          id="behind"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] decoration-4">
             Behind Koyya
           </h2>
           <div className="lg:p-6 p-5 bg-violet-100 rounded-lg">
@@ -340,9 +343,9 @@ const AboutUs = () => {
             </Link>
           </div>
         </section>
-        <div className="py-10 px-4 md:px-16" id="management">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] mb-8 underline-[#1f2c56] underline decoration-4">
-            Our Management
+        <div className="py-10 px-4 md:px-16 lg:mt-10" id="leadership">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] mb-8 ">
+            Leadership
           </h2>
           <div className="space-y-3">
             {managementTeam.map((member, idx) => (
