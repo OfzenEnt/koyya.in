@@ -9,11 +9,21 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "./lib/ScrollToTop";
 import { useInView } from "react-intersection-observer";
+import { Marquee } from "./components/magicui/marquee";
 
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000, once: false });
   }, []);
+  const clientLogos = [
+    { src: "imgs/clients/samsung_logo.svg", alt: "Samsung" },
+    { src: "imgs/clients/cisco_logo.svg", alt: "Cisco" },
+    { src: "imgs/clients/bosch_logo.svg", alt: "Bosch" },
+    { src: "imgs/clients/rakuten_logo.svg", alt: "Rakuten" },
+    { src: "imgs/clients/hsbc_logo.svg", alt: "HSBC" },
+    { src: "imgs/clients/flipkart_logo.svg", alt: "Flipkart" },
+    { src: "imgs/clients/arcesium_logo.svg", alt: "Arcesium" },
+  ];
   const NumberCounter = ({ endValue }) => {
     const { ref, inView } = useInView({
       triggerOnce: true, // only trigger once
@@ -105,8 +115,6 @@ function App() {
                 src="/imgs/2149241221.jpg"
                 alt="Coffee Launch"
                 className="w-full h-48 object-cover hover:scale-105 transition "
-
-
               />
               <div className="p-6">
                 <h3 className="text-lg font-semibold text-gray-900 z-10">
@@ -190,7 +198,6 @@ function App() {
             {/* Stats + Button */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-center mb-6">
               <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-center lg:mb-6 items-center py-3">
-
                 <div>
                   <div>
                     <div className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center">
@@ -268,6 +275,24 @@ function App() {
       </section>
       {/* Testimonials Section */}
       <Testimonials />
+      {/* our Clients */}
+      <div className="py-10 px-4 md:px-16 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#1f2c56] mb-10 ">
+          Our Clients
+        </h2>
+        <div className="flex flex-wrap justify-center items-center ">
+          <Marquee pauseOnHover className="[--duration:20s]">
+            {clientLogos.map((client, idx) => (
+              <img
+                key={idx}
+                src={client.src}
+                alt={client.alt}
+                className="h-8 md:h-10 object-contain px-5 hover:grayscale-0 transition duration-300"
+              />
+            ))}
+          </Marquee>
+        </div>
+      </div>
       <Footer />
     </>
   );

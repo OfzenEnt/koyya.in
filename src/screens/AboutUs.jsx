@@ -8,8 +8,31 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "@/lib/ScrollToTop";
 import { Marquee } from "@/components/magicui/marquee";
+import { useLocation } from "react-router-dom";
 
 const AboutUs = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollToHash = () => {
+      if (location.hash) {
+        const id = location.hash.replace("#", "");
+        const element = document.getElementById(id);
+        if (element) {
+          const elementPosition =
+            element.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({
+            top: elementPosition - 50,
+            behavior: "smooth",
+          });
+        } else {
+          setTimeout(scrollToHash, 100); // Retry if element not in DOM yet
+        }
+      }
+    };
+    scrollToHash();
+  }, [location]);
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: false });
   }, []);
@@ -35,51 +58,52 @@ const AboutUs = () => {
       title: "Founder Director",
       image: "imgs/krishna_img.png", // Replace with the correct path to your image
       description:
-        "Karuna brings the human touch to Koyya Enterprises. As a key leader, she oversees people-related initiatives and ensures a work environment where individuals feel valued, respected, and motivated. A graduate in Arts from Andhra University, Karuna also has deep knowledge and hands-on experience in horticulture, which adds a unique dimension to the company’s perspective — especially in areas related to agriculture and sustainability. Her ability to nurture talent and promote a people-first culture makes her an essential pillar of the organization’s growth and wellbeing.",
+        "Karuna brings the human touch to Koyya Enterprises. As a key leader, she oversees peoplerelated initiatives and ensures a work environment where individuals feel valued, respected, and motivated. A graduate in Arts from Andhra University, Karuna also has deep knowledge and hands-on experience in horticulture, which adds a unique dimension to the company’s perspective — especially in areas related to agriculture and sustainability. Her ability to nurture talent and promote a people-first culture makes her an essential pillar of the organization’s growth and wellbeing.",
     },
     {
       name: "Amol Sriram Koyya",
       title: "Product Marketing Manager",
       image: "imgs/krishna_img.png", // Replace with the correct path to your image
       description:
-        "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor’s degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings freshideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
+        "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor's degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings fresh ideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
     },
   ];
-  const teamMembers = [
-    {
-      name: "Krishna Mohan Koyya",
-      title: "CEO",
-      image: "imgs/krishna_img.png", // Replace with the correct path to your image
-      description:
-        "Koyya Enterprises is led by Krishna Mohan Koyya (Krishna), a seasoned technologist with over 25 years of experience in the IT industry. He holds a Master’s degree in Computer Science and Technology from Andhra University, Visakhapatnam. Krishna has held key roles at leading organizations such as Wipro and Cisco Systems, working across domains like GSM, Network Management, Distributed Computing, and E-commerce. In addition to his industry experience, Krishna has been a mentor and trainer to thousands of midcareer engineers at top multinational companies including Robert Bosch, Cisco, Samsung, Arcesium, and Intuit through corporate upskilling and training programs. His leadership combines deep technical expertise with a strong focus on building practical, impactful solutions.",
-    },
-    {
-      name: "Karuna Koyya",
-      title: "CTO",
-      image: "imgs/krishna_img.png", // Replace with the correct path to your image
-      description:
-        "Karuna brings the human touch to Koyya Enterprises. As a key leader, she oversees people-related initiatives and ensures a work environment where individuals feel valued, respected, and motivated. A graduate in Arts from Andhra University, Karuna also has deep knowledge and hands-on experience in horticulture, which adds a unique dimension to the company’s perspective — especially in areas related to agriculture and sustainability. Her ability to nurture talent and promote a people-first culture makes her an essential pillar of the organization’s growth and wellbeing.",
-    },
-    {
-      name: "Amol Sriram Koyya",
-      title: "CMO",
-      image: "imgs/krishna_img.png", // Replace with the correct path to your image
-      description:
-        "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor’s degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings freshideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
-    },
-    {
-      name: " speed",
-      title: "CFO",
-      image: "imgs/krishna_img.png", // Replace with the correct path to your image
-      description:
-        "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor’s degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings freshideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
-    },
-  ];
+  // const teamMembers = [
+  //   {
+  //     name: "Krishna Mohan Koyya",
+  //     title: "CEO",
+  //     image: "imgs/krishna_img.png", // Replace with the correct path to your image
+  //     description:
+  //       "Koyya Enterprises is led by Krishna Mohan Koyya (Krishna), a seasoned technologist with over 25 years of experience in the IT industry. He holds a Master’s degree in Computer Science and Technology from Andhra University, Visakhapatnam. Krishna has held key roles at leading organizations such as Wipro and Cisco Systems, working across domains like GSM, Network Management, Distributed Computing, and E-commerce. In addition to his industry experience, Krishna has been a mentor and trainer to thousands of midcareer engineers at top multinational companies including Robert Bosch, Cisco, Samsung, Arcesium, and Intuit through corporate upskilling and training programs. His leadership combines deep technical expertise with a strong focus on building practical, impactful solutions.",
+  //   },
+  //   {
+  //     name: "Karuna Koyya",
+  //     title: "CTO",
+  //     image: "imgs/krishna_img.png", // Replace with the correct path to your image
+  //     description:
+  //       "Karuna brings the human touch to Koyya Enterprises. As a key leader, she oversees people-related initiatives and ensures a work environment where individuals feel valued, respected, and motivated. A graduate in Arts from Andhra University, Karuna also has deep knowledge and hands-on experience in horticulture, which adds a unique dimension to the company’s perspective — especially in areas related to agriculture and sustainability. Her ability to nurture talent and promote a people-first culture makes her an essential pillar of the organization’s growth and wellbeing.",
+  //   },
+  //   {
+  //     name: "Amol Sriram Koyya",
+  //     title: "CMO",
+  //     image: "imgs/krishna_img.png", // Replace with the correct path to your image
+  //     description:
+  //       "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor’s degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings freshideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
+  //   },
+  //   {
+  //     name: " speed",
+  //     title: "CFO",
+  //     image: "imgs/krishna_img.png", // Replace with the correct path to your image
+  //     description:
+  //       "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor’s degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings freshideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
+  //   },
+  // ];
+
   return (
     <>
       <ScrollToTop />
       <Navbar />
-      <header className="h-[150px] relative lg:h-[400px] bg-cover bg-center  overflow-clip flex items-center justify-center ">
+      {/* <header className="h-[150px] relative lg:h-[400px] bg-cover bg-center  overflow-clip flex items-center justify-center ">
         <img
           src="imgs/aboutheader.png"
           alt=""
@@ -91,32 +115,32 @@ const AboutUs = () => {
             <Link to="/">Home</Link> → About
           </p>
         </div>
-      </header>
+      </header> */}
 
-      <div className="px-2 lg:px-16 py-5 ">
+      <div className="px-2 lg:px-16 py-5 " id="top">
         {/* About Koyya */}
-        <section className="flex flex-col md:flex-row gap-16 lg:gap-32 p-10 ">
+        <section className="flex flex-col md:flex-row gap-16 md:gap-5 2xl:gap-32 p-10 ">
           <div className="flex-1/2 grid grid-cols-3 gap-4 overflow-hidden">
             <img
               src="imgs/empolyees.jpg"
               className="rounded-lg col-span-1 h-full object-cover"
-              data-aos="fade-right"
+              // data-aos="fade-right"
             />
             <div className="col-span-2 grid grid-rows-2 gap-4">
               <img
                 src="imgs/workplace.jpg"
                 className="rounded-lg w-full h-full row-span-1 object-cover"
-                data-aos="fade"
+                // data-aos="fade"
               />
               <div className="grid grid-cols-2 row-span-2 gap-4">
                 <img
                   src="imgs/2149241221.jpg"
                   className="rounded-lg object-cover h-full"
-                  data-aos="fade-up"
+                  // data-aos="fade-up"
                 />
                 <div
-                  className="bg-blue-400 text-white text-center flex items-center justify-center lg:text-xl text-xs font-semibold p-5 rounded-lg"
-                  data-aos="fade-up"
+                  className="bg-blue-400 text-white text-center flex items-center justify-center xl:text-xl text-xs font-semibold p-5 rounded-lg"
+                  // data-aos="fade-up"
                 >
                   25+
                   <br />
@@ -125,7 +149,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1/2 flex flex-col bg-blue-100 lg:p-8 p-4 rounded-lg justify-center w-full gap-4 lg:gap-6 lg:text-lg text-sm ">
+          <div className="flex-1/2 flex flex-col bg-blue-100 xl:p-8 p-4 rounded-lg justify-center w-full gap-4 xl:gap-6 xl:text-lg text-sm ">
             <h3 className="text-blue-800 text-center  lg:text-3xl text-xl">
               About Koyya
             </h3>
@@ -135,9 +159,11 @@ const AboutUs = () => {
             </h2>
 
             <p className="mb-4 text-lg text-justify">
-              Koyya is a dual-vertical company bridging Technology and
-              AgriBusiness, delivering innovative digital solutions and
-              empowering agricultural brands through modern tech and marketing.
+              Koyya Enterprises Private Limited (KEPL), headquartered in
+              Bengaluru, operates across two key sectors: Technology and
+              Agriculture. The company is structured into two distinct verticals
+              — Glarimy Business Unit and Krissaco Business Unit — each with a
+              clear focus and purpose.
             </p>
             <ul className="list-disc list-inside space-y-2 text-left">
               <li className="flex items-center">
@@ -155,7 +181,7 @@ const AboutUs = () => {
             </ul>
           </div>
         </section>
-        <section className="p-10 grid-cols-3 text-left w-full">
+        {/* <section className="p-10 grid-cols-3 text-left w-full">
           <h2 className="lg:text-4xl text-3xl font-bold mb-4 lg:w-[70%] text-blue-600 text-left">
             Empowering Progress: Bridging Agriculture and Technology for a
             Better Tomorrow
@@ -169,7 +195,7 @@ const AboutUs = () => {
               </p>
               <div
                 className=" bg-blue-50 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:mr-16 flex items-center hover:shadow-lg transition-all duration-300"
-                data-aos="fade-right"
+                // data-aos="fade-right"
               >
                 <img
                   src="imgs/image 13.png"
@@ -187,48 +213,6 @@ const AboutUs = () => {
                   </p>
                 </div>
               </div>
-              <div
-                className=" bg-blue-50 p-3 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:ml-16 flex items-center hover:shadow-lg transition-all duration-300"
-                data-aos="fade-left"
-              >
-                <img
-                  src="imgs/image 12.png"
-                  className="lg:w-16 lg:h-16 w-12 h-12 mr-2 mt-3"
-                  alt="Vision Icon"
-                />
-                <div>
-                  <h3 className="text-blue-700 font-semibold lg:mb-2 lg:text-xl ml-3">
-                    Vision
-                  </h3>
-                  <p className="flex items-center ml-3 text-sm text-justify">
-                    To be a leading force in bridging the gap between
-                    agribusiness and technology, creating a future where digital
-                    innovation uplifts rural roots and modern enterprises alike.
-                  </p>
-                </div>
-              </div>
-              <div
-                className="bg-blue-50 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:mr-16 flex items-center hover:shadow-lg transition-all duration-300"
-                data-aos="fade-right"
-              >
-                <img
-                  src="imgs/image 14.png"
-                  className="lg:w-16 lg:h-16 w-12 h-12 mr-2 mt-3"
-                  alt="Mission Icon"
-                />
-                <div>
-                  <h3 className="text-blue-700 font-semibold lg:mb-2 ml-3 lg:text-xl">
-                    Core Values
-                  </h3>
-                  <ul className="list-disc list-inside lg:ml-3 ml-3 flex flex-wrap -space-y-3 gap-4">
-                    <li>Innovation</li>
-                    <li>Integrity </li>
-                    <li>Sustainability </li>
-                    <li>Excellence </li>
-                    <li>Collaboration</li>
-                  </ul>
-                </div>
-              </div>
             </div>
             <div className="hidden lg:flex justify-center items-center flex-1/3 h-full flex-col gap-10">
               <img
@@ -237,48 +221,40 @@ const AboutUs = () => {
               />
             </div>
           </div>
-        </section>
-
-        {/* <section className="px-20 relative w-full overflow-hidden">
-        <div className=" absolute p-12 bottom-1/2 left-0 bg-blue-200 h-4 -z-10 w-full "></div>
-        <div className="flex flex-col lg:flex-row items-center gap-8 ">
-        <img src="imgs/behind_koyya.jpg" className="lg:w-1/3 rounded-lg" />
-        <div className=" px-6 py-8 rounded-md w-full lg:w-1/2">
-        <h2 className="lg:text-6xl text-4xl font-bold text-blue-800 mb-2 ">
-        Behind the KOYYA
-        </h2>
-        <div className="space-y-10">
-        <p className="text-xl text-gray-800 ">
-        Rooted in Legacy. Growing with Innovation.
-        </p>
-        </div>
-        </div>
-        </div>
         </section> */}
 
-        <section className="p-10 gap-6 flex flex-col items-center">
-          <div className="lg:p-6 p-5 bg-violet-100 rounded-lg" data-aos="fade">
+        <section className="p-10 gap-6 flex flex-col items-center" id="behind">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] underline-[#1f2c56] underline decoration-4">
+            Behind Koyya
+          </h2>
+          <div className="lg:p-6 p-5 bg-violet-100 rounded-lg">
             <h2 className="text-2xl font-bold mb-4 ">Our Story</h2>
             <p className="text-gray-700  text-justify">
-              <strong>Koyya Enterprises Private Limited (KEPL)</strong> was born
-              from the vision of <strong>Krishna Mohan Koyya</strong> and{" "}
-              <strong>Karuna Koyya</strong> a family-driven initiative to merge
-              deep industry experience with purpose-driven innovation. What
-              began as <strong>Glarimy Technology Services</strong> in 2010 a
-              trusted name in tech upskilling and consulting evolved in 2023
-              into a broader mission: to build meaningful, scalable solutions in
-              technology and agriculture. Founded by Krishna and Sriram Koyya,
-              Koyya Enterprises blends over two decades of technical expertise
-              with a fresh perspective on agribusiness, aiming to deliver impact
-              across industries and communities.
+              The name Koyya is derived from the family name of the founders,
+              Krishna Mohan Koyya and Karuna Koyya. The company is a natural
+              evolution and spiritual successor of Glarimy Technology Services,
+              a corporate training and technology consulting firm that Krishna
+              successfully ran from 2010 to 2024. <br />
+              <br />
+              Glarimy Technology Services specialized in technology upskilling
+              and consulting, serving an impressive portfolio of clients
+              including HSBC, Cisco, Robert Bosch, Samsung, Rakuten, Flipkart,
+              and many more. <br />
+              <br />
+              Koyya Enterprises Private Limited (KEPL) was founded in 2023 when
+              Krishna and Sriram came together to expand the vision moving
+              beyond consulting into the development of meaningful products and
+              services, particularly in the domains of education and
+              agriculture. KEPL is the result of this shared ambition to combine
+              profit with purpose and innovation with impact.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8">
             <Link to="https://www.glarimy.com " target="_blank">
               <div
-                className="bg-blue-100 p-6 lg:rounded-bl-4xl rounded-lg overflow-hidden"
-                data-aos="fade-right"
+                className="bg-blue-100 p-6 lg:rounded-bl-4xl h-full rounded-lg overflow-hidden"
+                // data-aos="fade-right"
               >
                 <div className="flex justify-between w-full">
                   <div>
@@ -290,23 +266,22 @@ const AboutUs = () => {
                   <img
                     src="imgs/glarify logo.png"
                     alt=""
-                    className="w-12 md:mr-10"
+                    className="w-16 h-24 md:mr-10"
                   />
                 </div>
                 <p className="mt-4 text-justify">
-                  Glarimy symbolizes our technology vertical a young, agile, and
-                  curious mind constantly exploring new possibilities. She
-                  represents our approach to solving modern business problems
-                  through SaaS, mobile apps, consulting, and upskilling
-                  programs. Her energy drives digital transformation across
-                  enterprises.
+                  Glarimy represents today’s tech-savvy young talent. She is
+                  cheerful, modern, and open-minded — driven by curiosity and a
+                  passion for solving problems with out-of-the-box thinking. She
+                  embodies creativity, optimism, and the transformative power of
+                  technology.
                 </p>
               </div>
             </Link>
             <Link to="https://www.krissaco.com  " target="_blank">
               <div
-                className="bg-green-100 p-6 lg:rounded-tr-4xl rounded-lg overflow-hidden"
-                data-aos="fade-left"
+                className="bg-green-100 p-6 lg:rounded-tr-4xl h-full rounded-lg overflow-hidden"
+                // data-aos="fade-left"
               >
                 <div className="flex justify-between w-full">
                   <div>
@@ -320,25 +295,23 @@ const AboutUs = () => {
                   <img
                     src="imgs/krissaco logo.png"
                     alt=""
-                    className="w-12 md:mr-10"
+                    className="w-16 h-24 md:mr-10"
                   />
                 </div>
 
                 <p className="mt-4 text-justify">
-                  Krissaco stands for the modern agriculturist rooted in
-                  tradition, yet empowered by technology. He leads our
-                  agribusiness initiatives with a focus on IoT, AI, cloud-based
-                  tools, and food product innovation. His mission is to add
-                  value to agriculture through sustainable, tech-driven
-                  solutions.
+                  Krissaco stands for the spirit of the modern agriculturist.
+                  Energetic, forward-looking, and rooted in tradition, he
+                  represents a generation that’s reimagining agriculture through
+                  innovation. By embracing technology and sustainable practices,
+                  Krissaco aspires to add value to agricultural produce and
+                  build a stronger future for farming communities.
                 </p>
               </div>
             </Link>
           </div>
         </section>
-        <div className="py-16 px-4 md:px-16"
-
-        >
+        <div className="py-16 px-4 md:px-16" id="management">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] mb-12 underline-[#1f2c56] underline decoration-4">
             Our Management
           </h2>
@@ -346,15 +319,15 @@ const AboutUs = () => {
             {managementTeam.map((member, idx) => (
               <div
                 key={idx}
-                className={`flex flex-col ${idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  } items-start gap-6`}
+                className={`flex flex-col ${
+                  idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                } items-start gap-6`}
               >
-                <div className="bg-white rounded-xl shadow-md hover:shadow-lg p-6 md:p-8 lg:w-[80%]"
-                >
+                <div className="bg-white rounded-xl shadow-md hover:shadow-lg p-6 md:p-8 lg:w-[80%]">
                   <div
-                    className={`${idx % 2 !== 0 && "justify-self-end flex-row-reverse"
-                      } flex items-center gap-4 mb-4`}
-
+                    className={`${
+                      idx % 2 !== 0 && "justify-self-end flex-row-reverse"
+                    } flex items-center gap-4 mb-4`}
                   >
                     <img
                       src="/imgs/krishna_img.png" // Use the same image as in your uploaded file
@@ -382,7 +355,8 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <section className="md:px-20 p-5 bg-blue-50 mb-4 rounded-md ">
+      {/* Our Team */}
+      {/* <section className="md:px-20 p-5 bg-blue-50 mb-4 rounded-md ">
         <h2 className="text-blue-600 text-4xl font-bold mb-8 text-center ">
           Meet our team members
         </h2>
@@ -422,8 +396,9 @@ const AboutUs = () => {
             </div>
           ))}
         </div>
-      </section >
-      <div className="py-10 px-4 md:px-16 text-center">
+      </section > */}
+      {/* our Clients */}
+      {/* <div className="py-10 px-4 md:px-16 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-[#1f2c56] mb-10 ">
           Our Clients
         </h2>
@@ -439,7 +414,7 @@ const AboutUs = () => {
             ))}
           </Marquee>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </>
   );
