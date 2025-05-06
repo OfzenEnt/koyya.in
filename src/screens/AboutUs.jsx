@@ -119,7 +119,7 @@ const AboutUs = () => {
 
       <div className="px-2 lg:px-16 py-5 " id="top">
         {/* About Koyya */}
-        <section className="flex flex-col md:flex-row gap-16 md:gap-5 2xl:gap-32 p-10 ">
+        <section className="flex flex-col lg:flex-row gap-16 md:gap-5 2xl:gap-32 p-10 ">
           <div className="flex-1/2 grid grid-cols-3 gap-4 overflow-hidden">
             <img
               src="imgs/empolyees.jpg"
@@ -139,7 +139,7 @@ const AboutUs = () => {
                   // data-aos="fade-up"
                 />
                 <div
-                  className="bg-blue-400 text-white text-center flex items-center justify-center xl:text-xl text-xs font-semibold p-5 rounded-lg"
+                  className="bg-blue-400 text-white text-center flex items-center justify-center lg:text-xl md:text-base text-sm font-semibold p-5 rounded-lg"
                   // data-aos="fade-up"
                 >
                   25+
@@ -149,23 +149,50 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div className="flex-1/2 flex flex-col bg-blue-100 xl:p-8 p-4 rounded-lg justify-center w-full gap-4 xl:gap-6 xl:text-lg text-sm ">
+          <div className="flex-1/2 flex flex-col bg-blue-100 xl:p-8 p-4 rounded-lg  w-full gap-4 xl:gap-6 xl:text-lg text-sm ">
             <h3 className="text-blue-800 text-center  lg:text-3xl text-xl">
               About Koyya
             </h3>
-            <h2 className="text-400 lg:mb-4 mb:3 font-semibold text-left lg:text-4xl text-2xl">
-              Digitally rooted. Naturally driven. <br />
-              That’s the Koyya way.
-            </h2>
 
-            <p className="mb-4 text-lg text-justify">
+            <p className="mb-4 lg:text-base text-sm text-justify">
               Koyya Enterprises Private Limited (KEPL), headquartered in
               Bengaluru, operates across two key sectors: Technology and
               Agriculture. The company is structured into two distinct verticals
               — Glarimy Business Unit and Krissaco Business Unit — each with a
-              clear focus and purpose.
+              clear focus and purpose. <br />
+              <br />
+              <p>
+                Glarimy is dedicated to developing innovative technology-driven
+                products and services. Leveraging modern advancements such as
+                Cloud Computing and Artificial Intelligence, the unit delivers
+                SaaS solutions and cross-platform mobile applications tailored
+                to various business domains. In addition, Glarimy provides
+                technology consulting, corporate training, and upskilling
+                programs designed to empower teams and organizations in their
+                digital transformation journeys.
+              </p>
+              <br />
+              Krissaco is focused on creating impactful solutions for the
+              agriculture and allied sectors. The unit develops productivity
+              tools and data-driven platforms using IoT, AI, and Cloud
+              technologies, catering to domains such as agriculture,
+              horticulture, and food processing. Krissaco is also working on
+              launching its own product lines in coffee and millets. To support
+              other agribusinesses, the unit offers marketing services with an
+              emphasis on digital strategies — including e-commerce onboarding,
+              market research, and more.
             </p>
-            <ul className="list-disc list-inside space-y-2 text-left">
+            <div>
+              <h3 className="text-blue-700 font-semibold lg:mb-2 lg:text-xl">
+                Mission
+              </h3>
+              <p className="flex items-center text-justify text-sm lg:text-base">
+                Our mission is to leverage cutting-edge technologies to solve
+                real-world problems, focusing on technology and agriculture to
+                create meaningful impact and value.
+              </p>
+            </div>
+            {/* <ul className="list-disc list-inside space-y-2 text-left">
               <li className="flex items-center">
                 <MdCheckCircle color="blue" lg:size={"25"} size={"20"} /> &nbsp;
                 Bridging Technology & AgriBusiness
@@ -178,7 +205,7 @@ const AboutUs = () => {
                 <MdCheckCircle color="blue" lg:size={"25"} size={"20"} /> &nbsp;
                 Offering consulting & upskilling services
               </li>
-            </ul>
+            </ul> */}
           </div>
         </section>
         {/* <section className="p-10 grid-cols-3 text-left w-full">
@@ -223,13 +250,13 @@ const AboutUs = () => {
           </div>
         </section> */}
 
-        <section className="p-10 gap-6 flex flex-col items-center" id="behind">
+        <section className="px-10 gap-6 flex flex-col items-center" id="behind">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] underline-[#1f2c56] underline decoration-4">
             Behind Koyya
           </h2>
           <div className="lg:p-6 p-5 bg-violet-100 rounded-lg">
-            <h2 className="text-2xl font-bold mb-4 ">Our Story</h2>
-            <p className="text-gray-700  text-justify">
+            <h2 className="text-xl font-bold mb-4 ">Our Story</h2>
+            <p className="text-gray-700 lg:text-base text-sm text-justify">
               The name Koyya is derived from the family name of the founders,
               Krishna Mohan Koyya and Karuna Koyya. The company is a natural
               evolution and spiritual successor of Glarimy Technology Services,
@@ -253,15 +280,17 @@ const AboutUs = () => {
           <div className="grid lg:grid-cols-2 gap-8">
             <Link to="https://www.glarimy.com " target="_blank">
               <div
-                className="bg-blue-100 p-6 lg:rounded-bl-4xl h-full rounded-lg overflow-hidden"
+                className="bg-blue-100 hover:bg-blue-200 p-6 lg:rounded-bl-4xl h-full shadow-md hover:shadow-lg rounded-lg overflow-hidden"
                 // data-aos="fade-right"
               >
                 <div className="flex justify-between w-full">
                   <div>
-                    <h3 className="font-bold text-xl mb-2">
+                    <h3 className="font-bold lg:text-lg text-base mb-2">
                       Glarimy – The Spirit of Innovation
                     </h3>
-                    <p className="italic">Curious | Creative | Tech-savvy</p>
+                    <p className="italic lg:text-base text-sm">
+                      Curious | Creative | Tech-savvy
+                    </p>
                   </div>
                   <img
                     src="imgs/glarify logo.png"
@@ -269,7 +298,7 @@ const AboutUs = () => {
                     className="w-16 h-24 md:mr-10"
                   />
                 </div>
-                <p className="mt-4 text-justify">
+                <p className="mt-4 lg:text-base text-sm text-justify">
                   Glarimy represents today’s tech-savvy young talent. She is
                   cheerful, modern, and open-minded — driven by curiosity and a
                   passion for solving problems with out-of-the-box thinking. She
@@ -280,15 +309,15 @@ const AboutUs = () => {
             </Link>
             <Link to="https://www.krissaco.com  " target="_blank">
               <div
-                className="bg-green-100 p-6 lg:rounded-tr-4xl h-full rounded-lg overflow-hidden"
+                className="bg-green-100  hover:bg-green-200 p-6 lg:rounded-tr-4xl h-full shadow-md hover:shadow-lg rounded-lg overflow-hidden"
                 // data-aos="fade-left"
               >
                 <div className="flex justify-between w-full">
                   <div>
-                    <h3 className="font-bold text-xl mb-2">
+                    <h3 className="font-bold lg:text-lg text-base mb-2">
                       Krissaco – The Heart of Agriculture
                     </h3>
-                    <p className="italic">
+                    <p className="italic lg:text-base text-sm">
                       Grounded | Visionary | Future-Ready
                     </p>
                   </div>
@@ -299,7 +328,7 @@ const AboutUs = () => {
                   />
                 </div>
 
-                <p className="mt-4 text-justify">
+                <p className="mt-4 lg:text-base text-sm text-justify">
                   Krissaco stands for the spirit of the modern agriculturist.
                   Energetic, forward-looking, and rooted in tradition, he
                   represents a generation that’s reimagining agriculture through
@@ -311,11 +340,11 @@ const AboutUs = () => {
             </Link>
           </div>
         </section>
-        <div className="py-16 px-4 md:px-16" id="management">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] mb-12 underline-[#1f2c56] underline decoration-4">
+        <div className="py-10 px-4 md:px-16" id="management">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] mb-8 underline-[#1f2c56] underline decoration-4">
             Our Management
           </h2>
-          <div className="space-y-5">
+          <div className="space-y-3">
             {managementTeam.map((member, idx) => (
               <div
                 key={idx}
@@ -326,22 +355,24 @@ const AboutUs = () => {
                 <div className="bg-white rounded-xl shadow-md hover:shadow-lg p-6 md:p-8 lg:w-[80%]">
                   <div
                     className={`${
-                      idx % 2 !== 0 && "justify-self-end flex-row-reverse"
-                    } flex items-center gap-4 mb-4`}
+                      idx % 2 !== 0 && "flex-col lg:flex-row-reverse"
+                    } flex flex-col lg:flex-row items-center gap-4 mb-4`}
                   >
                     <img
                       src="/imgs/krishna_img.png" // Use the same image as in your uploaded file
                       alt={member.name}
                       className="w-32 h-32 lg:w-48 lg:h-48 rounded-full object-cover shadow-md border-2 border-white"
                     />
-                    <div className={`flex flex-col`}>
-                      <h3 className="text-xl font-semibold text-[#154C8C]">
+                    <div
+                      className={`flex items-center lg:items-start flex-col`}
+                    >
+                      <h3 className="text-lg lg:text-xl font-semibold text-[#154C8C]">
                         {member.name}
                       </h3>
                       <p className="text-sm font-medium text-[#7b7b7b] mb-2">
                         {member.title}
                       </p>
-                      <p className="text-gray-700 hidden lg:flex text-sm leading-relaxed text-justify">
+                      <p className="text-gray-700 hidden lg:flex text-sm lg:text-base leading-relaxed text-justify">
                         {member.description}
                       </p>
                     </div>
@@ -397,24 +428,6 @@ const AboutUs = () => {
           ))}
         </div>
       </section > */}
-      {/* our Clients */}
-      {/* <div className="py-10 px-4 md:px-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-[#1f2c56] mb-10 ">
-          Our Clients
-        </h2>
-        <div className="flex flex-wrap justify-center items-center ">
-          <Marquee pauseOnHover className="[--duration:20s]">
-            {clientLogos.map((client, idx) => (
-              <img
-                key={idx}
-                src={client.src}
-                alt={client.alt}
-                className="h-8 md:h-10 object-contain px-5 hover:grayscale-0 transition duration-300"
-              />
-            ))}
-          </Marquee>
-        </div>
-      </div> */}
       <Footer />
     </>
   );
