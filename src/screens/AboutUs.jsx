@@ -49,55 +49,25 @@ const AboutUs = () => {
     {
       name: "Krishna Mohan Koyya",
       title: "Chief Executive Officer & Managing Director",
-      image: "imgs/krishna_img.png", // Replace with the correct path to your image
+      image: "imgs/krishna_img.png",
       description:
         "Koyya Enterprises is led by Krishna Mohan Koyya (Krishna), a seasoned technologist with over 25 years of experience in the IT industry. He holds a Master’s degree in Computer Science and Technology from Andhra University, Visakhapatnam. Krishna has held key roles at leading organizations such as Wipro and Cisco Systems, working across domains like GSM, Network Management, Distributed Computing, and E-commerce. In addition to his industry experience, Krishna has been a mentor and trainer to thousands of midcareer engineers at top multinational companies including Robert Bosch, Cisco, Samsung, Arcesium, and Intuit through corporate upskilling and training programs. His leadership combines deep technical expertise with a strong focus on building practical, impactful solutions.",
     },
     {
       name: "Karuna Koyya",
       title: "Founder Director",
-      image: "imgs/krishna_img.png", // Replace with the correct path to your image
+      image: "imgs/krishna_img.png",
       description:
         "Karuna brings the human touch to Koyya Enterprises. As a key leader, she oversees peoplerelated initiatives and ensures a work environment where individuals feel valued, respected, and motivated. A graduate in Arts from Andhra University, Karuna also has deep knowledge and hands-on experience in horticulture, which adds a unique dimension to the company’s perspective — especially in areas related to agriculture and sustainability. Her ability to nurture talent and promote a people-first culture makes her an essential pillar of the organization’s growth and wellbeing.",
     },
     {
       name: "Amol Sriram Koyya",
       title: "Product Marketing Manager",
-      image: "imgs/krishna_img.png", // Replace with the correct path to your image
+      image: "imgs/krishna_img.png",
       description:
         "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor's degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings fresh ideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
     },
   ];
-  // const teamMembers = [
-  //   {
-  //     name: "Krishna Mohan Koyya",
-  //     title: "CEO",
-  //     image: "imgs/krishna_img.png", // Replace with the correct path to your image
-  //     description:
-  //       "Koyya Enterprises is led by Krishna Mohan Koyya (Krishna), a seasoned technologist with over 25 years of experience in the IT industry. He holds a Master’s degree in Computer Science and Technology from Andhra University, Visakhapatnam. Krishna has held key roles at leading organizations such as Wipro and Cisco Systems, working across domains like GSM, Network Management, Distributed Computing, and E-commerce. In addition to his industry experience, Krishna has been a mentor and trainer to thousands of midcareer engineers at top multinational companies including Robert Bosch, Cisco, Samsung, Arcesium, and Intuit through corporate upskilling and training programs. His leadership combines deep technical expertise with a strong focus on building practical, impactful solutions.",
-  //   },
-  //   {
-  //     name: "Karuna Koyya",
-  //     title: "CTO",
-  //     image: "imgs/krishna_img.png", // Replace with the correct path to your image
-  //     description:
-  //       "Karuna brings the human touch to Koyya Enterprises. As a key leader, she oversees people-related initiatives and ensures a work environment where individuals feel valued, respected, and motivated. A graduate in Arts from Andhra University, Karuna also has deep knowledge and hands-on experience in horticulture, which adds a unique dimension to the company’s perspective — especially in areas related to agriculture and sustainability. Her ability to nurture talent and promote a people-first culture makes her an essential pillar of the organization’s growth and wellbeing.",
-  //   },
-  //   {
-  //     name: "Amol Sriram Koyya",
-  //     title: "CMO",
-  //     image: "imgs/krishna_img.png", // Replace with the correct path to your image
-  //     description:
-  //       "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor’s degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings freshideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
-  //   },
-  //   {
-  //     name: " speed",
-  //     title: "CFO",
-  //     image: "imgs/krishna_img.png", // Replace with the correct path to your image
-  //     description:
-  //       "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor’s degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings freshideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
-  //   },
-  // ];
 
   return (
     <>
@@ -117,7 +87,7 @@ const AboutUs = () => {
         </div>
       </header> */}
 
-      <div className="px-2 lg:px-16 py-5" id="top">
+      <div className="lg:px-16 py-5" id="top">
         {/* About Koyya */}
         <section className="flex flex-col lg:flex-row gap-16 md:gap-5 2xl:gap-32 p-10 ">
           <div className="flex-1/2 grid grid-cols-3 gap-4 overflow-hidden">
@@ -154,7 +124,7 @@ const AboutUs = () => {
               About Koyya
             </h3> */}
 
-            <p className="mb-4 lg:text-base text-sm text-justify">
+            <p className="mb-4 lg:text-base text-sm text-justify hyphens-auto">
               <strong>Koyya Enterprises Private Limited (KEPL)</strong>,
               headquartered in Bengaluru, operates across two key sectors:
               Technology and Agriculture. The company is structured into two
@@ -187,69 +157,14 @@ const AboutUs = () => {
               <h3 className="text-blue-700 font-semibold lg:mb-2 lg:text-xl">
                 Mission
               </h3>
-              <p className="flex items-center text-justify text-sm lg:text-base">
+              <p className="flex items-center text-justify text-sm lg:text-base hyphens-auto">
                 Our mission is to leverage cutting-edge technologies to solve
                 real-world problems, focusing on technology and agriculture to
                 create meaningful impact and value.
               </p>
             </div>
-            {/* <ul className="list-disc list-inside space-y-2 text-left">
-              <li className="flex items-center">
-                <MdCheckCircle color="blue" lg:size={"25"} size={"20"} /> &nbsp;
-                Bridging Technology & AgriBusiness
-              </li>
-              <li className="flex items-center">
-                <MdCheckCircle color="blue" lg:size={"25"} size={"20"} /> &nbsp;
-                Building web, mobile & IoT products
-              </li>
-              <li className="flex items-center">
-                <MdCheckCircle color="blue" lg:size={"25"} size={"20"} /> &nbsp;
-                Offering consulting & upskilling services
-              </li>
-            </ul> */}
           </div>
         </section>
-        {/* <section className="p-10 grid-cols-3 text-left w-full">
-          <h2 className="lg:text-4xl text-3xl font-bold mb-4 lg:w-[70%] text-blue-600 text-left">
-            Empowering Progress: Bridging Agriculture and Technology for a
-            Better Tomorrow
-          </h2>
-
-          <div className="flex items-center h-full gap-10">
-            <div className="col-span-2 flex flex-col flex-2/3 gap-10 w-full">
-              <p className="text-lg text-gray-600 max-w-2xl">
-                Bridging agriculture and technology to create impactful,
-                sustainable solutions that shape a brighter tomorrow.
-              </p>
-              <div
-                className=" bg-blue-50 rounded-lg shadow-md py-2 px-5 md:px-10 md:py-4 lg:mr-16 flex items-center hover:shadow-lg transition-all duration-300"
-                // data-aos="fade-right"
-              >
-                <img
-                  src="imgs/image 13.png"
-                  className="lg:w-16 lg:h-16 w-12 h-12 mr-2 mt-3"
-                  alt="Mission Icon"
-                />
-                <div>
-                  <h3 className="text-blue-700 font-semibold lg:mb-2 lg:text-xl ml-3">
-                    Mission
-                  </h3>
-                  <p className="flex items-center ml-3 text-sm text-justify">
-                    Our mission is to leverage cutting-edge technologies to
-                    solve real-world problems, focusing on technology and
-                    agriculture to create meaningful impact and value.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="hidden lg:flex justify-center items-center flex-1/3 h-full flex-col gap-10">
-              <img
-                src="imgs/2149313746.jpg"
-                className="rounded-lg self-center w-full 2xl:w-[70%] object-cover hover:shadow-xl transition-all duration-300"
-              />
-            </div>
-          </div>
-        </section> */}
 
         <section
           className="px-10 gap-6 flex flex-col  lg:mt-10 items-center"
@@ -341,7 +256,7 @@ const AboutUs = () => {
 
             <div className="flex lg:flex-row-reverse flex-col items-center w-full">
               <Link
-                to="https://www.glarimy.com "
+                to="https://www.krissaco.com "
                 target="_blank"
                 className="relative flex items-center justify-center bg-white w-2/4 lg:w-1/4"
               >
