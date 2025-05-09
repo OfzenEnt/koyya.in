@@ -202,7 +202,7 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col mt-5 gap-8">
             <div className="flex flex-col lg:flex-row items-center w-full">
               <Link
                 to="https://www.glarimy.com "
@@ -214,7 +214,7 @@ const AboutUs = () => {
                   width="644"
                   height="619"
                   viewBox="0 0 644 619"
-                  className="absolute w-full h-[250px] "
+                  className="absolute w-full h-[130px] md:h-[87%] "
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -231,7 +231,7 @@ const AboutUs = () => {
                   <img
                     src="imgs/glarify logo.png"
                     alt="Character"
-                    className="w-[55%] mx-auto"
+                    className="w-[50%] md:w-[45%] md:pt-6 mx-auto mt-6 lg:mt-0"
                   />
                 </div>
               </Link>
@@ -265,7 +265,7 @@ const AboutUs = () => {
                   width="644"
                   height="619"
                   viewBox="0 0 644 619"
-                  className="absolute w-full h-[250px]"
+                  className="absolute w-full h-[150px] md:h-[90%]"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -282,7 +282,7 @@ const AboutUs = () => {
                   <img
                     src="imgs/krissaco logo.png"
                     alt="Character"
-                    className="w-[55%] mx-auto"
+                    className="w-[65%] md:w-[55%] mt-2 mx-auto "
                   />
                 </div>
               </Link>
@@ -308,7 +308,7 @@ const AboutUs = () => {
           </div>
         </section>
         {/* leadership */}
-        <section className="py-10 px-4 md:px-12 lg:mt-10" id="leadership">
+        <section className="py-10 px-6 md:px-12 lg:mt-10" id="leadership">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] mb-8 ">
             Leadership
           </h2>
