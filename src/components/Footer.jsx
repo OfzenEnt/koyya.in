@@ -57,7 +57,7 @@ const Footer = () => {
         {/* Links */}
 
         <div>
-          <h3 className="font-medium text-lg mb-2">Ouick Links</h3>
+          <h3 className="font-medium text-lg mb-2">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             {navLinks.map((item, i) => (
               <li key={i}>
