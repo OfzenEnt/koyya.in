@@ -7,12 +7,12 @@ import { Link } from "react-router-dom";
 const navLinks = [
   { name: "Home", to: "/" },
   {
-    name: "About Us",
+    name: "About Koyya",
     to: "/aboutus",
     hasDropdown: true,
     dropdownItems: [
-      { name: "About Koyya", to: "/aboutus#top" },
-      { name: "Behind Koyya", to: "/aboutus#behind" },
+      { name: "Organization", to: "/aboutus#top" },
+      { name: "Mascots", to: "/aboutus#mascots" },
       { name: "Leadership", to: "/aboutus#leadership" },
     ],
   },

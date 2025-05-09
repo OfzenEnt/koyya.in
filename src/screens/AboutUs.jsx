@@ -150,37 +150,38 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="flex-1/2 flex flex-col bg-blue-100 xl:p-8 p-4 rounded-lg  w-full gap-4 xl:gap-6 xl:text-lg text-sm ">
-            <h3 className="text-blue-800 text-center  lg:text-3xl text-xl font-bold">
+            {/* <h3 className="text-blue-800 text-center  lg:text-3xl text-xl font-bold">
               About Koyya
-            </h3>
+            </h3> */}
 
             <p className="mb-4 lg:text-base text-sm text-justify">
-              Koyya Enterprises Private Limited (KEPL), headquartered in
-              Bengaluru, operates across two key sectors: Technology and
-              Agriculture. The company is structured into two distinct verticals
-              — Glarimy Business Unit and Krissaco Business Unit — each with a
-              clear focus and purpose. <br />
+              <strong>Koyya Enterprises Private Limited (KEPL)</strong>,
+              headquartered in Bengaluru, operates across two key sectors:
+              Technology and Agriculture. The company is structured into two
+              distinct verticals — Glarimy Business Unit and Krissaco Business
+              Unit — each with a clear focus and purpose. <br />
               <br />
               <p>
-                Glarimy is dedicated to developing innovative technology-driven
-                products and services. Leveraging modern advancements such as
-                Cloud Computing and Artificial Intelligence, the unit delivers
-                SaaS solutions and cross-platform mobile applications tailored
-                to various business domains. In addition, Glarimy provides
-                technology consulting, corporate training, and upskilling
-                programs designed to empower teams and organizations in their
-                digital transformation journeys.
+                <strong> Glarimy</strong> is dedicated to developing innovative
+                technology-driven products and services. Leveraging modern
+                advancements such as Cloud Computing and Artificial
+                Intelligence, the unit delivers SaaS solutions and
+                cross-platform mobile applications tailored to various business
+                domains. In addition, Glarimy provides technology consulting,
+                corporate training, and upskilling programs designed to empower
+                teams and organizations in their digital transformation
+                journeys.
               </p>
               <br />
-              Krissaco is focused on creating impactful solutions for the
-              agriculture and allied sectors. The unit develops productivity
-              tools and data-driven platforms using IoT, AI, and Cloud
-              technologies, catering to domains such as agriculture,
-              horticulture, and food processing. Krissaco is also working on
-              launching its own product lines in coffee and millets. To support
-              other agribusinesses, the unit offers marketing services with an
-              emphasis on digital strategies — including e-commerce onboarding,
-              market research, and more.
+              <strong>Krissaco</strong> is focused on creating impactful
+              solutions for the agriculture and allied sectors. The unit
+              develops productivity tools and data-driven platforms using IoT,
+              AI, and Cloud technologies, catering to domains such as
+              agriculture, horticulture, and food processing. Krissaco is also
+              working on launching its own product lines in coffee and millets.
+              To support other agribusinesses, the unit offers marketing
+              services with an emphasis on digital strategies — including
+              e-commerce onboarding, market research, and more.
             </p>
             <div>
               <h3 className="text-blue-700 font-semibold lg:mb-2 lg:text-xl">
@@ -252,54 +253,81 @@ const AboutUs = () => {
 
         <section
           className="px-10 gap-6 flex flex-col  lg:mt-10 items-center"
-          id="behind"
+          id="mascots"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] decoration-4">
-            Behind Koyya
-          </h2>
+          <div>
+            <img
+              src="koyya_logo.png"
+              alt="Koyya Logo"
+              className="md:h-16 h-16 lg:w-36 lg:h-20 mb-5"
+            ></img>
+          </div>
           <div className="lg:p-6 p-5 bg-violet-100 rounded-lg">
-            <h2 className="text-xl font-bold mb-4 ">Our Story</h2>
-            <p className="text-gray-700 lg:text-base text-sm text-justify">
-              The name Koyya is derived from the family name of the founders,
-              Krishna Mohan Koyya and Karuna Koyya. The company is a natural
-              evolution and spiritual successor of Glarimy Technology Services,
-              a corporate training and technology consulting firm that Krishna
-              successfully ran from 2010 to 2024. <br />
+            {/* <h2 className="text-xl font-bold mb-4 ">Our Story</h2> */}
+            <p className="text-gray-700 lg:text-base text-sm text-justify hyphens-auto">
+              The name Koyya is derived from the{" "}
+              <strong>family name of the founders</strong>, Krishna Mohan Koyya
+              and Karuna Koyya. The company is a natural evolution and spiritual
+              successor of Glarimy Technology Services, a corporate training and
+              technology consulting firm that Krishna successfully ran from 2010
+              to 2024. <br />
               <br />
-              Glarimy Technology Services specialized in technology upskilling
-              and consulting, serving an impressive portfolio of clients
-              including HSBC, Cisco, Robert Bosch, Samsung, Rakuten, Flipkart,
-              and many more. <br />
+              Glarimy Technology Services specialized in technology{" "}
+              <strong>upskilling and consulting</strong>, serving an impressive
+              portfolio of clients including HSBC, Cisco, Robert Bosch, Samsung,
+              Rakuten, Flipkart, and many more. <br />
               <br />
-              Koyya Enterprises Private Limited (KEPL) was founded in 2023 when
-              Krishna and Sriram came together to expand the vision moving
-              beyond consulting into the development of meaningful products and
-              services, particularly in the domains of education and
-              agriculture. KEPL is the result of this shared ambition to combine
-              profit with purpose and innovation with impact.
+              Koyya Enterprises Private Limited (KEPL) was{" "}
+              <strong>founded in 2023</strong> when Krishna and Sriram came
+              together to expand the vision moving beyond consulting into the
+              development of meaningful products and services, particularly in
+              the domains of education and agriculture. KEPL is the result of
+              this shared ambition to combine profit with purpose and innovation
+              with impact.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
-            <Link to="https://www.glarimy.com " target="_blank">
-              <div
-                className="bg-blue-100 hover:bg-blue-200 p-6 lg:rounded-bl-4xl h-full shadow-md hover:shadow-lg rounded-lg overflow-hidden"
-                // data-aos="fade-right"
+          <div className="flex flex-col gap-8">
+            <div className="flex flex-col lg:flex-row items-center w-full">
+              <Link
+                to="https://www.glarimy.com "
+                target="_blank"
+                className="relative flex items-center justify-center bg-white w-2/4 lg:w-1/4"
               >
-                <div className="flex justify-between w-full">
-                  <div>
-                    <h3 className="font-bold lg:text-lg text-base mb-2">
-                      Glarimy – The Spirit of Innovation
-                    </h3>
-                    <p className="italic lg:text-base text-sm">
-                      Curious | Creative | Tech-savvy
-                    </p>
-                  </div>
+                {/* SVG Background */}
+                <svg
+                  width="644"
+                  height="619"
+                  viewBox="0 0 644 619"
+                  className="absolute w-full h-[250px] "
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  {" "}
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M276.878 0.0151888C355.694 -1.19728 409.204 70.4405 469.026 121.771C537.141 180.217 636.519 224.379 642.711 313.918C649.025 405.232 567.988 476.134 497.576 534.616C434.708 586.831 358.544 614.68 276.878 617.764C191.364 620.994 95.3019 616.259 38.8578 551.938C-15.9359 489.498 0.195596 396.382 10.2415 313.918C18.7438 244.126 45.0357 181.179 90.5527 127.593C141.212 67.9538 198.637 1.21882 276.878 0.0151888Z"
+                    fill="#8ec5ff"
+                  />
+                </svg>
+                {/* Foreground */}
+                <div className="z-10 text-center">
                   <img
                     src="imgs/glarify logo.png"
-                    alt=""
-                    className="w-16 h-24 md:mr-10"
+                    alt="Character"
+                    className="w-[55%] mx-auto"
                   />
+                </div>
+              </Link>
+              <div className="flex flex-col justify-center w-full lg:w-3/4 mt-5 lg:ml-5">
+                <div>
+                  <h3 className="font-bold lg:text-lg text-base mb-2">
+                    Glarimy
+                  </h3>
+                  <p className="italic lg:text-base text-sm">
+                    Curious | Creative | Tech-savvy
+                  </p>
                 </div>
                 <p className="mt-4 lg:text-base text-sm text-justify">
                   Glarimy represents today’s tech-savvy young talent. She is
@@ -309,29 +337,50 @@ const AboutUs = () => {
                   technology.
                 </p>
               </div>
-            </Link>
-            <Link to="https://www.krissaco.com  " target="_blank">
-              <div
-                className="bg-green-100  hover:bg-green-200 p-6 lg:rounded-tr-4xl h-full shadow-md hover:shadow-lg rounded-lg overflow-hidden"
-                // data-aos="fade-left"
+            </div>
+
+            <div className="flex lg:flex-row-reverse flex-col items-center w-full">
+              <Link
+                to="https://www.glarimy.com "
+                target="_blank"
+                className="relative flex items-center justify-center bg-white w-2/4 lg:w-1/4"
               >
-                <div className="flex justify-between w-full">
-                  <div>
-                    <h3 className="font-bold lg:text-lg text-base mb-2">
-                      Krissaco – The Heart of Agriculture
-                    </h3>
-                    <p className="italic lg:text-base text-sm">
-                      Grounded | Visionary | Future-Ready
-                    </p>
-                  </div>
+                {/* SVG Background */}
+                <svg
+                  width="644"
+                  height="619"
+                  viewBox="0 0 644 619"
+                  className="absolute w-full h-[250px]"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  {" "}
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M276.878 0.0151888C355.694 -1.19728 409.204 70.4405 469.026 121.771C537.141 180.217 636.519 224.379 642.711 313.918C649.025 405.232 567.988 476.134 497.576 534.616C434.708 586.831 358.544 614.68 276.878 617.764C191.364 620.994 95.3019 616.259 38.8578 551.938C-15.9359 489.498 0.195596 396.382 10.2415 313.918C18.7438 244.126 45.0357 181.179 90.5527 127.593C141.212 67.9538 198.637 1.21882 276.878 0.0151888Z"
+                    fill="#b9f8cf"
+                  />
+                </svg>
+                {/* Foreground */}
+                <div className="z-10 text-center">
                   <img
                     src="imgs/krissaco logo.png"
-                    alt=""
-                    className="w-16 h-24 md:mr-10"
+                    alt="Character"
+                    className="w-[55%] mx-auto"
                   />
                 </div>
-
-                <p className="mt-4 lg:text-base text-sm text-justify">
+              </Link>
+              <div className="flex flex-col justify-center w-full lg:w-3/4 mt-5 lg:mr-5">
+                <div>
+                  <h3 className="font-bold lg:text-lg text-base mb-2">
+                    Krissaco
+                  </h3>
+                  <p className="italic lg:text-base text-sm">
+                    Grounded | Visionary | Future-Ready
+                  </p>
+                </div>
+                <p className="mt-4 lg:text-base text-sm text-justify text-wrap hyphens-auto">
                   Krissaco stands for the spirit of the modern agriculturist.
                   Energetic, forward-looking, and rooted in tradition, he
                   represents a generation that’s reimagining agriculture through
@@ -340,97 +389,46 @@ const AboutUs = () => {
                   build a stronger future for farming communities.
                 </p>
               </div>
-            </Link>
+            </div>
           </div>
         </section>
-        <div className="py-10 px-4 md:px-16 lg:mt-10" id="leadership">
+        {/* leadership */}
+        <section className="py-10 px-4 md:px-12 lg:mt-10" id="leadership">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] mb-8 ">
             Leadership
           </h2>
           <div className="space-y-3">
             {managementTeam.map((member, idx) => (
-              <div
-                key={idx}
-                className={`flex flex-col ${
-                  idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                } items-start gap-6`}
-              >
-                <div className="bg-white rounded-xl shadow-md hover:shadow-lg p-6 md:p-8 lg:w-[80%]">
-                  <div
-                    className={`${
-                      idx % 2 !== 0 && "flex-col lg:flex-row-reverse"
-                    } flex flex-col lg:flex-row items-center gap-4 mb-4`}
-                  >
-                    <img
-                      src="/imgs/krishna_img.png" // Use the same image as in your uploaded file
-                      alt={member.name}
-                      className="w-32 h-32 lg:w-48 lg:h-48 rounded-full object-cover shadow-md border-2 border-white"
-                    />
-                    <div
-                      className={`flex items-center lg:items-start flex-col`}
-                    >
-                      <h3 className="text-lg lg:text-xl font-semibold text-[#154C8C]">
-                        {member.name}
-                      </h3>
-                      <p className="text-sm font-medium text-[#7b7b7b] mb-2">
-                        {member.title}
-                      </p>
-                      <p className="text-gray-700 hidden lg:flex text-sm lg:text-base leading-relaxed text-justify">
-                        {member.description}
-                      </p>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 flex lg:hidden text-sm leading-relaxed text-justify">
+              <div className="bg-white rounded-xl shadow-md hover:shadow-lg items-center lg:items-center flex flex-col lg:flex lg:flex-row p-6 lg:p-0">
+                <img
+                  src="/imgs/krishna_img.png"
+                  alt={member.name}
+                  className="w-32 h-32 lg:w-44 lg:h-full rounded-full lg:rounded object-cover shadow-md border-2 lg:border-0 border-white "
+                />
+                <div
+                  className={`flex items-center lg:items-start flex-col p-6`}
+                >
+                  <h3 className="text-lg lg:text-xl font-semibold text-[#154C8C]">
+                    {member.name}
+                  </h3>
+                  <p className="text-sm font-medium text-[#7b7b7b] mb-2">
+                    {member.title}
+                  </p>
+                  <p className="text-gray-700 hidden lg:flex text-sm lg:text-base leading-relaxed text-justify">
                     {member.description}
                   </p>
                 </div>
+
+                <p className="text-gray-700 flex lg:hidden text-sm leading-relaxed text-justify">
+                  {member.description}
+                </p>
               </div>
             ))}
           </div>
-        </div>
+        </section>
       </div>
-      {/* Our Team */}
-      {/* <section className="md:px-20 p-5 bg-blue-50 mb-4 rounded-md ">
-        <h2 className="text-blue-600 text-4xl font-bold mb-8 text-center ">
-          Meet our team members
-        </h2>
-        <div className="grid  grid-cols-2 :grid-cols-4 gap-4 ">
-          {teamMembers.map((member, i) => (
-            <div
-              key={i}
-              className=" bg-white rounded-md shadow p-2 flex md:flex-row md:text-left md:space-x-4 flex-col"
-            >
-              <img
-                src={member.image}
-                className="w-16 h-16 object-cover m-auto md:m-0 rounded-full md:w-36 md:h-36 md:rounded-md md:float-start md:ml-0"
-              />
-              <div className="md:ml-3 text-center md:text-left">
-                <h3 className="font-bold md:mt-4 items-center">
-                  {member.name}
-                </h3>
-                <p className="text-blue-600 md:text:xl text-sm">
-                  {member.title}
-                </p>
 
-                <div className="flex space-x-4 mt-4 justify-center md:justify-start">
-                  <a href="#" className="hover:text-blue-500 ">
-                    <FaFacebook />
-                  </a>
-                  <a
-                    href="#"
-                    className="hover:opacity-100  bg-white hover:bg-black hover:rounded-full hover:text-white text-black transition-all duration-300 "
-                  >
-                    <FaGithub />
-                  </a>
-                  <a href="#" className="hover:text-blue-800 ">
-                    <FaLinkedin />
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section > */}
+      {/* footer */}
       <Footer />
     </>
   );

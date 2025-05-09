@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const navLinks = [
     { name: "Home", to: "/" },
-    { name: "About Us", to: "/aboutus" },
+    { name: "About Koyya", to: "/aboutus" },
     { name: "Product & Services", to: "/services" },
     // { name: "Careers", to: "/careers" },
     { name: "ContactUs", to: "/contact", isButton: true },
