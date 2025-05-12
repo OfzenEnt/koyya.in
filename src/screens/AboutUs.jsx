@@ -165,16 +165,16 @@ const AboutUs = () => {
             </div>
           </div>
         </section>
-
+        {/* mascots */}
         <section
-          className="px-10 gap-6 flex flex-col  lg:mt-10 items-center"
+          className="px-10 gap-6 flex flex-col lg:mt-10 items-center"
           id="mascots"
         >
           <div>
             <img
               src="koyya_logo.png"
               alt="Koyya Logo"
-              className="md:h-16 h-16 lg:w-36 lg:h-20 mb-5"
+              className="md:h-16 h-16 lg:w-36 lg:h-auto mb-5"
             ></img>
           </div>
           <div className="lg:p-6 p-5 bg-violet-100 rounded-lg">
@@ -202,7 +202,7 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className="flex flex-col mt-5 gap-8">
+          <div className="flex flex-col mt-5 lg:mx-20 gap-8">
             <div className="flex flex-col lg:flex-row items-center w-full">
               <Link
                 to="https://www.glarimy.com "
@@ -214,7 +214,7 @@ const AboutUs = () => {
                   width="644"
                   height="619"
                   viewBox="0 0 644 619"
-                  className="absolute w-full h-[130px] md:h-[87%] "
+                  className="absolute w-full h-full"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -229,9 +229,9 @@ const AboutUs = () => {
                 {/* Foreground */}
                 <div className="z-10 text-center">
                   <img
-                    src="imgs/glarify logo.png"
+                    src="imgs/glarify_logo.png"
                     alt="Character"
-                    className="w-[50%] md:w-[45%] md:pt-6 mx-auto mt-6 lg:mt-0"
+                    className="w-[60%] md:w-[55%] md:pt-6 mx-auto mt-6 lg:mt-0"
                   />
                 </div>
               </Link>
@@ -244,7 +244,7 @@ const AboutUs = () => {
                     Curious | Creative | Tech-savvy
                   </p>
                 </div>
-                <p className="mt-4 lg:text-base text-sm text-justify">
+                <p className="mt-4 lg:text-base text-sm text-justify hyphens-auto">
                   Glarimy represents today’s tech-savvy young talent. She is
                   cheerful, modern, and open-minded — driven by curiosity and a
                   passion for solving problems with out-of-the-box thinking. She
@@ -253,8 +253,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-
-            <div className="flex lg:flex-row-reverse flex-col items-center w-full">
+            <div className="flex flex-col lg:flex-row items-center w-full">
               <Link
                 to="https://www.krissaco.com "
                 target="_blank"
@@ -265,7 +264,7 @@ const AboutUs = () => {
                   width="644"
                   height="619"
                   viewBox="0 0 644 619"
-                  className="absolute w-full h-[150px] md:h-[90%]"
+                  className="absolute w-full h-full"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -274,19 +273,19 @@ const AboutUs = () => {
                     fill-rule="evenodd"
                     clip-rule="evenodd"
                     d="M276.878 0.0151888C355.694 -1.19728 409.204 70.4405 469.026 121.771C537.141 180.217 636.519 224.379 642.711 313.918C649.025 405.232 567.988 476.134 497.576 534.616C434.708 586.831 358.544 614.68 276.878 617.764C191.364 620.994 95.3019 616.259 38.8578 551.938C-15.9359 489.498 0.195596 396.382 10.2415 313.918C18.7438 244.126 45.0357 181.179 90.5527 127.593C141.212 67.9538 198.637 1.21882 276.878 0.0151888Z"
-                    fill="#b9f8cf"
+                    fill="#8ec5ff"
                   />
                 </svg>
                 {/* Foreground */}
                 <div className="z-10 text-center">
                   <img
-                    src="imgs/krissaco logo.png"
+                    src="imgs/krissaco_logo.png"
                     alt="Character"
-                    className="w-[65%] md:w-[55%] mt-2 mx-auto "
+                    className="w-[60%] md:w-[60%] md:pt-6 mx-auto"
                   />
                 </div>
               </Link>
-              <div className="flex flex-col justify-center w-full lg:w-3/4 mt-5 lg:mr-5">
+              <div className="flex flex-col justify-center w-full lg:w-3/4 mt-5 lg:ml-5">
                 <div>
                   <h3 className="font-bold lg:text-lg text-base mb-2">
                     Krissaco
@@ -295,7 +294,7 @@ const AboutUs = () => {
                     Grounded | Visionary | Future-Ready
                   </p>
                 </div>
-                <p className="mt-4 lg:text-base text-sm text-justify text-wrap hyphens-auto">
+                <p className="mt-4 lg:text-base text-sm text-justify hyphens-auto">
                   Krissaco stands for the spirit of the modern agriculturist.
                   Energetic, forward-looking, and rooted in tradition, he
                   represents a generation that’s reimagining agriculture through
@@ -314,22 +313,22 @@ const AboutUs = () => {
           </h2>
           <div className="space-y-3">
             {managementTeam.map((member, idx) => (
-              <div className="bg-white rounded-xl shadow-md hover:shadow-lg items-center lg:items-center flex flex-col lg:flex lg:flex-row p-6 lg:p-0">
+              <div className="bg-white rounded-xl shadow-md hover:shadow-lg items-center lg:items-center flex flex-col lg:flex-row p-6 lg:p-0">
                 <img
                   src="/imgs/krishna_img.png"
                   alt={member.name}
-                  className="w-32 h-32 lg:w-44 lg:h-full rounded-full lg:rounded object-cover shadow-md border-2 lg:border-0 border-white "
+                  className="w-32 h-32 lg:w-44 lg:h-44 rounded-full object-cover ml-5 shadow-md border-2 border-white"
                 />
                 <div
-                  className={`flex items-center lg:items-start flex-col p-6`}
+                  className={`flex items-center lg:items-start flex-col p-6 flex-3/4`}
                 >
-                  <h3 className="text-lg lg:text-xl font-semibold text-[#154C8C]">
+                  <h3 className="text-lg lg:text-xl text-center  font-semibold text-[#154C8C]">
                     {member.name}
                   </h3>
-                  <p className="text-sm font-medium text-[#7b7b7b] mb-2">
+                  <p className="text-sm text-center font-medium text-[#7b7b7b] mb-2">
                     {member.title}
                   </p>
-                  <p className="text-gray-700 hidden lg:flex text-sm lg:text-base leading-relaxed text-justify">
+                  <p className="text-gray-700 hidden lg:flex text-sm lg:text-base leading-relaxed text-justify hyphens-auto">
                     {member.description}
                   </p>
                 </div>
