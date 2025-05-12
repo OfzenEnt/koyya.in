@@ -214,7 +214,7 @@ const AboutUs = () => {
                   width="644"
                   height="619"
                   viewBox="0 0 644 619"
-                  className="absolute w-full h-full"
+                  className="absolute w-full"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -264,7 +264,7 @@ const AboutUs = () => {
                   width="644"
                   height="619"
                   viewBox="0 0 644 619"
-                  className="absolute w-full h-full"
+                  className="absolute w-full"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -273,7 +273,7 @@ const AboutUs = () => {
                     fill-rule="evenodd"
                     clip-rule="evenodd"
                     d="M276.878 0.0151888C355.694 -1.19728 409.204 70.4405 469.026 121.771C537.141 180.217 636.519 224.379 642.711 313.918C649.025 405.232 567.988 476.134 497.576 534.616C434.708 586.831 358.544 614.68 276.878 617.764C191.364 620.994 95.3019 616.259 38.8578 551.938C-15.9359 489.498 0.195596 396.382 10.2415 313.918C18.7438 244.126 45.0357 181.179 90.5527 127.593C141.212 67.9538 198.637 1.21882 276.878 0.0151888Z"
-                    fill="#8ec5ff"
+                    fill="#b9f8cf"
                   />
                 </svg>
                 {/* Foreground */}
@@ -281,7 +281,7 @@ const AboutUs = () => {
                   <img
                     src="imgs/krissaco_logo.png"
                     alt="Character"
-                    className="w-[60%] md:w-[60%] md:pt-6 mx-auto"
+                    className="w-[60%] md:w-[65%] mx-auto"
                   />
                 </div>
               </Link>
