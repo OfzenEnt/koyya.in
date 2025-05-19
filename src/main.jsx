@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AboutUs from "./screens/AboutUs.jsx";
 import ErrorPage from "./screens/ErrorPage.jsx";
 import PreloadWrapper from "./PreloadWrapper.jsx";
+import Services from "./screens/services";
 
 const router = createBrowserRouter([
   {
@@ -17,10 +18,10 @@ const router = createBrowserRouter([
     path: "/aboutus",
     element: <AboutUs />,
   },
-  // {
-  //   path: "/services",
-  //   element: <Services />,
-  // },
+  {
+    path: "/services",
+    element: <Services />,
+  },
   // {
   //   path: "/careers",
   //   element: <Careers />,
