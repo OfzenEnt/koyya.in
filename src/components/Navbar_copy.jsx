@@ -3,7 +3,7 @@ import { CiMenuBurger } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import { FiChevronDown } from "react-icons/fi";
 import { Link } from "react-router-dom";
-
+import Dropdown from "react-multilevel-dropdown";
 const navLinks = [
   { name: "Home", to: "/" },
   {
@@ -81,50 +81,19 @@ const Navbar = () => {
   const NavItem = ({ name, to, isButton, hasDropdown, dropdownItems }) => {
     if (hasDropdown) {
       return (
-        <div
-          className="relative flex"
-          onMouseEnter={() => setActiveDropdown(name)}
-          onMouseLeave={() => setActiveDropdown(null)}
-        >
-          <div className="flex items-center gap-1 text-gray-600 hover:text-black text-base font-medium cursor-pointer">
-            <span>{name}</span>
-            <FiChevronDown className="mt-0.5" />
-          </div>
-          {activeDropdown === name && (
-            <div className="absolute mt-2 w-56 top-4 bg-white border rounded-sm shadow-md z-50">
-              {dropdownItems.map((item, idx) => (
-                <div key={idx}>
-                  {item.dropdownItems ? (
-                    <div className="group relative">
-                      <div className="flex justify-between items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
-                        <span>{item.name}</span>
-                        <FiChevronDown className="transform -rotate-90" />
-                      </div>
-                      <div className="absolute left-[90%] z-10 top-2 hidden group-hover:block w-56 bg-white border rounded-sm shadow-md ml-1">
-                        {item.dropdownItems.map((subItem, subIdx) => (
-                          <Link
-                            key={subIdx}
-                            to={subItem.to}
-                            className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                          >
-                            {subItem.name}
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
-                  ) : (
-                    <Link
-                      to={item.to}
-                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    >
-                      {item.name}
-                    </Link>
-                  )}
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
+        <Dropdown title={name}>
+          <Dropdown.Item>Item 1</Dropdown.Item>
+          <Dropdown.Item>Item 1</Dropdown.Item>
+          <Dropdown.Item>Item 1</Dropdown.Item>
+          <Dropdown.Item>
+            Item 2
+            <Dropdown.Submenu>
+              <Dropdown.Item>Subitem 1</Dropdown.Item>
+              <Dropdown.Item>Subitem 1</Dropdown.Item>
+              <Dropdown.Item>Subitem 1</Dropdown.Item>
+            </Dropdown.Submenu>
+          </Dropdown.Item>
+        </Dropdown>
       );
     }
 
