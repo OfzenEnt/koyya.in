@@ -12,6 +12,9 @@ import Consulting from "./screens/services/techForBusiness/Consulting";
 import AgriBusiness from "./screens/services/AgriBusiness/UrbanBrews";
 import MarketResearch from "./screens/services/AgriBusiness/MarketResearch";
 import UrbanBrews from "./screens/services/AgriBusiness/UrbanBrews";
+import Sleek from "./screens/services/techForAgriculture/Sleek";
+import Drip from "./screens/services/techForAgriculture/Drip";
+import DigitalMarketing from "./screens/services/techForAgriculture/DigitalMarketing";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +50,21 @@ const router = createBrowserRouter([
   {
     path: "/services/urban-brews",
     element: <UrbanBrews />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/services/krissaco-sleek",
+    element: <Sleek />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/services/krissaco-drip",
+    element: <Drip />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/services/digital-marketing",
+    element: <DigitalMarketing />,
     errorElement: <ErrorPage />,
   },
   // {
