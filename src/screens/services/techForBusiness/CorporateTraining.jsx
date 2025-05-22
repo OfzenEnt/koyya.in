@@ -1,7 +1,9 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import React, { useState, useMemo } from "react";
+import ScrollToTop from "@/lib/ScrollToTop";
+import React, { useState, useMemo, useEffect } from "react";
 import { MdCheckCircleOutline } from "react-icons/md";
+import { useLocation } from "react-router-dom";
 
 const PROGRAMS = {
   "Software Engineering": [
@@ -82,6 +84,7 @@ export default function CorporateTraining() {
 
   return (
     <div className="bg-blue-50">
+      <ScrollToTop />
       <Navbar />
 
       {/* Header */}

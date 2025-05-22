@@ -13,7 +13,7 @@ const Footer = () => {
   const navLinks = [
     { name: "Home", to: "/" },
     { name: "About Koyya", to: "/aboutus" },
-    { name: "Product & Services", to: "/services" },
+    { name: "Product & Services", to: "/services/corporate-training" },
     // { name: "Careers", to: "/careers" },
     { name: "ContactUs", to: "/contact", isButton: true },
   ];

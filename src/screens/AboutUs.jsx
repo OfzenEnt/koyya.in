@@ -1,13 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { MdCheckCircle } from "react-icons/md";
-import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa6";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "@/lib/ScrollToTop";
-import { Marquee } from "@/components/magicui/marquee";
 import { useLocation } from "react-router-dom";
 
 const AboutUs = () => {

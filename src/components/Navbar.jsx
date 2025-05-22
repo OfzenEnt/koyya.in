@@ -51,8 +51,8 @@ const navLinks = [
       {
         name: "Agri Business",
         dropdownItems: [
-          { name: "Agri Business", to: "/services/agri-business" },
           { name: "Krissaco Urban Brews Coffee", to: "/services/urban-brews" },
+          { name: "Market Research", to: "/services/market-research" },
         ],
       },
     ],

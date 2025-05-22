@@ -65,7 +65,7 @@ export default function Consulting() {
           <ul className="space-y-6">
             {AREAS.map((feature, index) => (
               <li key={index} className="flex items-center z-20">
-                <FaCheck className="text-blue-500 mr-2" size={20} />
+                <span className="text-blue-500 text-2xl">✓</span>
                 {feature}
               </li>
             ))}
@@ -96,7 +96,7 @@ export default function Consulting() {
               "Implementation roadmap",
             ].map((item, idx) => (
               <li key={idx} className="flex items-start gap-2">
-                <FaCheck className="text-green-500 mt-1" />
+                <span className="text-green-500 text-2xl">✓</span>
                 {item}
               </li>
             ))}

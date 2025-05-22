@@ -9,6 +9,9 @@ import PreloadWrapper from "./PreloadWrapper.jsx";
 import CorporateTraining from "./screens/services/techForBusiness/CorporateTraining";
 import SoftwareDevelopment from "./screens/services/techForBusiness/SoftwareDevelopment";
 import Consulting from "./screens/services/techForBusiness/Consulting";
+import AgriBusiness from "./screens/services/AgriBusiness/UrbanBrews";
+import MarketResearch from "./screens/services/AgriBusiness/MarketResearch";
+import UrbanBrews from "./screens/services/AgriBusiness/UrbanBrews";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +37,16 @@ const router = createBrowserRouter([
   {
     path: "/services/consulting",
     element: <Consulting />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/services/market-research",
+    element: <MarketResearch />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/services/urban-brews",
+    element: <UrbanBrews />,
     errorElement: <ErrorPage />,
   },
   // {
