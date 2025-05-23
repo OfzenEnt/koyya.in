@@ -15,6 +15,9 @@ import UrbanBrews from "./screens/services/AgriBusiness/UrbanBrews";
 import Sleek from "./screens/services/techForAgriculture/Sleek";
 import Drip from "./screens/services/techForAgriculture/Drip";
 import DigitalMarketing from "./screens/services/techForAgriculture/DigitalMarketing";
+import AcademicWorkshopsPage from "./screens/services/techForEduction/AcademicWorkshops";
+import Grip from "./screens/services/techForEduction/Grip";
+import GlarimyWiz from "./screens/services/techForEduction/GlarimyWiz";
 
 const router = createBrowserRouter([
   {
@@ -65,6 +68,18 @@ const router = createBrowserRouter([
   {
     path: "/services/digital-marketing",
     element: <DigitalMarketing />,
+    path: "/services/academic-workshops",
+    element: <AcademicWorkshopsPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/services/grip",
+    element: <Grip />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/services/glarimy-wiz",
+    element: <GlarimyWiz />,
     errorElement: <ErrorPage />,
   },
   // {
