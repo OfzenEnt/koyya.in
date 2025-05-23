@@ -106,7 +106,7 @@ export default function Consulting() {
           </p>
 
           <div className="mt-6 flex justify-end">
-            <button className="bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold px-4 py-2 rounded">
+            <button className="bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold px-4 py-2 rounded cursor-pointer">
               Book a consultation
             </button>
           </div>

@@ -71,7 +71,6 @@ const KEY_FEATURES = [
 ];
 const categoryOptions = {
   "Data & Analytics": [
-    "Data and Analysis",
     "Apache Kafka",
     "Apache Spark",
     "Python Tools for Data Analysis",
@@ -158,7 +157,7 @@ export default function CorporateTraining() {
         <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
           Technology for Businesses
         </h1>
-        <p className="text-gray-600">
+        <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
           Comprehensive technology solutions designed to empower your <br className="hidden lg:block" />
           business with cutting-edge tools and expertise.
         </p>

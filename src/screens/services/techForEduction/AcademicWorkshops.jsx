@@ -159,14 +159,12 @@ const AcademicWorkshopsPage = () => {
                 return (
                   <div
                     key={index}
-                    className={`mb-5 flex justify-${
-                      isLeft ? "start mr-[50%]" : "end ml-[50%]"
-                    } relative z-10`}
+                    className={`mb-5 flex justify-${isLeft ? "start mr-[50%]" : "end ml-[50%]"
+                      } relative z-10`}
                   >
                     <div
-                      className={` ${
-                        isLeft ? "pr-2 text-right" : "pl-2 text-left"
-                      }`}
+                      className={` ${isLeft ? "pr-2 text-right" : "pl-2 text-left"
+                        }`}
                     >
                       <div className="flex flex-row-reverse items-center gap-2 md:gap-4 ">
                         {isLeft && (
@@ -257,7 +255,7 @@ const AcademicWorkshopsPage = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="bg-blue-50 py-12  flex gap-10 justify-center items-center">
+      <section className="bg-blue-50 py-12 flex md:flex-row flex-col md:gap-10 justify-center items-center  px-6">
         <div>
           <h3 className="text-xl font-semibold mb-2">
             Ready to Elevate Your Academic Impact?
@@ -268,7 +266,7 @@ const AcademicWorkshopsPage = () => {
             and support excellence in teaching and learning.
           </p>
         </div>
-        <button className="bg-blue-600 text-white px-6 h-10 rounded-lg  hover:bg-blue-700 transition">
+        <button className="bg-blue-600 text-white px-6 h-10 rounded-lg  hover:bg-blue-700 transition cursor-pointer">
           Contact Us
         </button>
       </section>

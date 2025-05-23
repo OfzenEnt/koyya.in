@@ -143,8 +143,8 @@ export default function SoftwareDevelopment() {
         <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
           Technology for Businesses
         </h1>
-        <p className="text-gray-600 text-center">
-          Comprehensive technology solutions designed to empower your <br className="hidden lg:block" />
+        <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
+          Comprehensive technology solutions designed to empower your
           business with cutting-edge tools and expertise.
         </p>
       </section>
@@ -325,7 +325,7 @@ export default function SoftwareDevelopment() {
             />
             <button
               type="submit"
-              className="w-full bg-indigo-700 hover:bg-indigo-900 text-white font-semibold py-2 rounded-md transition"
+              className="w-full bg-indigo-700 hover:bg-indigo-900 text-white font-semibold py-2 rounded-md transition cursor-pointer"
             >
               Get My Quote
             </button>

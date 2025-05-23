@@ -9,12 +9,12 @@ export default function Grip() {
             <Navbar />
             {/* Hero Section */}
             <section className="bg-blue-50 text-center py-10">
-                <h2 className="text-2xl md:text-3xl font-bold text-blue-700">Technology for GRIP</h2>
+                <h2 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">Technology for GRIP</h2>
                 <p className="text-sm mt-2 max-w-xl mx-auto">Gain real-world experience through our comprehensive remote internship program designed for recent graduates.</p>
             </section>
 
             {/* Program Title */}
-            <section className="bg-white px-6 md:px-20 py-10 flex flex-col md:flex-row gap-y-10 items-center ">
+            <section className="bg-white px-6 md:px-20 py-10 flex flex-col lg:flex-row gap-y-10 items-center ">
                 <div>
                     <h2 className="text-3xl md:text-4xl font-semibold">Glarimy Remote <br />Internship Program <span className="font-bold">(GRIP)</span></h2>
                     <p className="mt-4 text-gray-600 max-w-2xl">Gain real-world experience through our comprehensive remote internship program designed for recent graduates.</p>
@@ -43,14 +43,14 @@ export default function Grip() {
             {/* Program Process */}
             <section className="px-20 py-6 space-y-5 bg-gray-50 mb-7">
                 <h3 className="text-3xl font-bold text-center text-blue-700 mb-20">Program Process</h3>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+                <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 text-center">
                     {[
                         { title: "Screening Process", desc: "Prospective interns are screened for eligibility to work on a project through assignments and interviews to assess technical skills and aptitude.", icons: "/imgs/Frame 76.png" },
                         { title: "Interviews", desc: "Interviews assess interns' skills, adaptability, and fit for the project environment.", icons: "/imgs/Frame 76 (1).png" },
                         { title: "Project Assignment", desc: "Selected interns join project teams and work on real-world application development following industry practices and completing assigned tasks. ", icons: "/imgs/Frame 76 (2).png" },
                         { title: "Certification", desc: "Upon successful completion of the internship, interns receive an official internship experience letter documenting their skills and contributions.", icons: "/imgs/Frame 76 (3).png" },
                     ].map((step, i) => (
-                        <div key={i} className="bg-white p-6 rounded-md shadow-md mb-5">
+                        <div key={i} className="bg-white p-6 rounded-md shadow-md hover:shadow-lg mb-5">
                             <img
                                 src={step.icons}
                                 alt={step.title}
@@ -66,7 +66,7 @@ export default function Grip() {
             {/* Benefits */}
             <section className="bg-white py-12 px-6 md:px-20">
                 <h3 className="text-2xl font-bold text-center text-blue-700 mb-10">Benefits</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl md:ml-50">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl  mx-auto">
                     {[
 
                         ["Real-World Experience", "Work on actual projects and gain practical experience that goes beyond theoretical knowledge.", "/imgs/Frame 76(5).png"],
@@ -86,18 +86,18 @@ export default function Grip() {
             {/* Important Notes */}
             <section className="bg-gray-50 py-10">
                 <h3 className="text-3xl font-bold text-center text-blue-700 mb-6">Important Notes</h3>
-                <div className="bg-white p-10 shadow-md rounded-md max-w-5xl mx-auto space-y-5 text-gray-700">
-                    <p className="flex items-center gap-x-3"><CircleArrowRight color="blue" /> These are not regular academic internships. They are designed for graduates who have completed their education.</p>
-                    <p className="flex items-center gap-x-3"><CircleArrowRight color="blue" /> If you are still pursuing your graduation... visit our careers page for openings.</p>
-                    <p className="flex items-center gap-x-3"><CircleArrowRight color="blue" /> Terms & Conditions apply. Please review all terms before applying.</p>
-                    <p className="flex items-center gap-x-3"><CircleArrowRight color="blue" /> The program requires full-time commitment for up to 3 months.</p>
+                <div className="bg-white p-10 shadow-lg rounded-md max-w-5xl mx-auto space-y-5 text-gray-700">
+                    <p className="flex  gap-x-3"><CircleArrowRight color="blue" size={24} className="shrink-0 mt-2" /> These are not regular academic internships. They are designed for graduates who have completed their education.</p>
+                    <p className="flex items-center gap-x-3"><CircleArrowRight color="blue" size={24} className="shrink-0 " />  If you are still pursuing your graduation... visit our careers page for openings.</p>
+                    <p className="flex items-center gap-x-3"><CircleArrowRight color="blue" size={24} className="shrink-0 " />  Terms & Conditions apply. Please review all terms before applying.</p>
+                    <p className="flex items-center gap-x-3"><CircleArrowRight color="blue" size={24} className="shrink-0 " />  The program requires full-time commitment for up to 3 months.</p>
                 </div>
             </section>
 
             {/* CTA */}
             <section className="bg-gradient-to-r from-blue-500 to-cyan-400 text-white py-12 text-center flex flex-col items-center justify-center">
                 <p className="text-lg max-w-2xl ">Join our Remote Internship Program and gain the experience you need to excel in your technology career.</p>
-                <button className="mt-4 bg-white text-blue-700 px-6 py-2 rounded-full font-semibold">Apply Now</button>
+                <button className="mt-4 bg-white text-blue-700 px-6 py-2 rounded-full font-semibold cursor-pointer hover:bg-blue-700 hover:text-white duration-300">Apply Now</button>
             </section>
 
             <Footer />

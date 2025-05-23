@@ -15,10 +15,10 @@ const GlarimyWiz = () => {
 
       {/* Header */}
       <section className=" bg-blue-50 py-16 text-center">
-        <h1 className="text-4xl font-bold text-blue-700 mb-3">
+        <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
           Technology for Education
         </h1>
-        <p className="text-gray-600">
+        <p className="mt-2 text-base max-w-3xl mx-auto">
           An advanced learning management system with AI-powered personalized
           learning paths, interactive content, and comprehensive analytics.
         </p>
@@ -54,7 +54,7 @@ const GlarimyWiz = () => {
                 </ul>
               </div>
 
-              <button className="mt-8 bg-blue-600 hover:bg-blue-700 text-white text-lg  py-3 px-6 rounded-lg shadow-md transition">
+              <button className="mt-8 bg-blue-600 hover:bg-blue-700 text-white text-lg  py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
                 Request a Demo
               </button>
             </div>

@@ -8,8 +8,8 @@ export default function UrbanBrews() {
 
       {/* Header */}
       <section className=" bg-blue-50 py-16 text-center">
-        <h1 className="text-4xl font-bold text-blue-700 mb-3">Agri Business</h1>
-        <p className="text-gray-600">
+        <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">Agri Business</h1>
+        <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
           Specialized technology solutions designed to address the unique
           challenges of specific industries.
         </p>
@@ -64,7 +64,7 @@ export default function UrbanBrews() {
                 </ul>
               </div>
 
-              <button className="mt-8 bg-yellow-600 hover:bg-yellow-700 text-white text-lg font-bold py-3 px-6 rounded-lg shadow-md transition">
+              <button className="mt-8 bg-yellow-600 hover:bg-yellow-700 text-white text-lg font-bold py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
                 Buy Now!!
               </button>
             </div>

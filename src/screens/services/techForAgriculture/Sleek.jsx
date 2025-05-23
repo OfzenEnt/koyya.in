@@ -13,10 +13,10 @@ export default function Sleek() {
 
       {/* Header */}
       <section className=" bg-blue-50 py-16 text-center">
-        <h1 className="text-4xl font-bold text-blue-700 mb-3">
+        <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
           Technology for Agriculture
         </h1>
-        <p className="text-gray-600">
+        <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
           Specialized technology solutions designed to address the unique
           challenges of specific industries.
         </p>
@@ -53,7 +53,7 @@ export default function Sleek() {
                 </ul>
               </div>
 
-              <button className="mt-8 bg-green-600 hover:bg-green-700 text-white text-lg font-medium py-3 px-6 rounded-lg shadow-md transition">
+              <button className="mt-8 bg-green-600 hover:bg-green-700 text-white text-lg font-medium py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
                 Try Now!!
               </button>
             </div>
