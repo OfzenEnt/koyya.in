@@ -22,12 +22,12 @@ export default function Consulting() {
       <Navbar />
 
       {/* Header */}
-      <section className=" bg-blue-50 py-16 text-center">
-        <h1 className="text-4xl font-bold text-blue-700 mb-3">
+      <section className=" bg-blue-50 lg:py-16 py-10 text-center">
+        <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
           Technology for Businesses
         </h1>
         <p className="text-gray-600">
-          Comprehensive technology solutions designed to empower your <br />
+          Comprehensive technology solutions designed to empower your <br className="hidden lg:block" />
           business with cutting-edge tools and expertise.
         </p>
       </section>
@@ -47,7 +47,7 @@ export default function Consulting() {
           </div>
           <div className="space-y-2 mt-4 md:mt-0">
             <h2 className="text-xl font-semibold mb-4">Key Features</h2>
-            <ul className="space-y-3">
+            <ul className="lg:space-y-3 space-y-2">
               {KEY_FEATURES.map((feature, index) => (
                 <li key={index} className="flex items-center">
                   <MdCheckCircleOutline
@@ -62,7 +62,7 @@ export default function Consulting() {
         </div>
         <div className="relative space-y-2 max-w-6xl md:mx-auto px-6 mt-10 z-20">
           <h2 className="text-xl font-semibold mb-4">Consulting Areas:</h2>
-          <ul className="space-y-6">
+          <ul className="lg:space-y-6 space-y-3">
             {AREAS.map((feature, index) => (
               <li key={index} className="flex items-center z-20">
                 <FaCheck className="text-blue-500 mr-2" size={20} />

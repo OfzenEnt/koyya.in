@@ -139,12 +139,12 @@ export default function SoftwareDevelopment() {
       <Navbar />
 
       {/* Header */}
-      <section className="bg-blue-50 py-16 text-center">
-        <h1 className="text-4xl font-bold text-blue-700 mb-3">
+      <section className="bg-blue-50 lg:py-16 py-10 text-center">
+        <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
           Technology for Businesses
         </h1>
-        <p className="text-gray-600">
-          Comprehensive technology solutions designed to empower your <br />
+        <p className="text-gray-600 text-center">
+          Comprehensive technology solutions designed to empower your <br className="hidden lg:block" />
           business with cutting-edge tools and expertise.
         </p>
       </section>
@@ -157,7 +157,7 @@ export default function SoftwareDevelopment() {
               Software <br /> Development
             </h2>
 
-            <p className="max-w-xl">
+            <p className="max-w-xl mb-10">
               Custom software solutions designed to address your specific
               business challenges. Our development team follows industry best
               practices to deliver scalable, secure, and maintainable
@@ -182,7 +182,7 @@ export default function SoftwareDevelopment() {
       </section>
       <section className="bg-white py-14 mt-5 px-4">
         <div className="flex flex-col items-center mx-auto">
-          <h2 className="text-3xl text-center font-bold text-blue-700">
+          <h2 className="text-3xl  text-center font-bold text-blue-700">
             Our Key Software Development Services
           </h2>
           <p className="max-w-[70%] mt-2 text-center text-base text-gray-600">
@@ -191,7 +191,7 @@ export default function SoftwareDevelopment() {
             efficiency.
           </p>
 
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5 max-w-[95%] lg:max-w-[70%]">
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5 max-w-[95%] lg:max-w-[70%]">
             {services.map((service, index) => (
               <div key={service.title}>
                 <div className="bg-white p-8 col-span-1 h-full rounded-lg shadow-md">
@@ -233,23 +233,21 @@ export default function SoftwareDevelopment() {
                 return (
                   <div
                     key={index}
-                    className={`mb-10 flex justify-${
-                      isLeft ? "start mr-[50%]" : "end ml-[50%]"
-                    } relative z-10`}
+                    className={`mb-5 flex justify-${isLeft ? "start mr-[50%]" : "end ml-[50%]"
+                      } relative z-10`}
                   >
                     <div
-                      className={` ${
-                        isLeft ? "pr-2 text-right" : "pl-2 text-left"
-                      }`}
+                      className={` ${isLeft ? "pr-2 text-right" : "pl-2 text-left"
+                        }`}
                     >
-                      <div className="flex flex-row-reverse items-center gap-2 md:gap-4">
+                      <div className="flex flex-row-reverse items-center gap-2 md:gap-4 ">
                         {isLeft && (
                           <div className="w-12 h-12 px-4 rounded-full bg-blue-900 text-white flex items-center justify-center shadow-md text-xl">
                             {step.icon}
                           </div>
                         )}
                         <div>
-                          <h3 className="text-base md:text-lg font-semibold text-gray-800">
+                          <h3 className="text-base md:text-lg font-semibold text-gray-800 ">
                             {step.title}
                           </h3>
                           <p className="text-sm text-gray-600">
@@ -327,7 +325,7 @@ export default function SoftwareDevelopment() {
             />
             <button
               type="submit"
-              className="w-full bg-indigo-700 hover:bg-indigo-800 text-white font-semibold py-2 rounded-md transition"
+              className="w-full bg-indigo-700 hover:bg-indigo-900 text-white font-semibold py-2 rounded-md transition"
             >
               Get My Quote
             </button>

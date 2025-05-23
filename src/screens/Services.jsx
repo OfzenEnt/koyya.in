@@ -68,7 +68,7 @@ export default function Services() {
           Technology for Businesses
         </h1>
         <p className=" text-gray-600">
-          Comprehensive technology solutions designed to empower your <br />{" "}
+          Comprehensive technology solutions designed to empower your
           business with cutting-edge tools and expertise.
         </p>
       </div>

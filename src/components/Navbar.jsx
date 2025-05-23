@@ -91,7 +91,7 @@ const Navbar = () => {
             <FiChevronDown className="mt-0.5" />
           </div>
           {activeDropdown === name && (
-            <div className="absolute mt-2 w-56 top-4 bg-white border rounded-sm shadow-md z-50">
+            <div className="absolute mt-2 w-48   top-4 bg-white border rounded-sm shadow-md z-50">
               {dropdownItems.map((item, idx) => (
                 <div key={idx}>
                   {item.dropdownItems ? (
@@ -100,7 +100,7 @@ const Navbar = () => {
                         <span>{item.name}</span>
                         <FiChevronDown className="transform -rotate-90" />
                       </div>
-                      <div className="absolute left-[90%] z-10 top-2 hidden group-hover:block w-56 bg-white border rounded-sm shadow-md ml-1">
+                      <div className="absolute left-[90%] z-10 top-2 hidden group-hover:block w-44 bg-white border rounded-sm shadow-md ml-4">
                         {item.dropdownItems.map((subItem, subIdx) => (
                           <Link
                             key={subIdx}
@@ -131,11 +131,10 @@ const Navbar = () => {
     return (
       <Link
         to={to}
-        className={`text-base font-medium flex items-center ${
-          isButton
-            ? "text-blue-500 hover:text-white hover:bg-blue-700 border border-blue-500 rounded-md px-3 py-1"
-            : "text-gray-600 hover:text-black"
-        }`}
+        className={`text-base font-medium flex items-center ${isButton
+          ? "text-blue-500 hover:text-white hover:bg-blue-700 border border-blue-500 rounded-md px-3 py-1"
+          : "text-gray-600 hover:text-black"
+          }`}
       >
         {name}
       </Link>
@@ -155,9 +154,8 @@ const Navbar = () => {
             >
               <span>{item.name}</span>
               <FiChevronDown
-                className={`transform transition-transform ${
-                  isOpen ? "rotate-180" : ""
-                }`}
+                className={`transform transition-transform ${isOpen ? "rotate-180" : ""
+                  }`}
               />
             </div>
             {isOpen && (
@@ -237,9 +235,8 @@ const Navbar = () => {
                       >
                         <span>{link.name}</span>
                         <FiChevronDown
-                          className={`transform transition-transform ${
-                            mobileDropdownIndex === idx ? "rotate-180" : ""
-                          }`}
+                          className={`transform transition-transform ${mobileDropdownIndex === idx ? "rotate-180" : ""
+                            }`}
                         />
                       </div>
                       {/* Show dropdown items if active */}
@@ -262,11 +259,10 @@ const Navbar = () => {
                   <li key={idx}>
                     <Link
                       to={link.to}
-                      className={`block font-medium text-gray-700 ${
-                        link.isButton
-                          ? "text-blue-500 border border-blue-500 px-3 py-1 rounded hover:bg-blue-700 hover:text-white"
-                          : "hover:text-black"
-                      }`}
+                      className={`block font-medium text-gray-700 ${link.isButton
+                        ? "text-blue-500 border border-blue-500 px-3 py-1 rounded hover:bg-blue-700 hover:text-white"
+                        : "hover:text-black"
+                        }`}
                       onClick={() => setMenuOpen(false)}
                     >
                       {link.name}

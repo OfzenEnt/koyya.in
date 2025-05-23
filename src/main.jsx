@@ -9,6 +9,9 @@ import PreloadWrapper from "./PreloadWrapper.jsx";
 import CorporateTraining from "./screens/services/techForBusiness/CorporateTraining";
 import SoftwareDevelopment from "./screens/services/techForBusiness/SoftwareDevelopment";
 import Consulting from "./screens/services/techForBusiness/Consulting";
+import AcademicWorkshopsPage from "./screens/services/techForEduction/AcademicWorkshops";
+import Grip from "./screens/services/techForEduction/Grip";
+import GlarimyWiz from "./screens/services/techForEduction/GlarimyWiz";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +37,21 @@ const router = createBrowserRouter([
   {
     path: "/services/consulting",
     element: <Consulting />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/services/academic-workshops",
+    element: <AcademicWorkshopsPage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/services/grip",
+    element: <Grip />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/services/glarimy-wiz",
+    element: <GlarimyWiz />,
     errorElement: <ErrorPage />,
   },
   // {
