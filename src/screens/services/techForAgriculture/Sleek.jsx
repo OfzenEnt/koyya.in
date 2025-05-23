@@ -63,7 +63,7 @@ export default function Sleek() {
               <img
                 src="/imgs/sleek.png" // Save your uploaded image as "urbanbrew.png" in the public folder
                 alt="Urban Brew Coffee Product"
-                className="rounded-xl shadow-xl"
+                className="rounded-xl"
               />
             </div>
           </div>

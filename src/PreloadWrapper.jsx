@@ -6,12 +6,13 @@ const assetsToLoad = [
   "/vids/agri.mp4",
   "/vids/dev.mp4",
   "/imgs/krishna_img.png",
-  "/imgs/behind_koyya.jpg",
   "/imgs/2149241221.jpg",
-  "/imgs/2149313746.jpg",
-  "/imgs/aboutheader.png",
   "/imgs/empolyees.jpg",
   "/imgs/workplace.jpg",
+  "/imgs/drip.png",
+  "/imgs/sleek.png",
+  "/imgs/digitalMarketing.png",
+  "/imgs/agribusiness.png",
 ];
 
 export default function PreloadWrapper({ children }) {

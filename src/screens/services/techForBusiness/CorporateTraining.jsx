@@ -69,7 +69,52 @@ const KEY_FEATURES = [
   "Online & classroom formats",
   "Partnered with top training vendors",
 ];
-
+const categoryOptions = {
+  "Data & Analytics": [
+    "Data and Analysis",
+    "Apache Kafka",
+    "Apache Spark",
+    "Python Tools for Data Analysis",
+    "PySpark",
+    "MongoDB",
+  ],
+  "AI": [
+    "Open AI Integration",
+    "Gen AI Tools for Developers",
+    "Gen AI Tools for Business",
+  ],
+  "Full Stack": [
+    "Java Platform",
+    "Spring Boot",
+    "MERN/MEAN",
+    "NextJS",
+  ],
+  "DevOps": [
+    "Git & GitHub",
+    "Dockers",
+    "Kubernetes",
+    "Jenkins",
+    "Splunk",
+    "ELK",
+  ],
+  "Software Engineering": [
+    "Domain Driven Design",
+    "Test Driven Design",
+    "Design Patterns",
+    "OOAD & UML",
+    "Architectural Patterns",
+    "Microservice Patterns",
+    "Design Thinking",
+  ],
+  "Cloud": [
+    "Google Cloud",
+    "AWS",
+  ],
+  "Others": [
+    "Flutter for Android & iOS",
+    "Cyber Security",
+  ]
+};
 export default function CorporateTraining() {
   const [openSections, setOpenSections] = useState({});
 
@@ -78,6 +123,27 @@ export default function CorporateTraining() {
       ...prev,
       [category]: !prev[category],
     }));
+  };
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    phoneno: "",
+    mail: "",
+  });
+
+  const [selectedCategory, setSelectedCategory] = useState("Data & Analytics");
+  const [selectedPrograms, setSelectedPrograms] = useState([]);
+
+  const handleChange = (e) => {
+    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleProgramToggle = (program) => {
+    setSelectedPrograms(prev =>
+      prev.includes(program)
+        ? prev.filter(p => p !== program)
+        : [...prev, program]
+    );
   };
 
   const programEntries = useMemo(() => Object.entries(PROGRAMS), []);
@@ -88,12 +154,12 @@ export default function CorporateTraining() {
       <Navbar />
 
       {/* Header */}
-      <section className="bg-blue-50 py-16 text-center">
-        <h1 className="text-4xl font-bold text-blue-700 mb-3">
+      <section className="bg-blue-50 lg:py-16 py-10 text-center">
+        <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
           Technology for Businesses
         </h1>
         <p className="text-gray-600">
-          Comprehensive technology solutions designed to empower your <br />
+          Comprehensive technology solutions designed to empower your <br className="hidden lg:block" />
           business with cutting-edge tools and expertise.
         </p>
       </section>
@@ -134,8 +200,14 @@ export default function CorporateTraining() {
           <img
             src="/imgs/training_process.png"
             alt="Training process"
-            className="w-full max-w-3xl mx-auto"
+            className="w-full max-w-3xl mx-auto hidden md:block"
           />
+          <img
+            src="/imgs/training_process(mob).png"
+            alt="Training process"
+            className="w-32 mx-auto md:hidden block"
+          />
+
         </div>
       </section>
 
@@ -147,12 +219,12 @@ export default function CorporateTraining() {
           </h2>
           <p>
             Comprehensive training across various technology domains to keep{" "}
-            <br />
+            <br className="hidden lg:block" />
             your team at the cutting edge.
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto p-6">
+        {/* <div className="max-w-3xl mx-auto p-6">
           {programEntries.map(([category, items]) => (
             <div
               key={category}
@@ -179,7 +251,97 @@ export default function CorporateTraining() {
               )}
             </div>
           ))}
-        </div>
+        </div> */}
+
+        {/* Form Section */}
+
+        <form className="space-y-6 max-w-4xl mx-auto">
+          {/* Name and Contact Fields */}
+          <div className="flex flex-col md:flex-row md:space-x-4">
+            <div className="w-full mb-4 md:mb-0">
+              <label className="block mb-2" htmlFor="firstName">First Name</label>
+              <input
+                id="firstName"
+                name="firstName"
+                value={formData.firstName}
+                type="text"
+                placeholder="First name"
+                className="w-full border border-gray-300 rounded-md lg:p-4 p-3 focus:outline-none focus:ring-1 focus:ring-blue-400"
+                onChange={handleChange}
+              />
+            </div>
+            <div className="w-full">
+              <label className="block mb-2" htmlFor="lastName">Last Name</label>
+              <input
+                id="lastName"
+                name="lastName"
+                value={formData.lastName}
+                type="text"
+                placeholder="Last name"
+                className="w-full border border-gray-300 rounded-md lg:p-4 p-3 focus:outline-none focus:ring-1 focus:ring-blue-400"
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row md:space-x-6">
+            <div className="w-full mb-4 md:mb-0">
+              <label className="block mb-2" htmlFor="PhoneNo">Ph.No:</label>
+              <input
+                id="PhoneNo"
+                name="phoneno"
+                value={formData.phoneno}
+                type="tel"
+                placeholder="+91 1234567890"
+                className="w-full border border-gray-300 rounded-md lg:p-4 p-3 focus:outline-none focus:ring-1 focus:ring-blue-400"
+                onChange={handleChange}
+              />
+            </div>
+
+            <div className="w-full">
+              <label className="block mb-2" htmlFor="mail">Email</label>
+              <input
+                id="mail"
+                name="mail"
+                value={formData.mail}
+                type="email"
+                placeholder="example@gmail.com"
+                className="w-full border border-gray-300 rounded-md lg:p-4 p-3 focus:outline-none focus:ring-1 focus:ring-blue-400"
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+
+          {/* Category and Program Selection */}
+          <div className="col-span-2 border-2 rounded-xl shadow-md p-10">
+            <label className="block font-medium mb-5">Choose a Category:</label>
+            <select
+              className="w-full border lg:p-4 p-3 rounded-md mb-5"
+              value={selectedCategory}
+              onChange={(e) => {
+                setSelectedCategory(e.target.value);
+                setSelectedPrograms([]); // Clear when switching category
+              }}
+            >
+              {Object.keys(categoryOptions).map((category) => (
+                <option key={category}>{category}</option>
+              ))}
+            </select>
+
+            <div className="flex flex-wrap gap-x-10 gap-y-5 mx-auto">
+              {categoryOptions[selectedCategory].map((program) => (
+                <label key={program} className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    checked={selectedPrograms.includes(program)}
+                    onChange={() => handleProgramToggle(program)}
+                  />
+                  {program}
+                </label>
+              ))}
+            </div>
+          </div>
+        </form>
 
         {/* Training Delivery Charges */}
         <div className="p-6 max-w-4xl mx-auto">
@@ -211,7 +373,7 @@ export default function CorporateTraining() {
           </p>
 
           <div className="text-center mt-6">
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+            <button className="bg-white  outline-2 outline-blue-600 text-blue-700  px-6 py-2 rounded-md hover:bg-blue-700 hover:text-white transition-colors duration-200 cursor-pointer">
               Request custom quote
             </button>
           </div>

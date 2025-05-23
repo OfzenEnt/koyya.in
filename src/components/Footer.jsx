@@ -99,7 +99,7 @@ const Footer = () => {
       </div>
 
       <div className="mt-8 text-center text-sm border-t border-gray-600 pt-4 text-gray-400">
-        © 2023 Koyya Enterprises Private Limited. | Developed by{" "}
+        © 2025 Koyya Enterprises Private Limited. | Developed by{" "}
         <a className="text-white" href="https://ofzen.in">
           Ofzen.in
         </a>
