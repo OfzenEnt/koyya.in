@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ScrollToTop from "@/lib/ScrollToTop";
 import {
   FaFileAlt,
   FaClock,
@@ -85,11 +86,19 @@ const steps = [
 ];
 const services = [
   {
-    title: "Web & Mobile Development",
+    title: "Web Applications",
     description:
-      "Responsive web applications and native mobile apps that deliver exceptional user experiences across all devices.",
+      "Responsive web applications  that deliver exceptional user experiences across all devices.",
     features: [
       "Progressive Web Apps (PWA)",
+      "Cross-platform Solutions",
+    ],
+  },
+  {
+    title: "Mobile Development",
+    description:
+    "Responsive native mobile apps that deliver exceptional user experiences across all devices.",
+    features: [
       "IOS & Android Applications",
       "Cross-platform Solutions",
     ],
@@ -104,26 +113,7 @@ const services = [
       "Usability Testing",
     ],
   },
-  {
-    title: "Cloud Deployment",
-    description:
-      "Seamless cloud infrastructure setup and deployment strategies for optimal performance and cost efficiency.",
-    features: [
-      "AWS, Azure & GCP Solutions",
-      "Containerization & Kubernetes",
-      "CI/CD Pipeline Implementation",
-    ],
-  },
-  {
-    title: "Maintenance",
-    description:
-      "Proactive maintenance and support services to ensure your software remains secure, up-to-date, and optimized.",
-    features: [
-      "Bug Files & Security Updates",
-      "Performance Monitoring",
-      "Continuous Improvements",
-    ],
-  },
+  
 ];
 
 const KEY_FEATURES = [
@@ -136,12 +126,13 @@ const KEY_FEATURES = [
 export default function SoftwareDevelopment() {
   return (
     <div className="bg-blue-50">
+      <ScrollToTop />
       <Navbar />
 
       {/* Header */}
       <section className="bg-blue-50 lg:py-16 py-10 text-center">
         <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
-          Technology for Businesses
+          Software Development
         </h1>
         <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
           Comprehensive technology solutions designed to empower your
@@ -150,7 +141,7 @@ export default function SoftwareDevelopment() {
       </section>
 
       {/* Software Development Section */}
-      <section className="py-10 bg-white">
+      <section className="py-10 bg-white shadow-md ">
         <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6">
           <div className="flex flex-col">
             <h2 className="text-3xl font-bold mb-2">
@@ -180,7 +171,7 @@ export default function SoftwareDevelopment() {
           </div>
         </div>
       </section>
-      <section className="bg-white py-14 mt-5 px-4">
+      <section className="bg-white py-14 mt-5 px-4 shadow-md">
         <div className="flex flex-col items-center mx-auto">
           <h2 className="text-3xl  text-center font-bold text-blue-700">
             Our Key Software Development Services
@@ -194,7 +185,7 @@ export default function SoftwareDevelopment() {
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-5 max-w-[95%] lg:max-w-[70%]">
             {services.map((service, index) => (
               <div key={service.title}>
-                <div className="bg-white p-8 col-span-1 h-full rounded-lg shadow-md">
+                <div className="bg-white p-8 col-span-1 h-full rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                   <h3 className="text-base md:text-xl font-semibold text-gray-900">
                     {service.title}
                   </h3>
@@ -214,10 +205,10 @@ export default function SoftwareDevelopment() {
       </section>
       <section className="bg-white py-14 mt-5 px-4">
         <div className="flex flex-col items-center mx-auto">
-          <h2 className="text-3xl text-center font-bold text-blue-700">
+          <h2 className="text-2xl lg:text-3xl  text-center font-bold text-blue-700">
             Our Development Process
           </h2>
-          <p className="max-w-[70%] mt-2 text-center text-base text-gray-600">
+          <p className="max-w-3xl mt-2 text-center text-base text-gray-600">
             We follow a structured approach to deliver high-quality software
             solutions that meet your business objectives.
           </p>
@@ -237,7 +228,7 @@ export default function SoftwareDevelopment() {
                       } relative z-10`}
                   >
                     <div
-                      className={` ${isLeft ? "pr-2 text-right" : "pl-2 text-left"
+                      className={` ${isLeft ? "pr-2 text-left" : "pl-2 text-left"
                         }`}
                     >
                       <div className="flex flex-row-reverse items-center gap-2 md:gap-4 ">
@@ -268,9 +259,9 @@ export default function SoftwareDevelopment() {
           </div>
         </div>
       </section>
-      <div className="flex flex-col md:flex-row justify-between items-center bg-gradient-to-r from-indigo-500 to-cyan-400 text-white p-8 md:p-16 shadow-lg">
+      <div className="flex flex-col justify-between items-center bg-gradient-to-r from-indigo-500 to-cyan-400 text-white p-8 md:p-16 shadow-lg">
         {/* Left Content */}
-        <div className="md:w-1/2 space-y-4">
+        <div className=" space-y-4 mb-10 max-w-2xl" >
           <h2 className="text-2xl md:text-3xl font-bold">
             Transparent Pricing
           </h2>
@@ -299,38 +290,15 @@ export default function SoftwareDevelopment() {
         </div>
 
         {/* Right Form */}
-        <div className="md:w-2/5 bg-white rounded-xl p-6 mt-8 md:mt-0 shadow-lg">
-          <h3 className="text-center text-lg font-semibold text-indigo-700 mb-4">
-            Request a Custom Quote
-          </h3>
-          <form className="space-y-4 text-black">
-            <input
-              type="text"
-              placeholder="Full Name"
-              className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-            />
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-            />
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
-            />
-            <textarea
-              placeholder="Project Details"
-              className="w-full border border-gray-300 rounded-md p-2 h-24 resize-none focus:outline-none focus:ring-2 focus:ring-indigo-400"
-            />
+        
+        
             <button
               type="submit"
-              className="w-full bg-indigo-700 hover:bg-indigo-900 text-white font-semibold py-2 rounded-md transition cursor-pointer"
+              className="bg-indigo-700 hover:bg-white hover:text-indigo-800 text-white font-semibold p-4 rounded-md transition cursor-pointer"
             >
-              Get My Quote
+              Request a Custom Quote
             </button>
-          </form>
-        </div>
+          
       </div>
       <Footer />
     </div>

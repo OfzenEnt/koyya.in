@@ -96,9 +96,9 @@ const AcademicWorkshopsPage = () => {
     <div>
       <Navbar />
       {/* Hero Section */}
-      <section className="bg-blue-50 lg:py-16 py-10 text-center">
+      <section className="bg-blue-50 lg:py-16 py-10 text-center mb-5 ">
         <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
-          Technology for Education
+          Academic Workshops
         </h1>
         <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
           Empowering the next generation with knowledge and skills through our
@@ -118,7 +118,7 @@ const AcademicWorkshopsPage = () => {
               students may also be offered internships.
             </p>
           </div>
-          <div className="bg-gray-100 p-7 rounded-xl shadow max-w-lg">
+          <div className="bg-gray-50 p-7 rounded-xl shadow max-w-lg">
             <h3 className="text-xl font-semibold mb-2">Workshop Format:</h3>
             <div className="space-y-2 ">
               {items.map((item, idx) => (
@@ -138,12 +138,12 @@ const AcademicWorkshopsPage = () => {
       </section>
 
       {/* Workflow Section */}
-      <section className="bg-white mt-5 px-4">
+      <section className="bg-white px-4 mb-5">
         <div className="flex flex-col items-center mx-auto">
-          <h2 className="text-3xl text-center font-bold text-blue-700">
+          <h2 className="text-3xl text-center font-bold text-blue-700 mt-5">
             Workshop Work Flow
           </h2>
-          <p className="max-w-[70%] mt-2 text-center text-base text-gray-600">
+          <p className="max-w-xl mt-2 text-center text-base text-gray-600">
             Industry-aligned educational programs designed to bridge the gap
             between academic learning and professional requirements.
           </p>
@@ -166,7 +166,7 @@ const AcademicWorkshopsPage = () => {
                       className={` ${isLeft ? "pr-2 text-right" : "pl-2 text-left"
                         }`}
                     >
-                      <div className="flex flex-row-reverse items-center gap-2 md:gap-4 ">
+                      <div className="flex flex-row-reverse items-center gap-2 md:gap-4 bg-gray-50 border-b-6 rounded-lg border-blue-700 p-2">
                         {isLeft && (
                           <div className="w-12 h-12 px-4 rounded-full bg-blue-900 text-white flex items-center justify-center shadow-md text-xl">
                             {step.icon}
@@ -200,7 +200,7 @@ const AcademicWorkshopsPage = () => {
         <h2 className="text-3xl font-bold text-center text-blue-700 mb-12">
           Workshop Pricing
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 ">
           <div className="border-2 rounded-lg p-8 shadow hover:shadow-lg transition">
             <h3 className="text-2xl font-semibold text-cyan-600 mb-2">
               Online Delivery
@@ -248,7 +248,7 @@ const AcademicWorkshopsPage = () => {
             </ul>
           </div>
         </div>
-        <p className="text-center text-sm mt-6">
+        <p className="text-center text-sm mt-6 mb-5">
           * Prices may vary based on workshop duration, content complexity.
           Terms & Conditions apply
         </p>

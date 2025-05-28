@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { MdCheckCircleOutline } from "react-icons/md";
 import { FaCheck } from "react-icons/fa";
+import ScrollToTop from "@/lib/ScrollToTop";
 const KEY_FEATURES = [
   "Scalable Enterprise Solutions",
   "High-Performance Architectures",
@@ -19,15 +20,16 @@ const AREAS = [
 export default function Consulting() {
   return (
     <div className="bg-blue-50">
+      <ScrollToTop />
       <Navbar />
 
       {/* Header */}
       <section className=" bg-blue-50 lg:py-16 py-10 text-center">
         <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
-          Technology for Businesses
+          Consulting 
         </h1>
-        <p className="text-gray-600">
-          Comprehensive technology solutions designed to empower your <br className="hidden lg:block" />
+        <p className="text-gray-600 max-w-xl mx-auto p-3">
+          Comprehensive technology solutions designed to empower your 
           business with cutting-edge tools and expertise.
         </p>
       </section>
@@ -39,7 +41,7 @@ export default function Consulting() {
             <div className="flex flex-row items-center">
               <h2 className="text-3xl font-bold mb-2">Consulting </h2>
             </div>
-            <p className="max-w-xl">
+            <p className="max-w-xl ">
               We offer technology consulting services to corporate clients in
               the areas of designing and architecting enterprise solutions that
               are scalable and performant using modern technologies.
@@ -77,8 +79,8 @@ export default function Consulting() {
           className="absolute w-1/2 h-auto md:h-1/2 object-contain bottom-0 right-0 opacity-30 lg:opacity-100 z-0"
         />
       </section>
-      <section className="relative py-6 mt-10 bg-white shadow-md rounded-lg">
-        <section className="max-w-[90%] md:max-w-1/2 mx-auto p-6 bg-gray-50 rounded-md shadow-md border">
+      <section className="relative py-6 mt-5 bg-white rounded-lg">
+        <section className="max-w-[90%] md:max-w-1/2 mx-auto p-6 bg-gray-50 rounded-md shadow-md hover:shadow-lg border">
           <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-2">
             Consulting Services Pricing
           </h2>
@@ -95,7 +97,7 @@ export default function Consulting() {
               "Performance optimization strategies",
               "Implementation roadmap",
             ].map((item, idx) => (
-              <li key={idx} className="flex items-start gap-2">
+              <li key={idx} className="flex items-center gap-2">
                 <span className="text-green-500 text-2xl">✓</span>
                 {item}
               </li>
@@ -105,7 +107,7 @@ export default function Consulting() {
             * Terms & Conditions apply
           </p>
 
-          <div className="mt-6 flex justify-end">
+          <div className="mt-6 flex lg:justify-end justify-center">
             <button className="bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold px-4 py-2 rounded cursor-pointer">
               Book a consultation
             </button>

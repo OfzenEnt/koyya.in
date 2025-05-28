@@ -155,7 +155,7 @@ export default function CorporateTraining() {
       {/* Header */}
       <section className="bg-blue-50 lg:py-16 py-10 text-center">
         <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
-          Technology for Businesses
+          Corporate Training
         </h1>
         <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
           Comprehensive technology solutions designed to empower your <br className="hidden lg:block" />
@@ -165,19 +165,22 @@ export default function CorporateTraining() {
 
       {/* Corporate Training Section */}
       <section className="py-6 bg-white shadow-md rounded-lg">
-        <div className="flex flex-col md:flex-row md:items-center justify-between max-w-6xl md:mx-auto px-6">
+       
+<section className="py-10 bg-white">
+        <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6">
           <div className="flex flex-col">
-            <div className="flex flex-row items-center">
-              <h2 className="text-3xl font-bold mb-2">Corporate Training</h2>
-            </div>
-            <p className="max-w-xl">
+            <h2 className="text-3xl font-bold mb-2">
+              Corporate Training
+            </h2>
+
+            <p className="max-w-xl mb-10">
               We offer technology upskilling services to corporate clients in
               the modern technologies that matter. We offer them both online as
               well as in the classrooms. Our training services are practical
               oriented with more than 70% hands-on.
             </p>
           </div>
-          <div className="space-y-2 mt-4 md:mt-0">
+           <div className="space-y-2 mt-4 md:mt-0">
             <h2 className="text-xl font-semibold mb-4">Key Features</h2>
             <ul className="space-y-2">
               {KEY_FEATURES.map((feature, index) => (
@@ -192,7 +195,7 @@ export default function CorporateTraining() {
             </ul>
           </div>
         </div>
-
+      </section>
         {/* Training Process */}
         <div className="relative md:p-10 max-w-6xl mx-auto mt-8 md:mt-0 px-6">
           <h2 className="text-2xl font-bold mb-6">Training Process:</h2>
@@ -256,7 +259,7 @@ export default function CorporateTraining() {
 
         <form className="space-y-6 max-w-4xl mx-auto">
           {/* Name and Contact Fields */}
-          <div className="flex flex-col md:flex-row md:space-x-4">
+          {/* <div className="flex flex-col md:flex-row md:space-x-4">
             <div className="w-full mb-4 md:mb-0">
               <label className="block mb-2" htmlFor="firstName">First Name</label>
               <input
@@ -309,7 +312,7 @@ export default function CorporateTraining() {
                 onChange={handleChange}
               />
             </div>
-          </div>
+          </div> */}
 
           {/* Category and Program Selection */}
           <div className="col-span-2 border-2 rounded-xl shadow-md p-10">
@@ -343,7 +346,9 @@ export default function CorporateTraining() {
         </form>
 
         {/* Training Delivery Charges */}
-        <div className="p-6 max-w-4xl mx-auto">
+        
+        {selectedPrograms.length > 0 && (
+  <div className="p-6 max-w-4xl mx-auto">
           <h3 className="text-blue-700 font-bold mb-4 text-2xl">
             Training Delivery Charges:
           </h3>
@@ -356,15 +361,17 @@ export default function CorporateTraining() {
                   <th className="border p-4">Charges (per day)</th>
                 </tr>
               </thead>
-              <tbody>
-                {DELIVERY_CHARGES.map((row, index) => (
-                  <tr key={index}>
-                    <td className="border p-3">{row.mode}</td>
-                    <td className="border p-3">{row.location}</td>
-                    <td className="border p-3">{row.charges}</td>
-                  </tr>
-                ))}
-              </tbody>
+             
+    <tbody>
+      {DELIVERY_CHARGES.map((row, index) => (
+        <tr key={index}>
+          <td className="border p-3">{row.mode}</td>
+          <td className="border p-3">{row.location}</td>
+          <td className="border p-3">{row.charges}</td>
+        </tr>
+      ))}
+    </tbody>
+  
             </table>
           </div>
           <p className="text-sm text-black italic mt-2">
@@ -377,6 +384,8 @@ export default function CorporateTraining() {
             </button>
           </div>
         </div>
+)}
+
       </section>
 
       <Footer />

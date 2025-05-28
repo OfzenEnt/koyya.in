@@ -330,7 +330,7 @@ const AboutUs = () => {
                   </p>
                 </div>
 
-                <p className="text-gray-700 flex lg:hidden text-sm leading-relaxed text-justify">
+                <p className="text-gray-700 flex lg:hidden text-sm leading-relaxed text-justify ">
                   {member.description}
                 </p>
               </div>

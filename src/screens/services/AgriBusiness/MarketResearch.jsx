@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ScrollToTop from "@/lib/ScrollToTop";
 
 export default function MarketResearch() {
   const Services = [
@@ -11,11 +12,12 @@ export default function MarketResearch() {
   ];
   return (
     <div className="bg-blue-50">
+      <ScrollToTop />
       <Navbar />
 
       {/* Header */}
-      <section className=" bg-blue-50 py-16 text-center">
-        <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">Agri Business</h1>
+      <section className=" bg-blue-50 lg:py-16 py-10 text-center">
+        <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">Market Research</h1>
         <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
           Specialized technology solutions designed to address the unique
           challenges of specific industries.
