@@ -57,7 +57,7 @@ export default function Drip() {
               </div>
 
               <Link
-              to="contact"
+              to="/contact"
                className="mt-8 bg-green-600 hover:bg-green-700 text-white text-lg font-medium py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
                 Install Now!!
               </Link>

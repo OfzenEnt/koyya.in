@@ -60,7 +60,7 @@ export default function DigitalMarketing() {
               </div>
 
               <Link 
-               to="/contactus"
+               to="/contact"
               className="mt-8 bg-blue-600 hover:bg-blue-700 text-white text-lg font-medium py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
                 Get your Quote
               </Link>

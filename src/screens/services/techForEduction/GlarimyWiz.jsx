@@ -47,7 +47,7 @@ const GlarimyWiz = () => {
                 <h2 className="text-xl font-semibold text-black mb-4">
                   Platform Features:
                 </h2>
-                <ul className="space-y-4 text-lg text-gray-800">
+                <ul className="space-y-4 text-lg text-gray-800 mb-5">
                   {Services.map((service, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <span className="text-blue-500 text-2xl">✓</span>
