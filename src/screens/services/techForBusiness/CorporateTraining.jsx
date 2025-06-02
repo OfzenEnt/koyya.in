@@ -278,10 +278,11 @@ export default function CorporateTraining() {
 
             <div className="flex flex-wrap gap-x-10 gap-y-5 mx-auto">
               {categoryOptions[selectedCategory].map((program) => (
-                <label key={program} className="flex items-center gap-2">
+                <label key={program} name="category" className="flex items-center gap-2">
                   <input
                     type="radio"
-                    checked={selectedPrograms.includes(program)}
+                    name="radio"
+                    // checked={selectedPrograms.includes(program)}
                     onChange={() => handleProgramToggle(program)}
                   />
                   {program}
