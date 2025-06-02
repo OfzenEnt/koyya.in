@@ -10,6 +10,7 @@ import {
   FaFileInvoiceDollar,
 } from "react-icons/fa";
 import { MdCheckCircleOutline } from "react-icons/md";
+import { Link } from "react-router-dom";
 const steps = [
   {
     title: "1. Client Shares SoW",
@@ -284,7 +285,7 @@ export default function SoftwareDevelopment() {
               models available
             </li>
           </ul>
-          <p className="text-sm text-white italic mt-2">
+          <p className="text-sm text-white italic mt-2 mb-5">
             * Terms & Conditions apply
           </p>
         </div>
@@ -292,12 +293,12 @@ export default function SoftwareDevelopment() {
         {/* Right Form */}
         
         
-            <button
-              type="submit"
+            <Link
+              to="/contact"
               className="bg-indigo-700 hover:bg-white hover:text-indigo-800 text-white font-semibold p-4 rounded-md transition cursor-pointer"
             >
               Request a Custom Quote
-            </button>
+            </Link>
           
       </div>
       <Footer />

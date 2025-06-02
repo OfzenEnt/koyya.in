@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/lib/ScrollToTop";
+import { Link } from "react-router-dom";
 
 export default function MarketResearch() {
   const Services = [
@@ -45,7 +46,7 @@ export default function MarketResearch() {
                 <h2 className="text-xl font-semibold text-black mb-4">
                   Research Services:
                 </h2>
-                <ul className="space-y-4 text-lg text-gray-800">
+                <ul className="space-y-4 text-lg text-gray-800 mb-5">
                   {Services.map((service, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <span className="text-blue-500 text-2xl">✓</span>
@@ -55,9 +56,11 @@ export default function MarketResearch() {
                 </ul>
               </div>
 
-              <button className="mt-8 bg-blue-600 hover:bg-blue-700 text-white text-lg  py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
+              <Link
+              to="/contact"
+               className="mt-8 bg-blue-600 hover:bg-blue-700 text-white text-lg  py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
                 Talk to us!
-              </button>
+              </Link>
             </div>
 
             {/* Right Section - Image */}

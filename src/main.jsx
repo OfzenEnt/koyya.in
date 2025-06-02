@@ -17,6 +17,7 @@ import DigitalMarketing from "./screens/services/techForAgriculture/DigitalMarke
 import AcademicWorkshopsPage from "./screens/services/techForEduction/AcademicWorkshops";
 import Grip from "./screens/services/techForEduction/Grip";
 import GlarimyWiz from "./screens/services/techForEduction/GlarimyWiz";
+import ContactUs from "./screens/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -84,11 +85,13 @@ const router = createBrowserRouter([
     element: <GlarimyWiz />,
     errorElement: <ErrorPage />,
   },
-  // {
-  //   path: "/contact",
-  //   element: <Contact />,
-  //   // errorElement: <ErrorPage />,
-  // },
+  {
+    path: "/contact",
+    element: <ContactUs/>,
+    errorElement: <ErrorPage />,
+
+    // errorElement: <ErrorPage />,
+  },
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>

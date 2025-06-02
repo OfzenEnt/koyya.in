@@ -15,6 +15,7 @@ import {
   FileText as InvoiceIcon,
   Wallet,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const AcademicWorkshopsPage = () => {
   const items = [
@@ -266,9 +267,11 @@ const AcademicWorkshopsPage = () => {
             and support excellence in teaching and learning.
           </p>
         </div>
-        <button className="bg-blue-600 text-white px-6 h-10 rounded-lg  hover:bg-blue-700 transition cursor-pointer">
+        <Link
+        to="/contact"
+        className="bg-blue-600 text-white px-6 h-10 rounded-lg  hover:bg-blue-700 transition cursor-pointer items-center flex">
           Contact Us
-        </button>
+        </Link>
       </section>
 
       <Footer />

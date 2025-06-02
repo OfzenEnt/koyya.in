@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { Link } from "react-router-dom";
 
 export default function Sleek() {
   const KEY_FEATURES = [
@@ -43,7 +44,7 @@ export default function Sleek() {
                 <h2 className="text-xl font-semibold text-black mb-4">
                   Key Features:
                 </h2>
-                <ul className="space-y-4 text-lg text-gray-800">
+                <ul className="space-y-4 text-lg text-gray-800 mb-5">
                   {KEY_FEATURES.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <span className="text-green-500 text-2xl">✓</span>
@@ -53,9 +54,11 @@ export default function Sleek() {
                 </ul>
               </div>
 
-              <button className="mt-8 bg-green-600 hover:bg-green-700 text-white text-lg font-medium py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
+              <Link
+              to="/contact"
+              className="mt-8 bg-green-600 hover:bg-green-700 text-white text-lg font-medium py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
                 Try Now!!
-              </button>
+              </Link>
             </div>
 
             {/* Right Section - Image */}

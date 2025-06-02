@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/lib/ScrollToTop";
 import { Calendar1Icon, CircleArrowRight, GraduationCap, IndianRupeeIcon, Laptop } from "lucide-react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Grip() {
     return (
@@ -102,7 +103,7 @@ export default function Grip() {
             {/* CTA */}
             <section className="bg-gradient-to-r from-blue-500 to-cyan-400 text-white py-12 text-center flex flex-col items-center justify-center">
                 <p className="text-lg max-w-2xl p-3">Join our Remote Internship Program and gain the experience you need to excel in your technology career.</p>
-                <button className="mt-4 bg-white text-blue-700 px-6 py-2 rounded-full font-semibold cursor-pointer hover:bg-blue-700 hover:text-white duration-300">Apply Now</button>
+                <Link to="/contact" className="mt-4 bg-white text-blue-700 px-6 py-2 rounded-full font-semibold cursor-pointer hover:bg-blue-700 hover:text-white duration-300">Apply Now</Link>
             </section>
 
             <Footer />

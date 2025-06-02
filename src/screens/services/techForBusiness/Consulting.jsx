@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import { MdCheckCircleOutline } from "react-icons/md";
 import { FaCheck } from "react-icons/fa";
 import ScrollToTop from "@/lib/ScrollToTop";
+import { Link } from "react-router-dom";
 const KEY_FEATURES = [
   "Scalable Enterprise Solutions",
   "High-Performance Architectures",
@@ -103,14 +104,16 @@ export default function Consulting() {
               </li>
             ))}
           </ul>
-          <p className="text-sm text-gray-500 italic mt-2">
+          <p className="text-sm text-gray-500 italic mt-2 mb-5">
             * Terms & Conditions apply
           </p>
 
           <div className="mt-6 flex lg:justify-end justify-center">
-            <button className="bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold px-4 py-2 rounded cursor-pointer">
+            <Link
+              to="/contact"
+            className="bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold px-4 py-2 rounded cursor-pointer">
               Book a consultation
-            </button>
+            </Link>
           </div>
         </section>
       </section>

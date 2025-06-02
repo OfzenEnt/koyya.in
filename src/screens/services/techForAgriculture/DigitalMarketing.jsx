@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/lib/ScrollToTop";
-
+import { Link } from "react-router-dom";
 export default function DigitalMarketing() {
   const KEY_FEATURES = [
     "E-commerce Enablement",
@@ -35,7 +35,7 @@ export default function DigitalMarketing() {
                 Digital <br /> Marketing
               </h1>
 
-              <p className="mt-4 text-gray-500 text-lg">
+              <p className="mt-4 text-gray-500 text-lg mb-5">
                 With keein insights into the agrictulure, horticulture, food &
                 food processing industries, we are your partner in your digital
                 journey. Be it onboarding you on e-commerce platforms, or
@@ -49,7 +49,7 @@ export default function DigitalMarketing() {
                 <h2 className="text-xl font-semibold text-black mb-4">
                   Services Offered:
                 </h2>
-                <ul className="space-y-4 text-lg text-gray-800">
+                <ul className="space-y-4 text-lg text-gray-800 mb-5">
                   {KEY_FEATURES.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <span className="text-blue-500 text-2xl">✓</span>
@@ -59,9 +59,11 @@ export default function DigitalMarketing() {
                 </ul>
               </div>
 
-              <button className="mt-8 bg-blue-600 hover:bg-blue-700 text-white text-lg font-medium py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
+              <Link 
+               to="/contactus"
+              className="mt-8 bg-blue-600 hover:bg-blue-700 text-white text-lg font-medium py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
                 Get your Quote
-              </button>
+              </Link>
             </div>
 
             {/* Right Section - Image */}

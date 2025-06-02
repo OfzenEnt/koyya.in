@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/lib/ScrollToTop";
 import React, { useState, useMemo, useEffect } from "react";
 import { MdCheckCircleOutline } from "react-icons/md";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const PROGRAMS = {
   "Software Engineering": [
@@ -200,12 +200,12 @@ export default function CorporateTraining() {
         <div className="relative md:p-10 max-w-6xl mx-auto mt-8 md:mt-0 px-6">
           <h2 className="text-2xl font-bold mb-6">Training Process:</h2>
           <img
-            src="/imgs/training_process.png"
+            src="/imgs/training_process(mob).png"
             alt="Training process"
             className="w-full max-w-3xl mx-auto hidden md:block"
           />
           <img
-            src="/imgs/training_process(mob).png"
+            src="/imgs/Group 17.png"
             alt="Training process"
             className="w-32 mx-auto md:hidden block"
           />
@@ -258,61 +258,7 @@ export default function CorporateTraining() {
         {/* Form Section */}
 
         <form className="space-y-6 max-w-4xl mx-auto">
-          {/* Name and Contact Fields */}
-          {/* <div className="flex flex-col md:flex-row md:space-x-4">
-            <div className="w-full mb-4 md:mb-0">
-              <label className="block mb-2" htmlFor="firstName">First Name</label>
-              <input
-                id="firstName"
-                name="firstName"
-                value={formData.firstName}
-                type="text"
-                placeholder="First name"
-                className="w-full border border-gray-300 rounded-md lg:p-4 p-3 focus:outline-none focus:ring-1 focus:ring-blue-400"
-                onChange={handleChange}
-              />
-            </div>
-            <div className="w-full">
-              <label className="block mb-2" htmlFor="lastName">Last Name</label>
-              <input
-                id="lastName"
-                name="lastName"
-                value={formData.lastName}
-                type="text"
-                placeholder="Last name"
-                className="w-full border border-gray-300 rounded-md lg:p-4 p-3 focus:outline-none focus:ring-1 focus:ring-blue-400"
-                onChange={handleChange}
-              />
-            </div>
-          </div>
-
-          <div className="flex flex-col md:flex-row md:space-x-6">
-            <div className="w-full mb-4 md:mb-0">
-              <label className="block mb-2" htmlFor="PhoneNo">Ph.No:</label>
-              <input
-                id="PhoneNo"
-                name="phoneno"
-                value={formData.phoneno}
-                type="tel"
-                placeholder="+91 1234567890"
-                className="w-full border border-gray-300 rounded-md lg:p-4 p-3 focus:outline-none focus:ring-1 focus:ring-blue-400"
-                onChange={handleChange}
-              />
-            </div>
-
-            <div className="w-full">
-              <label className="block mb-2" htmlFor="mail">Email</label>
-              <input
-                id="mail"
-                name="mail"
-                value={formData.mail}
-                type="email"
-                placeholder="example@gmail.com"
-                className="w-full border border-gray-300 rounded-md lg:p-4 p-3 focus:outline-none focus:ring-1 focus:ring-blue-400"
-                onChange={handleChange}
-              />
-            </div>
-          </div> */}
+          
 
           {/* Category and Program Selection */}
           <div className="col-span-2 border-2 rounded-xl shadow-md p-10">
@@ -374,14 +320,16 @@ export default function CorporateTraining() {
   
             </table>
           </div>
-          <p className="text-sm text-black italic mt-2">
+          <p className="text-sm text-black italic mt-2 mb-5">
             * Terms & Conditions apply
           </p>
 
           <div className="text-center mt-6">
-            <button className="bg-white  outline-2 outline-blue-600 text-blue-700  px-6 py-2 rounded-md hover:bg-blue-700 hover:text-white transition-colors duration-200 cursor-pointer">
+            <Link 
+            to="/contact"
+             className="bg-white  outline-2 outline-blue-600 text-blue-700  px-6 py-2 rounded-md hover:bg-blue-700 hover:text-white transition-colors duration-200 cursor-pointer">
               Request custom quote
-            </button>
+            </Link>
           </div>
         </div>
 )}

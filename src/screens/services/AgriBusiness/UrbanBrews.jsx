@@ -1,6 +1,8 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/lib/ScrollToTop";
+import { Link } from "react-router-dom";
+import { CiLink } from "react-icons/ci";
 
 export default function UrbanBrews() {
   return (
@@ -59,16 +61,19 @@ export default function UrbanBrews() {
                     <span className="text-yellow-500 text-2xl">✓</span>
                     Crafted for Coffee Lovers
                   </li>
-                  <li className="flex items-start gap-3">
+                  <li className="flex items-start gap-3 mb-5">
                     <span className="text-yellow-500 text-2xl">✓</span>
                     Health and Well-being in Every Sip
                   </li>
                 </ul>
               </div>
 
-              <button className="mt-8 bg-yellow-600 hover:bg-yellow-700 text-white text-lg font-bold py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
+              <Link
+              to="/contact"
+              className=" bg-yellow-600 hover:bg-yellow-700 text-white text-lg font-bold py-3 px-6 rounded-lg shadow-md transition cursor-pointer"
+                >
                 Buy Now!!
-              </button>
+              </Link>
             </div>
 
             {/* Right Section - Image */}
