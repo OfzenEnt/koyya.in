@@ -11,10 +11,10 @@ export default function Grip() {
             <ScrollToTop />
             <Navbar />
             {/* Hero Section */}
-            <section className="bg-blue-50 text-center lg:py-16 py-10">
+            {/* <section className="bg-blue-50 text-center lg:py-16 py-10">
                 <h2 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">Glarimy Remote Internship Program </h2>
                 <p className="mt-2 max-w-xl mx-auto p-3">Gain real-world experience through our comprehensive remote internship program designed for recent graduates.</p>
-            </section>
+            </section> */}
 
             {/* Program Title */}
             <section className="bg-white px-6 md:px-20 py-10 flex flex-col lg:flex-row  items-center ">             

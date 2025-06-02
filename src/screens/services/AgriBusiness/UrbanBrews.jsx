@@ -11,15 +11,15 @@ export default function UrbanBrews() {
       <Navbar />
 
       {/* Header */}
-      <section className=" bg-blue-50 lg:py-16 py-8 text-center">
+      {/* <section className=" bg-blue-50 lg:py-16 py-8 text-center">
         <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3 p-2">Krissaco Urban Brews Coffee</h1>
         <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
           Specialized technology solutions designed to address the unique
           challenges of specific industries.
         </p>
-      </section>
+      </section> */}
 
-      <section className="relative py-6 bg-white shadow-md rounded-lg">
+      <section className="relative py-8 bg-white shadow-md rounded-lg">
         <div className="flex flex-col md:flex-row md:items-center justify-between max-w-6xl md:mx-auto px-6">
           <div className=" bg-white  flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Section */}

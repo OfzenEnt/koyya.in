@@ -131,7 +131,7 @@ export default function SoftwareDevelopment() {
       <Navbar />
 
       {/* Header */}
-      <section className="bg-blue-50 lg:py-16 py-10 text-center">
+      {/* <section className="bg-blue-50 lg:py-16 py-10 text-center">
         <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
           Software Development
         </h1>
@@ -139,7 +139,7 @@ export default function SoftwareDevelopment() {
           Comprehensive technology solutions designed to empower your
           business with cutting-edge tools and expertise.
         </p>
-      </section>
+      </section> */}
 
       {/* Software Development Section */}
       <section className="py-10 bg-white shadow-md ">

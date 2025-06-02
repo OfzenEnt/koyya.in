@@ -153,7 +153,7 @@ export default function CorporateTraining() {
       <Navbar />
 
       {/* Header */}
-      <section className="bg-blue-50 lg:py-16 py-10 text-center">
+      {/* <section className="bg-white shadow mb-2 lg:py-16 py-10 text-center">
         <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
           Corporate Training
         </h1>
@@ -161,7 +161,7 @@ export default function CorporateTraining() {
           Comprehensive technology solutions designed to empower your <br className="hidden lg:block" />
           business with cutting-edge tools and expertise.
         </p>
-      </section>
+      </section> */}
 
       {/* Corporate Training Section */}
       <section className="py-6 bg-white shadow-md rounded-lg">

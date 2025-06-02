@@ -17,7 +17,7 @@ const GlarimyWiz = () => {
       <Navbar />
 
       {/* Header */}
-      <section className=" bg-blue-50 lg:py-16 py-10 text-center">
+      {/* <section className=" bg-blue-50 lg:py-16 py-10 text-center">
         <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
           Glarimy Wiz Platform
         </h1>
@@ -25,9 +25,9 @@ const GlarimyWiz = () => {
           An advanced learning management system with AI-powered personalized
           learning paths, interactive content, and comprehensive analytics.
         </p>
-      </section>
+      </section> */}
 
-      <section className="relative py-6 bg-white shadow-md rounded-lg">
+      <section className="relative py-8 bg-white shadow-md rounded-lg">
         <div className="flex flex-col md:flex-row md:items-center justify-between max-w-6xl md:mx-auto px-6">
           <div className=" bg-white  flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Section */}

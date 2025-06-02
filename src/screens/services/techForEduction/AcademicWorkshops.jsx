@@ -97,7 +97,7 @@ const AcademicWorkshopsPage = () => {
     <div>
       <Navbar />
       {/* Hero Section */}
-      <section className="bg-blue-50 lg:py-16 py-10 text-center mb-5 ">
+      {/* <section className="bg-blue-50 lg:py-16 py-10 text-center mb-5 ">
         <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
           Academic Workshops
         </h1>
@@ -105,7 +105,7 @@ const AcademicWorkshopsPage = () => {
           Empowering the next generation with knowledge and skills through our
           specialized educational offerings.
         </p>
-      </section>
+      </section> */}
 
       {/* Academic Workshops Section */}
       <section className="py-10 bg-white">
