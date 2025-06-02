@@ -94,7 +94,7 @@ const AcademicWorkshopsPage = () => {
   ];
 
   return (
-    <div>
+    <div className="bg-blue-50">
       <Navbar />
       {/* Hero Section */}
       {/* <section className="bg-blue-50 lg:py-16 py-10 text-center mb-5 ">
@@ -108,10 +108,10 @@ const AcademicWorkshopsPage = () => {
       </section> */}
 
       {/* Academic Workshops Section */}
-      <section className="py-10 bg-white">
+      <section className=" bg-white shadow-md -mt-10 mb-5">
         <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6 items-center">
           <div className="flex flex-col">
-            <h2 className="text-3xl font-bold mb-4">Academic Workshops</h2>
+            <h2 className="text-3xl font-bold mb-4 text-blue-700">Academic Workshops</h2>
             <p className="max-w-xl mb-10">
               We deliver workshops for academic institutions both online and
               on-campus. The workshops complement the academic learning of the
@@ -119,8 +119,8 @@ const AcademicWorkshopsPage = () => {
               students may also be offered internships.
             </p>
           </div>
-          <div className="bg-gray-50 p-7 rounded-xl shadow max-w-lg">
-            <h3 className="text-xl font-semibold mb-2">Workshop Format:</h3>
+          <div className=" p-7 rounded-xl mt-13  max-w-lg">
+            <h3 className="text-xl font-semibold mb-2 text-blue-700">Workshop Format:</h3>
             <div className="space-y-2 ">
               {items.map((item, idx) => (
                 <div key={idx} className="flex items-start space-x-3">
@@ -139,7 +139,7 @@ const AcademicWorkshopsPage = () => {
       </section>
 
       {/* Workflow Section */}
-      <section className="bg-white px-4 mb-5">
+      <section className="bg-white px-4 mb-5 shadow-md">
         <div className="flex flex-col items-center mx-auto">
           <h2 className="text-3xl text-center font-bold text-blue-700 mt-5">
             Workshop Work Flow
@@ -167,9 +167,9 @@ const AcademicWorkshopsPage = () => {
                       className={` ${isLeft ? "pr-2 text-right" : "pl-2 text-left"
                         }`}
                     >
-                      <div className="flex flex-row-reverse items-center gap-2 md:gap-4 bg-gray-50 border-b-6 rounded-lg border-blue-700 p-2">
+                      <div className="flex flex-row-reverse items-center gap-2 md:gap-4 bg-gray-50 border-b-6 rounded-lg border-blue-500 p-2">
                         {isLeft && (
-                          <div className="w-12 h-12 px-4 rounded-full bg-blue-900 text-white flex items-center justify-center shadow-md text-xl">
+                          <div className="w-12 h-12 px-4 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-md text-xl">
                             {step.icon}
                           </div>
                         )}
@@ -182,7 +182,7 @@ const AcademicWorkshopsPage = () => {
                           </p>
                         </div>
                         {!isLeft && (
-                          <div className="w-12 h-12 px-4 rounded-full bg-blue-900 text-white flex items-center justify-center shadow-md text-xl">
+                          <div className="w-12 h-12 px-4 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-md text-xl">
                             {step.icon}
                           </div>
                         )}
@@ -197,35 +197,34 @@ const AcademicWorkshopsPage = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className=" px-6 md:px-20 bg-white">
+      <section className=" p-6 md:px-20 bg-white">
         <h2 className="text-3xl font-bold text-center text-blue-700 mb-12">
           Workshop Pricing
         </h2>
-        <div className="grid md:grid-cols-2 gap-8 ">
-          <div className="border-2 rounded-lg p-8 shadow hover:shadow-lg transition">
-            <h3 className="text-2xl font-semibold text-cyan-600 mb-2">
+        <div className="grid md:grid-cols-2 lg:px-50 ">
+          <div className="border-2 rounded-lg p-6 shadow hover:shadow-lg transition mx-auto w-lg text-center">
+            <h3 className="text-2xl  font-semibold text-cyan-600 mb-2">
               Online Delivery
             </h3>
             <p className="text-xl font-bold mb-4">
               ₹ 10,000.00 <span className="text-base font-normal">per day</span>
             </p>
-            <ul className="space-y-2">
-              <li className="flex items-center">
+            <ul className="space-y-2 ">
+              <li className="flex items-center justify-center">
                 <Check className="text-green-600 mr-2" /> Live virtual sessions
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center justify-center">
                 <Check className="text-green-600 mr-2" /> Interactive Q&A
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center justify-center">
                 <Check className="text-green-600 mr-2" /> Digital materials
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center justify-center">
                 <Check className="text-green-600 mr-2" /> Recording access
               </li>
             </ul>
           </div>
-
-          <div className="border-2 rounded-lg p-8 shadow hover:shadow-lg transition">
+          <div className="border-2 rounded-lg p-8 shadow hover:shadow-lg transition w-lg mx-auto text-center">
             <h3 className="text-2xl font-semibold text-violet-700 mb-2">
               Classroom Delivery
             </h3>
@@ -233,17 +232,17 @@ const AcademicWorkshopsPage = () => {
               ₹ 15,000.00 <span className="text-base font-normal">per day</span>
             </p>
             <ul className="space-y-2">
-              <li className="flex items-center">
+              <li className="flex items-center justify-center">
                 <Check className="text-green-600 mr-2" /> In-person instruction
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center justify-center">
                 <Check className="text-green-600 mr-2" /> Hands-on lab sessions
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center justify-center">
                 <Check className="text-green-600 mr-2" /> Physical workshop
                 materials
               </li>
-              <li className="flex items-center">
+              <li className="flex items-center justify-center">
                 <Check className="text-green-600 mr-2" /> One-on-one assistance
               </li>
             </ul>

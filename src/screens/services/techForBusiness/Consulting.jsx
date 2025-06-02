@@ -36,11 +36,11 @@ export default function Consulting() {
       </section> */}
 
       {/* Consulting Section */}
-      <section className="relative py-6 bg-white shadow-md rounded-lg">
-        <div className="flex flex-col md:flex-row md:items-center justify-between max-w-6xl md:mx-auto px-6">
+      <section className="relative -mt-5 bg-white shadow-md rounded-lg">
+        <div className="flex flex-col md:flex-row md:items-center justify-between max-w-7xl md:mx-auto px-6">
           <div className="flex flex-col">
             <div className="flex flex-row items-center">
-              <h2 className="text-3xl font-bold mb-2">Consulting </h2>
+              <h2 className="text-3xl font-bold mb-2 text-blue-700">Consulting </h2>
             </div>
             <p className="max-w-xl ">
               We offer technology consulting services to corporate clients in
@@ -48,8 +48,8 @@ export default function Consulting() {
               are scalable and performant using modern technologies.
             </p>
           </div>
-          <div className="space-y-2 mt-4 md:mt-0">
-            <h2 className="text-xl font-semibold mb-4">Key Features</h2>
+          <div className="space-y-2 mt-6 md:mt-17">
+            <h2 className="text-xl font-semibold mb-4 text-blue-700">Key Features</h2>
             <ul className="lg:space-y-3 space-y-2">
               {KEY_FEATURES.map((feature, index) => (
                 <li key={index} className="flex items-center">
@@ -64,7 +64,7 @@ export default function Consulting() {
           </div>
         </div>
         <div className="relative space-y-2 max-w-6xl md:mx-auto px-6 mt-10 z-20">
-          <h2 className="text-xl font-semibold mb-4">Consulting Areas:</h2>
+          <h2 className="text-xl font-semibold mb-4 text-blue-700">Consulting Areas:</h2>
           <ul className="lg:space-y-6 space-y-3">
             {AREAS.map((feature, index) => (
               <li key={index} className="flex items-center z-20">
@@ -82,12 +82,12 @@ export default function Consulting() {
       </section>
       <section className="relative py-6 mt-5 bg-white rounded-lg">
         <section className="max-w-[90%] md:max-w-1/2 mx-auto p-6 bg-gray-50 rounded-md shadow-md hover:shadow-lg border">
-          <h2 className="text-xl md:text-2xl font-semibold text-gray-900 mb-2">
+          <h2 className="text-xl md:text-2xl font-semibold text-blue-700 mb-2">
             Consulting Services Pricing
           </h2>
           <p className="text-gray-600 mb-4">
             Starting at{" "}
-            <span className="text-blue-700 font-bold text-lg">₹ 50,000–00</span>{" "}
+            <span className="text-blue-400 font-bold text-lg">₹ 50,000–00</span>{" "}
             per day
           </p>
 

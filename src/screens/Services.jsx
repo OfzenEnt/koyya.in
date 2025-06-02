@@ -75,10 +75,10 @@ export default function Services() {
 
       {/* Corporate Training Section */}
       <div className="py-6 bg-white shadow-md rounded-lg">
-        <div className="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-24">
+        <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-24">
           <div className="flex  flex-col  ">
             <div className="flex flex-row items-center ">
-              <h2 className="text-3xl font-bold mb-2">Corporate Training</h2>
+              <h2 className="text-3xl font-bold mb-2 text-blue-700">Corporate Training</h2>
             </div>
             <p className="max-w-xl">
               We offer tecnology upskilling services to corporate clients in the
@@ -88,7 +88,7 @@ export default function Services() {
             </p>
           </div>
           <ul className="space-y-2 mt-4 md:mt-0">
-            <h2 className="text-xl font-semibold mb-4">Key Features</h2>
+            <h2 className="text-xl font-semibold mb-4text-blue-700 ">Key Features</h2>
             <li className="flex items-center ">
               <MdCheckCircleOutline color="blue " size={"20"} /> 24x7 lifetime
               access to learning resources

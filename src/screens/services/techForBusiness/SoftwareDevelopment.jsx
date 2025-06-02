@@ -145,7 +145,7 @@ export default function SoftwareDevelopment() {
       <section className="py-10 bg-white shadow-md ">
         <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6">
           <div className="flex flex-col">
-            <h2 className="text-3xl font-bold mb-2">
+            <h2 className="text-3xl font-bold mb-2 text-blue-700">
               Software <br /> Development
             </h2>
 
@@ -157,7 +157,7 @@ export default function SoftwareDevelopment() {
             </p>
           </div>
           <div className="space-y-2">
-            <h2 className="text-xl font-semibold mb-4">Key Features</h2>
+            <h2 className="text-xl font-semibold mb-4 text-blue-700">Key Features</h2>
             <ul className="space-y-2">
               {KEY_FEATURES.map((feature, index) => (
                 <li key={index} className="flex items-center">
@@ -187,7 +187,7 @@ export default function SoftwareDevelopment() {
             {services.map((service, index) => (
               <div key={service.title}>
                 <div className="bg-white p-8 col-span-1 h-full rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                  <h3 className="text-base md:text-xl font-semibold text-gray-900">
+                  <h3 className="text-base md:text-xl font-semibold text-blue-700">
                     {service.title}
                   </h3>
                   <p className="mt-2 text-gray-600">{service.description}</p>
@@ -285,7 +285,7 @@ export default function SoftwareDevelopment() {
               models available
             </li>
           </ul>
-          <p className="text-sm text-white italic mt-2 mb-5">
+          <p className="text-sm text-white italic mt-2 ">
             * Terms & Conditions apply
           </p>
         </div>
@@ -295,7 +295,7 @@ export default function SoftwareDevelopment() {
         
             <Link
               to="/contact"
-              className="bg-indigo-700 hover:bg-white hover:text-indigo-800 text-white font-semibold p-4 rounded-md transition cursor-pointer"
+              className="bg-indigo-700 hover:bg-white hover:text-indigo-800 text-white font-semibold p-4 rounded-md transition cursor-pointer "
             >
               Request a Custom Quote
             </Link>

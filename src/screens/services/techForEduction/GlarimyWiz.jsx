@@ -28,11 +28,11 @@ const GlarimyWiz = () => {
       </section> */}
 
       <section className="relative py-8 bg-white shadow-md rounded-lg">
-        <div className="flex flex-col md:flex-row md:items-center justify-between max-w-6xl md:mx-auto px-6">
+        <div className="flex flex-col md:flex-row md:items-center justify-between max-w-7xl md:mx-auto px-6">
           <div className=" bg-white  flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Section */}
             <div className="max-w-xl">
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-bold text-blue-700 leading-tight">
                 Glarimy Wiz <br /> <span className="font-normal">Platform</span>
               </h1>
 
@@ -44,7 +44,7 @@ const GlarimyWiz = () => {
 
               {/* Benefits */}
               <div className="mt-8">
-                <h2 className="text-xl font-semibold text-black mb-4">
+                <h2 className="text-xl font-semibold text-blue-700 mb-4">
                   Platform Features:
                 </h2>
                 <ul className="space-y-4 text-lg text-gray-800 mb-5">

@@ -164,12 +164,11 @@ export default function CorporateTraining() {
       </section> */}
 
       {/* Corporate Training Section */}
-      <section className="py-6 bg-white shadow-md rounded-lg">
        
-<section className="py-10 bg-white">
+<section className="py-10 bg-white shadow-md" >
         <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6">
           <div className="flex flex-col">
-            <h2 className="text-3xl font-bold mb-2">
+            <h2 className="text-3xl font-bold mb-2 text-blue-700">
               Corporate Training
             </h2>
 
@@ -181,7 +180,7 @@ export default function CorporateTraining() {
             </p>
           </div>
            <div className="space-y-2 mt-4 md:mt-0">
-            <h2 className="text-xl font-semibold mb-4">Key Features</h2>
+            <h2 className="text-xl font-semibold mb-4 text-blue-700">Key Features</h2>
             <ul className="space-y-2">
               {KEY_FEATURES.map((feature, index) => (
                 <li key={index} className="flex items-center">
@@ -197,7 +196,6 @@ export default function CorporateTraining() {
         </div>
       </section>
         
-      </section>
 
       {/* Form Section */}
       <section className="bg-white p-6 mt-5">
@@ -243,14 +241,14 @@ export default function CorporateTraining() {
 
         {/* Form Section */}
 
-        <form className="space-y-6 max-w-4xl mx-auto">
+        <form className="space-y-6 max-w-4xl mx-auto p-4">
           
 
           {/* Category and Program Selection */}
           <div className="col-span-2 border-2 rounded-xl shadow-md p-10">
             <label className="block font-medium mb-5">Choose a Category:</label>
             <select
-              className="w-full border lg:p-4 p-3 rounded-md mb-5"
+              className="w-full border lg:p-4 p-3 rounded-md mb-5 "
               value={selectedCategory}
               onChange={(e) => {
                 setSelectedCategory(e.target.value);
@@ -281,7 +279,7 @@ export default function CorporateTraining() {
         {/* Training Delivery Charges */}
         
         {selectedPrograms.length > 0 && (
-  <div className="p-6 max-w-4xl mx-auto">
+  <div className="p-5 max-w-4xl mx-auto">
           <h3 className="text-blue-700 font-bold mb-4 text-2xl">
             Training Delivery Charges:
           </h3>
@@ -321,12 +319,12 @@ export default function CorporateTraining() {
         </div>
 )}
 {/* Training Process */}
-<div className="relative md:p-10 max-w-6xl mx-auto mt-8 md:mt-0 px-6">
-          <h2 className="text-2xl font-bold mb-6">Training Process:</h2>
+<div className="relative md:p-5 max-w-4xl mx-auto mt-8 md:mt-0 px-6">
+          <h2 className="text-2xl font-bold mb-6 text-blue-700">Training Process:</h2>
           <img
             src="/imgs/training_process(mob).png"
             alt="Training process"
-            className="w-full max-w-3xl mx-auto hidden md:block"
+            className="w-full max-w-4xl mx-auto hidden md:block"
           />
           <img
             src="/imgs/Group 17.png"

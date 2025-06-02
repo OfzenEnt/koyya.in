@@ -20,7 +20,7 @@ export default function Grip() {
             <section className="bg-white px-6 md:px-20 py-10 flex flex-col lg:flex-row  items-center ">             
                  <div className="flex flex-col md:flex-row md:items-center justify-between  md:mx-auto px-6 gap-10 lg:gap-44">
                           <div className="flex flex-col">
-                               <h2 className="text-3xl md:text-4xl font-semibold">Glarimy Remote <br />Internship Program <span className="font-bold">(GRIP)</span></h2>
+                               <h2 className="text-3xl md:text-4xl font-semibold text-blue-700">Glarimy Remote <br />Internship Program <span className="font-bold">(GRIP)</span></h2>
                     <p className="mt-4 text-gray-600 max-w-2xl">Gain real-world experience through our comprehensive remote internship program designed for recent graduates.</p>
                 
                           </div>
@@ -47,9 +47,9 @@ export default function Grip() {
             </section>
 
             {/* Program Process */}
-            <section className="px-20 py-6 space-y-5 bg-gray-50 mb-7">
+            <section className="px-20 py-6 space-y-5 bg-gray-50 mb-7 ">
                 <h3 className="text-3xl font-bold text-center text-blue-700 mb-20">Program Process</h3>
-                <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:text-justify hyphens-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 max-w-4xl mx-auto gap-6 lg:text-justify hyphens-auto">
                     {[
                         { title: "Screening Process", desc: "Prospective interns are screened for eligibility to work on a project through assignments and interviews to assess technical skills and aptitude.", icons: "/imgs/Frame 76.png" },
                         { title: "Interviews", desc: "Interviews assess interns skills, adaptability, and fit for the project environment.", icons: "/imgs/Frame 76 (1).png" },
