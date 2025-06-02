@@ -196,21 +196,7 @@ export default function CorporateTraining() {
           </div>
         </div>
       </section>
-        {/* Training Process */}
-        <div className="relative md:p-10 max-w-6xl mx-auto mt-8 md:mt-0 px-6">
-          <h2 className="text-2xl font-bold mb-6">Training Process:</h2>
-          <img
-            src="/imgs/training_process(mob).png"
-            alt="Training process"
-            className="w-full max-w-3xl mx-auto hidden md:block"
-          />
-          <img
-            src="/imgs/Group 17.png"
-            alt="Training process"
-            className="w-32 mx-auto md:hidden block"
-          />
-
-        </div>
+        
       </section>
 
       {/* Form Section */}
@@ -334,6 +320,21 @@ export default function CorporateTraining() {
           </div>
         </div>
 )}
+{/* Training Process */}
+<div className="relative md:p-10 max-w-6xl mx-auto mt-8 md:mt-0 px-6">
+          <h2 className="text-2xl font-bold mb-6">Training Process:</h2>
+          <img
+            src="/imgs/training_process(mob).png"
+            alt="Training process"
+            className="w-full max-w-3xl mx-auto hidden md:block"
+          />
+          <img
+            src="/imgs/Group 17.png"
+            alt="Training process"
+            className="w-32 mx-auto md:hidden block"
+          />
+
+        </div>
 
       </section>
 

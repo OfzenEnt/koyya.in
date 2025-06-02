@@ -19,7 +19,7 @@ function ContactUs() {
 return (
     <div >
         <Navbar/>
-          <form action="" className="contact-us max-w-4xl mx-auto p-10 bg-white shadow-md rounded-lg mb-10 mt-10">
+          <form action="" className="contact-us max-w-4xl  mx-auto md:p-10 p-5 bg-white shadow-md rounded-lg mb-10 mt-10">
           <h1 className="text-3xl font-bold mb-10 text-center ">Contact Us</h1>
 
             <div className="flex flex-col md:flex-row md:space-x-4">
@@ -50,19 +50,19 @@ return (
             </div>
             <div className="flex flex-col md:flex-row md:space-x-6 mb-5">
             <div className="w-full">
-              <label className="block mb-2" htmlFor="lastName">Phn No</label>
+              <label className="block mb-2" htmlFor="lastName">Phone No</label>
               <input
                 id="phoneno"
                 name="phoneno"
                 value={formData.phoneno}
                 type="text"
-                placeholder="Phn No"
+                placeholder="Phone No"
                 className="w-full border border-gray-300 rounded-md lg:p-4 p-3 focus:outline-none focus:ring-1 focus:ring-blue-400"
                 onChange={handleChange}
               />
             </div>
             <div className="w-full">
-              <label className="block mb-2" htmlFor="phoneno">E mail</label>
+              <label className="block mb-2" htmlFor="phoneno">Email</label>
               <input
                 id="mail"
                 name="mail"
