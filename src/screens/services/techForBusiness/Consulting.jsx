@@ -42,7 +42,7 @@ export default function Consulting() {
             <div className="flex flex-row items-center">
               <h2 className="text-4xl md:5xl font-bold mb-2 text-blue-700">Consulting </h2>
             </div>
-            <p className="max-w-xl ">
+            <p className="max-w-xl hyphens-auto">
               We offer technology consulting services to corporate clients in
               the areas of designing and architecting enterprise solutions that
               are scalable and performant using modern technologies.
@@ -63,12 +63,12 @@ export default function Consulting() {
             </ul>
           </div>
         </div>
-        <div className="relative space-y-2 max-w-7xl md:mx-auto px-6 mt-10 z-20">
+        <div className="relative space-y-2 max-w-7xl md:mx-auto px-6 mt-10 z-20 md:p-6">
           <h2 className="text-xl font-semibold mb-4 text-blue-700">Consulting Areas:</h2>
-          <ul className="lg:space-y-6 space-y-3">
+          <ul className="lg:space-y-1 space-y-3">
             {AREAS.map((feature, index) => (
-              <li key={index} className="flex items-center z-20">
-                <span className="text-blue-500 text-2xl">✓</span>
+              <li key={index} className="flex items-center z-20 space-y-2">
+                <span className="text-blue-500 text-2xl mr-2">✓</span>
                 {feature}
               </li>
             ))}

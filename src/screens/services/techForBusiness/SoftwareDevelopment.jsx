@@ -149,7 +149,7 @@ export default function SoftwareDevelopment() {
               Software <br /> Development
             </h2>
 
-            <p className="max-w-xl mb-10">
+            <p className="max-w-xl mb-10 hyphens-auto">
               Custom software solutions designed to address your specific
               business challenges. Our development team follows industry best
               practices to deliver scalable, secure, and maintainable
@@ -174,10 +174,10 @@ export default function SoftwareDevelopment() {
       </section>
       <section className="bg-white py-14 mt-5 px-4  shadow-md">
         <div className="flex flex-col items-center max-w-7xl mx-auto">
-          <h2 className="text-2xl md:text-3xl text-center font-bold text-blue-700">
+          <h2 className="text-2xl md:text-3xl text-center md:max-w-lg max-w-xs font-bold text-blue-700">
             Our Key Software Development Services
           </h2>
-          <p className="max-w-[70%] mt-2 text-center text-base text-gray-600">
+          <p className="max-w-xl mt-2 text-center text-base text-gray-600">
             We offer comprehensive software development solutions to help
             businesses transform their digital presence and operational
             efficiency.

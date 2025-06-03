@@ -27,7 +27,7 @@ const GlarimyWiz = () => {
         </p>
       </section> */}
 
-      <section className="relative  bg-white shadow-md rounded-lg">
+      <section className="relative  bg-white shadow-md rounded-lg md:py-1 py-8">
         <div className="flex flex-col md:flex-row md:items-center justify-between max-w-7xl md:mx-auto px-6">
           <div className=" bg-white  flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Section */}
@@ -69,7 +69,7 @@ const GlarimyWiz = () => {
               <img
                 src="/imgs/Frame 184.png" // Save your uploaded image as "urbanbrew.png" in the public folder
                 alt="Urban Brew Coffee Product"
-                className="rounded-xl md:p-6 "
+                className="rounded-xl md:p-5 "
               />
             </div>
           </div>

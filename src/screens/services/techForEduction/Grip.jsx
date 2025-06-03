@@ -20,7 +20,7 @@ export default function Grip() {
             {/* Program Title */}
             <section className=" bg-white shadow-md  md:py-5 py-10 mb-5">
             <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6 items-center">
-            <div className="flex flex-col">
+            <div className="flex flex-col mb-2">
                                <h2 className="text-3xl md:text-4xl font-semibold text-blue-700">Glarimy Remote <br />Internship Program <span className="font-bold">(GRIP)</span></h2>
                     <p className="mt-4 text-gray-600 max-w-xl">Gain real-world experience through our comprehensive remote internship program designed for recent graduates.</p>
                 
@@ -28,7 +28,7 @@ export default function Grip() {
                             <img
                     src="/imgs/grip.png"
                     alt="Training process"
-                    className="max-w-xs h-auto mx-auto"
+                    className="max-w-xs h-auto mx-auto "
                 />
                         </div>
             </section>
@@ -37,7 +37,7 @@ export default function Grip() {
             <section className="bg-white py-8 p-5 md:px-0 mt-5 flex flex-col items-center">
                 <h3 className="text-2xl font-bold text-center text-blue-700 mb-6">Program Overview</h3>
                 <div className="bg-gray-50 p-10 rounded shadow-lg max-w-5xl mx-auto">
-                    <p className="mb-4 text-gray-700">The Glarimy Remote Internship Program (GRIP) is offered exclusively to graduates who completed their college education in the last two years. This program is designed for graduate students seeking opportunities to work on real-world projects to gain command on technologies and industry practices.</p>
+                    <p className="mb-4 text-gray-700 text-justify hyphens-auto">The Glarimy Remote Internship Program (GRIP) is offered exclusively to graduates who completed their college education in the last two years. This program is designed for graduate students seeking opportunities to work on real-world projects to gain command on technologies and industry practices.</p>
                     <ul className="space-y-2 text-gray-800 mt-5">
                         <li className="lg:items-center flex  gap-3"><GraduationCap color="blue" size={'28'} className="shrink-0" /> <strong>Eligibility:</strong> Graduates who completed their  college education in the last two years</li>
                         <li className=" flex gap-3"><Calendar1Icon color="blue" size={'26'} className="shrink-0"/> <strong>Duration:</strong> Maximum of 3 months, full-time</li>

@@ -172,7 +172,7 @@ export default function CorporateTraining() {
               Corporate Training
             </h2>
 
-            <p className="max-w-xl mb-10">
+            <p className="max-w-xl mb-10 hyphens-auto">
               We offer technology upskilling services to corporate clients in
               the modern technologies that matter. We offer them both online as
               well as in the classrooms. Our training services are practical
@@ -199,13 +199,13 @@ export default function CorporateTraining() {
 
       {/* Form Section */}
       <section className="bg-white p-6 mt-5">
-        <div className="text-center mb-8">
+        <div className="text-center mb-8 md:max-w-lg max-w-xs mx-auto">
           <h2 className="text-3xl font-bold text-blue-700 mb-3">
             Technology Training Programs
           </h2>
           <p>
-            Comprehensive training across various technology domains to keep{" "}
-            <br className="hidden lg:block" />
+            Comprehensive training across various technology domains to keep
+            
             your team at the cutting edge.
           </p>
         </div>
