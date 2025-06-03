@@ -24,7 +24,7 @@ export default function UrbanBrews() {
           <div className=" bg-white  flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Section */}
             <div className="max-w-xl">
-              <h1 className="text-4xl md:text-5xl md:max-w-full max-w-xs font-bold text-blue-700 leading-tight">
+              <h1 className="text-4xl md:text-5xl md:max-w-full max-w-xs font-bold text-gray-900 leading-tight">
                 Krissaco Urban <br /> Brews Coffee
                 <span className="md:ml-3 inline-block text-xs font-semibold bg-yellow-100 text-yellow-800 px-2 md:py-1 rounded-full align-middle">
                   Featured Product
@@ -49,7 +49,7 @@ export default function UrbanBrews() {
 
               {/* Benefits */}
               <div className="mt-8">
-                <h2 className="text-xl font-semibold text-blue-700 mb-4">
+                <h2 className="text-xl font-semibold text-black mb-4">
                   Why Urban Brews:
                 </h2>
                 <ul className="space-y-4 text-lg text-gray-800">

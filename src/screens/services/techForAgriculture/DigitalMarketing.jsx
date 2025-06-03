@@ -31,7 +31,7 @@ export default function DigitalMarketing() {
           <div className=" bg-white  flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Section */}
             <div className="max-w-xl">
-              <h1 className="text-4xl md:text-5xl max-w-xs font-medium text-blue-700 leading-tight">
+              <h1 className="text-4xl md:text-5xl max-w-xs font-medium text-gray-900 leading-tight">
                 Digital Marketing
               </h1>
 
@@ -46,7 +46,7 @@ export default function DigitalMarketing() {
 
               {/* Key Features */}
               <div className="mt-8">
-                <h2 className="text-xl font-semibold text-blue-700 mb-4">
+                <h2 className="text-xl font-semibold text-black mb-4">
                   Services Offered:
                 </h2>
                 <ul className="space-y-2 text-lg text-gray-800 mb-5">

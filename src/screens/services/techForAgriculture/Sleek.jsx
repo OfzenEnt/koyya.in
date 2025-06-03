@@ -29,8 +29,8 @@ export default function Sleek() {
           <div className=" bg-white  flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Section */}
             <div className="max-w-xl">
-              <h1 className="text-4xl md:text-5xl font-bold max-w-xs  text-blue-700 leading-tight">
-                Krissaco <br /> Sleek
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+                Krissaco <br /> <span className="text-green-500">Sleek</span>
               </h1>
 
               <p className="mt-4 text-gray-500 text-lg">
@@ -42,7 +42,7 @@ export default function Sleek() {
 
               {/* Key Features */}
               <div className="mt-8">
-                <h2 className="text-xl font-semibold text-blue-700 mb-4">
+                <h2 className="text-xl font-semibold text-black mb-4">
                   Key Features:
                 </h2>
                 <ul className="space-y-4 text-lg text-gray-800 mb-5">
