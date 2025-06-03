@@ -234,7 +234,7 @@ export default function SoftwareDevelopment() {
                     >
                       <div className="flex flex-row-reverse items-center gap-2 md:gap-4 ">
                         {isLeft && (
-                          <div className="w-12 h-12 px-4 rounded-full bg-blue-900 text-white flex items-center justify-center shadow-md text-xl">
+                          <div className="w-12 h-12 px-4 rounded-full bg-blue-700 text-white flex items-center justify-center shadow-md text-xl">
                             {step.icon}
                           </div>
                         )}
@@ -247,7 +247,7 @@ export default function SoftwareDevelopment() {
                           </p>
                         </div>
                         {!isLeft && (
-                          <div className="w-12 h-12 px-4 rounded-full bg-blue-900 text-white flex items-center justify-center shadow-md text-xl">
+                          <div className="w-12 h-12 px-4 rounded-full bg-blue-700 text-white flex items-center justify-center shadow-md text-xl">
                             {step.icon}
                           </div>
                         )}
@@ -295,7 +295,7 @@ export default function SoftwareDevelopment() {
         
             <Link
               to="/contact"
-              className="bg-indigo-700 hover:bg-white hover:text-indigo-800 text-white font-semibold p-4 rounded-md transition cursor-pointer "
+              className="bg-blue-700 hover:bg-white hover:text-blue-800 text-white font-semibold p-4 rounded-md transition cursor-pointer "
             >
               Request a Custom Quote
             </Link>

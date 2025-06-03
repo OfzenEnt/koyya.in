@@ -30,7 +30,7 @@ export default function Sleek() {
             {/* Left Section */}
             <div className="max-w-xl">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                Krissaco <br /> <span className="text-green-500">Sleek</span>
+                Krissaco <br /> <span className="text-green-600">Sleek</span>
               </h1>
 
               <p className="mt-4 text-gray-500 text-lg">
@@ -48,7 +48,7 @@ export default function Sleek() {
                 <ul className="space-y-4 text-lg text-gray-800 mb-5">
                   {KEY_FEATURES.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <span className="text-green-500 text-2xl">✓</span>
+                      <span className="text-green-600 text-2xl">✓</span>
                       {feature}
                     </li>
                   ))}

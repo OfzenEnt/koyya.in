@@ -59,7 +59,7 @@ const GlarimyWiz = () => {
 
               <Link
               to="/contact"
-              className="mt-8 bg-blue-600 hover:bg-blue-700 text-white text-lg  py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
+              className="mt-8 bg-blue-700 hover:bg-blue-800 text-white text-lg  py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
                 Request a Demo
               </Link>
             </div>

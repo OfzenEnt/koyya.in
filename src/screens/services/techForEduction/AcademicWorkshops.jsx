@@ -169,9 +169,9 @@ const AcademicWorkshopsPage = () => {
                       className={` ${isLeft ? "pr-2 text-right" : "pl-2 text-left"
                         }`}
                     >
-                      <div className="flex flex-row-reverse items-center gap-2 md:gap-4 bg-gray-50 border-b-6 rounded-lg border-blue-500 p-2">
+                      <div className="flex flex-row-reverse items-center gap-2 md:gap-4 bg-gray-50 border-b-6 rounded-lg border-blue-700 p-2">
                         {isLeft && (
-                          <div className="w-12 h-12 px-4 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-md text-xl">
+                          <div className="w-12 h-12 px-4 rounded-full bg-blue-700 text-white flex items-center justify-center shadow-md text-xl">
                             {step.icon}
                           </div>
                         )}
@@ -184,7 +184,7 @@ const AcademicWorkshopsPage = () => {
                           </p>
                         </div>
                         {!isLeft && (
-                          <div className="w-12 h-12 px-4 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-md text-xl">
+                          <div className="w-12 h-12 px-4 rounded-full bg-blue-700 text-white flex items-center justify-center shadow-md text-xl">
                             {step.icon}
                           </div>
                         )}
