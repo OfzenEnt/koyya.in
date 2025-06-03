@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ScrollToTop from "@/lib/ScrollToTop";
 import React,{useState} from "react";
 function ContactUs() {
     const [formData, setFormData] = useState({
@@ -19,6 +20,7 @@ function ContactUs() {
 return (
     <div >
         <Navbar/>
+        <ScrollToTop/>
           <form action="" className="contact-us max-w-4xl  mx-auto md:p-10 p-5 bg-white shadow-md rounded-lg mb-10 mt-10">
           <h1 className="text-3xl font-bold mb-10 text-center ">Contact Us</h1>
 

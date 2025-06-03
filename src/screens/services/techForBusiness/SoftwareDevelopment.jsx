@@ -127,8 +127,8 @@ const KEY_FEATURES = [
 export default function SoftwareDevelopment() {
   return (
     <div className="bg-blue-50">
-      <ScrollToTop />
       <Navbar />
+      <ScrollToTop />
 
       {/* Header */}
       {/* <section className="bg-blue-50 lg:py-16 py-10 text-center">
@@ -145,7 +145,7 @@ export default function SoftwareDevelopment() {
       <section className="py-10 bg-white shadow-md ">
         <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6">
           <div className="flex flex-col">
-            <h2 className="text-3xl font-bold mb-2 text-blue-700">
+            <h2 className="text-4xl md:5xl font-bold mb-2 text-blue-700">
               Software <br /> Development
             </h2>
 
@@ -172,9 +172,9 @@ export default function SoftwareDevelopment() {
           </div>
         </div>
       </section>
-      <section className="bg-white py-14 mt-5 px-4 shadow-md">
-        <div className="flex flex-col items-center mx-auto">
-          <h2 className="text-3xl  text-center font-bold text-blue-700">
+      <section className="bg-white py-14 mt-5 px-4  shadow-md">
+        <div className="flex flex-col items-center max-w-7xl mx-auto">
+          <h2 className="text-2xl md:text-3xl text-center font-bold text-blue-700">
             Our Key Software Development Services
           </h2>
           <p className="max-w-[70%] mt-2 text-center text-base text-gray-600">
@@ -190,7 +190,7 @@ export default function SoftwareDevelopment() {
                   <h3 className="text-base md:text-xl font-semibold text-blue-700">
                     {service.title}
                   </h3>
-                  <p className="mt-2 text-gray-600">{service.description}</p>
+                  <p className="mt-2 text-gray-600 text-justify hyphens-auto">{service.description}</p>
                   <ul className="mt-4 space-y-2 list-disc pl-5">
                     {service.features.map((feature) => (
                       <li key={feature} className="text-gray-600">
@@ -260,7 +260,7 @@ export default function SoftwareDevelopment() {
           </div>
         </div>
       </section>
-      <div className="flex flex-col justify-between items-center bg-gradient-to-r from-indigo-500 to-cyan-400 text-white p-8 md:p-16 shadow-lg">
+      <div className="flex flex-col justify-between items-center bg-gradient-to-r from-indigo-500 to-cyan-400 text-white p-8 shadow-lg">
         {/* Left Content */}
         <div className=" space-y-4 mb-10 max-w-2xl" >
           <h2 className="text-2xl md:text-3xl font-bold">

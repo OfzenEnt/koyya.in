@@ -16,6 +16,7 @@ import {
   Wallet,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import ScrollToTop from "@/lib/ScrollToTop";
 
 const AcademicWorkshopsPage = () => {
   const items = [
@@ -96,6 +97,7 @@ const AcademicWorkshopsPage = () => {
   return (
     <div className="bg-blue-50">
       <Navbar />
+      <ScrollToTop/>
       {/* Hero Section */}
       {/* <section className="bg-blue-50 lg:py-16 py-10 text-center mb-5 ">
         <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
@@ -108,10 +110,10 @@ const AcademicWorkshopsPage = () => {
       </section> */}
 
       {/* Academic Workshops Section */}
-      <section className=" bg-white shadow-md -mt-10 mb-5">
+      <section className=" bg-white shadow-md md:-mt-10 md:py-5 py-10 mb-5">
         <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6 items-center">
           <div className="flex flex-col">
-            <h2 className="text-3xl font-bold mb-4 text-blue-700">Academic Workshops</h2>
+            <h2 className="text-4xl md:5xl  font-bold mb-4 text-blue-700">Academic Workshops</h2>
             <p className="max-w-xl mb-10">
               We deliver workshops for academic institutions both online and
               on-campus. The workshops complement the academic learning of the
@@ -119,7 +121,7 @@ const AcademicWorkshopsPage = () => {
               students may also be offered internships.
             </p>
           </div>
-          <div className=" p-7 rounded-xl mt-13  max-w-lg">
+          <div className=" md:p-7 rounded-xl md:mt-13  max-w-lg">
             <h3 className="text-xl font-semibold mb-2 text-blue-700">Workshop Format:</h3>
             <div className="space-y-2 ">
               {items.map((item, idx) => (
@@ -201,8 +203,8 @@ const AcademicWorkshopsPage = () => {
         <h2 className="text-3xl font-bold text-center text-blue-700 mb-12">
           Workshop Pricing
         </h2>
-        <div className="grid md:grid-cols-2 lg:px-50 ">
-          <div className="border-2 rounded-lg p-6 shadow hover:shadow-lg transition mx-auto w-lg text-center">
+        <div className="grid md:grid-cols-2 lg:px-50 gap-y-5">
+          <div className="border-2 rounded-lg p-6 shadow hover:shadow-lg transition md:mx-auto md:w-lg  text-center">
             <h3 className="text-2xl  font-semibold text-cyan-600 mb-2">
               Online Delivery
             </h3>
@@ -224,7 +226,7 @@ const AcademicWorkshopsPage = () => {
               </li>
             </ul>
           </div>
-          <div className="border-2 rounded-lg p-8 shadow hover:shadow-lg transition w-lg mx-auto text-center">
+          <div className="border-2 rounded-lg p-8 shadow hover:shadow-lg transition md:w-lg md:mx-auto text-center">
             <h3 className="text-2xl font-semibold text-violet-700 mb-2">
               Classroom Delivery
             </h3>

@@ -13,9 +13,9 @@ const GlarimyWiz = () => {
   ];
   return (
     <div className="bg-blue-50">
-      <ScrollToTop />
+      
       <Navbar />
-
+      <ScrollToTop />
       {/* Header */}
       {/* <section className=" bg-blue-50 lg:py-16 py-10 text-center">
         <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
@@ -27,7 +27,7 @@ const GlarimyWiz = () => {
         </p>
       </section> */}
 
-      <section className="relative py-8 bg-white shadow-md rounded-lg">
+      <section className="relative  bg-white shadow-md rounded-lg">
         <div className="flex flex-col md:flex-row md:items-center justify-between max-w-7xl md:mx-auto px-6">
           <div className=" bg-white  flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Section */}
@@ -69,6 +69,7 @@ const GlarimyWiz = () => {
               <img
                 src="/imgs/Frame 184.png" // Save your uploaded image as "urbanbrew.png" in the public folder
                 alt="Urban Brew Coffee Product"
+                className="rounded-xl md:p-6 "
               />
             </div>
           </div>

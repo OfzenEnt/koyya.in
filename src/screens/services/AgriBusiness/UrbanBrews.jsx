@@ -7,8 +7,8 @@ import { CiLink } from "react-icons/ci";
 export default function UrbanBrews() {
   return (
     <div className="bg-blue-50">
-      <ScrollToTop />
       <Navbar />
+      <ScrollToTop />
 
       {/* Header */}
       {/* <section className=" bg-blue-50 lg:py-16 py-8 text-center">
@@ -20,13 +20,13 @@ export default function UrbanBrews() {
       </section> */}
 
       <section className="relative py-8 bg-white shadow-md rounded-lg">
-        <div className="flex flex-col md:flex-row md:items-center justify-between max-w-6xl md:mx-auto px-6">
+        <div className="flex flex-col md:flex-row md:items-center justify-between max-w-7xl md:mx-auto px-6">
           <div className=" bg-white  flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Section */}
             <div className="max-w-xl">
-              <h1 className="text-4xl md:text-5xl font-bold text-blue-700 leading-tight">
+              <h1 className="text-4xl md:text-5xl md:max-w-full max-w-xs font-bold text-blue-700 leading-tight">
                 Krissaco Urban <br /> Brews Coffee
-                <span className="ml-3 inline-block text-xs font-semibold bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full align-middle">
+                <span className="md:ml-3 inline-block text-xs font-semibold bg-yellow-100 text-yellow-800 px-2 md:py-1 rounded-full align-middle">
                   Featured Product
                 </span>
               </h1>
@@ -77,11 +77,11 @@ export default function UrbanBrews() {
             </div>
 
             {/* Right Section - Image */}
-            <div className="w-full md:w-1/2">
+            <div className="w-full  md:w-1/2">
               <img
                 src="/imgs/agribusiness.png" // Save your uploaded image as "urbanbrew.png" in the public folder
                 alt="Urban Brew Coffee Product"
-                className="rounded-xl shadow-xl"
+                className="rounded-xl shadow-xl md:h-[500px]"
               />
             </div>
           </div>

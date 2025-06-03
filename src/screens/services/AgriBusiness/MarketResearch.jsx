@@ -13,8 +13,8 @@ export default function MarketResearch() {
   ];
   return (
     <div className="bg-blue-50">
-      <ScrollToTop />
       <Navbar />
+      <ScrollToTop />
 
       {/* Header */}
       {/* <section className=" bg-blue-50 lg:py-16 py-10 text-center">
@@ -26,12 +26,12 @@ export default function MarketResearch() {
       </section> */}
 
       <section className="relative py-8 bg-white shadow-md rounded-lg ">
-        <div className="flex flex-col md:flex-row md:items-center justify-between max-w-6xl md:mx-auto px-6">
+        <div className="flex flex-col md:flex-row md:items-center justify-between max-w-7xl md:mx-auto px-6">
           <div className=" bg-white  flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Section */}
             <div className="max-w-xl">
-              <h1 className="text-4xl md:text-5xl font-bold text-blue-700 leading-tight">
-                Market <br /> Research
+              <h1 className="text-4xl md:text-5xl max-w-xs font-bold text-blue-700 leading-tight">
+                Market  Research
               </h1>
 
               <p className="mt-4 text-gray-500 text-lg">
@@ -68,7 +68,7 @@ export default function MarketResearch() {
               <img
                 src="/imgs/marketResearch.png" // Save your uploaded image as "urbanbrew.png" in the public folder
                 alt="Urban Brew Coffee Product"
-                className="rounded-xl shadow-xl"
+                className="rounded-xl shadow-xl md:h-full"
               />
             </div>
           </div>

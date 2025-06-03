@@ -8,8 +8,9 @@ import { Link } from "react-router-dom";
 export default function Grip() {
     return (
         <div className="bg-blue-50" >
-            <ScrollToTop />
+            
             <Navbar />
+            <ScrollToTop />
             {/* Hero Section */}
             {/* <section className="bg-blue-50 text-center lg:py-16 py-10">
                 <h2 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">Glarimy Remote Internship Program </h2>
@@ -17,24 +18,24 @@ export default function Grip() {
             </section> */}
 
             {/* Program Title */}
-            <section className="bg-white px-6 md:px-20 py-10 flex flex-col lg:flex-row  items-center ">             
-                 <div className="flex flex-col md:flex-row md:items-center justify-between  md:mx-auto px-6 gap-10 lg:gap-44">
-                          <div className="flex flex-col">
+            <section className=" bg-white shadow-md  md:py-5 py-10 mb-5">
+            <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6 items-center">
+            <div className="flex flex-col">
                                <h2 className="text-3xl md:text-4xl font-semibold text-blue-700">Glarimy Remote <br />Internship Program <span className="font-bold">(GRIP)</span></h2>
-                    <p className="mt-4 text-gray-600 max-w-2xl">Gain real-world experience through our comprehensive remote internship program designed for recent graduates.</p>
+                    <p className="mt-4 text-gray-600 max-w-xl">Gain real-world experience through our comprehensive remote internship program designed for recent graduates.</p>
                 
                           </div>
                             <img
                     src="/imgs/grip.png"
                     alt="Training process"
-                    className="max-w-sm h-auto mx-auto"
+                    className="max-w-xs h-auto mx-auto"
                 />
                         </div>
             </section>
 
             {/* Program Overview */}
-            <section className="bg-white py-12 mt-5 flex flex-col items-center ">
-                <h3 className="text-2xl font-bold text-center text-blue-700 mb-12">Program Overview</h3>
+            <section className="bg-white py-8 p-5 md:px-0 mt-5 flex flex-col items-center">
+                <h3 className="text-2xl font-bold text-center text-blue-700 mb-6">Program Overview</h3>
                 <div className="bg-gray-50 p-10 rounded shadow-lg max-w-5xl mx-auto">
                     <p className="mb-4 text-gray-700">The Glarimy Remote Internship Program (GRIP) is offered exclusively to graduates who completed their college education in the last two years. This program is designed for graduate students seeking opportunities to work on real-world projects to gain command on technologies and industry practices.</p>
                     <ul className="space-y-2 text-gray-800 mt-5">
@@ -47,16 +48,16 @@ export default function Grip() {
             </section>
 
             {/* Program Process */}
-            <section className="px-20 py-6 space-y-5 bg-gray-50 mb-7 ">
+            <section className="p-10  space-y-5 bg-white mb-7 shadow-md ">
                 <h3 className="text-3xl font-bold text-center text-blue-700 mb-20">Program Process</h3>
-                <div className="grid grid-cols-1 lg:grid-cols-2 max-w-4xl mx-auto gap-6 lg:text-justify hyphens-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 max-w-5xl mx-auto place-items-center items-center gap-6 lg:text-justify hyphens-auto ">
                     {[
                         { title: "Screening Process", desc: "Prospective interns are screened for eligibility to work on a project through assignments and interviews to assess technical skills and aptitude.", icons: "/imgs/Frame 76.png" },
                         { title: "Interviews", desc: "Interviews assess interns skills, adaptability, and fit for the project environment.", icons: "/imgs/Frame 76 (1).png" },
                         { title: "Project Assignment", desc: "Selected interns join project teams and work on real-world application development following industry practices and completing assigned tasks. ", icons: "/imgs/Frame 76 (2).png" },
                         { title: "Certification", desc: "Upon successful completion of the internship, interns receive an official internship experience letter documenting their skills and contributions.", icons: "/imgs/Frame 76 (3).png" },
                     ].map((step, i) => (
-                        <div key={i} className="bg-white p-6 rounded-md shadow-md hover:shadow-lg mb-5 max-w-sm transition duration-300">
+                        <div key={i} className="bg-gray-50 p-6 rounded-md shadow-md hover:shadow-xl mb-5 max-w-sm transition duration-300 h-full">
                             <img
                                 src={step.icons}
                                 alt={step.title}
@@ -92,7 +93,7 @@ export default function Grip() {
             {/* Important Notes */}
             <section className="bg-gray-50 py-10">
                 <h3 className="text-3xl font-bold text-center text-blue-700 mb-6">Important Notes</h3>
-                <div className="bg-white p-10 shadow-lg rounded-md max-w-5xl mx-auto space-y-6 text-gray-700 ">
+                <div className="bg-white p-10 shadow-md hover:shadow-lg rounded-md max-w-5xl mx-auto space-y-6 text-gray-700 ">
                     <p className="flex  gap-x-3"><CircleArrowRight color="blue" size={24} className="shrink-0 mt-2" /> These are not regular academic internships. They are designed for graduates who have completed their education.</p>
                     <p className="flex  gap-x-3"><CircleArrowRight color="blue" size={24} className="shrink-0 mt-2 lg:mt-0" />  If you are still pursuing your graduation... visit our careers page for openings.</p>
                     <p className="flex  gap-x-3"><CircleArrowRight color="blue" size={24} className="shrink-0 mt-2 lg:mt-0" />  Terms & Conditions apply. Please review all terms before applying.</p>

@@ -149,8 +149,8 @@ export default function CorporateTraining() {
 
   return (
     <div className="bg-blue-50">
-      <ScrollToTop />
       <Navbar />
+      <ScrollToTop />
 
       {/* Header */}
       {/* <section className="bg-white shadow mb-2 lg:py-16 py-10 text-center">
@@ -168,7 +168,7 @@ export default function CorporateTraining() {
 <section className="py-10 bg-white shadow-md" >
         <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6">
           <div className="flex flex-col">
-            <h2 className="text-3xl font-bold mb-2 text-blue-700">
+            <h2 className="text-4xl md:5xl  font-bold mb-2 text-blue-700">
               Corporate Training
             </h2>
 

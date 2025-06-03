@@ -12,8 +12,8 @@ export default function DigitalMarketing() {
   ];
   return (
     <div className="bg-blue-50">
-      <ScrollToTop />
       <Navbar />
+      <ScrollToTop />
 
       {/* Header */}
       {/* <section className=" bg-blue-50 lg:py-16 py-10 text-center">
@@ -31,8 +31,8 @@ export default function DigitalMarketing() {
           <div className=" bg-white  flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Section */}
             <div className="max-w-xl">
-              <h1 className="text-4xl md:text-5xl font-medium text-blue-700 leading-tight">
-                Digital <br /> Marketing
+              <h1 className="text-4xl md:text-5xl max-w-xs font-medium text-blue-700 leading-tight">
+                Digital Marketing
               </h1>
 
               <p className="mt-4 text-gray-500 text-lg mb-5">
@@ -49,7 +49,7 @@ export default function DigitalMarketing() {
                 <h2 className="text-xl font-semibold text-blue-700 mb-4">
                   Services Offered:
                 </h2>
-                <ul className="space-y-4 text-lg text-gray-800 mb-5">
+                <ul className="space-y-2 text-lg text-gray-800 mb-5">
                   {KEY_FEATURES.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
                       <span className="text-blue-500 text-2xl">✓</span>

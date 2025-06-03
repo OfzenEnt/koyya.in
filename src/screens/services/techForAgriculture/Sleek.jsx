@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ScrollToTop from "@/lib/ScrollToTop";
 import { Link } from "react-router-dom";
 
 export default function Sleek() {
@@ -11,7 +12,7 @@ export default function Sleek() {
   return (
     <div className="bg-blue-50">
       <Navbar />
-
+      <ScrollToTop />
       {/* Header */}
       {/* <section className=" bg-blue-50 lg:py-16 py-10 text-center">
         <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
@@ -23,12 +24,12 @@ export default function Sleek() {
         </p>
       </section> */}
 
-      <section className="relative py-10 bg-white shadow-md rounded-lg">
-        <div className="flex flex-col md:flex-row md:items-center justify-between max-w-6xl md:mx-auto px-6">
+      <section className="relative py-10 bg-white shadow-md rounded-lg ">
+        <div className="flex flex-col md:flex-row md:items-center justify-between max-w-7xl md:mx-auto px-6 ">
           <div className=" bg-white  flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Section */}
             <div className="max-w-xl">
-              <h1 className="text-4xl md:text-5xl font-bold text-blue-700 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-bold max-w-xs  text-blue-700 leading-tight">
                 Krissaco <br /> Sleek
               </h1>
 
@@ -66,7 +67,7 @@ export default function Sleek() {
               <img
                 src="/imgs/sleek.png" // Save your uploaded image as "urbanbrew.png" in the public folder
                 alt="Urban Brew Coffee Product"
-                className="rounded-xl"
+                className="rounded-xl md:h-[500px] md:ml-10"
               />
             </div>
           </div>

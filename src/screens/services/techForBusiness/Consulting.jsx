@@ -21,9 +21,9 @@ const AREAS = [
 export default function Consulting() {
   return (
     <div className="bg-blue-50">
-      <ScrollToTop />
+      
       <Navbar />
-
+      <ScrollToTop />
       {/* Header */}
       {/* <section className=" bg-blue-50 lg:py-16 py-10 text-center">
         <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
@@ -36,11 +36,11 @@ export default function Consulting() {
       </section> */}
 
       {/* Consulting Section */}
-      <section className="relative -mt-5 bg-white shadow-md rounded-lg">
+      <section className="relative md:-mt-5 bg-white shadow-md py-10 md:p-0 rounded-lg">
         <div className="flex flex-col md:flex-row md:items-center justify-between max-w-7xl md:mx-auto px-6">
           <div className="flex flex-col">
             <div className="flex flex-row items-center">
-              <h2 className="text-3xl font-bold mb-2 text-blue-700">Consulting </h2>
+              <h2 className="text-4xl md:5xl font-bold mb-2 text-blue-700">Consulting </h2>
             </div>
             <p className="max-w-xl ">
               We offer technology consulting services to corporate clients in
@@ -63,7 +63,7 @@ export default function Consulting() {
             </ul>
           </div>
         </div>
-        <div className="relative space-y-2 max-w-6xl md:mx-auto px-6 mt-10 z-20">
+        <div className="relative space-y-2 max-w-7xl md:mx-auto px-6 mt-10 z-20">
           <h2 className="text-xl font-semibold mb-4 text-blue-700">Consulting Areas:</h2>
           <ul className="lg:space-y-6 space-y-3">
             {AREAS.map((feature, index) => (
