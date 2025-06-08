@@ -12,7 +12,7 @@ export default function UrbanBrews() {
 
       {/* Header */}
       {/* <section className=" bg-blue-50 lg:py-16 py-8 text-center">
-        <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3 p-2">Krissaco Urban Brews Coffee</h1>
+        <h1 className="lg:text-4xl text-3xl font-bold text-[#005692] mb-3 p-2">Krissaco Urban Brews Coffee</h1>
         <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
           Specialized technology solutions designed to address the unique
           challenges of specific industries.
@@ -31,7 +31,7 @@ export default function UrbanBrews() {
                 </span>
               </h1>
 
-              <p className="mt-4 text-gray-500 text-lg">
+              <p className="mt-4 text-gray-900 text-lg">
                 Ever tasted something like filter coffee but far better? Try{" "}
                 <span className="font-semibold text-yellow-700">
                   Urban Brews
@@ -42,7 +42,7 @@ export default function UrbanBrews() {
 
               <a
                 href="#"
-                className="mt-4 block text-blue-700 font-bold underline hover:text-blue-900"
+                className="mt-4 block text-[#005692] font-bold underline hover:text-blue-900"
               >
                 Buy it from Amazon.
               </a>
@@ -69,9 +69,9 @@ export default function UrbanBrews() {
               </div>
 
               <Link
-              to="/contact"
-              className=" bg-yellow-600 hover:bg-yellow-700 text-white text-lg font-bold py-3 px-6 rounded-lg shadow-md transition cursor-pointer"
-                >
+                to="/contact"
+                className=" bg-yellow-600 hover:bg-yellow-700 text-white text-lg font-bold py-3 px-6 rounded-lg shadow-md transition cursor-pointer"
+              >
                 Buy Now!!
               </Link>
             </div>

@@ -154,7 +154,7 @@ export default function CorporateTraining() {
 
       {/* Header */}
       {/* <section className="bg-white shadow mb-2 lg:py-16 py-10 text-center">
-        <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
+        <h1 className="lg:text-4xl text-3xl font-bold text-[#005692] mb-3">
           Corporate Training
         </h1>
         <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
@@ -164,11 +164,11 @@ export default function CorporateTraining() {
       </section> */}
 
       {/* Corporate Training Section */}
-       
-<section className="py-10 bg-white shadow-md" >
+
+      <section className="py-10 bg-white shadow-md" >
         <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6">
           <div className="flex flex-col">
-            <h2 className="text-4xl md:5xl  font-bold mb-2 text-blue-700">
+            <h2 className="text-4xl md:text-5xl  font-bold mb-2 text-[#005692]">
               Corporate Training
             </h2>
 
@@ -179,8 +179,8 @@ export default function CorporateTraining() {
               oriented with more than 70% hands-on.
             </p>
           </div>
-           <div className="space-y-2 mt-4 md:mt-0">
-            <h2 className="text-xl font-semibold mb-4 text-blue-700">Key Features</h2>
+          <div className="space-y-2 ">
+            <h2 className="text-xl font-semibold mb-4 text-[#005692]">Key Features</h2>
             <ul className="space-y-2">
               {KEY_FEATURES.map((feature, index) => (
                 <li key={index} className="flex items-center">
@@ -195,17 +195,17 @@ export default function CorporateTraining() {
           </div>
         </div>
       </section>
-        
+
 
       {/* Form Section */}
       <section className="bg-white p-6 mt-5">
         <div className="text-center mb-8 md:max-w-lg max-w-xs mx-auto">
-          <h2 className="text-3xl font-bold text-blue-700 mb-3">
+          <h2 className="text-3xl font-bold text-[#005692] mb-3">
             Technology Training Programs
           </h2>
           <p>
             Comprehensive training across various technology domains to keep
-            
+
             your team at the cutting edge.
           </p>
         </div>
@@ -242,7 +242,7 @@ export default function CorporateTraining() {
         {/* Form Section */}
 
         <form className="space-y-6 max-w-4xl mx-auto p-4">
-          
+
 
           {/* Category and Program Selection */}
           <div className="col-span-2 border-2 rounded-xl shadow-md p-10">
@@ -277,50 +277,50 @@ export default function CorporateTraining() {
         </form>
 
         {/* Training Delivery Charges */}
-        
-        {selectedPrograms.length > 0 && (
-  <div className="p-5 max-w-4xl mx-auto">
-          <h3 className="text-blue-700 font-bold mb-4 text-2xl">
-            Training Delivery Charges:
-          </h3>
-          <div className="overflow-x-auto rounded-2xl border border-sky-500">
-            <table className="w-full border border-sky-300">
-              <thead className="bg-blue-100">
-                <tr>
-                  <th className="border p-4">Delivery Mode</th>
-                  <th className="border p-4">Location</th>
-                  <th className="border p-4">Charges (per day)</th>
-                </tr>
-              </thead>
-             
-    <tbody>
-      {DELIVERY_CHARGES.map((row, index) => (
-        <tr key={index}>
-          <td className="border p-3">{row.mode}</td>
-          <td className="border p-3">{row.location}</td>
-          <td className="border p-3">{row.charges}</td>
-        </tr>
-      ))}
-    </tbody>
-  
-            </table>
-          </div>
-          <p className="text-sm text-black italic mt-2 mb-5">
-            * Terms & Conditions apply
-          </p>
 
-          <div className="text-center mt-6">
-            <Link 
-            to="/contact"
-             className="bg-white  outline-2 outline-blue-600 text-blue-700  px-6 py-2 rounded-md hover:bg-blue-700 hover:text-white transition-colors duration-200 cursor-pointer">
-              Request custom quote
-            </Link>
+        {selectedPrograms.length > 0 && (
+          <div className="p-5 max-w-4xl mx-auto">
+            <h3 className="text-[#005692] font-bold mb-4 text-2xl">
+              Training Delivery Charges:
+            </h3>
+            <div className="overflow-x-auto rounded-2xl border border-sky-500">
+              <table className="w-full border border-sky-300">
+                <thead className="bg-blue-100">
+                  <tr>
+                    <th className="border p-4">Delivery Mode</th>
+                    <th className="border p-4">Location</th>
+                    <th className="border p-4">Charges (per day)</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  {DELIVERY_CHARGES.map((row, index) => (
+                    <tr key={index}>
+                      <td className="border p-3">{row.mode}</td>
+                      <td className="border p-3">{row.location}</td>
+                      <td className="border p-3">{row.charges}</td>
+                    </tr>
+                  ))}
+                </tbody>
+
+              </table>
+            </div>
+            <p className="text-sm text-black italic mt-2 mb-5">
+              * Terms & Conditions apply
+            </p>
+
+            <div className="text-center mt-6">
+              <Link
+                to="/contact"
+                className="bg-white  outline-2 outline-blue-600 text-[#005692]  px-6 py-2 rounded-md hover:bg-blue-700 hover:text-white transition-colors duration-200 cursor-pointer">
+                Request custom quote
+              </Link>
+            </div>
           </div>
-        </div>
-)}
-{/* Training Process */}
-<div className="relative md:p-5 max-w-4xl mx-auto mt-8 md:mt-0 px-6">
-          <h2 className="text-2xl font-bold mb-6 text-blue-700">Training Process:</h2>
+        )}
+        {/* Training Process */}
+        <div className="relative md:p-5 max-w-4xl mx-auto mt-8 md:mt-0 px-6">
+          <h2 className="text-2xl font-bold mb-6 text-[#005692]">Training Process:</h2>
           <img
             src="/imgs/training_process(mob).png"
             alt="Training process"

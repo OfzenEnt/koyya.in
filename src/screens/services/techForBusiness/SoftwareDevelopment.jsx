@@ -98,7 +98,7 @@ const services = [
   {
     title: "Mobile Development",
     description:
-    "Responsive native mobile apps that deliver exceptional user experiences across all devices.",
+      "Responsive native mobile apps that deliver exceptional user experiences across all devices.",
     features: [
       "IOS & Android Applications",
       "Cross-platform Solutions",
@@ -114,7 +114,7 @@ const services = [
       "Usability Testing",
     ],
   },
-  
+
 ];
 
 const KEY_FEATURES = [
@@ -132,7 +132,7 @@ export default function SoftwareDevelopment() {
 
       {/* Header */}
       {/* <section className="bg-blue-50 lg:py-16 py-10 text-center">
-        <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
+        <h1 className="lg:text-4xl text-3xl font-bold text-[#005692] mb-3">
           Software Development
         </h1>
         <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
@@ -145,7 +145,7 @@ export default function SoftwareDevelopment() {
       <section className="py-10 bg-white shadow-md ">
         <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6">
           <div className="flex flex-col">
-            <h2 className="text-4xl md:5xl font-bold mb-2 text-blue-700">
+            <h2 className="text-4xl md:text-5xl font-bold mb-2 text-[#005692]">
               Software <br /> Development
             </h2>
 
@@ -157,7 +157,7 @@ export default function SoftwareDevelopment() {
             </p>
           </div>
           <div className="space-y-2">
-            <h2 className="text-xl font-semibold mb-4 text-blue-700">Key Features</h2>
+            <h2 className="text-xl font-semibold mb-4 text-[#005692]">Key Features</h2>
             <ul className="space-y-2">
               {KEY_FEATURES.map((feature, index) => (
                 <li key={index} className="flex items-center">
@@ -174,7 +174,7 @@ export default function SoftwareDevelopment() {
       </section>
       <section className="bg-white py-14 mt-5 px-4  shadow-md">
         <div className="flex flex-col items-center max-w-7xl mx-auto">
-          <h2 className="text-2xl md:text-3xl text-center md:max-w-lg max-w-xs font-bold text-blue-700">
+          <h2 className="text-2xl md:text-3xl text-center md:max-w-lg max-w-xs font-bold text-[#005692]">
             Our Key Software Development Services
           </h2>
           <p className="max-w-xl mt-2 text-center text-base text-gray-600">
@@ -187,7 +187,7 @@ export default function SoftwareDevelopment() {
             {services.map((service, index) => (
               <div key={service.title}>
                 <div className="bg-white p-8 col-span-1 h-full rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
-                  <h3 className="text-base md:text-xl font-semibold text-blue-700">
+                  <h3 className="text-base md:text-xl font-semibold text-[#005692]">
                     {service.title}
                   </h3>
                   <p className="mt-2 text-gray-600 text-justify hyphens-auto">{service.description}</p>
@@ -206,7 +206,7 @@ export default function SoftwareDevelopment() {
       </section>
       <section className="bg-white py-14 mt-5 px-4">
         <div className="flex flex-col items-center mx-auto">
-          <h2 className="text-2xl lg:text-3xl  text-center font-bold text-blue-700">
+          <h2 className="text-2xl lg:text-3xl  text-center font-bold text-[#005692]">
             Our Development Process
           </h2>
           <p className="max-w-3xl mt-2 text-center text-base text-gray-600">
@@ -291,15 +291,15 @@ export default function SoftwareDevelopment() {
         </div>
 
         {/* Right Form */}
-        
-        
-            <Link
-              to="/contact"
-              className="bg-blue-700 hover:bg-white hover:text-blue-800 text-white font-semibold p-4 rounded-md transition cursor-pointer "
-            >
-              Request a Custom Quote
-            </Link>
-          
+
+
+        <Link
+          to="/contact"
+          className="bg-blue-700 hover:bg-white hover:text-blue-800 text-white font-semibold p-4 rounded-md transition cursor-pointer "
+        >
+          Request a Custom Quote
+        </Link>
+
       </div>
       <Footer />
     </div>

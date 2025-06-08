@@ -97,10 +97,10 @@ const AcademicWorkshopsPage = () => {
   return (
     <div className="bg-blue-50">
       <Navbar />
-      <ScrollToTop/>
+      <ScrollToTop />
       {/* Hero Section */}
       {/* <section className="bg-blue-50 lg:py-16 py-10 text-center mb-5 ">
-        <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
+        <h1 className="lg:text-4xl text-3xl font-bold text-[#005692] mb-3">
           Academic Workshops
         </h1>
         <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
@@ -110,23 +110,25 @@ const AcademicWorkshopsPage = () => {
       </section> */}
 
       {/* Academic Workshops Section */}
-      <section className=" bg-white shadow-md md:-mt-10 md:py-5 py-10 mb-5">
-        <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6 items-center">
+      <section className="py-10 bg-white shadow-md" >
+        <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6">
           <div className="flex flex-col">
-            <h2 className="text-4xl md:5xl  font-bold mb-4 text-blue-700">Academic Workshops</h2>
-            <p className="max-w-xl mb-10">
+            <h2 className="text-4xl md:text-5xl  font-bold mb-2 text-[#005692]">
+
+              Academic Workshops</h2>
+            <p className="max-w-xl mb-10 S">
               We deliver workshops for academic institutions both online and
               on-campus. The workshops complement the academic learning of the
               students. The workshops typically range from 2–5 days. Deserving
               students may also be offered internships.
             </p>
           </div>
-          <div className=" md:p-7 rounded-xl md:mt-13  max-w-lg">
-            <h3 className="text-xl font-semibold mb-2 text-blue-700">Workshop Format:</h3>
+          <div className=" rounded-xl   max-w-lg">
+            <h3 className="text-xl font-semibold mb-2 text-[#005692]">Workshop Format:</h3>
             <div className="space-y-2 ">
               {items.map((item, idx) => (
                 <div key={idx} className="flex items-start space-x-3">
-                  <div className="pt-1">{item.icon}</div>
+                  <div className="pt-1 0">{item.icon}</div>
                   <div>
                     <h4 className="font-semibold text-gray-900 ">
                       {item.title}
@@ -141,9 +143,9 @@ const AcademicWorkshopsPage = () => {
       </section>
 
       {/* Workflow Section */}
-      <section className="bg-white px-4 mb-5 shadow-md">
+      <section className="bg-white px-4 mb-5 mt-5 shadow-md">
         <div className="flex flex-col items-center mx-auto">
-          <h2 className="text-3xl text-center font-bold text-blue-700 mt-5">
+          <h2 className="text-3xl text-center font-bold text-[#005692] mt-5">
             Workshop Work Flow
           </h2>
           <p className="max-w-xl mt-2 text-center text-base text-gray-600">
@@ -200,7 +202,7 @@ const AcademicWorkshopsPage = () => {
 
       {/* Pricing Section */}
       <section className=" p-6 md:px-20 bg-white">
-        <h2 className="text-3xl font-bold text-center text-blue-700 mb-12">
+        <h2 className="text-3xl font-bold text-center text-[#005692] mb-12">
           Workshop Pricing
         </h2>
         <div className="grid md:grid-cols-2 lg:px-50 gap-y-5">
@@ -234,7 +236,7 @@ const AcademicWorkshopsPage = () => {
               ₹ 15,000.00 <span className="text-base font-normal">per day</span>
             </p>
             <ul className="space-y-2">
-              <li className="flex items-center justify-center">
+              <li className="flex items-center justify-center hyphens-auto">
                 <Check className="text-green-600 mr-2" /> In-person instruction
               </li>
               <li className="flex items-center justify-center">
@@ -269,8 +271,8 @@ const AcademicWorkshopsPage = () => {
           </p>
         </div>
         <Link
-        to="/contact"
-        className="bg-blue-600 text-white px-6 h-10 rounded-lg  hover:bg-blue-700 transition cursor-pointer items-center flex">
+          to="/contact"
+          className="bg-blue-600 text-white px-6 h-10 rounded-lg  hover:bg-blue-700 transition cursor-pointer items-center flex">
           Contact Us
         </Link>
       </section>

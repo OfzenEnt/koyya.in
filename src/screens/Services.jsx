@@ -64,7 +64,7 @@ export default function Services() {
 
       {/* Header */}
       <div className="bg-blue-50 py-16 text-center">
-        <h1 className="text-4xl font-bold text-blue-700 mb-3">
+        <h1 className="text-4xl font-bold text-[#005692] mb-3">
           Technology for Businesses
         </h1>
         <p className=" text-gray-600">
@@ -78,7 +78,7 @@ export default function Services() {
         <div className="flex flex-col md:flex-row items-center justify-between max-w-7xl mx-24">
           <div className="flex  flex-col  ">
             <div className="flex flex-row items-center ">
-              <h2 className="text-3xl font-bold mb-2 text-blue-700">Corporate Training</h2>
+              <h2 className="text-3xl font-bold mb-2 text-[#005692]">Corporate Training</h2>
             </div>
             <p className="max-w-xl">
               We offer tecnology upskilling services to corporate clients in the
@@ -88,7 +88,7 @@ export default function Services() {
             </p>
           </div>
           <ul className="space-y-2 mt-4 md:mt-0">
-            <h2 className="text-xl font-semibold mb-4text-blue-700 ">Key Features</h2>
+            <h2 className="text-xl font-semibold mb-4text-[#005692] ">Key Features</h2>
             <li className="flex items-center ">
               <MdCheckCircleOutline color="blue " size={"20"} /> 24x7 lifetime
               access to learning resources
@@ -151,7 +151,7 @@ export default function Services() {
 
       {/* Form Section */}
       <div className="bg-white p-6 mt-5">
-        <h2 className="text-3xl font-bold text-center text-blue-700 mb-3">
+        <h2 className="text-3xl font-bold text-center text-[#005692] mb-3">
           Technology Training Programs
         </h2>
         <p className="text-center mb-5">
@@ -190,7 +190,7 @@ export default function Services() {
 
         {/* Training Delivery Charges */}
         <div className="p-6">
-          <h3 className="text-blue-700 font-bold mb-4 ml-49 text-2xl">
+          <h3 className="text-[#005692] font-bold mb-4 ml-49 text-2xl">
             Training Delivery Charges :
           </h3>
           <table className=" md:w-4xl  border-sky-300 mx-auto ">

@@ -91,23 +91,23 @@ const AboutUs = () => {
             <img
               src="imgs/empolyees.jpg"
               className="rounded-lg col-span-1 h-full object-cover"
-              // data-aos="fade-right"
+            // data-aos="fade-right"
             />
             <div className="col-span-2 grid grid-rows-2 gap-4">
               <img
                 src="imgs/workplace.jpg"
                 className="rounded-lg w-full h-full row-span-1 object-cover"
-                // data-aos="fade"
+              // data-aos="fade"
               />
               <div className="grid grid-cols-2 row-span-2 gap-4">
                 <img
                   src="imgs/2149241221.jpg"
                   className="rounded-lg object-cover h-full"
-                  // data-aos="fade-up"
+                // data-aos="fade-up"
                 />
                 <div
                   className="bg-blue-400 text-white text-center flex items-center justify-center lg:text-xl md:text-base text-sm font-semibold p-5 rounded-lg"
-                  // data-aos="fade-up"
+                // data-aos="fade-up"
                 >
                   25+
                   <br />
@@ -151,7 +151,7 @@ const AboutUs = () => {
               e-commerce onboarding, market research, and more.
             </p>
             <div>
-              <h3 className="text-blue-700 font-semibold lg:mb-2 lg:text-xl">
+              <h3 className="text-[#005692] font-semibold lg:mb-2 lg:text-xl">
                 Mission
               </h3>
               <p className="flex items-center text-justify text-sm lg:text-base hyphens-auto">

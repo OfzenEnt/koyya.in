@@ -39,7 +39,7 @@ function App() {
             duration={2}
             separator=","
             suffix=" "
-            className="text-2xl font-semibold text-center text-blue-700"
+            className="text-2xl font-semibold text-center text-[#005692]"
           />
         )}
       </div>
@@ -61,7 +61,7 @@ function App() {
               <br />
               <span className="text-blue-900">Naturally Innovative.</span>
             </h1>
-            <p className="mt-6 text-gray-500 text-base sm:text-lg">
+            <p className="mt-6 text-gray-900 text-base sm:text-lg">
               Bridging the gap between cutting-edge technology and sustainable
               agriculture to create impactful solutions for the future.
             </p>
@@ -120,7 +120,7 @@ function App() {
                 <h3 className="text-lg font-semibold text-gray-900 z-10">
                   New Single-Origin Coffee Launch
                 </h3>
-                <p className="text-sm text-gray-500 mt-1">June 15, 2023</p>
+                <p className="text-sm text-gray-900 mt-1">June 15, 2023</p>
                 <p className="text-gray-600 mt-3 text-justify">
                   Discover our new line of premium single-origin coffee beans
                   sourced directly from sustainable farms.
@@ -142,7 +142,7 @@ function App() {
                 <h3 className="text-lg font-semibold text-gray-900">
                   Tech Summit 2023
                 </h3>
-                <p className="text-sm text-gray-500 mt-1">July 22-24, 2023</p>
+                <p className="text-sm text-gray-900 mt-1">July 22-24, 2023</p>
                 <p className="text-gray-600 mt-3 text-justify">
                   Join us for our annual technology summit featuring workshops
                   on IoT, AI, Cloud technologies and digital transformation.
@@ -164,7 +164,7 @@ function App() {
                 <h3 className="text-lg font-semibold text-gray-900 ">
                   Strategic Partnership Announcement
                 </h3>
-                <p className="text-sm text-gray-500 mt-1">May 5, 2023</p>
+                <p className="text-sm text-gray-900 mt-1">May 5, 2023</p>
                 <p className="text-gray-600 mt-3 text-justify">
                   We're proud to announce our new partnership with FarmTech
                   Alliance to develop agricultural IoT solutions.
@@ -200,7 +200,7 @@ function App() {
               <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-center lg:mb-6 items-center py-3">
                 <div>
                   <div>
-                    <div className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center">
+                    <div className="text-[#005692] font-semibold text-xl md:text-2xl flex items-center justify-center">
                       <NumberCounter endValue={25} /> +
                     </div>
                   </div>
@@ -210,7 +210,7 @@ function App() {
                 </div>
                 <div>
                   <div>
-                    <div className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center">
+                    <div className="text-[#005692] font-semibold text-xl md:text-2xl flex items-center justify-center">
                       <NumberCounter endValue={50} /> +
                     </div>
                   </div>
@@ -220,7 +220,7 @@ function App() {
                 </div>
                 <div>
                   <div>
-                    <div className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center">
+                    <div className="text-[#005692] font-semibold text-xl md:text-2xl flex items-center justify-center">
                       <NumberCounter endValue={100} /> +
                     </div>
                   </div>

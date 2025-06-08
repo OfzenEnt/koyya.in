@@ -15,7 +15,7 @@ export default function Sleek() {
       <ScrollToTop />
       {/* Header */}
       {/* <section className=" bg-blue-50 lg:py-16 py-10 text-center">
-        <h1 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">
+        <h1 className="lg:text-4xl text-3xl font-bold text-[#005692] mb-3">
           Krissaco Sleek
         </h1>
         <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
@@ -29,11 +29,11 @@ export default function Sleek() {
           <div className=" bg-white  flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Section */}
             <div className="max-w-xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
                 Krissaco <br /> <span className="text-green-600">Sleek</span>
               </h1>
 
-              <p className="mt-4 text-gray-500 text-lg">
+              <p className="mt-4 text-gray-900 text-lg">
                 A SaaS solution for the food processing industry to optimise the
                 operations driven by data. Available as an online application,
                 Krissaco Sleek helps you in identifying the process
@@ -56,8 +56,8 @@ export default function Sleek() {
               </div>
 
               <Link
-              to="/contact"
-              className="mt-8 bg-green-600 hover:bg-green-700 text-white text-lg font-medium py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
+                to="/contact"
+                className="mt-8 bg-green-600 hover:bg-green-700 text-white text-lg font-medium py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
                 Try Now!!
               </Link>
             </div>

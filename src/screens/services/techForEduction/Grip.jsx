@@ -8,48 +8,49 @@ import { Link } from "react-router-dom";
 export default function Grip() {
     return (
         <div className="bg-blue-50" >
-            
+
             <Navbar />
             <ScrollToTop />
             {/* Hero Section */}
             {/* <section className="bg-blue-50 text-center lg:py-16 py-10">
-                <h2 className="lg:text-4xl text-3xl font-bold text-blue-700 mb-3">Glarimy Remote Internship Program </h2>
+                <h2 className="lg:text-4xl text-3xl font-bold text-[#005692] mb-3">Glarimy Remote Internship Program </h2>
                 <p className="mt-2 max-w-xl mx-auto p-3">Gain real-world experience through our comprehensive remote internship program designed for recent graduates.</p>
             </section> */}
 
             {/* Program Title */}
-            <section className=" bg-white shadow-md  md:py-5 py-10 mb-5">
-            <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6 items-center">
-            <div className="flex flex-col mb-2">
-                               <h2 className="text-3xl md:text-4xl font-semibold text-blue-700">Glarimy Remote <br />Internship Program <span className="font-bold">(GRIP)</span></h2>
-                    <p className="mt-4 text-gray-600 max-w-xl">Gain real-world experience through our comprehensive remote internship program designed for recent graduates.</p>
-                
-                          </div>
-                            <img
-                    src="/imgs/grip.png"
-                    alt="Training process"
-                    className="max-w-xs h-auto mx-auto "
-                />
-                        </div>
+            <section className="py-10 bg-white shadow-md" >
+                <div className="flex flex-col md:flex-row justify-between max-w-7xl md:mx-auto px-6">
+                    <div className="flex flex-col">
+                        <h2 className="text-4xl md:text-5xl  font-bold mb-2 text-[#005692]">
+                            Glarimy Remote <br />Internship Program <span className="font-bold">(GRIP)</span></h2>
+                        <p className="mt-4 text-gray-600 max-w-xl">Gain real-world experience through our comprehensive remote internship program designed for recent graduates.</p>
+
+                    </div>
+                    <img
+                        src="/imgs/grip.png"
+                        alt="Training process"
+                        className="max-w-sm h-auto mx-auto "
+                    />
+                </div>
             </section>
 
             {/* Program Overview */}
             <section className="bg-white py-8 p-5 md:px-0 mt-5 flex flex-col items-center">
-                <h3 className="text-2xl font-bold text-center text-blue-700 mb-6">Program Overview</h3>
+                <h3 className="text-2xl font-bold text-center text-[#005692] mb-6">Program Overview</h3>
                 <div className="bg-gray-50 p-10 rounded shadow-lg max-w-5xl mx-auto">
                     <p className="mb-4 text-gray-700 text-justify hyphens-auto">The Glarimy Remote Internship Program (GRIP) is offered exclusively to graduates who completed their college education in the last two years. This program is designed for graduate students seeking opportunities to work on real-world projects to gain command on technologies and industry practices.</p>
                     <ul className="space-y-2 text-gray-800 mt-5">
                         <li className="lg:items-center flex  gap-3"><GraduationCap color="blue" size={'28'} className="shrink-0" /> <strong>Eligibility:</strong> Graduates who completed their  college education in the last two years</li>
-                        <li className=" flex gap-3"><Calendar1Icon color="blue" size={'26'} className="shrink-0"/> <strong>Duration:</strong> Maximum of 3 months, full-time</li>
-                        <li className="items-center flex gap-3"> <Laptop color="blue" size={'26'} className="shrink-0"/> <strong>Mode:</strong> 100% Remote/Online</li>
-                        <li className="items-center flex gap-3"> <IndianRupeeIcon color="blue" size={'26'} className="shrink-0"/><strong>Charges:</strong> Rs. 10,000~ + Taxes</li>
+                        <li className=" flex gap-3"><Calendar1Icon color="blue" size={'26'} className="shrink-0" /> <strong>Duration:</strong> Maximum of 3 months, full-time</li>
+                        <li className="items-center flex gap-3"> <Laptop color="blue" size={'26'} className="shrink-0" /> <strong>Mode:</strong> 100% Remote/Online</li>
+                        <li className="items-center flex gap-3"> <IndianRupeeIcon color="blue" size={'26'} className="shrink-0" /><strong>Charges:</strong> Rs. 10,000~ + Taxes</li>
                     </ul>
                 </div>
             </section>
 
             {/* Program Process */}
             <section className="p-10  space-y-5 bg-white mb-7 shadow-md ">
-                <h3 className="text-3xl font-bold text-center text-blue-700 mb-20">Program Process</h3>
+                <h3 className="text-3xl font-bold text-center text-[#005692] mb-20">Program Process</h3>
                 <div className="grid grid-cols-1 lg:grid-cols-2 max-w-5xl mx-auto place-items-center items-center gap-6 lg:text-justify hyphens-auto ">
                     {[
                         { title: "Screening Process", desc: "Prospective interns are screened for eligibility to work on a project through assignments and interviews to assess technical skills and aptitude.", icons: "/imgs/Frame 76.png" },
@@ -72,7 +73,7 @@ export default function Grip() {
 
             {/* Benefits */}
             <section className="bg-white py-12 px-6 md:px-20">
-                <h3 className="text-2xl font-bold text-center text-blue-700 mb-10">Benefits</h3>
+                <h3 className="text-2xl font-bold text-center text-[#005692] mb-10">Benefits</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl  mx-auto">
                     {[
 
@@ -92,7 +93,7 @@ export default function Grip() {
 
             {/* Important Notes */}
             <section className="bg-gray-50 py-10">
-                <h3 className="text-3xl font-bold text-center text-blue-700 mb-6">Important Notes</h3>
+                <h3 className="text-3xl font-bold text-center text-[#005692] mb-6">Important Notes</h3>
                 <div className="bg-white p-10 shadow-md hover:shadow-lg rounded-md max-w-5xl mx-auto space-y-6 text-gray-700 ">
                     <p className="flex  gap-x-3"><CircleArrowRight color="blue" size={24} className="shrink-0 mt-2" /> These are not regular academic internships. They are designed for graduates who have completed their education.</p>
                     <p className="flex  gap-x-3"><CircleArrowRight color="blue" size={24} className="shrink-0 mt-2 lg:mt-0" />  If you are still pursuing your graduation... visit our careers page for openings.</p>
@@ -104,7 +105,7 @@ export default function Grip() {
             {/* CTA */}
             <section className="bg-gradient-to-r from-blue-500 to-cyan-400 text-white py-12 text-center flex flex-col items-center justify-center">
                 <p className="text-lg max-w-2xl p-3">Join our Remote Internship Program and gain the experience you need to excel in your technology career.</p>
-                <Link to="/contact" className="mt-4 bg-white text-blue-700 px-6 py-2 rounded-full font-semibold cursor-pointer hover:bg-blue-700 hover:text-white duration-300">Apply Now</Link>
+                <Link to="/contact" className="mt-4 bg-white text-[#005692] px-6 py-2 rounded-full font-semibold cursor-pointer hover:bg-blue-700 hover:text-white duration-300">Apply Now</Link>
             </section>
 
             <Footer />
