@@ -217,7 +217,7 @@ export default function SoftwareDevelopment() {
           <div className="relative py-16">
             <div className="relative max-w-5xl mx-auto">
               {/* Vertical line */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-blue-500 z-0"></div>
+              <div className="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-[#005592f8] z-0"></div>
 
               {/* Steps */}
               {steps.map((step, index) => {

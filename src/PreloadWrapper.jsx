@@ -14,7 +14,9 @@ const assetsToLoad = [
   "/imgs/digitalMarketing.png",
   "/imgs/agribusiness.png",
   "/imgs/Frame 184.png",
-  "/imgs/marketResearch.png"
+  "/imgs/marketResearch.png",
+  " /imgs/consulting.png",
+  "/imgs/grip.png"
 ];
 
 export default function PreloadWrapper({ children }) {
