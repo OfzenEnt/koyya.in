@@ -18,7 +18,7 @@ export default function MarketResearch() {
 
       {/* Header */}
       {/* <section className=" bg-blue-50 lg:py-16 py-10 text-center">
-        <h1 className="lg:text-4xl text-3xl font-bold text-[#005692] mb-3">Market Research</h1>
+        <h1 className="lg:text-4xl text-3xl font-bold text-[#005592f8] mb-3">Market Research</h1>
         <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
           Specialized technology solutions designed to address the unique
           challenges of specific industries.
@@ -30,7 +30,7 @@ export default function MarketResearch() {
           <div className=" bg-white  flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Section */}
             <div className="max-w-xl">
-              <h1 className="text-4xl md:text-5xl max-w-xs font-bold text-[#005692] leading-tight">
+              <h1 className="text-4xl md:text-5xl max-w-xs font-bold text-[#005592f8] leading-tight">
                 Market  Research
               </h1>
 
@@ -43,7 +43,7 @@ export default function MarketResearch() {
 
               {/* Benefits */}
               <div className="mt-8">
-                <h2 className="text-xl font-semibold text-[#005692] mb-4">
+                <h2 className="text-xl font-semibold text-[#005592f8] mb-4">
                   Research Services:
                 </h2>
                 <ul className="space-y-4 text-lg text-gray-800 mb-5">

@@ -132,7 +132,7 @@ const Navbar = () => {
       <Link
         to={to}
         className={`text-base font-medium flex items-center ${isButton
-          ? "text-blue-500 hover:text-white hover:bg-[#005692] border border-blue-500 rounded-md px-3 py-1"
+          ? "text-blue-500 hover:text-white hover:bg-[#005592f8] border border-blue-500 rounded-md px-3 py-1"
           : "text-gray-600 hover:text-black"
           }`}
       >
@@ -260,7 +260,7 @@ const Navbar = () => {
                     <Link
                       to={link.to}
                       className={`block font-medium text-gray-700 ${link.isButton
-                        ? "text-blue-500 border border-blue-500 px-3 py-1 rounded hover:bg-[#005692] hover:text-white"
+                        ? "text-blue-500 border border-[#005592f8] px-3 py-1 rounded hover:bg-[#005592f8] hover:text-white"
                         : "hover:text-black"
                         }`}
                       onClick={() => setMenuOpen(false)}

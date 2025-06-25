@@ -39,7 +39,7 @@ function App() {
             duration={2}
             separator=","
             suffix=" "
-            className="text-2xl font-semibold text-center text-[#005692]"
+            className="text-2xl font-semibold text-center text-[#005592f8]"
           />
         )}
       </div>
@@ -200,7 +200,7 @@ function App() {
               <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-center lg:mb-6 items-center py-3">
                 <div>
                   <div>
-                    <div className="text-[#005692] font-semibold text-xl md:text-2xl flex items-center justify-center">
+                    <div className="text-[#005592f8] font-semibold text-xl md:text-2xl flex items-center justify-center">
                       <NumberCounter endValue={25} /> +
                     </div>
                   </div>
@@ -210,7 +210,7 @@ function App() {
                 </div>
                 <div>
                   <div>
-                    <div className="text-[#005692] font-semibold text-xl md:text-2xl flex items-center justify-center">
+                    <div className="text-[#005592f8] font-semibold text-xl md:text-2xl flex items-center justify-center">
                       <NumberCounter endValue={50} /> +
                     </div>
                   </div>
@@ -220,7 +220,7 @@ function App() {
                 </div>
                 <div>
                   <div>
-                    <div className="text-[#005692] font-semibold text-xl md:text-2xl flex items-center justify-center">
+                    <div className="text-[#005592f8] font-semibold text-xl md:text-2xl flex items-center justify-center">
                       <NumberCounter endValue={100} /> +
                     </div>
                   </div>

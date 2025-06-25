@@ -16,7 +16,7 @@ export default function Drip() {
       <ScrollToTop />
       {/* Header */}
       {/* <section className=" bg-blue-50 lg:py-16 py-10 text-center">
-        <h1 className="lg:text-4xl text-3xl font-bold text-[#005692] mb-3">
+        <h1 className="lg:text-4xl text-3xl font-bold text-[#005592f8] mb-3">
           Krissaco Drip
         </h1>
         <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">

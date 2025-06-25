@@ -12,7 +12,7 @@ export default function UrbanBrews() {
 
       {/* Header */}
       {/* <section className=" bg-blue-50 lg:py-16 py-8 text-center">
-        <h1 className="lg:text-4xl text-3xl font-bold text-[#005692] mb-3 p-2">Krissaco Urban Brews Coffee</h1>
+        <h1 className="lg:text-4xl text-3xl font-bold text-[#005592f8] mb-3 p-2">Krissaco Urban Brews Coffee</h1>
         <p className="mt-2 text-sm md:text-base max-w-3xl mx-auto">
           Specialized technology solutions designed to address the unique
           challenges of specific industries.
@@ -42,7 +42,7 @@ export default function UrbanBrews() {
 
               <a
                 href="#"
-                className="mt-4 block text-[#005692] font-bold underline hover:text-blue-900"
+                className="mt-4 block text-[#005592f8] font-bold underline hover:text-blue-900"
               >
                 Buy it from Amazon.
               </a>
@@ -81,7 +81,7 @@ export default function UrbanBrews() {
               <img
                 src="/imgs/agribusiness.png" // Save your uploaded image as "urbanbrew.png" in the public folder
                 alt="Urban Brew Coffee Product"
-                className="rounded-xl shadow-xl md:h-[500px]"
+                className="rounded-xl shadow-xl "
               />
             </div>
           </div>

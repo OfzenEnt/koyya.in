@@ -26,7 +26,7 @@ export default function Consulting() {
       <ScrollToTop />
       {/* Header */}
       {/* <section className=" bg-blue-50 lg:py-16 py-10 text-center">
-        <h1 className="lg:text-4xl text-3xl font-bold text-[#005692] mb-3">
+        <h1 className="lg:text-4xl text-3xl font-bold text-[#005592f8] mb-3">
           Consulting 
         </h1>
         <p className="text-gray-600 max-w-xl mx-auto p-3">
@@ -40,7 +40,7 @@ export default function Consulting() {
         <div className="flex flex-col md:flex-row md:items-center justify-between max-w-7xl md:mx-auto px-6">
           <div className="flex flex-col">
             <div className="flex flex-row items-center">
-              <h2 className="text-4xl md:text-5xl font-bold mb-2 text-[#005692]">Consulting </h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-2 text-[#005592f8]">Consulting </h2>
             </div>
             <p className="max-w-xl hyphens-auto">
               We offer technology consulting services to corporate clients in
@@ -49,7 +49,7 @@ export default function Consulting() {
             </p>
           </div>
           <div className="space-y-2 mt-6 md:mt-17">
-            <h2 className="text-xl font-semibold mb-4 text-[#005692]">Key Features</h2>
+            <h2 className="text-xl font-semibold mb-4 text-[#005592f8]">Key Features</h2>
             <ul className="lg:space-y-3 space-y-2">
               {KEY_FEATURES.map((feature, index) => (
                 <li key={index} className="flex items-center">
@@ -64,7 +64,7 @@ export default function Consulting() {
           </div>
         </div>
         <div className="relative space-y-2 max-w-7xl md:mx-auto px-6 mt-10 z-20 md:p-6">
-          <h2 className="text-xl font-semibold mb-4 text-[#005692]">Consulting Areas:</h2>
+          <h2 className="text-xl font-semibold mb-4 text-[#005592f8]">Consulting Areas:</h2>
           <ul className="lg:space-y-1 space-y-3">
             {AREAS.map((feature, index) => (
               <li key={index} className="flex items-center z-20 space-y-2">
@@ -82,12 +82,12 @@ export default function Consulting() {
       </section>
       <section className="relative py-6 mt-5 bg-white rounded-lg">
         <section className="max-w-[90%] md:max-w-1/2 mx-auto p-6 bg-gray-50 rounded-md shadow-md hover:shadow-lg border">
-          <h2 className="text-xl md:text-2xl font-semibold text-[#005692] mb-2">
+          <h2 className="text-xl md:text-2xl font-semibold text-[#005592f8] mb-2">
             Consulting Services Pricing
           </h2>
           <p className="text-gray-600 mb-4">
             Starting at{" "}
-            <span className="text-blue-400 font-bold text-lg">₹ 50,000–00</span>{" "}
+            <span className="text-[#005592f8] font-bold text-lg">₹ 50,000–00</span>{" "}
             per day
           </p>
 
@@ -99,7 +99,7 @@ export default function Consulting() {
               "Implementation roadmap",
             ].map((item, idx) => (
               <li key={idx} className="flex items-center gap-2">
-                <span className="text-green-500 text-2xl">✓</span>
+                <span className="text-blue-500 text-2xl">✓</span>
                 {item}
               </li>
             ))}
@@ -111,7 +111,7 @@ export default function Consulting() {
           <div className="mt-6 flex lg:justify-end justify-center">
             <Link
               to="/contact"
-              className="bg-blue-700 hover:bg-blue-800 text-white text-sm font-semibold px-4 py-2 rounded cursor-pointer">
+              className="bg-[#005592ea] hover:bg-[#005694] text-white text-sm font-semibold px-4 py-2 rounded-sm cursor-pointer">
               Book a consultation
             </Link>
           </div>

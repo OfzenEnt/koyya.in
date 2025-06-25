@@ -151,7 +151,7 @@ const AboutUs = () => {
               e-commerce onboarding, market research, and more.
             </p>
             <div>
-              <h3 className="text-[#005692] font-semibold lg:mb-2 lg:text-xl">
+              <h3 className="text-[#005592f8] font-semibold lg:mb-2 lg:text-xl">
                 Mission
               </h3>
               <p className="flex items-center text-justify text-sm lg:text-base hyphens-auto">
