@@ -59,14 +59,14 @@ export default function Career() {
                                 className="w-full h-full object-cover border-4 border-white rounded-full shadow-md"
                             />
                         </div>
-                        <div className="lg:w-60 lg:h-48 w-52 h-40 relative top-20 lg:-left-35 -left-10">
+                        <div className="lg:w-60 lg:h-48 w-52 h-40 relative top-20 lg:-left-35 -left-10 z-10">
                             <img
                                 src="/imgs/boy_with_laptop.svg"
                                 alt="Boy working"
                                 className="w-full h-full object-cover border-4 border-white rounded-xl shadow-xl"
                             />
                         </div>
-                        <div className='absolute lg:w-32 lg:h-32 w-24 h-24 rounded-3xl -bottom-10 lg:-left-40 -left-15  bg-sky-100 -z-10'>
+                        <div className='absolute lg:w-32 lg:h-32 w-24 h-24 rounded-3xl -bottom-10 lg:-left-40 -left-15  bg-[#CBEDFF]'>
                         </div>
 
                         {/* Top-right Code Icon */}
@@ -74,7 +74,7 @@ export default function Career() {
                             &lt;/&gt;
                         </div>
 
-                        <div className='absolute w-24 h-24 bg-sky-100 rounded-full top-3 lg:right-0 -right-15 '> </div>
+                        <div className='absolute w-24 h-24 bg-[#D3F9F3] rounded-full top-3 lg:right-0 -right-15 '> </div>
                         <div className='absolute lg:block hidden w-10 h-10 bg-pink-300 top-53 right-20 rounded-full rounded-tl-none'></div>
 
                         <div className='absolute lg:block hidden top-25 -left-5 '>
@@ -95,7 +95,7 @@ export default function Career() {
                                 className='w-38 h-38' />
                         </div>
                         <div className="absolute w-0 h-0  lg:-bottom-5 lg:right-0 -bottom-5 -right-10
-                            border-l-[44px] border-r-[44px] border-b-[79.28px] lg:border-l-[55px] lg:border-r-[55px] lg:border-b-[89.28px] border-l-transparent border-r-transparent border-b-sky-100 -rotate-30">
+                            border-l-[44px] border-r-[44px] border-b-[79.28px] lg:border-l-[55px] lg:border-r-[55px] lg:border-b-[89.28px] border-l-transparent border-r-transparent border-b-[#7DD1FF] -rotate-30">
                         </div>
                     </div>
                 </div>
@@ -196,7 +196,7 @@ export default function Career() {
                     </div>
                 </div>
                 <div className='flex flex-col items-center justify-center p-10 gap-4 bg-white'>
-                    <h1 className='text-3xl font-semibold font-sans'>Life of Koyya</h1>
+                    <h1 className='text-3xl font-semibold font-sans'>Life at Koyya</h1>
                     <p className='text-gray-600'>Experience a workplace that values creativity, diversity, and continuous learning.</p>
                     <div className='relative flex flex-row bg-white  md:shadow-lg rounded-xl md:p-20 lg:p-5 overflow-hidden'>
                         <div className="absolute w-20 h-20 bg-[#A96DF6CC] text-[#6e8fc5] rounded-b-md rounded-br-3xl rounded-e-lg rounded-ee-xs rounded-es-full rounded-tr-3xl top-0 blur -left-3 -z-10 md:z-0"></div>
