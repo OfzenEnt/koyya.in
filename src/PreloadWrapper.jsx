@@ -16,7 +16,12 @@ const assetsToLoad = [
   "/imgs/Frame 184.png",
   "/imgs/marketResearch.png",
   " /imgs/consulting.png",
-  "/imgs/grip.png"
+  "/imgs/grip.png",
+  "/imgs/boy_with_laptop.svg",
+  "/imgs/building.svg",
+  "/imgs/girl_with_laptop.svg",
+  "/imgs/graduationcap.gif",
+  "/imgs/groppeople.svg",
 ];
 
 export default function PreloadWrapper({ children }) {
