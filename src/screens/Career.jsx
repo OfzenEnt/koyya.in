@@ -198,7 +198,7 @@ export default function Career() {
                 <div className='flex flex-col items-center justify-center p-10 gap-4 bg-white'>
                     <h1 className='text-3xl font-semibold font-sans'>Life of Koyya</h1>
                     <p className='text-gray-600'>Experience a workplace that values creativity, diversity, and continuous learning.</p>
-                    <div className='relative flex flex-row bg-white  shadow-lg rounded-xl md:p-20 lg:p-5 overflow-hidden'>
+                    <div className='relative flex flex-row bg-white  md:shadow-lg rounded-xl md:p-20 lg:p-5 overflow-hidden'>
                         <div className="absolute w-20 h-20 bg-[#A96DF6CC] text-[#6e8fc5] rounded-b-md rounded-br-3xl rounded-e-lg rounded-ee-xs rounded-es-full rounded-tr-3xl top-0 blur -left-3 -z-10 md:z-0"></div>
                         <div className="absolute w-24 h-24 bg-[url('/imgs/Star.svg')] bg-contain bottom-3 left-1 -z-10 md:z-0"></div>
                         <div className='flex flex-col gap-10 items-center justify-center p-5'>
