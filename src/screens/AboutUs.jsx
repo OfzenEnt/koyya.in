@@ -128,18 +128,20 @@ const AboutUs = () => {
               distinct verticals — Glarimy Business Unit and Krissaco Business
               Unit — each with a clear focus and purpose. <br />
               <br />
-              <p>
-                <strong> Glarimy</strong> is dedicated to developing innovative
-                technology-driven products and services. Leveraging modern
-                advancements such as Cloud Computing and Artificial
-                Intelligence, the unit delivers SaaS solutions and
-                cross-platform mobile applications tailored to various business
-                domains. In addition, Glarimy provides technology consulting,
-                corporate training, and upskilling programs designed to empower
-                teams and organizations in their digital transformation
-                journeys.
-              </p>
-              <br />
+            </p>
+            <p className="mb-4 lg:text-base text-sm text-justify hyphens-auto">
+              <strong> Glarimy</strong> is dedicated to developing innovative
+              technology-driven products and services. Leveraging modern
+              advancements such as Cloud Computing and Artificial
+              Intelligence, the unit delivers SaaS solutions and
+              cross-platform mobile applications tailored to various business
+              domains. In addition, Glarimy provides technology consulting,
+              corporate training, and upskilling programs designed to empower
+              teams and organizations in their digital transformation
+              journeys.
+            </p>
+            <br />
+            <p >
               <strong>Krissaco</strong> is focused on creating impactful
               solutions for the agriculture and allied sectors. The unit
               develops productivity tools and data-driven platforms using IoT,
@@ -217,8 +219,8 @@ const AboutUs = () => {
                 >
                   {" "}
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M276.878 0.0151888C355.694 -1.19728 409.204 70.4405 469.026 121.771C537.141 180.217 636.519 224.379 642.711 313.918C649.025 405.232 567.988 476.134 497.576 534.616C434.708 586.831 358.544 614.68 276.878 617.764C191.364 620.994 95.3019 616.259 38.8578 551.938C-15.9359 489.498 0.195596 396.382 10.2415 313.918C18.7438 244.126 45.0357 181.179 90.5527 127.593C141.212 67.9538 198.637 1.21882 276.878 0.0151888Z"
                     fill="#8ec5ff"
                   />
@@ -267,8 +269,8 @@ const AboutUs = () => {
                 >
                   {" "}
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M276.878 0.0151888C355.694 -1.19728 409.204 70.4405 469.026 121.771C537.141 180.217 636.519 224.379 642.711 313.918C649.025 405.232 567.988 476.134 497.576 534.616C434.708 586.831 358.544 614.68 276.878 617.764C191.364 620.994 95.3019 616.259 38.8578 551.938C-15.9359 489.498 0.195596 396.382 10.2415 313.918C18.7438 244.126 45.0357 181.179 90.5527 127.593C141.212 67.9538 198.637 1.21882 276.878 0.0151888Z"
                     fill="#b9f8cf"
                   />
@@ -310,7 +312,7 @@ const AboutUs = () => {
           </h2>
           <div className="space-y-3">
             {managementTeam.map((member, idx) => (
-              <div className="bg-white rounded-xl shadow-md hover:shadow-lg items-center lg:items-center flex flex-col lg:flex-row p-6 lg:p-0">
+              <div key={idx} className="bg-white rounded-xl shadow-md hover:shadow-lg items-center lg:items-center flex flex-col lg:flex-row p-6 lg:p-0">
                 <img
                   src="/imgs/krishna_img.png"
                   alt={member.name}

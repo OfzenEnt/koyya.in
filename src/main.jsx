@@ -18,6 +18,7 @@ import AcademicWorkshopsPage from "./screens/services/techForEduction/AcademicWo
 import Grip from "./screens/services/techForEduction/Grip";
 import GlarimyWiz from "./screens/services/techForEduction/GlarimyWiz";
 import ContactUs from "./screens/ContactUs";
+import Career from "./screens/Career";
 
 const router = createBrowserRouter([
   {
@@ -86,8 +87,13 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
+    path: "/career",
+    element: <Career />,
+    errorElement: <ErrorPage />,
+  },
+  {
     path: "/contact",
-    element: <ContactUs/>,
+    element: <ContactUs />,
     errorElement: <ErrorPage />,
 
     // errorElement: <ErrorPage />,
