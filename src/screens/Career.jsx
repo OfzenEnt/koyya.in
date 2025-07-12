@@ -13,14 +13,14 @@ export default function Career() {
             <Navbar />
             <div className=' space-y-5 bg-gray-50'>
                 <div className='flex flex-col  md:flex-row items-center justify-around p-10 gap-5 bg-white'>
-                    <div className='md:max-w-xl  space-y-3 order-2 md:order-1'>
+                    <div className='md:max-w-xl  space-y-3 order-2 md:order-1 z-10'>
                         <h1 className='text-4xl font-medium '>Kickstart Your Career Journey  at <span className='text-koyya1'>Koyya</span></h1>
                         <p className='lg:max-w-md'>
                             Join our dynamic team of innovators and problem-solvers. We're looking for passionate students and early career professionals to
                             help shape the future of technology.
                         </p>
                         {/* Search Bar */}
-                        <div className="flex flex-col max-w-md justify-center  items-center gap-3 mt-10  border border-gray-300 rounded-md shadow-sm py-3 px-5">
+                        {/* <div className="flex flex-col max-w-md justify-center  items-center gap-3 mt-10  border border-gray-300 rounded-md shadow-sm py-3 px-5">
                             <div className='flex flex-col md:flex-row w-full h-full gap-3'>
                                 <div className='relative '>
                                     <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-koyya1 h-4 w-4 opacity-85 " />
@@ -46,13 +46,13 @@ export default function Career() {
                             <button className="w-full  px-2 text-sm py-1 bg-koyya2 text-white  rounded-sm hover:bg-koyya1 transition">
                                 Search
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="relative flex items-center justify-center py-16 mb-15 bg-white order-1 md:order-2">
-                        <div className="absolute lg:-left-35 -left-10 top-21 w-32 h-48 bg-[url('/imgs/zigzag.svg')] bg-contain bg-no-repeat"></div>
+                        <div className="absolute lg:-left-35 -left-10 top-21 w-32 h-48 bg-[url('/imgs/zigzag.svg')] bg-contain bg-no-repeat opacity-80"></div>
 
                         {/* Left Image - Square */}
-                        <div className="lg:w-48 lg:h-48 w-40 h-40 absolute lg:top-2  lg:left-10 top-4 left-20 z-10">
+                        <div className="lg:w-48 lg:h-48 w-40 h-40 absolute lg:top-2  lg:left-10 top-4 left-20 z-20">
                             <img
                                 src="/imgs/girl_with_laptop.svg"
                                 alt="Girl working"
@@ -99,7 +99,33 @@ export default function Career() {
                         </div>
                     </div>
                 </div>
-                <div className='p-10'>
+                <div className='max-w-7xl flex flex-col mx-auto items-center justify-center p-10 gap-4'>
+                    <h1 className='text-4xl font-semibold'>Available Roles</h1>
+                    <p className='text-gray-600'>Explore our current openings and find the perfect opportunity to kickstart your career.</p>
+                    <div className='grid grid-cols-1 md:grid-cols-3 mt-10 gap-5'>
+                        {[
+                            { color: "bg-[#DBEAFE] text-[#2563EB]", icon: <FaCode />, title: "Frontend Developer Intern", desc: "Build responsive user interfaces using modern JavaScript frameworks and libraries.", other: ["Remote", "Full time"] },
+                            { color: "bg-[#FEF9C3] text-[#CA8A04]", icon: <FaBullhorn />, title: "Marketing Intern", desc: "Create and execute digital marketing campaigns to grow our user base  engagement.", other: ["Remote", "Full time"] },
+                            { color: "bg-[#DBEAFE] text-[#2563EB]", icon: <FaCode />, title: "Product Manager Intern", desc: "Work with teams to plan features, manage roadmaps, and improve user experience.", other: ["Remote", "Full time"] },
+                            { color: "bg-[#F3E8FF] text-[#9638EA]", icon: <FaUserTie />, title: "HR Intern", desc: "Support hiring, onboarding,team engagement activities. Great for those interested in building people-first workplaces.", other: ["Remote", "Full time"] },
+                            { color: "bg-[#DBEAFE] text-[#2563EB]", icon: <FaCode />, title: "Market Research Intern", desc: "Collect and analyze data on users, competitors, and trends to guide business strategy. Ideal for analytical minds.", other: ["Remote", "Full time"] },
+                            { color: "bg-[#DBEAFE] text-[#2563EB]", icon: <FaCode />, title: "Market Research Intern", desc: "Collect and analyze data on users, competitors, and trends to guide business strategy. Ideal for analytical minds.", other: ["Remote", "Full time"] },
+
+                        ].map((items, index) => (
+                            <div className='bg-gray-50 shadow-lg rounded-md p-5 h-full space-y-2 hover:bg-white hover:shadow-2xl transition-transform duration-300' key={index}>
+                                <div className='flex'><span className={`p-4 rounded-md ${items.color}`}>{items.icon}</span></div>
+                                <h1 className='font-medium'>{items.title}</h1>
+                                <p className='text-gray-600 text-xs'>{items.desc}</p>
+                                <div className='flex  gap-2 py-3 rounded text-xs text-gray-700 mt-5'>
+                                    <p className='bg-gray-200 px-2'>{items.other[0]}</p>
+                                    <p className='bg-gray-200 px-2'>{items.other[1]}</p>
+                                </div>
+                                <button className='w-full bg-koyya2 hover:bg-koyya1 p-1 rounded text-white cursor-pointer'>Apply Now</button>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className='p-10 bg-white'>
                     <section className='flex flex-col items-center justify-center max-w-5xl mx-auto  border border-gray-300 p-5 lg:py-20 rounded-lg shadow-xl gap-10  '>
                         <h1 className='text-3xl text-koyya1 text-center font-semibold '>How We Collaborate</h1>
                         <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
@@ -124,7 +150,7 @@ export default function Career() {
                         </div>
                     </section>
                 </div>
-                <div className='flex flex-col items-center justify-center mx-auto p-10 bg-white'>
+                <div className='flex flex-col items-center justify-center mx-auto p-10'>
                     <h1 className='text-3xl font-semibold p-2'>How We Work</h1>
                     <p className='text-gray-500 mb-5'>Choose the internship structure that fits your schedule and learning goals</p>
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
@@ -133,7 +159,7 @@ export default function Career() {
                             { color: "bg-[#C5F0E9]", title: "Part-Time Internship", duration: "4 Months or 6 Months", Stipend: "Performance-Based", Workload: "Flexible (10-12 hours/weeks)", Eligibility: "Skill-based" },
 
                         ].map((items, index) => (
-                            <div className='relative p-5 shadow-xl rounded-xl  h-full overflow-hidden hover:bg-gray-100 hover:shadow-2xl' key={index}>
+                            <div className='relative p-5 shadow-xl rounded-xl  h-full overflow-hidden hover:shadow-2xl bg-gray-50 hover:bg-white transition-all' key={index}>
                                 <div className={`absolute bg-gray-200 rounded-full w-32 h-32 -top-10 -right-11`}></div>
                                 <p>
                                     <span className={`${items.color} p-1 rounded-sm text-gray-700 text-sm`}>{items.title}</span>
@@ -157,6 +183,7 @@ export default function Career() {
                                         <p className='flex flex-col'>Eligibility: <span className='text-gray-500 text-xs'>{items.Eligibility}</span></p>
                                     </li>
                                     <hr />
+                                    <p>Technologies:</p>
                                     <div className='flex gap-2'>
                                         <p className='bg-gray-300 text-xs text-gray-600 rounded  px-2'>IOT</p>
                                         <p className='bg-gray-300 text-xs text-gray-600 rounded  px-2'>Flutter</p>
@@ -169,33 +196,8 @@ export default function Career() {
                     </div>
 
                 </div>
-                <div className='max-w-7xl flex flex-col mx-auto items-center justify-center p-10 gap-4'>
-                    <h1 className='text-4xl font-semibold'>Available Roles</h1>
-                    <p className='text-gray-600'>Explore our current openings and find the perfect opportunity to kickstart your career.</p>
-                    <div className='grid grid-cols-1 md:grid-cols-3 mt-10 gap-5'>
-                        {[
-                            { color: "bg-[#DBEAFE] text-[#2563EB]", icon: <FaCode />, title: "Frontend Developer Intern", desc: "Build responsive user interfaces using modern JavaScript frameworks and libraries.", other: ["Remote", "Full time"] },
-                            { color: "bg-[#FEF9C3] text-[#CA8A04]", icon: <FaBullhorn />, title: "Marketing Intern", desc: "Create and execute digital marketing campaigns to grow our user base  engagement.", other: ["Remote", "Full time"] },
-                            { color: "bg-[#DBEAFE] text-[#2563EB]", icon: <FaCode />, title: "Product Manager Intern", desc: "Work with teams to plan features, manage roadmaps, and improve user experience. Perfect for aspiring product leaders.", other: ["Remote", "Full time"] },
-                            { color: "bg-[#F3E8FF] text-[#9638EA]", icon: <FaUserTie />, title: "HR Intern", desc: "Support hiring, onboarding,team engagement activities. Great for those interested in building people-first workplaces.", other: ["Remote", "Full time"] },
-                            { color: "bg-[#DBEAFE] text-[#2563EB]", icon: <FaCode />, title: "Market Research Intern", desc: "Collect and analyze data on users, competitors, and trends to guide business strategy. Ideal for analytical minds.", other: ["Remote", "Full time"] },
-                            { color: "bg-[#DBEAFE] text-[#2563EB]", icon: <FaCode />, title: "Market Research Intern", desc: "Collect and analyze data on users, competitors, and trends to guide business strategy. Ideal for analytical minds.", other: ["Remote", "Full time"] },
 
-                        ].map((items, index) => (
-                            <div className='bg-white shadow-lg rounded-md p-5 h-full space-y-2' key={index}>
-                                <div className='flex'><span className={`p-4 rounded-md ${items.color}`}>{items.icon}</span></div>
-                                <h1 className='font-medium'>{items.title}</h1>
-                                <p className='text-gray-600 text-xs'>{items.desc}</p>
-                                <div className='flex  gap-2 py-3 rounded text-xs text-gray-700 mt-5'>
-                                    <p className='bg-gray-200 px-2'>{items.other[0]}</p>
-                                    <p className='bg-gray-200 px-2'>{items.other[1]}</p>
-                                </div>
-                                <button className='w-full bg-koyya2 hover:bg-koyya1 p-1 rounded text-white '>Apply Now</button>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                <div className='flex flex-col items-center justify-center p-10 gap-4 bg-white'>
+                {/* <div className='flex flex-col items-center justify-center p-10 gap-4 bg-white'>
                     <h1 className='text-3xl font-semibold font-sans'>Life at Koyya</h1>
                     <p className='text-gray-600'>Experience a workplace that values creativity, diversity, and continuous learning.</p>
                     <div className='relative flex flex-row bg-white  md:shadow-lg rounded-xl md:p-20 lg:p-5 overflow-hidden'>
@@ -228,45 +230,8 @@ export default function Career() {
                                 className='w-md hidden lg:block' />
                         </div>
                     </div>
-                </div>
-                {/* <div className='flex flex-col md:flex-row p-10 max-w-7xl mx-auto gap-5'>
-                    <div >
-                        <h1 className='text-5xl font-light'>Let's Get In Touch!!</h1>
-                        <p className='text-gray-500 text-xl'>We’d love to hear from you! Fill out the form and our team will get back to you shortly.</p>
-                        <div>
-                            <h1 className='font-semibold text-2xl'>Follow us at:</h1>
-                            <ul className='flex gap-5'>
-                                <li className=' p-3 w-12 h-12 flex justify-center items-center rounded-full shadow-2xl bg-pink-50'><FaInstagram color='pink' /></li>
-                                <li className='p-3 w-12 h-12 flex justify-center items-center rounded-full shadow-2xl bg-grya-50'><FaXTwitter color='black' /></li>
-                                <li className='p-3 w-12 h-12 flex justify-center items-center rounded-full shadow-2xl bg-blue-50'><FaLinkedinIn color='blue' /></li>
-                            </ul>
-                            <p className='flex items-center gap-2'><FaEnvelope color='blue ' />Email:contactus@Koyya.in</p>
-                            <p className='flex items-center gap-2'><MapPin color='blue' />Address:<span>contactus@Koyya.in</span></p>
-                        </div>
-                    </div>
-                    <div className='p-10 shadow-xl rounded-xl'>
-                        <form className='space-y-3'>
-                            <div className='flex gap-4'>
-                                <input type="text"
-                                    className='w-full px-3 py-3 border border-gray-300 rounded-md focus:outline-0 focus:ring-2 focus:ring-blue-700 '
-                                    placeholder='Full Name' />
-                                <input type="text"
-                                    className='w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-0 focus:ring-2 focus:ring-blue-700 '
-                                    placeholder='Last Name' />
-                            </div>
-                            <input type="text"
-                                className='w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-0 focus:ring-2 focus:ring-blue-700 '
-                                placeholder='Phone Number' />
-                            <input type="text"
-                                className='w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-0 focus:ring-2 focus:ring-blue-700 '
-                                placeholder='Email Address' />
-                            <textarea name="" id=""
-                                className='w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-0 focus:ring-2 focus:ring-blue-700 '
-                                placeholder='write your message here...'></textarea>
-                            <button className='text-white w-full flex items-center justify-center bg-blue-400 p-3 rounded-md gap-2'><FaEnvelope />Send Message</button>
-                        </form>
-                    </div>
                 </div> */}
+
             </div>
             <Footer />
         </>

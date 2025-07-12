@@ -1,7 +1,10 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/lib/ScrollToTop";
+import { MapPin } from "lucide-react";
 import React, { useState } from "react";
+import { FaEnvelope, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 function ContactUs() {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -21,76 +24,50 @@ function ContactUs() {
     <div >
       <Navbar />
       <ScrollToTop />
-      <form action="" className="contact-us max-w-4xl  mx-auto md:p-10 p-5 bg-white shadow-md rounded-lg mb-10 mt-10">
-        <h1 className="text-3xl font-bold mb-10 text-center text-[#005592f8] ">Contact Us</h1>
-
-        <div className="flex flex-col md:flex-row md:space-x-4">
-          <div className="w-full mb-4">
-            <label className="block mb-2" htmlFor="firstName">First Name</label>
-            <input
-              id="firstName"
-              name="firstName"
-              value={formData.firstName}
-              type="text"
-              placeholder="First name"
-              className="w-full border border-gray-300 rounded-md lg:p-4 p-3 focus:outline-none focus:ring-1 focus:ring-blue-400"
-              onChange={handleChange}
-            /> </div>
-          <div className="w-full">
-            <label className="block mb-2" htmlFor="lastName">Last Name</label>
-            <input
-              id="lastName"
-              name="lastName"
-              value={formData.lastName}
-              type="text"
-              placeholder="Last name"
-              className="w-full border border-gray-300 rounded-md lg:p-4 p-3 focus:outline-none focus:ring-1 focus:ring-blue-400"
-              onChange={handleChange}
-            />
-          </div>
-
-        </div>
-        <div className="flex flex-col md:flex-row md:space-x-6 mb-5">
-          <div className="w-full">
-            <label className="block mb-2" htmlFor="lastName">Phone No</label>
-            <input
-              id="phoneno"
-              name="phoneno"
-              value={formData.phoneno}
-              type="text"
-              placeholder="Phone No"
-              className="w-full border border-gray-300 rounded-md lg:p-4 p-3 focus:outline-none focus:ring-1 focus:ring-blue-400"
-              onChange={handleChange}
-            />
-          </div>
-          <div className="w-full">
-            <label className="block mb-2" htmlFor="phoneno">Email</label>
-            <input
-              id="mail"
-              name="mail"
-              value={formData.mail}
-              type="text"
-              placeholder="Email"
-              className="w-full border border-gray-300 rounded-md lg:p-4 p-3 focus:outline-none focus:ring-1 focus:ring-blue-400"
-              onChange={handleChange}
-            />
+      <div className='flex p-10 max-w-7xl mx-auto justify-center items-center gap-5'>
+        <div className="space-y-5">
+          <h1 className='text-5xl font-light'>Let's Get In Touch!!</h1>
+          <p className='text-gray-500 text-xl'>We’d love to hear from you! Fill out the form and our team will get back to you shortly.</p>
+          <div className="space-y-5 ">
+            <h1 className='font-semibold text-2xl'>Follow us at:</h1>
+            <ul className='flex gap-5 '>
+              <li className=' p-3 w-12 h-12 flex justify-center items-center rounded-full shadow-2xl bg-gray-200 text-black hover:text-pink-500 hover:bg-pink-100 hover:text-xl transition-all duration-200'><FaInstagram /></li>
+              <li className='p-3 w-12 h-12 flex justify-center items-center rounded-full shadow-2xl bg-gray-200 text-black hover:text-white hover:bg-gray-900 hover:text-xl transition-all duration-200'><FaXTwitter /></li>
+              <li className='p-3 w-12 h-12 flex justify-center items-center rounded-full shadow-2xl bg-gray-200 text-black hover:text-blue-500 hover:bg-blue-100 hover:text-xl transition-all duration-200'><FaLinkedinIn /></li>
+            </ul>
+            <div className="space-y-2">
+              <p className='flex items-center gap-5 pl-1'><FaEnvelope className=" text-blue-700 text-lg shrink-0" /><span className="font-bold ">Email:</span>krishnamohan@koyya.in</p>
+              <p className='flex  gap-2 max-w-lg'><MapPin className="text-blue-700 text-lg shrink-0" /><span className="font-bold">Address:</span>Koyya Enterprises Private Limited <br /> 13th floor, WeWork Salarpuria Magnificia, Thin Factory, 78, old Madras Road , Doorvani Nagar, Bengaluru-560016 India</p>
+            </div>
           </div>
         </div>
-        <div>
-          <label htmlFor="Message" className="block mb-2">Message:</label>
-          <textarea type="text"
-            className="w-full border border-gray-300 rounded-md lg:p-4 p-3 focus:outline-none focus:ring-1 focus:ring-blue-400"
-            name="" id="" />
+        <div className="p-10 hidden md:block">
+          <img src="/imgs/group_members.png" alt="grouppeople img"
+            className="opacity-87" />
         </div>
-        <div className="flex justify-center mt-4">
-          <button
-            type="submit"
-            className="bg-[#005592ea] text-white px-6 py-2 rounded-md hover:bg-[#005592] focus:outline-none focus:ring-2 focus:ring-[#005592ea] w-full"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
+        {/* <div className='p-10 shadow-xl rounded-xl'>
+          <form className='space-y-3'>
+            <div className='flex gap-4'>
+              <input type="text"
+                className='w-full px-3 py-3 border border-gray-300 rounded-md focus:outline-0 focus:ring-2 focus:ring-blue-700 '
+                placeholder='Full Name' />
+              <input type="text"
+                className='w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-0 focus:ring-2 focus:ring-blue-700 '
+                placeholder='Last Name' />
+            </div>
+            <input type="text"
+              className='w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-0 focus:ring-2 focus:ring-blue-700 '
+              placeholder='Phone Number' />
+            <input type="text"
+              className='w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-0 focus:ring-2 focus:ring-blue-700 '
+              placeholder='Email Address' />
+            <textarea name="" id=""
+              className='w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-0 focus:ring-2 focus:ring-blue-700 '
+              placeholder='write your message here...'></textarea>
+            <button className='text-white w-full flex items-center justify-center bg-blue-400 p-3 rounded-md gap-2'><FaEnvelope />Send Message</button>
+          </form>
+        </div> */}
+      </div>
       <Footer />
     </div>)
 }
