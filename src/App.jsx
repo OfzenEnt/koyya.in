@@ -10,6 +10,8 @@ import "aos/dist/aos.css";
 import ScrollToTop from "./lib/ScrollToTop";
 import { useInView } from "react-intersection-observer";
 import { Marquee } from "./components/magicui/marquee";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa6";
 
 function App() {
   useEffect(() => {
@@ -50,233 +52,102 @@ function App() {
       <ScrollToTop />
       <Navbar />
       {/* Hero section */}
-      <section className="bg-gradient-to-br from-white to-[#d2f3ec] flex items-center h-[93vh] py-16 px-6 md:px-12">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-          {/* Left Text */}
-          <div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-gray-900">
-              Empowering <span className="text-green-700">Agriculture</span>
-              <br />
-              and <span className="text-blue-500">Technology</span>
-              <br />
-              <span className="text-blue-900">Naturally Innovative.</span>
-            </h1>
-            <p className="mt-6 text-gray-900 text-base sm:text-lg">
-              Bridging the gap between cutting-edge technology and sustainable
-              agriculture to create impactful solutions for the future.
-            </p>
-            <button className="mt-6 px-6 py-3 rounded-full bg-gradient-to-r from-blue-300 to-green-300 shadow-md hover:scale-105 transition font-semibold text-gray-900">
-              Explore More
-            </button>
-          </div>
-
-          {/* Right Images */}
-          <div className="relative w-full h-[300px] md:h-[400px] xl:h-[500px]">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              src="/vids/dev.mp4"
-              alt="developer"
-              className="w-[70%] h-[70%] object-cover  rounded-tl-[80px] rounded-tr-lg rounded-br-lg rounded-bl-md shadow-lg absolute top-0 right-0"
-            />
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              src="/vids/agri.mp4"
-              alt="farm"
-              className="w-[60%] h-[60%] object-cover rounded-tl-[50px] rounded-tr-lg rounded-bl-lg rounded-br-lg shadow-md absolute bottom-0 left-0 "
-            />
-          </div>
-        </div>
+      <section className="relative bg-gradient-to-br from-blue-100 via-pink-50 to-blue-50 p-10 md:px-24  space-y-10 overflow-hidden">
+        {/* Left Text */}
+        <h1 className="bg-gradient-to-r from-blue-900  to-green-300 text-transparent inline-block bg-clip-text text-3xl sm:text-4xl lg:text-5xl font-bold leading-normal">
+          Empowering Agriculture
+          and <br /> Technology
+          Naturally Innovative.
+        </h1>
+        <Testimonials />
       </section>
       {/* Announcements Section */}
       <section className="py-16 bg-white px-6 md:px-12" data-aos="fade-up">
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-green-900">
-              Latest Announcements
+            <h2 className="text-3xl sm:text-4xl font-medium text-blue-600">
+              Our Product & Services
             </h2>
             <p className="text-gray-600 mt-4">
-              Stay updated with our newest developments, products, and company
-              news.
+              Innovative technology solutions designed to meet the diverse needs of businesses, educational institutions, and agricultural sectors.
             </p>
           </div>
 
           {/* Cards Grid */}
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
             {/* Card 1 */}
-            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg ">
-              <img
-                src="/imgs/2149241221.jpg"
-                alt="Coffee Launch"
-                className="w-full h-48 object-cover hover:scale-105 transition "
-              />
-              <div className="p-6">
+            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg border px-6">
+              <div className="flex items-center justify-center w-24 h-24  bg-blue-100 rounded-full mt-10">
+                <img
+                  src="/imgs/building.svg"
+                  alt="Coffee Launch"
+                  className="w-14 h-14"
+                />
+              </div>
+              <div className="p-3">
                 <h3 className="text-lg font-semibold text-gray-900 z-10">
-                  New Single-Origin Coffee Launch
+                  Business Solutions
                 </h3>
-                <p className="text-sm text-gray-900 mt-1">June 15, 2023</p>
-                <p className="text-gray-600 mt-3 text-justify">
-                  Discover our new line of premium single-origin coffee beans
-                  sourced directly from sustainable farms.
+                <p className="text-gray-600 mt-3 max-w-xs text-justify hyphens-auto">
+                  Coporate training, software development, and IT consulting services tailored for business growth.
                 </p>
-                <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-700 hover:text-white transition cursor-pointer">
-                  Read More
-                </button>
+                <Link
+                  to="/Explore#business-solutions"
+                  className="mt-6 flex items-center gap-3 px-5 py-2 text-lg text-indigo-500 hover:text-indigo-900 transition cursor-pointer">
+                  Explore <FaLongArrowAltRight className="text-10" />
+                </Link>
               </div>
             </div>
 
             {/* Card 2 */}
-            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
-              <img
-                src="/imgs/2149313746.jpg"
-                alt="Tech Summit"
-                className="w-full h-48 object-cover hover:scale-105 transition"
-              />
-              <div className="p-6">
+            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl border px-6">
+              <div className="flex items-center justify-center w-24 h-24  bg-[#E5FBFF] rounded-full mt-10">
+                <FaGraduationCap className="w-16 h-16 text-[#00D7FF]" />
+              </div>
+              <div className="p-3">
                 <h3 className="text-lg font-semibold text-gray-900">
-                  Tech Summit 2023
+                  Education Services
                 </h3>
-                <p className="text-sm text-gray-900 mt-1">July 22-24, 2023</p>
-                <p className="text-gray-600 mt-3 text-justify">
-                  Join us for our annual technology summit featuring workshops
-                  on IoT, AI, Cloud technologies and digital transformation.
+                <p className="text-gray-600 mt-3 max-w-xs text-justify hyphens-auto">
+                  Academic workshops, GRIP program, and Glarimy Wiz designed for education advancement.
                 </p>
-                <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-700 hover:text-white transition cursor-pointer">
-                  Read More
-                </button>
+                <Link
+                  to="/Explore#educational-services"
+                  className="mt-6 flex items-center gap-3 px-5 py-2 text-lg text-blue-400 hover:text-blue-600 transition cursor-pointer">
+                  Explore <FaLongArrowAltRight className="text-10" />
+                </Link>
               </div>
             </div>
 
             {/* Card 3 */}
-            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg">
-              <img
-                src="/imgs/behind_koyya.jpg"
-                alt="Partnership"
-                className="w-full h-48 object-cover hover:scale-105 transition"
-              />
-              <div className="p-6">
+            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg border px-6 ">
+              <div className="flex items-center justify-center w-24 h-24  bg-green-100 rounded-full mt-10">
+                <img
+                  src="/imgs/leaf.svg"
+                  alt="Partnership"
+                  className="w-20 h-20"
+                />
+              </div>
+              <div className="p-3">
                 <h3 className="text-lg font-semibold text-gray-900 ">
-                  Strategic Partnership Announcement
+                  Agricultural echnology
                 </h3>
-                <p className="text-sm text-gray-900 mt-1">May 5, 2023</p>
-                <p className="text-gray-600 mt-3 text-justify">
-                  We're proud to announce our new partnership with FarmTech
-                  Alliance to develop agricultural IoT solutions.
+                <p className="text-gray-600 mt-3 max-w-xs text-justify hyphens-auto">
+                  Innovative solutions designed to specifically for the agricultural advancement and efficiency.
                 </p>
-                <button className="mt-6 inline-block px-5 py-2 border border-green-700 text-green-800 rounded-full hover:bg-green-700 hover:text-white transition cursor-pointer">
-                  Read More
-                </button>
+                <Link
+                  to="/Explore#agricultural-technology"
+                  className="mt-6 flex items-center gap-3 px-5 py-2 text-lg text-green-500 hover:text-green-800 transition-all duration-300 cursor-pointer">
+                  Explore <FaLongArrowAltRight className="text-10 " />
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* About Us Section */}
-      <section className="bg-gray-50 w-full px-4 sm:px-8 lg:px-16 py-16">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-12 text-center">
-          About Us
-        </h2>
-
-        <div className="flex flex-col lg:flex-row items-center gap-12">
-          {/* Image Section */}
-          <div className="w-full lg:w-1/2 flex justify-center">
-            <img
-              src="imgs/team_illustration.svg"
-              alt="Team illustration"
-              className="rounded-xl w-full max-w-xs lg:max-w-md 2xl:max-w-lg object-contain"
-            />
-          </div>
-
-          {/* Content Section */}
-          <div className="w-full lg:w-1/2 flex flex-col justify-center">
-            {/* Stats + Button */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-6 text-center mb-6">
-              <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-center lg:mb-6 items-center py-3">
-                <div>
-                  <div>
-                    <div className="text-[#005592f8] font-semibold text-xl md:text-2xl flex items-center justify-center">
-                      <NumberCounter endValue={25} /> +
-                    </div>
-                  </div>
-                  <p className="text-gray-600 text-sm md:text-base ">
-                    Years Experience
-                  </p>
-                </div>
-                <div>
-                  <div>
-                    <div className="text-[#005592f8] font-semibold text-xl md:text-2xl flex items-center justify-center">
-                      <NumberCounter endValue={50} /> +
-                    </div>
-                  </div>
-                  <p className="text-gray-600 text-sm md:text-base">
-                    Employees
-                  </p>
-                </div>
-                <div>
-                  <div>
-                    <div className="text-[#005592f8] font-semibold text-xl md:text-2xl flex items-center justify-center">
-                      <NumberCounter endValue={100} /> +
-                    </div>
-                  </div>
-                  <p className="text-gray-600 text-sm md:text-base"> Smiles</p>
-                </div>
-                {/* Learn More Button (visible for large and up) */}
-
-                <div className="hidden lg:block">
-                  <Link to="/aboutus">
-                    <button className="bg-purple-100 text-purple-800 px-4 py-2 rounded-md shadow-sm hover:bg-purple-200 mt-4 lg:mt-0">
-                      Learn More
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Learn More Button for small devices */}
-            <div className="block lg:hidden text-center mb-4">
-              <Link to="/aboutus">
-                <button className="bg-purple-100 text-purple-800 px-4 py-2 rounded-md shadow hover:bg-purple-200 transition">
-                  Learn More
-                </button>
-              </Link>
-            </div>
-
-            {/* Description */}
-            <p className="italic text-gray-700 text-justify mb-6 px-2 sm:px-4 lg:px-0">
-              Koyya Enterprises Private Limited (KEPL), headquartered in
-              Bengaluru, operates across two key sectors: Technology and
-              Agriculture. The company is structured into two distinct
-              verticals: Glarimy Business Unit and Krissaco Business Unit, each
-              with a clear focus and purpose.
-            </p>
-
-            {/* Founder Info */}
-            <div className="flex items-center gap-4 px-2 sm:px-4 lg:px-0">
-              <img
-                src="imgs/krishna_img.png"
-                alt="Krishna Mohan Koyya"
-                className="rounded-full w-[80px] h-[80px] object-cover shadow-lg border-2 border-white"
-              />
-              <div>
-                <p className="text-lg font-semibold">Krishna Mohan Koyya</p>
-                <p className="text-sm text-gray-600">
-                  CEO, Krishna Mohan Koyya
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* Testimonials Section */}
-      <Testimonials />
       {/* our Clients */}
-      <div className="py-10 px-4 md:px-16 text-center">
+      {/* <div className="py-10 px-4 md:px-16 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-[#1f2c56] mb-10 ">
           Our Clients
         </h2>
@@ -292,7 +163,7 @@ function App() {
             ))}
           </Marquee>
         </div>
-      </div>
+      </div> */}
       <Footer />
     </>
   );

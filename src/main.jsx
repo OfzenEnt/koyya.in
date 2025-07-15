@@ -19,11 +19,17 @@ import Grip from "./screens/services/techForEduction/Grip";
 import GlarimyWiz from "./screens/services/techForEduction/GlarimyWiz";
 import ContactUs from "./screens/ContactUs";
 import Career from "./screens/Career";
+import Explore from "./screens/Explore";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/Explore",
+    element: <Explore />,
     errorElement: <ErrorPage />,
   },
   {
