@@ -147,7 +147,7 @@ function App() {
         </div>
       </section>
       {/* our Clients */}
-      {/* <div className="py-10 px-4 md:px-16 text-center">
+      <div className="py-10 px-4 md:px-16 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-[#1f2c56] mb-10 ">
           Our Clients
         </h2>
@@ -163,7 +163,7 @@ function App() {
             ))}
           </Marquee>
         </div>
-      </div> */}
+      </div>
       <Footer />
     </>
   );

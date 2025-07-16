@@ -27,7 +27,7 @@ function ContactUs() {
       <div className='flex p-10 max-w-7xl mx-auto justify-center items-center gap-5'>
         <div className="space-y-5">
           <h1 className='text-5xl font-light'>Contact Us</h1>
-          <p className='text-gray-500 text-xl'>We’d love to hear from you! Fill out the form and our team will get back to you shortly.</p>
+          <p className='text-gray-500 text-xl'>Have questions or feedback? Reach out to us—we'll get back to you shortly.</p>
           <div className="space-y-5 ">
             <h1 className='font-semibold text-2xl'>Follow us at:</h1>
             <ul className='flex gap-5 '>

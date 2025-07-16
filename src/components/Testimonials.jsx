@@ -4,25 +4,25 @@ import { Marquee } from "./magicui/marquee";
 const testimonials = [
   {
     name: "Tony Stark",
-    img: "imgs/2149241221.jpg",
+    img: "/imgs/productlog0.svg",
     body: "Koyya's team transformed our digital presence with a beautifully designed website and a robust mobile application",
     date: "10 April",
   },
   {
     name: "Pavan",
-    img: "imgs/2149241221.jpg",
+    img: "/imgs/productlog0.svg",
     body: "Koyya's team transformed our digital presence with a beautifully designed website and a robust mobile application",
     date: "10 April",
   },
   {
     name: "Messi",
-    img: "imgs/2149241221.jpg",
+    img: "/imgs/productlog0.svg",
     body: "Koyya's team transformed our digital presence with a beautifully designed website and a robust mobile application",
     date: "10 April",
   },
   {
     name: "Speed",
-    img: "imgs/2149241221.jpg",
+    img: "/imgs/productlog0.svg",
     body: "Koyya's team transformed our digital presence with a beautifully designed website and a robust mobile application",
     date: "10 April",
   },
@@ -33,7 +33,7 @@ export default function Testimonials() {
     return (
       <figure
         className={cn(
-          "relative h-84 w-60 cursor-pointer overflow-hidden rounded-xl border",
+          "relative h-84 w-60 cursor-pointer overflow-hidden rounded-xl border hover:scale-115 transition-all duration-300",
           // light styles
           "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
           // dark styles
