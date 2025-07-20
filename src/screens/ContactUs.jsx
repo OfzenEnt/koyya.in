@@ -31,13 +31,13 @@ function ContactUs() {
           <div className="space-y-5 ">
             <h1 className='font-semibold text-2xl'>Follow us at:</h1>
             <ul className='flex gap-5 '>
-              <li className=' p-3 w-12 h-12 flex justify-center items-center rounded-full shadow-2xl bg-gray-200 text-black hover:text-pink-500 hover:bg-pink-100 hover:text-xl transition-all duration-200'><FaInstagram /></li>
-              <li className='p-3 w-12 h-12 flex justify-center items-center rounded-full shadow-2xl bg-gray-200 text-black hover:text-white hover:bg-gray-900 hover:text-xl transition-all duration-200'><FaXTwitter /></li>
-              <li className='p-3 w-12 h-12 flex justify-center items-center rounded-full shadow-2xl bg-gray-200 text-black hover:text-blue-500 hover:bg-blue-100 hover:text-xl transition-all duration-200'><FaLinkedinIn /></li>
+              <li className=' p-3 w-12 h-12 flex justify-center items-center rounded-full shadow-2xl bg-gray-200 text-black hover:text-pink-500 hover:bg-pink-100 hover:text-xl transition-all duration-200 cursor-pointer'><FaInstagram /></li>
+              <li className='p-3 w-12 h-12 flex justify-center items-center rounded-full shadow-2xl bg-gray-200 text-black hover:text-white hover:bg-gray-900 hover:text-xl transition-all duration-200 cursor-pointer'><FaXTwitter /></li>
+              <li className='p-3 w-12 h-12 flex justify-center items-center rounded-full shadow-2xl bg-gray-200 text-black hover:text-blue-500 hover:bg-blue-100 hover:text-xl transition-all duration-200 cursor-pointer'><FaLinkedinIn /></li>
             </ul>
             <div className="space-y-2">
-              <p className='flex items-center gap-5 pl-1'><FaEnvelope className=" text-blue-700 text-lg shrink-0" /><span className="font-bold ">Email:</span>krishnamohan@koyya.in</p>
-              <p className='flex  gap-2 max-w-lg'><MapPin className="text-blue-700 text-lg shrink-0" /><span className="font-bold">Address:</span>Koyya Enterprises Private Limited <br /> 13th floor, WeWork Salarpuria Magnificia, Thin Factory, 78, old Madras Road , Doorvani Nagar, Bengaluru-560016 India</p>
+              <p className='flex items-center gap-5 pl-1'><FaEnvelope className=" text-koyya2 text-lg shrink-0" /><span className="font-bold ">Email:</span>krishnamohan@koyya.in</p>
+              <p className='flex  gap-2 max-w-lg'><MapPin className="text-koyya2 text-lg shrink-0" /><span className="font-bold">Address:</span>Koyya Enterprises Private Limited <br /> 13th floor, WeWork Salarpuria Magnificia, Thin Factory, 78, old Madras Road , Doorvani Nagar, Bengaluru-560016 India</p>
             </div>
           </div>
         </div>

@@ -3,15 +3,15 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Link } from "react-router-dom";
-import Testimonials from "./components/Testimonials";
 import CountUp from "react-countup";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "./lib/ScrollToTop";
 import { useInView } from "react-intersection-observer";
 import { Marquee } from "./components/magicui/marquee";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaArrowRightLong } from 'react-icons/fa6';
 import { FaGraduationCap } from "react-icons/fa6";
+import Carousel from "./components/Carousel";
 
 function App() {
   useEffect(() => {
@@ -52,31 +52,101 @@ function App() {
       <ScrollToTop />
       <Navbar />
       {/* Hero section */}
-      <section className="relative bg-gradient-to-br from-blue-100 via-pink-50 to-blue-50 p-10 md:px-24  space-y-10 overflow-hidden">
-        {/* Left Text */}
-        <h1 className="bg-gradient-to-r from-blue-900  to-green-300 text-transparent inline-block bg-clip-text text-3xl sm:text-4xl lg:text-5xl font-bold leading-normal">
-          Empowering Agriculture
-          and <br /> Technology
-          Naturally Innovative.
-        </h1>
-        <Testimonials />
+      <section className="bg-gradient-to-br from-blue-100 via-pink-50 to-blue-50 p-10 overflow-hidden">
+        <Carousel />
       </section>
       {/* Announcements Section */}
       <section className="py-16 bg-white px-6 md:px-12" data-aos="fade-up">
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-medium text-blue-600">
+            <h2 className="text-3xl sm:text-4xl font-semibold text-koyya2">
               Our Product & Services
             </h2>
-            <p className="text-gray-600 mt-4">
+            <p className="text-gray-600 mt-4 mb-10">
               Innovative technology solutions designed to meet the diverse needs of businesses, educational institutions, and agricultural sectors.
             </p>
+            <div className='bg-white space-y-10 text-left -mb-10'>
+              <div className='space-y-3'>
+                <h1 className='text-koyya2 md:3xl text-2xl font-semibold'>Business Solutions </h1>
+                <p className='text-gray-500'>Comprehensive services designed to enhance business operations and growth</p>
+              </div>
+              <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-14 mt-8'>
+                {[
+                  { bg: "bg-blue-50", text: "text-koyya2", icon: "/imgs/corporatelogo.svg", title: "Corporate Training", desc: "Specialized training programs designed to enhance workforce skills.", link: "/services/corporate-training", other: ["Technical Skills", "Team Building"] },
+                  { bg: "bg-sky-50", text: "text-sky-400", icon: "/imgs/tech_skills.svg", title: "Software Development", desc: "Custom software solutions tailored to meet specific business needs.", link: "/services/software-development", other: ["Web Development", "App Development"] },
+                  { bg: "bg-violet-100", text: "text-violet-800", icon: "/imgs/handshake.svg", title: "Consulting Services", desc: "Expert guidance on technology strategy, digital transformation.", link: "/services/consulting", other: ["IT Strategy", "Digital Transformation"] },
+                ].map((service, index) => (
+                  <div className='border p-1 rounded-xl overflow-hidden  shadow-lg hover:shadow-xl transition ' key={index}>
+                    <div className={`${service.bg} w-full h-52 flex justify-center items-center p-8 rounded-t-lg`}>
+                      <img src={service.icon}
+                        alt={service.title}
+                        className='w-28 object-cover' />
+                    </div>
+                    <div className="bg-white p-3 space-y-2 ">
+                      <h2 className='text-2xl font-bold mt-4 text-koyya2'>{service.title}</h2>
+                      <p className='text-gray-600 mt-2 max-w-md'>{service.desc}</p>
+                      <p className={`text-xs ${service.text} py-2 flex gap-3`}><span className={`${service.bg} p-2 rounded-sm shadow-sm`}>{service.other[0]}</span> <span className={`${service.bg} p-2 rounded-sm shadow-sm`}>{service.other[1]}</span></p>
+                      <Link to={service.link} className={`${service.text} hover:underline border flex items-center w-36 rounded-md gap-3 p-2`}> Read More <FaArrowRightLong size={14} /></Link>
+                    </div>
+                  </div>))}
+              </div>
+              <div className='space-y-3'>
+                <h1 className='text-koyya2 md:3xl text-2xl font-semibold'>Educational Services </h1>
+                <p className='text-gray-500'>Innovative educational solutions designed for academic excellence and professional development</p>
+              </div>
+              <div className='grid grid-cols-1 md:grid-cols-3 gap-14 mt-8'>
+                {[
+                  { bg: "bg-[#FFFBEB]", text: "text-orange-400", button: "hover:bg-orange-400 hover:text-white", icon: "/imgs/teacher.svg", title: "Academic Workshops", desc: "Interactive workshops designed to enhance learning experiences and develop practical skills for students and faculty.", link: "/services/academic-workshops" },
+                  { bg: "bg-[#EEF2FF]", text: "text-koyya2", button: "hover:bg-koyya2 hover:text-white", icon: "/imgs/breifcaselogo.svg", title: "GRIP Program", desc: "Graduate Readiness and Industry Preparedness program designed to bridge the gap between academia and industry requirements.", link: "/services/grip" },
+                  { bg: "bg-[#E5FBFF]", text: "text-sky-500", button: "hover:bg-sky-400 hover:text-white", icon: "/imgs/mobilelogo.svg", title: "Glarimy Wiz", desc: "An intelligent learning platform that adapts to individual learning styles and pace, enhancing educational outcomes.", link: "/services/glarimy-wiz" },
+                ].map((service, index) => (
+                  <div className='border p-1 rounded-xl overflow-hidden  shadow-lg hover:shadow-xl transition ' key={index}>
+                    <div className={`${service.bg} w-full h-52 flex justify-center items-center p-8 rounded-t-lg`}>
+                      <img src={service.icon}
+                        alt={service.title}
+                        className='w-28 object-cover' />
+                    </div>
+                    <div className="bg-white p-3 space-y-2 ">
+                      <h2 className='text-2xl font-bold mt-4 text-koyya2'>{service.title}</h2>
+                      <p className='text-gray-600 mt-2 max-w-md'>{service.desc}</p>
+                      <Link to={service.link} className={`${service.text} ${service.button} border flex items-center w-36 rounded-md gap-3 p-2`}> Read More <FaArrowRightLong size={14} /></Link>
+                    </div>
+                  </div>))}
+              </div>
+              <div className='space-y-3'>
+                <h1 className='text-koyya2 md:3xl text-2xl font-semibold'>Agricultural Technology </h1>
+                <p className='text-gray-500'>Innovative solutions designed to revolutionize agricultural practices and enhance productivity</p>
+              </div>
+              <div className='grid grid-cols-1 md:grid-cols-3 gap-14 mt-8'>
+                {[
+                  { bg: "bg-[#F3F2FD]", text: "text-gray-600", icon: "/imgs/savetreelogo.svg", title: "Krissaco Sleek", desc: "A SaaS solution for the food processing industry to optimise the operations driven by data.", link: "/services/krissaco-sleek" },
+                  { bg: "bg-[#F0FDFA]", text: "text-green-400", icon: "/imgs/mobilewithplantlogo.svg", title: "Krissaco Drip", desc: "he farmer friendly iOT system is your own lab. Measure the important soil parameters like a pro. I", link: "/services/krissaco-drip" },
+                  { bg: "bg-[#E0F2FE]", text: "text-blue-500", icon: "/imgs/bulkhornlogo.svg", title: "Digital Marketing", desc: "Comprehensive digital marketing strategies to enhance online presence, drive traffic, and convert leads into customers.", link: "/services/digital-marketing" },
+                  { bg: "bg-[#FFFBEB]", text: "text-orange-400", icon: "/imgs/baglogo.svg", title: "Krissaco Urban Brews Coffee", desc: "the premium coffee powder from the plantations of Coorg, Chikmaguluru is a class of its own.", link: "/services/urban-brews" },
+                  { bg: "bg-[#F1F6FE]", text: "text-blue-700", icon: "/imgs/graphlogo.svg", title: "Market Research", desc: "want to track how your products is working in the market? Want to assess your competition. ", link: "/services/market-research" },
+                ].map((service, index) => (
+                  <div className='border p-1 rounded-xl overflow-hidden  shadow-lg hover:shadow-xl transition ' key={index}>
+                    <div className={`${service.bg} w-full h-52 flex justify-center items-center p-8 rounded-t-lg`}>
+                      <img src={service.icon}
+                        alt={service.title}
+                        className='w-28 object-cover' />
+                    </div>
+                    <div className="bg-white p-3 space-y-2 ">
+                      <h2 className='text-2xl font-bold mt-4 text-koyya2'>{service.title}</h2>
+                      <p className='text-gray-600 mt-2 max-w-md'>{service.desc}</p>
+                      <Link to={service.link} className={`${service.text} hover:underline border flex items-center w-36 rounded-md gap-3 p-2`}> Read More <FaArrowRightLong size={14} /></Link>
+                    </div>
+                  </div>))}
+              </div>
+            </div>
           </div>
 
           {/* Cards Grid */}
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
-            {/* Card 1 */}
+          {/* <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 ">
+            <div></div>
+
+
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg border px-6">
               <div className="flex items-center justify-center w-24 h-24  bg-blue-100 rounded-full mt-10">
                 <img
@@ -100,7 +170,6 @@ function App() {
               </div>
             </div>
 
-            {/* Card 2 */}
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl border px-6">
               <div className="flex items-center justify-center w-24 h-24  bg-[#E5FBFF] rounded-full mt-10">
                 <FaGraduationCap className="w-16 h-16 text-[#00D7FF]" />
@@ -120,7 +189,6 @@ function App() {
               </div>
             </div>
 
-            {/* Card 3 */}
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg border px-6 ">
               <div className="flex items-center justify-center w-24 h-24  bg-green-100 rounded-full mt-10">
                 <img
@@ -143,7 +211,7 @@ function App() {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       {/* our Clients */}

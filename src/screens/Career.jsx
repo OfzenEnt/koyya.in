@@ -12,10 +12,10 @@ export default function Career() {
         <>
             <Navbar />
             <div className=' space-y-5 bg-gray-50'>
-                <div className='flex flex-col  md:flex-row items-center justify-around p-10 gap-5 bg-white'>
-                    <div className='md:max-w-xl  space-y-3 order-2 md:order-1 z-10'>
-                        <h1 className='text-4xl font-medium '>Kickstart Your Career Journey  at <span className='text-koyya1'>Koyya</span></h1>
-                        <p className='lg:max-w-md'>
+                <div className='flex flex-col  md:flex-row items-center justify-around p-10 gap-5 overflow-hidden bg-white relative'>
+                    <div className='max-w-md xl:max-w-xl  space-3 order-2 md:order-1 z-10'>
+                        <h1 className='text-4xl font-medium '>Kickstart Your Career Journey <br className='xl:block hidden' />  at <span className='text-koyya1'>Koyya</span></h1>
+                        <p className='lg:max-w-xl'>
                             Join our dynamic team of innovators and problem-solvers. We're looking for passionate students and early career professionals to
                             help shape the future of technology.
                         </p>
@@ -48,61 +48,63 @@ export default function Career() {
                             </button>
                         </div> */}
                     </div>
-                    <div className="relative flex items-center justify-center py-16 mb-15 bg-white order-1 md:order-2">
-                        <div className="absolute lg:-left-35 -left-10 top-21 w-32 h-48 bg-[url('/imgs/zigzag.svg')] bg-contain bg-no-repeat opacity-80"></div>
+                    <div className=' order-1 md:order-2 p-10 '>
+                        <div className="relative flex items-center justify-center py-16 mb-15 bg-white">
+                            <div className="absolute lg:-left-35 -left-10 top-21 w-32 h-48 bg-[url('/imgs/zigzag.svg')] bg-contain bg-no-repeat opacity-80"></div>
 
-                        {/* Left Image - Square */}
-                        <div className="lg:w-48 lg:h-48 w-40 h-40 absolute lg:top-2  lg:left-10 top-4 left-20 z-20">
-                            <img
-                                src="/imgs/girl_with_laptop.svg"
-                                alt="Girl working"
-                                className="w-full h-full object-cover border-4 border-white rounded-full shadow-md"
-                            />
-                        </div>
-                        <div className="lg:w-60 lg:h-48 w-52 h-40 relative top-20 lg:-left-35 -left-10 z-10">
-                            <img
-                                src="/imgs/boy_with_laptop.svg"
-                                alt="Boy working"
-                                className="w-full h-full object-cover border-4 border-white rounded-xl shadow-xl"
-                            />
-                        </div>
-                        <div className='absolute lg:w-32 lg:h-32 w-24 h-24 rounded-3xl -bottom-10 lg:-left-40 -left-15  bg-[#CBEDFF]'>
-                        </div>
+                            {/* Left Image - Square */}
+                            <div className="lg:w-48 lg:h-48 w-40 h-40 absolute lg:top-2  lg:left-10 top-4 left-20 z-20">
+                                <img
+                                    src="/imgs/girl_with_laptop.svg"
+                                    alt="Girl working"
+                                    className="w-full h-full object-cover border-4 border-white rounded-full shadow-md"
+                                />
+                            </div>
+                            <div className="lg:w-60 lg:h-48 w-52 h-40 relative top-20 lg:-left-35 -left-10 z-10">
+                                <img
+                                    src="/imgs/boy_with_laptop.svg"
+                                    alt="Boy working"
+                                    className="w-full h-full object-cover border-4 border-white rounded-xl shadow-xl"
+                                />
+                            </div>
+                            <div className='absolute lg:w-32 lg:h-32 w-24 h-24 rounded-3xl -bottom-10 lg:-left-40 -left-15  bg-[#CBEDFF]'>
+                            </div>
 
-                        {/* Top-right Code Icon */}
-                        <div className="absolute lg:right-0 -right-10 top-6 bg-white p-1 rounded shadow text-koyya1 text-xs border border-blue-100 z-10">
-                            &lt;/&gt;
-                        </div>
+                            {/* Top-right Code Icon */}
+                            <div className="absolute lg:right-0 -right-10 top-6 bg-white p-1 rounded shadow text-koyya1 text-xs border border-blue-100 z-10">
+                                &lt;/&gt;
+                            </div>
 
-                        <div className='absolute w-24 h-24 bg-[#D3F9F3] rounded-full top-3 lg:right-0 -right-15 '> </div>
-                        <div className='absolute lg:block hidden w-10 h-10 bg-pink-300 top-53 right-20 rounded-full rounded-tl-none'></div>
+                            <div className='absolute w-24 h-24 bg-[#D3F9F3] rounded-full top-3 lg:right-0 -right-15 '> </div>
+                            <div className='absolute lg:block hidden w-10 h-10 bg-pink-300 top-53 right-20 rounded-full rounded-tl-none'></div>
 
-                        <div className='absolute lg:block hidden top-25 -left-5 '>
-                            <img src="/imgs/like_hash.svg" alt='likehash'
-                                className='w-16 h-16' />
-                        </div>
-                        {/* <div className='absolute lg:block hidden bottom-2 left-30 '>
+                            <div className='absolute lg:block hidden top-25 -left-5 '>
+                                <img src="/imgs/like_hash.svg" alt='likehash'
+                                    className='w-16 h-16' />
+                            </div>
+                            {/* <div className='absolute lg:block hidden bottom-2 left-30 '>
                             <img src="/imgs/pencil_scale.svg" alt='likehash'
                                 className='w-16 h-16' />
                         </div> */}
-                        {/* Graduation hat bottom-right */}
-                        <div className="absolute bottom-3 -right-10 lg:bottom-5 lg:right-0 z-10 w-12 h-12 lg:w-16 lg:h-16 bg-[url('/imgs/graduationcap.gif')] bg-contain bg-no-repeat ">
-                        </div>
+                            {/* Graduation hat bottom-right */}
+                            <div className="absolute bottom-3 -right-10 lg:bottom-5 lg:right-0 z-10 w-12 h-12 lg:w-16 lg:h-16 bg-[url('/imgs/graduationcap.gif')] bg-contain bg-no-repeat ">
+                            </div>
 
-                        {/* Small dot grid (mocked using dots) */}
-                        <div className="absolute lg:block hidden z-30 -bottom-20 right-20 text-xl text-gray-400">
-                            <img src="/imgs/dots.svg" alt='likehash'
-                                className='w-38 h-38' />
-                        </div>
-                        <div className="absolute w-0 h-0  lg:-bottom-5 lg:right-0 -bottom-5 -right-10
+                            {/* Small dot grid (mocked using dots) */}
+                            <div className="absolute lg:block hidden z-30 -bottom-20 right-20 text-xl text-gray-400">
+                                <img src="/imgs/dots.svg" alt='likehash'
+                                    className='w-38 h-38' />
+                            </div>
+                            <div className="absolute w-0 h-0  lg:-bottom-5 lg:right-0 -bottom-5 -right-10
                             border-l-[44px] border-r-[44px] border-b-[79.28px] lg:border-l-[55px] lg:border-r-[55px] lg:border-b-[89.28px] border-l-transparent border-r-transparent border-b-[#7DD1FF] -rotate-30">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div className='max-w-7xl flex flex-col mx-auto items-center justify-center p-10 gap-4'>
                     <h1 className='text-4xl font-semibold'>Available Roles</h1>
                     <p className='text-gray-600'>Explore our current openings and find the perfect opportunity to kickstart your career.</p>
-                    <div className='grid grid-cols-1 md:grid-cols-3 mt-10 gap-5'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-5'>
                         {[
                             { color: "bg-[#DBEAFE] text-[#2563EB]", icon: <FaCode />, title: "Frontend Developer Intern", desc: "Build responsive user interfaces using modern JavaScript frameworks and libraries.", other: ["Remote", "Full time"] },
                             { color: "bg-[#FEF9C3] text-[#CA8A04]", icon: <FaBullhorn />, title: "Marketing Intern", desc: "Create and execute digital marketing campaigns to grow our user base  engagement.", other: ["Remote", "Full time"] },
@@ -159,7 +161,7 @@ export default function Career() {
                             { color: "bg-[#C5F0E9]", title: "Part-Time Internship", duration: "4 Months or 6 Months", Stipend: "Performance-Based", Workload: "Flexible (10-12 hours/weeks)", Eligibility: "Skill-based" },
 
                         ].map((items, index) => (
-                            <div className='relative p-5 shadow-xl rounded-xl  h-full overflow-hidden hover:shadow-2xl bg-gray-50 hover:bg-white transition-all' key={index}>
+                            <div className='relative p-5 shadow-xl rounded-xl  h-full overflow-hidden hover:shadow-2xl bg-white transition-all' key={index}>
                                 <div className={`absolute bg-gray-200 rounded-full w-32 h-32 -top-10 -right-11`}></div>
                                 <p>
                                     <span className={`${items.color} p-1 rounded-sm text-gray-700 text-sm`}>{items.title}</span>
