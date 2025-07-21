@@ -31,7 +31,7 @@ export default function DigitalMarketing() {
           <div className=" bg-white  flex flex-col md:flex-row items-center justify-between gap-10">
             {/* Left Section */}
             <div className="max-w-xl">
-              <h1 className="text-4xl md:text-5xl max-w-xs font-medium text-[#005592f8] leading-tight">
+              <h1 className="text-4xl md:text-5xl max-w-xs font-semibold text-[#005592f8] leading-tight">
                 Digital Marketing
               </h1>
 
@@ -52,7 +52,7 @@ export default function DigitalMarketing() {
                 <ul className="space-y-2 text-lg text-gray-800 mb-5">
                   {KEY_FEATURES.map((feature, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <span className="text-blue-500 text-2xl">✓</span>
+                      <span className="text-koyya2 text-2xl">✓</span>
                       {feature}
                     </li>
                   ))}

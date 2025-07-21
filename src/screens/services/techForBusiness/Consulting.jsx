@@ -68,7 +68,7 @@ export default function Consulting() {
           <ul className="lg:space-y-1 space-y-3">
             {AREAS.map((feature, index) => (
               <li key={index} className="flex items-center z-20 space-y-2">
-                <span className="text-blue-500 text-2xl mr-2">✓</span>
+                <span className="text-koyya2 text-2xl mr-2">✓</span>
                 {feature}
               </li>
             ))}

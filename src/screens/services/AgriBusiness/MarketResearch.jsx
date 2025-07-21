@@ -49,7 +49,7 @@ export default function MarketResearch() {
                 <ul className="space-y-4 text-lg text-gray-800 mb-5">
                   {Services.map((service, index) => (
                     <li key={index} className="flex items-start gap-3">
-                      <span className="text-blue-500 text-2xl">✓</span>
+                      <span className="text-koyya2 text-2xl">✓</span>
                       {service}
                     </li>
                   ))}

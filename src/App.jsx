@@ -144,11 +144,11 @@ function App() {
               </div>
               <div className='grid grid-cols-1 md:grid-cols-3 gap-14 mt-8'>
                 {[
-                  { bg: "bg-[#F3F2FD]", text: "text-gray-600", icon: "/imgs/savetreelogo.svg", title: "Krissaco Sleek", desc: "A SaaS solution for the food processing industry to optimise the operations driven by data.", link: "/services/krissaco-sleek" },
-                  { bg: "bg-[#F0FDFA]", text: "text-green-400", icon: "/imgs/mobilewithplantlogo.svg", title: "Krissaco Drip", desc: "he farmer friendly iOT system is your own lab. Measure the important soil parameters like a pro. I", link: "/services/krissaco-drip" },
-                  { bg: "bg-[#E0F2FE]", text: "text-blue-500", icon: "/imgs/bulkhornlogo.svg", title: "Digital Marketing", desc: "Comprehensive digital marketing strategies to enhance online presence, drive traffic, and convert leads into customers.", link: "/services/digital-marketing" },
-                  { bg: "bg-[#FFFBEB]", text: "text-orange-400", icon: "/imgs/baglogo.svg", title: "Krissaco Urban Brews Coffee", desc: "the premium coffee powder from the plantations of Coorg, Chikmaguluru is a class of its own.", link: "/services/urban-brews" },
-                  { bg: "bg-[#F1F6FE]", text: "text-blue-700", icon: "/imgs/graphlogo.svg", title: "Market Research", desc: "want to track how your products is working in the market? Want to assess your competition. ", link: "/services/market-research" },
+                  { bg: "bg-[#F3F2FD]", icon: "/imgs/savetreelogo.svg", title: "Krissaco Sleek", desc: "A SaaS solution for the food processing industry to optimise the operations driven by data.", link: "/services/krissaco-sleek" },
+                  { bg: "bg-[#F0FDFA]", icon: "/imgs/mobilewithplantlogo.svg", title: "Krissaco Drip", desc: "he farmer friendly iOT system is your own lab. Measure the important soil parameters like a pro. I", link: "/services/krissaco-drip" },
+                  { bg: "bg-[#E0F2FE]", icon: "/imgs/bulkhornlogo.svg", title: "Digital Marketing", desc: "Comprehensive digital marketing strategies to enhance online presence, drive traffic, and convert leads into customers.", link: "/services/digital-marketing" },
+                  { bg: "bg-[#FFFBEB]", icon: "/imgs/baglogo.svg", title: "Krissaco Urban Brews Coffee", desc: "the premium coffee powder from the plantations of Coorg, Chikmaguluru is a class of its own.", link: "/services/urban-brews" },
+                  { bg: "bg-[#F1F6FE]", icon: "/imgs/graphlogo.svg", title: "Market Research", desc: "want to track how your products is working in the market? Want to assess your competition. ", link: "/services/market-research" },
                 ].map((service, index) => (
                   <Link to={service.link} className='border p-1 rounded-xl overflow-hidden  shadow-lg hover:shadow-xl transition ' key={index}>
                     <div className={`${service.bg} w-full h-52 flex justify-center items-center p-8 rounded-t-lg`}>

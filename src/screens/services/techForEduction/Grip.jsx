@@ -103,7 +103,7 @@ export default function Grip() {
             </section>
 
             {/* CTA */}
-            <section className="bg-gradient-to-r from-blue-500 to-cyan-400 text-white py-12 text-center flex flex-col items-center justify-center">
+            <section className="bg-gradient-to-r from-koyya2 to-cyan-400 text-white py-12 text-center flex flex-col items-center justify-center">
                 <p className="text-lg max-w-2xl p-3">Join our Remote Internship Program and gain the experience you need to excel in your technology career.</p>
                 <Link to="/contact" className="mt-4 bg-white text-[#005592f8] px-6 py-2 rounded-full font-semibold cursor-pointer hover:bg-[#005592f8] hover:text-white duration-300">Apply Now</Link>
             </section>
