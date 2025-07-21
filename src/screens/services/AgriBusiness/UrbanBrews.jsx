@@ -42,7 +42,7 @@ export default function UrbanBrews() {
 
               <a
                 href="#"
-                className="mt-4 block text-[#005592f8] font-bold underline hover:text-blue-900"
+                className="mt-4 block text-[#005592f8] font-bold underline hover:text-koyya2"
               >
                 Buy it from Amazon.
               </a>

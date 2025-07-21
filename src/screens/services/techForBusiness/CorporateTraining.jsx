@@ -185,7 +185,7 @@ export default function CorporateTraining() {
               {KEY_FEATURES.map((feature, index) => (
                 <li key={index} className="flex items-center">
                   <MdCheckCircleOutline
-                    className="text-blue-500 mr-2"
+                    className="text-koyya2 mr-2"
                     size={20}
                   />
                   {feature}

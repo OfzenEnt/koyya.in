@@ -185,7 +185,7 @@ export default function SoftwareDevelopment() {
 
           <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-5 max-w-[95%]">
             {services.map((service, index) => (
-              <div key={service.title}>
+              <div key={index}>
                 <div className="bg-white p-8 col-span-1 h-full rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                   <h3 className="text-base md:text-xl font-semibold text-[#005592f8]">
                     {service.title}
@@ -295,7 +295,7 @@ export default function SoftwareDevelopment() {
 
         <Link
           to="/contact"
-          className="bg-blue-700 hover:bg-white hover:text-blue-800 text-white font-semibold p-4 rounded-md transition cursor-pointer "
+          className="bg-koyya2 hover:bg-white hover:text-koyya1 text-white font-semibold p-4 rounded-md transition cursor-pointer "
         >
           Request a Custom Quote
         </Link>

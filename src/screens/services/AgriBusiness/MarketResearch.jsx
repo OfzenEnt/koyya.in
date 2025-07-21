@@ -58,7 +58,7 @@ export default function MarketResearch() {
 
               <Link
                 to="/contact"
-                className="mt-8 bg-blue-700 hover:bg-blue-800 text-white text-lg  py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
+                className="mt-8 bg-koyya1 hover:bg-koyya2 text-white text-lg  py-3 px-6 rounded-lg shadow-md transition cursor-pointer">
                 Talk to us!
               </Link>
             </div>

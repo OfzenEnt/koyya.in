@@ -54,7 +54,7 @@ export default function Consulting() {
               {KEY_FEATURES.map((feature, index) => (
                 <li key={index} className="flex items-center">
                   <MdCheckCircleOutline
-                    className="text-blue-500 mr-2"
+                    className="text-koyya2 mr-2"
                     size={20}
                   />
                   {feature}
@@ -74,11 +74,6 @@ export default function Consulting() {
             ))}
           </ul>
         </div>
-        <img
-          src="/imgs/consulting.png"
-          alt=""
-          className="absolute w-1/2 h-auto md:h-1/2 object-contain bottom-0 right-0 opacity-30 lg:opacity-100 z-0"
-        />
       </section>
       <section className="relative py-6 mt-5 bg-white rounded-lg">
         <section className="max-w-[90%] md:max-w-1/2 mx-auto p-6 bg-gray-50 rounded-md shadow-md hover:shadow-lg border">
@@ -99,7 +94,7 @@ export default function Consulting() {
               "Implementation roadmap",
             ].map((item, idx) => (
               <li key={idx} className="flex items-center gap-2">
-                <span className="text-blue-500 text-2xl">✓</span>
+                <span className="text-koyya2 text-2xl">✓</span>
                 {item}
               </li>
             ))}
