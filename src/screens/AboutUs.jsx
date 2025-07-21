@@ -106,7 +106,7 @@ const AboutUs = () => {
                 // data-aos="fade-up"
                 />
                 <div
-                  className="bg-blue-400 text-white text-center flex items-center justify-center lg:text-xl md:text-base text-sm font-semibold p-5 rounded-lg"
+                  className="bg-koyya1 text-white text-center flex items-center justify-center lg:text-xl md:text-base text-sm font-semibold p-5 rounded-lg"
                 // data-aos="fade-up"
                 >
                   25+

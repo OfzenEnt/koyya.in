@@ -193,7 +193,7 @@ export default function Services() {
           <h3 className="text-[#005592f8] font-bold mb-4 ml-49 text-2xl">
             Training Delivery Charges :
           </h3>
-          <table className=" md:w-4xl  border-sky-300 mx-auto ">
+          <table className=" md:w-4xl  border-sky-300 mx-auto">
             <thead className="bg-blue-100">
               <tr>
                 <th className="border p-4">Delivery Mode</th>
@@ -226,7 +226,7 @@ export default function Services() {
           </table>
 
           <div className="text-center mt-6">
-            <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 cursor-pointer">
+            <button className="bg-koyya1 text-white px-4 py-2 rounded hover:bg-koyya2 cursor-pointer">
               Request custom quote
             </button>
           </div>
