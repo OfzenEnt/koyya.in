@@ -106,7 +106,7 @@ const AboutUs = () => {
                 src="imgs/workplace.jpg"
                 alt="Workplace"
                 onLoad={() => setLoaded(true)}
-                className="rounded-lg w-full h-full row-span-1 object-cover"
+                className={`rounded-lg w-full h-full row-span-1 object-cover ${loaded ? "opacity-100" : "opacity-0"}`}
               // data-aos="fade"
               />
               <div className="grid grid-cols-2 row-span-2 gap-4">
@@ -117,7 +117,7 @@ const AboutUs = () => {
                   src="imgs/2149241221.jpg"
                   alt="Teamwork"
                   onLoad={() => setLoaded(true)}
-                  className="rounded-lg object-cover h-full"
+                  className={`rounded-lg object-cover h-full ${loaded ? "opacity-100" : "opacity-0"}`}
                 // data-aos="fade-up"
                 />
                 <div
