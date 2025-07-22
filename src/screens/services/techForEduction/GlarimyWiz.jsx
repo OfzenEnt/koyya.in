@@ -74,7 +74,7 @@ const GlarimyWiz = () => {
                 src="/imgs/Frame 184.png" // Save your uploaded image as "urbanbrew.png" in the public folder
                 alt="Urban Brew Coffee Product"
                 onLoad={() => setLoaded(true)}
-                className="rounded-xl md:p-5 "
+                className={`"rounded-xl md:p-5 " ${loaded ? "opacity-100" : "opacity-0"}`}
               />
             </div>
           </div>

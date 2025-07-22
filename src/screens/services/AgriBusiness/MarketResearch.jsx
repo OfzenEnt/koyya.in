@@ -74,7 +74,7 @@ export default function MarketResearch() {
                 src="/imgs/marketResearch.png" // Save your uploaded image as "urbanbrew.png" in the public folder
                 alt="Urban Brew Coffee Product"
                 onLoad={() => setLoaded(true)}
-                className="rounded-xl shadow-xl md:h-full"
+                className={`rounded-xl shadow-xl md:h-full ${loaded ? "opacity-100" : "opacity-0"}`}
               />
             </div>
           </div>

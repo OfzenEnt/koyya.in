@@ -73,7 +73,7 @@ export default function Sleek() {
                 src="/imgs/sleek.png" // Save your uploaded image as "urbanbrew.png" in the public folder
                 alt="Urban Brew Coffee Product"
                 onLoad={() => setLoaded(true)}
-                className="rounded-xl  md:ml-10"
+                className={`"rounded-xl  md:ml-10" ${loaded ? "opacity-100" : "opacity-0"}`}
               />
             </div>
           </div>

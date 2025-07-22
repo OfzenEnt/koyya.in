@@ -34,7 +34,7 @@ export default function Grip() {
                         src="/imgs/grip.png"
                         alt="Training process"
                         onLoad={() => setLoaded(true)}
-                        className="max-w-sm h-auto mx-auto "
+                        className={`"max-w-sm h-auto mx-auto "${loaded ? "opacity-100" : "opacity-0"}`}
                     />
                 </div>
             </section>

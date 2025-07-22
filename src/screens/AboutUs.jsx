@@ -95,7 +95,7 @@ const AboutUs = () => {
               src="imgs/empolyees.jpg"
               alt="Employees"
               onLoad={() => setLoaded(true)}
-              className="rounded-lg col-span-1 h-full object-cover"
+              className={`"rounded-lg col-span-1 h-full object-cover" ${loaded ? "opacity-100" : "opacity-0"}`}
             // data-aos="fade-right"
             />
             <div className="col-span-2 grid grid-rows-2 gap-4">
