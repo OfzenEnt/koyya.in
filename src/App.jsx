@@ -47,6 +47,7 @@ function App() {
       </div>
     );
   };
+  const [loaded, setLoaded] = useState(false);
   return (
     <>
       <ScrollToTop />
@@ -77,14 +78,19 @@ function App() {
                   { bg: "bg-sky-50", icon: "/imgs/tech_skills.svg", title: "Software Development", desc: "Custom software solutions tailored to meet specific business needs.", link: "/services/software-development", other: ["Web Development", "App Development"] },
                   { bg: "bg-violet-100", icon: "/imgs/handshake.svg", title: "Consulting Services", desc: "Expert guidance on technology strategy, digital transformation.", link: "/services/consulting", other: ["IT Strategy", "Digital Transformation"] },
                 ].map((service, index) => (
-                  <Link to={service.link} className='border p-1 rounded-xl overflow-hidden  shadow-lg hover:shadow-xl transition ' key={index}>
+                  <Link to={service.link} className='border p-1 rounded-xl overflow-hidden  shadow-lg hover:scale-105 transition-all duration-300' key={index}>
                     <div className={`${service.bg} w-full h-52 flex justify-center items-center p-8 rounded-t-lg`}>
+                      {!loaded && (
+                        <div className="absolute inset-0 bg-gradient-to-br from-green-300 to-blue-400 animate-pulse rounded-lg" />
+                      )}
                       <img src={service.icon}
                         alt={service.title}
+                        onLoad={() => setLoaded(true)}
                         className='w-28 object-cover' />
                     </div>
+
                     <div className="bg-white p-3 space-y-2 text-koyya2">
-                      <h2 className='text-2xl font-bold mt-4 '>{service.title}</h2>
+                      <h2 className='text-2xl font-medium mt-4 '>{service.title}</h2>
                       <p className='text-gray-600 mt-2 max-w-md'>{service.desc}</p>
                       <p className={`text-xs py-2 flex gap-3`}><span className={`bg-gray-50 p-2 rounded-sm shadow-sm`}>{service.other[0]}</span> <span className={`bg-gray-50 p-2 rounded-sm shadow-sm`}>{service.other[1]}</span></p>
                       <Link
@@ -108,20 +114,18 @@ function App() {
               </div>
               <div className='grid grid-cols-1 md:grid-cols-3 gap-14 mt-8'>
                 {[
-                  { bg: "bg-[#FFFBEB]", text: "text-orange-400", button: "hover:bg-orange-400 hover:text-white", icon: "/imgs/teacher.svg", title: "Academic Workshops", desc: "Interactive workshops designed to enhance learning experiences and develop practical skills for students and faculty.", link: "/services/academic-workshops" },
-                  {
-                    bg: "bg-[#EEF2FF]", button: "hover:bg-koyya2 hover:text-white", icon: "/imgs/breifcaselogo.svg", title: "GRIP Program", desc: "Graduate Readiness and Industry Preparedness program bridging academia and industry gaps.", link: "/services/grip"
-                  },
-                  { bg: "bg-[#E5FBFF]", text: "text-sky-500", button: "hover:bg-sky-400 hover:text-white", icon: "/imgs/mobilelogo.svg", title: "Glarimy Wiz", desc: "An intelligent learning platform that adapts to individual learning styles and pace, enhancing educational outcomes.", link: "/services/glarimy-wiz" },
+                  { bg: "bg-[#FFFBEB]", icon: "/imgs/teacher.svg", title: "Academic Workshops", desc: "Interactive workshops designed to enhance learning experiences and develop practical skills for students and faculty.", link: "/services/academic-workshops" },
+                  { bg: "bg-[#EEF2FF]", icon: "/imgs/breifcaselogo.svg", title: "GRIP Program", desc: "Graduate Readiness and Industry Preparedness program bridging academia and industry gaps.", link: "/services/grip" },
+                  { bg: "bg-[#E5FBFF]", icon: "/imgs/mobilelogo.svg", title: "Glarimy Wiz", desc: "An intelligent learning platform that adapts to individual learning styles and pace, enhancing educational outcomes.", link: "/services/glarimy-wiz" },
                 ].map((service, index) => (
-                  <Link to={service.link} className='border p-1 rounded-xl overflow-hidden  shadow-lg hover:shadow-xl transition ' key={index}>
+                  <Link to={service.link} className='border p-1 rounded-xl overflow-hidden  shadow-lg hover:scale-105 transition-all duration-300' key={index}>
                     <div className={`${service.bg} w-full h-52 flex justify-center items-center p-8 rounded-t-lg`}>
                       <img src={service.icon}
                         alt={service.title}
                         className='w-28 object-cover' />
                     </div>
                     <div className="bg-white p-3 space-y-2 text-koyya2">
-                      <h2 className='text-2xl font-bold mt-4 '>{service.title}</h2>
+                      <h2 className='text-2xl font-medium mt-4 '>{service.title}</h2>
                       <p className='text-gray-600 mt-2 max-w-md '>{service.desc}</p>
                       <Link
                         to={service.link}
@@ -145,19 +149,19 @@ function App() {
               <div className='grid grid-cols-1 md:grid-cols-3 gap-14 mt-8'>
                 {[
                   { bg: "bg-[#F3F2FD]", icon: "/imgs/savetreelogo.svg", title: "Krissaco Sleek", desc: "A SaaS solution for the food processing industry to optimise the operations driven by data.", link: "/services/krissaco-sleek" },
-                  { bg: "bg-[#F0FDFA]", icon: "/imgs/mobilewithplantlogo.svg", title: "Krissaco Drip", desc: "he farmer friendly iOT system is your own lab. Measure the important soil parameters like a pro. I", link: "/services/krissaco-drip" },
+                  { bg: "bg-[#F0FDFA]", icon: "/imgs/mobilewithplantlogo.svg", title: "Krissaco Drip", desc: "The farmer friendly IOT system is your own lab. Measure the important soil parameters like a pro.", link: "/services/krissaco-drip" },
                   { bg: "bg-[#E0F2FE]", icon: "/imgs/bulkhornlogo.svg", title: "Digital Marketing", desc: "Comprehensive digital marketing strategies to enhance online presence, drive traffic, and convert leads into customers.", link: "/services/digital-marketing" },
-                  { bg: "bg-[#FFFBEB]", icon: "/imgs/baglogo.svg", title: "Krissaco Urban Brews Coffee", desc: "the premium coffee powder from the plantations of Coorg, Chikmaguluru is a class of its own.", link: "/services/urban-brews" },
-                  { bg: "bg-[#F1F6FE]", icon: "/imgs/graphlogo.svg", title: "Market Research", desc: "want to track how your products is working in the market? Want to assess your competition. ", link: "/services/market-research" },
+                  { bg: "bg-[#FFFBEB]", icon: "/imgs/baglogo.svg", title: "Krissaco Urban Brews Coffee", desc: "The premium coffee powder from the plantations of Coorg, Chikmaguluru is a class of its own.", link: "/services/urban-brews" },
+                  { bg: "bg-[#F1F6FE]", icon: "/imgs/graphlogo.svg", title: "Market Research", desc: "Do you want to track how your product is performing in the market? Do you want to assess your competition?", link: "/services/market-research" },
                 ].map((service, index) => (
-                  <Link to={service.link} className='border p-1 rounded-xl overflow-hidden  shadow-lg hover:shadow-xl transition ' key={index}>
+                  <Link to={service.link} className='border p-1 rounded-xl overflow-hidden  shadow-lg hover:scale-105 transition-all duration-300 ' key={index}>
                     <div className={`${service.bg} w-full h-52 flex justify-center items-center p-8 rounded-t-lg`}>
                       <img src={service.icon}
                         alt={service.title}
                         className='w-28 object-cover' />
                     </div>
                     <div className="bg-white p-3 space-y-2 text-koyya2">
-                      <h2 className='text-2xl font-bold mt-4 '>{service.title}</h2>
+                      <h2 className='text-2xl font-medium mt-4 '>{service.title}</h2>
                       <p className='text-gray-600 mt-2 max-w-md'>{service.desc}</p>
                       <Link
                         to={service.link}
@@ -250,7 +254,7 @@ function App() {
         </div>
       </section>
       {/* our Clients */}
-      <div className="py-10 px-4 md:px-16 text-center">
+      <div className="pb-10 px-4 md:px-16 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-[#1f2c56] mb-10 ">
           Our Clients
         </h2>

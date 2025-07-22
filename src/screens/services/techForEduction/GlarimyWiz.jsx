@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/lib/ScrollToTop";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const GlarimyWiz = () => {
@@ -11,6 +11,7 @@ const GlarimyWiz = () => {
     "Progress Tracking & Analytics",
     "Virtual Labs & Simulations",
   ];
+  const [loaded, setLoaded] = useState(false);
   return (
     <div className="bg-blue-50">
 
@@ -66,9 +67,13 @@ const GlarimyWiz = () => {
 
             {/* Right Section - Image */}
             <div className="w-full md:w-1/2">
+              {!loaded && (
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-blue-koyya2 animate-pulse rounded-lg" />
+              )}
               <img
                 src="/imgs/Frame 184.png" // Save your uploaded image as "urbanbrew.png" in the public folder
                 alt="Urban Brew Coffee Product"
+                onLoad={() => setLoaded(true)}
                 className="rounded-xl md:p-5 "
               />
             </div>

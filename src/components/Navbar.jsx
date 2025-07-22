@@ -93,12 +93,12 @@ const Navbar = () => {
             <FiChevronDown className="mt-0.5" />
           </div>
           {activeDropdown === name && (
-            <div className="absolute mt-2 w-48   top-4 bg-white border rounded-sm shadow-md z-50">
+            <div className="absolute mt-2 w-48   top-4 pb-3 bg-white border rounded-sm shadow-md z-50">
               {dropdownItems.map((item, idx) => (
                 <div key={idx}>
                   {item.dropdownItems ? (
                     <div className="group relative">
-                      <div className="flex justify-between items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
+                      <div className="flex justify-between items-center px-4 py-3 text-sm text-gray-700 hover:bg-gray-100">
                         <span>{item.name}</span>
                         <FiChevronDown className="transform -rotate-90" />
                       </div>
@@ -107,7 +107,7 @@ const Navbar = () => {
                           <Link
                             key={subIdx}
                             to={subItem.to}
-                            className="block px-2 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            className="block px-2 py-2 pb-3 text-sm text-gray-700 hover:bg-gray-100"
                           >
                             {subItem.name}
                           </Link>

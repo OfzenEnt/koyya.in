@@ -3,17 +3,15 @@ import { useEffect, useState } from "react";
 import Preloader from "./components/Preloader";
 
 const assetsToLoad = [
-  "/vids/agri.mp4",
-  "/vids/dev.mp4",
   "/imgs/krishna_img.png",
   "/imgs/2149241221.jpg",
   "/imgs/empolyees.jpg",
-  "/imgs/workplace.jpg",
   "/imgs/drip.png",
   "/imgs/sleek.png",
-  "/imgs/digitalMarketing.png",
   "/imgs/agribusiness.png",
   "/imgs/Frame 184.png",
+  "/imgs/Group 17.png",
+  "/imgs/training_process.png",
   "/imgs/marketResearch.png",
   " /imgs/consulting.png",
   "/imgs/grip.png",

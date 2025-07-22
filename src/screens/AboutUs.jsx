@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -65,7 +65,7 @@ const AboutUs = () => {
         "Sriram plays a pivotal role in shaping and launching products and services in the agriculture and allied sectors. He holds a Bachelor's degree in Agricultural Science from the University of Mysore and a Postgraduate Diploma in Food Processing and Business Management from the Indian Institute of Plantation Management, Bengaluru. With a sharp understanding of agribusiness and a passion for innovation, Sriram brings fresh ideas and the drive to take them from concept to market. His energy, insight, and commitment to local relevance make him a key force in Krissaco’s product strategy and execution.",
     },
   ];
-
+  const [loaded, setLoaded] = useState(false);
   return (
     <>
       <ScrollToTop />
@@ -88,20 +88,35 @@ const AboutUs = () => {
         {/* About Koyya */}
         <section className="flex flex-col lg:flex-row gap-16 md:gap-5 2xl:gap-32 p-10 ">
           <div className="flex-1/2 grid grid-cols-3 gap-4 overflow-hidden">
+            {!loaded && (
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-blue-koyya2 animate-pulse rounded-lg" />
+            )}
             <img
               src="imgs/empolyees.jpg"
+              alt="Employees"
+              onLoad={() => setLoaded(true)}
               className="rounded-lg col-span-1 h-full object-cover"
             // data-aos="fade-right"
             />
             <div className="col-span-2 grid grid-rows-2 gap-4">
+              {!loaded && (
+                <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-blue-koyya2 animate-pulse rounded-lg" />
+              )}
               <img
                 src="imgs/workplace.jpg"
+                alt="Workplace"
+                onLoad={() => setLoaded(true)}
                 className="rounded-lg w-full h-full row-span-1 object-cover"
               // data-aos="fade"
               />
               <div className="grid grid-cols-2 row-span-2 gap-4">
+                {!loaded && (
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-blue-koyya2 animate-pulse rounded-lg" />
+                )}
                 <img
                   src="imgs/2149241221.jpg"
+                  alt="Teamwork"
+                  onLoad={() => setLoaded(true)}
                   className="rounded-lg object-cover h-full"
                 // data-aos="fade-up"
                 />
@@ -313,9 +328,13 @@ const AboutUs = () => {
           <div className="space-y-3">
             {managementTeam.map((member, idx) => (
               <div key={idx} className="bg-white rounded-xl shadow-md hover:shadow-lg items-center lg:items-center flex flex-col lg:flex-row p-6 lg:p-0">
+                {!loaded && (
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-blue-koyya2 animate-pulse rounded-lg" />
+                )}
                 <img
                   src="/imgs/krishna_img.png"
                   alt={member.name}
+                  onLoad={() => setLoaded(true)}
                   className="w-32 h-32 lg:w-44 lg:h-44 rounded-full object-cover ml-5 shadow-md border-2 border-white"
                 />
                 <div

@@ -114,7 +114,7 @@ export default function Career() {
                             { color: "bg-[#DBEAFE] text-[#2563EB]", icon: <FaCode />, title: "Market Research Intern", desc: "Collect and analyze data on users, competitors, and trends to guide business strategy. Ideal for analytical minds.", other: ["Remote", "Full time"] },
 
                         ].map((items, index) => (
-                            <div className='bg-gray-50 shadow-lg rounded-md p-5 h-full space-y-2 hover:bg-white hover:shadow-2xl transition-transform duration-300' key={index}>
+                            <div className='bg-white shadow-md rounded-md p-5 h-full space-y-2  hover:shadow-2xl transition-all duration-300' key={index}>
                                 <div className='flex'><span className={`p-4 rounded-md ${items.color}`}>{items.icon}</span></div>
                                 <h1 className='font-medium'>{items.title}</h1>
                                 <p className='text-gray-600 text-xs'>{items.desc}</p>
@@ -161,7 +161,7 @@ export default function Career() {
                             { color: "bg-[#C5F0E9]", title: "Part-Time Internship", duration: "4 Months or 6 Months", Stipend: "Performance-Based", Workload: "Flexible (10-12 hours/weeks)", Eligibility: "Skill-based" },
 
                         ].map((items, index) => (
-                            <div className='relative p-5 shadow-xl rounded-xl  h-full overflow-hidden hover:shadow-2xl bg-white transition-all' key={index}>
+                            <div className='relative p-5 shadow-xl rounded-lg  md:w-96  h-full overflow-hidden hover:shadow-2xl bg-white transition-all' key={index}>
                                 <div className={`absolute bg-gray-200 rounded-full w-32 h-32 -top-10 -right-11`}></div>
                                 <p>
                                     <span className={`${items.color} p-1 rounded-sm text-gray-700 text-sm`}>{items.title}</span>
