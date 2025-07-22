@@ -12,6 +12,7 @@ import { Marquee } from "./components/magicui/marquee";
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { FaGraduationCap } from "react-icons/fa6";
 import Carousel from "./components/Carousel";
+import ImagePlaceholder from "./ImagePlaceholder";
 
 function App() {
   useEffect(() => {
@@ -80,12 +81,10 @@ function App() {
                 ].map((service, index) => (
                   <Link to={service.link} className='border p-1 rounded-xl overflow-hidden  shadow-lg hover:scale-105 transition-all duration-300' key={index}>
                     <div className={`${service.bg} w-full h-52 flex justify-center items-center p-8 rounded-t-lg`}>
-                      {!loaded && (
-                        <div className="absolute inset-0 bg-gradient-to-br from-green-300 to-blue-400 animate-pulse rounded-lg" />
-                      )}
-                      <img src={service.icon}
+
+                      <ImagePlaceholder
+                        src={service.icon}
                         alt={service.title}
-                        onLoad={() => setLoaded(true)}
                         className='w-28 object-cover' />
                     </div>
 

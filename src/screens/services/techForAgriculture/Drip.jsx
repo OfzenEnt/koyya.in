@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ImagePlaceholder from "@/ImagePlaceholder";
 import ScrollToTop from "@/lib/ScrollToTop";
 import { Link } from "react-router-dom";
 
@@ -9,7 +10,6 @@ export default function Drip() {
     "Uses AI-powered app to provide personalized farming advice and solutions",
     "Saves time and effort while helping farmers grow better, healthier crops.",
   ];
-  const [loaded, setLoaded] = useState(false);
   return (
     <div className="bg-blue-50">
 
@@ -65,14 +65,10 @@ export default function Drip() {
 
             {/* Right Section - Image */}
             <div className="w-full md:w-1/2">
-              {!loaded && (
-                <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-blue-koyya2 animate-pulse rounded-lg" />
-              )}
-              <img
+              <ImagePlaceholder
                 src="/imgs/drip.png" // Save your uploaded image as "urbanbrew.png" in the public folder
                 alt="Urban Brew Coffee Product"
-                onLoad={() => setLoaded(true)}
-                className={`rounded-xl shadow-xl ${loaded ? "opacity-100" : "opacity-0"}`}
+                className="rounded-xl shadow-xl"
               />
             </div>
           </div>

@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ScrollToTop from "@/lib/ScrollToTop";
 import { Link } from "react-router-dom";
+import ImagePlaceholder from "@/ImagePlaceholder";
 
 export default function Sleek() {
   const KEY_FEATURES = [
@@ -10,7 +11,6 @@ export default function Sleek() {
     "Shows you those inefficiencies",
     "Helps you fix issues to save cost, time",
   ];
-  const [loaded, setLoaded] = useState(false);
   return (
     <div className="bg-blue-50">
       <Navbar />
@@ -66,14 +66,10 @@ export default function Sleek() {
 
             {/* Right Section - Image */}
             <div className="w-full md:w-1/2">
-              {!loaded && (
-                <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-blue-koyya2 animate-pulse rounded-lg" />
-              )}
-              <img
+              <ImagePlaceholder
                 src="/imgs/sleek.png" // Save your uploaded image as "urbanbrew.png" in the public folder
                 alt="Urban Brew Coffee Product"
-                onLoad={() => setLoaded(true)}
-                className={`"rounded-xl  md:ml-10" ${loaded ? "opacity-100" : "opacity-0"}`}
+                className="rounded-xl  md:ml-10"
               />
             </div>
           </div>

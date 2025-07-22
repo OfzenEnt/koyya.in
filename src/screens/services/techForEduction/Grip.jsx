@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ImagePlaceholder from "@/ImagePlaceholder";
 import ScrollToTop from "@/lib/ScrollToTop";
 import { Calendar1Icon, CircleArrowRight, GraduationCap, IndianRupeeIcon, Laptop } from "lucide-react";
 import React, { useState } from "react";
@@ -27,14 +28,10 @@ export default function Grip() {
                         <p className="mt-4 text-gray-600 max-w-xl">Gain real-world experience through our comprehensive remote internship program designed for recent graduates.</p>
 
                     </div>
-                    {!loaded && (
-                        <div className="absolute inset-0 bg-gradient-to-br from-green-500 to-blue-koyya2 animate-pulse rounded-lg" />
-                    )}
-                    <img
+                    <ImagePlaceholder
                         src="/imgs/grip.png"
                         alt="Training process"
-                        onLoad={() => setLoaded(true)}
-                        className={`"max-w-sm h-auto mx-auto "${loaded ? "opacity-100" : "opacity-0"}`}
+                        className="max-w-sm h-auto mx-auto"
                     />
                 </div>
             </section>

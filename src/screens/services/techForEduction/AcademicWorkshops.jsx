@@ -95,7 +95,7 @@ const AcademicWorkshopsPage = () => {
   ];
 
   return (
-    <div className="bg-blue-50">
+    <div className="bg-blue-50 overflow-hidden">
       <Navbar />
       <ScrollToTop />
       {/* Hero Section */}
@@ -168,7 +168,7 @@ const AcademicWorkshopsPage = () => {
                       } relative z-10`}
                   >
                     <div
-                      className={` ${isLeft ? "pr-2 text-right" : "pl-2 text-left"
+                      className={` ${isLeft ? "pr-2 text-left" : "pl-2 text-left"
                         }`}
                     >
                       <div className="flex flex-row-reverse items-center gap-2 md:gap-4 bg-gray-50 border-l-3 rounded-lg border-[#005592f8] p-2">
