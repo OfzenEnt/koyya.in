@@ -186,7 +186,7 @@ export default function SoftwareDevelopment() {
           <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-5 max-w-[95%]">
             {services.map((service, index) => (
               <div key={index}>
-                <div className="bg-white p-8 col-span-1 h-full rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div className="bg-white p-8 col-span-1 h-full rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
                   <h3 className="text-base md:text-xl font-semibold text-[#005592f8]">
                     {service.title}
                   </h3>

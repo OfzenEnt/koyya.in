@@ -85,9 +85,9 @@ const AboutUs = () => {
         </div>
       </header> */}
 
-      <div className="lg:px-16 py-5" id="top">
+      <div className="xl:px-16 py-5" id="top">
         {/* About Koyya */}
-        <section className="flex flex-col lg:flex-row gap-16 md:gap-5 2xl:gap-32 p-10 ">
+        <section className="flex flex-col lg:flex-row gap-5 xl:gap-10 p-10 ">
           <div className="flex-1/2 grid grid-cols-3 gap-4 overflow-hidden">
 
             <ImagePlaceholder
@@ -109,7 +109,7 @@ const AboutUs = () => {
                 <ImagePlaceholder
                   src="imgs/2149241221.jpg"
                   alt="Teamwork"
-                  className={`rounded-lg object-cover h-full `}
+                  className={`rounded-lg object-cover h-full`}
                 // data-aos="fade-up"
                 />
                 <div
@@ -128,15 +128,14 @@ const AboutUs = () => {
               About Koyya
             </h3> */}
 
-            <p className="mb-4 lg:text-base text-sm text-justify hyphens-auto">
+            <p className=" text-justify hyphens-auto">
               <strong>Koyya Enterprises Private Limited (KEPL)</strong>,
               headquartered in Bengaluru, operates across two key sectors:
               Technology and Agriculture. The company is structured into two
               distinct verticals — Glarimy Business Unit and Krissaco Business
               Unit — each with a clear focus and purpose. <br />
-              <br />
             </p>
-            <p className="mb-4 lg:text-base text-sm text-justify hyphens-auto">
+            <p className="text-justify hyphens-auto">
               <strong> Glarimy</strong> is dedicated to developing innovative
               technology-driven products and services. Leveraging modern
               advancements such as Cloud Computing and Artificial
@@ -147,8 +146,7 @@ const AboutUs = () => {
               teams and organizations in their digital transformation
               journeys.
             </p>
-            <br />
-            <p >
+            <p className="text-justify hyphens-auto">
               <strong>Krissaco</strong> is focused on creating impactful
               solutions for the agriculture and allied sectors. The unit
               develops productivity tools and data-driven platforms using IoT,
@@ -163,7 +161,7 @@ const AboutUs = () => {
               <h3 className="text-[#005592f8] font-semibold lg:mb-2 lg:text-xl">
                 Mission
               </h3>
-              <p className="flex items-center text-justify text-sm lg:text-base hyphens-auto">
+              <p className="flex items-center text-justify  hyphens-auto">
                 Our mission is to leverage cutting-edge technologies to solve
                 real-world problems, focusing on technology and agriculture to
                 create meaningful impact and value.
@@ -173,14 +171,14 @@ const AboutUs = () => {
         </section>
         {/* mascots */}
         <section
-          className="px-10 gap-6 flex flex-col lg:mt-10 items-center"
+          className="px-10 gap-6 flex flex-col  items-center"
           id="mascots"
         >
           <div>
             <img
               src="koyya_logo.png"
               alt="Koyya Logo"
-              className="md:h-16 h-16 lg:w-36 lg:h-auto mb-5"
+              className="h-16 lg:w-36 lg:h-auto"
             ></img>
           </div>
           <div className="lg:p-6 p-5 bg-violet-100 rounded-lg">

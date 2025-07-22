@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ImagePlaceholder from "@/ImagePlaceholder";
 import ScrollToTop from "@/lib/ScrollToTop";
 import { MapPin } from "lucide-react";
 import React, { useState } from "react";
@@ -42,7 +43,7 @@ function ContactUs() {
           </div>
         </div>
         <div className="p-10 hidden md:block">
-          <img src="/imgs/group_members.png" alt="grouppeople img"
+          <ImagePlaceholder src="/imgs/group_members.png" alt="grouppeople img"
             className="opacity-87" />
         </div>
         {/* <div className='p-10 shadow-xl rounded-xl'>

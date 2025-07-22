@@ -22,6 +22,8 @@ const assetsToLoad = [
   "/imgs/girl_with_laptop.svg",
   "/imgs/graduationcap.gif",
   "/imgs/groppeople.svg",
+  "/imgs/group_members.png",
+  "/imgs/productlog0.svg"
 ];
 
 export default function PreloadWrapper({ children }) {

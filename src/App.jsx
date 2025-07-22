@@ -71,7 +71,6 @@ function App() {
             <div className='bg-white space-y-10 text-left -mb-10'>
               <div className='space-y-3'>
                 <h1 className='text-koyya2 md:3xl text-2xl font-semibold'>Business Solutions </h1>
-                <p className='text-gray-500'>Comprehensive services designed to enhance business operations and growth</p>
               </div>
               <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-14 mt-8'>
                 {[
@@ -109,7 +108,6 @@ function App() {
               </div>
               <div className='space-y-3'>
                 <h1 className='text-koyya2 md:3xl text-2xl font-semibold'>Educational Services </h1>
-                <p className='text-gray-500'>Innovative educational solutions designed for academic excellence and professional development</p>
               </div>
               <div className='grid grid-cols-1 md:grid-cols-3 gap-14 mt-8'>
                 {[
@@ -143,7 +141,6 @@ function App() {
               </div>
               <div className='space-y-3'>
                 <h1 className='text-koyya2 md:3xl text-2xl font-semibold'>Agricultural Technology </h1>
-                <p className='text-gray-500'>Innovative solutions designed to revolutionize agricultural practices and enhance productivity</p>
               </div>
               <div className='grid grid-cols-1 md:grid-cols-3 gap-14 mt-8'>
                 {[
