@@ -1,3 +1,4 @@
+import ImagePlaceholder from "@/ImagePlaceholder";
 import { useState, useEffect, useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
@@ -57,7 +58,7 @@ const Carousel = () => {
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
           >
-            <img
+            <ImagePlaceholder
               src={slide.src}
               alt={slide.alt}
               className="w-full h-full object-cover rounded-sm"
