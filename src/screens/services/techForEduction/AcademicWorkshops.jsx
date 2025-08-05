@@ -221,7 +221,7 @@ const AcademicWorkshopsPage = () => {
             ].map((text, index) => (
               <ul className="space-y-2" key={index}>
                 <li key={index} className="flex items-center gap-2">
-                  <Check className="text-green-600 " /> {text}
+                  <span className="text-green-600 text-2xl" >✓</span> {text}
                 </li>
               </ul>
             ))}
@@ -255,7 +255,7 @@ const AcademicWorkshopsPage = () => {
             ].map((text, index) => (
               <ul className="space-y-2" key={index}>
                 <li className="flex items-center gap-2">
-                  <Check className="text-green-600 " /> {text}
+                  <span className="text-green-600 text-2xl" >✓</span> {text}
                 </li>
               </ul>
             ))}

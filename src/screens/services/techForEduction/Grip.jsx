@@ -28,11 +28,7 @@ export default function Grip() {
                         <p className="mt-4 text-gray-600 max-w-xl">Gain real-world experience through our comprehensive remote internship program designed for recent graduates.</p>
 
                     </div>
-                    <ImagePlaceholder
-                        src="/imgs/grip.png"
-                        alt="Training process"
-                        className="max-w-sm h-auto mx-auto"
-                    />
+
                 </div>
             </section>
 

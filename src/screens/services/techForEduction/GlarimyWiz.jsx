@@ -35,7 +35,7 @@ const GlarimyWiz = () => {
             {/* Left Section */}
             <div className="max-w-xl">
               <h1 className="text-4xl md:text-5xl font-bold text-[#005592f8] leading-tight">
-                Glarimy Wiz <br /> <span className="font-normal">Platform</span>
+                Glarimy Wiz <br /> Platform
               </h1>
 
               <p className="mt-4 text-gray-900 text-lg">
@@ -70,7 +70,7 @@ const GlarimyWiz = () => {
             <div className="w-full md:w-1/2">
 
               <ImagePlaceholder
-                src="/imgs/Frame 184.png" // Save your uploaded image as "urbanbrew.png" in the public folder
+                src="/imgs/glarimy_wiz.svg" // Save your uploaded image as "urbanbrew.png" in the public folder
                 alt="Urban Brew Coffee Product"
                 className="rounded-xl md:p-5 "
               />

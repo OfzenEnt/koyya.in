@@ -6,6 +6,7 @@ import { FaBullhorn, FaCalendarAlt, FaClock, FaCode, FaCodiepie, FaEnvelope, FaG
 import { FaXTwitter } from "react-icons/fa6";
 import { FaQuoteLeft } from "react-icons/fa";
 import { MdAttachMoney, MdLocationPin } from 'react-icons/md'
+import ImagePlaceholder from '@/ImagePlaceholder'
 
 export default function Career() {
     return (
@@ -15,7 +16,7 @@ export default function Career() {
                 <div className='flex flex-col  md:flex-row items-center justify-around p-10 gap-5 overflow-hidden bg-white relative'>
                     <div className='max-w-md xl:max-w-xl  space-3 order-2 md:order-1 z-10'>
                         <h1 className='text-4xl font-medium '>Kickstart Your Career Journey <br className='xl:block hidden' />  at <span className='text-koyya1'>Koyya</span></h1>
-                        <p className='lg:max-w-xl'>
+                        <p className='lg:max-w-xl mt-5'>
                             Join our dynamic team of innovators and problem-solvers. We're looking for passionate students and early career professionals to
                             help shape the future of technology.
                         </p>
@@ -54,8 +55,8 @@ export default function Career() {
 
                             {/* Left Image - Square */}
                             <div className="lg:w-48 lg:h-48 w-40 h-40 absolute lg:top-2  lg:left-10 top-4 left-20 z-20">
-                                <img
-                                    src="/imgs/girl_with_laptop.svg"
+                                <ImagePlaceholder
+                                    src="/imgs/girl_with_laptop.png"
                                     alt="Girl working"
                                     className="w-full h-full object-cover border-4 border-white rounded-full shadow-md"
                                 />
@@ -102,7 +103,7 @@ export default function Career() {
                     </div>
                 </div>
                 <div className='max-w-7xl flex flex-col mx-auto items-center justify-center p-10 gap-4'>
-                    <h1 className='text-4xl font-semibold'>Available Roles</h1>
+                    <h1 className='text-4xl font-semibold text-koyya2'>Available Roles</h1>
                     <p className='text-gray-600'>Explore our current openings and find the perfect opportunity to kickstart your career.</p>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-5'>
                         {[
@@ -129,7 +130,7 @@ export default function Career() {
                 </div>
                 <div className='p-10 bg-white'>
                     <section className='flex flex-col items-center justify-center max-w-5xl mx-auto  border border-gray-300 p-5 lg:py-20 rounded-lg shadow-xl gap-10  '>
-                        <h1 className='text-3xl text-koyya1 text-center font-semibold '>How We Collaborate</h1>
+                        <h1 className='text-3xl text-koyya2 text-center font-semibold '>How We Collaborate</h1>
                         <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
 
                             {[
@@ -153,7 +154,7 @@ export default function Career() {
                     </section>
                 </div>
                 <div className='flex flex-col items-center justify-center mx-auto p-10'>
-                    <h1 className='text-3xl font-semibold p-2'>How We Work</h1>
+                    <h1 className='text-3xl font-semibold p-2 text-koyya2'>How We Work</h1>
                     <p className='text-gray-500 mb-5'>Choose the internship structure that fits your schedule and learning goals</p>
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
                         {[

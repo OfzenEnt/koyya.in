@@ -74,7 +74,7 @@ export default function DigitalMarketing() {
               <ImagePlaceholder
                 src="/imgs/digitalMarketing.png" // Save your uploaded image as "urbanbrew.png" in the public folder
                 alt="Urban Brew Coffee Product"
-                className="rounded-xl"
+                className="rounded-xl "
               />
             </div>
           </div>

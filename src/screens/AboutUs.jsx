@@ -312,7 +312,7 @@ const AboutUs = () => {
         </section>
         {/* leadership */}
         <section className="py-10 px-6 md:px-12 lg:mt-10" id="leadership">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1f2c56] mb-8 ">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-koyya2  mb-5">
             Leadership
           </h2>
           <div className="space-y-3">
