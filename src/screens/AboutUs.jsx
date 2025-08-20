@@ -87,7 +87,7 @@ const AboutUs = () => {
 
       <div className="xl:px-16 py-5" id="top">
         {/* About Koyya */}
-        <section className="flex flex-col lg:flex-row gap-5 xl:gap-10 p-10 ">
+        <section className="flex flex-col lg:flex-row gap-5 xl:gap-10 lg:p-10 p-5 ">
           <div className="flex-1/2 grid grid-cols-3 gap-4 overflow-hidden">
 
             <ImagePlaceholder
@@ -171,7 +171,7 @@ const AboutUs = () => {
         </section>
         {/* mascots */}
         <section
-          className="px-10 gap-6 flex flex-col  items-center"
+          className="lg:px-10 px-5 gap-6 flex flex-col  items-center"
           id="mascots"
         >
           <div>
@@ -206,7 +206,7 @@ const AboutUs = () => {
             </p>
           </div>
 
-          <div className="flex flex-col mt-5 lg:mx-20 gap-8">
+          <div className="flex flex-col mt-5 lg:mx-20 gap-8 px-5 md:p-0">
             <div className="flex flex-col lg:flex-row items-center w-full">
               <Link
                 to="https://www.glarimy.com "

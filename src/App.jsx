@@ -54,7 +54,7 @@ function App() {
       <ScrollToTop />
       <Navbar />
       {/* Hero section */}
-      <section className="bg-gradient-to-br from-blue-100 via-pink-50 to-blue-50 p-10 overflow-hidden">
+      <section className="bg-gradient-to-br from-blue-100 via-pink-50 to-blue-50  overflow-hidden">
         <Carousel />
       </section>
       {/* Announcements Section */}
@@ -72,7 +72,7 @@ function App() {
               <div className='space-y-3'>
                 <h1 className='text-koyya2 md:3xl text-2xl font-semibold'>Business Solutions </h1>
               </div>
-              <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-14 mt-8'>
+              <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 mt-8'>
                 {[
                   { bg: "bg-blue-50", icon: "/imgs/corporatelogo.svg", title: "Corporate Training", desc: "Specialized training programs designed to enhance workforce skills.", link: "/services/corporate-training", other: ["Technical Skills", "Team Building"] },
                   { bg: "bg-sky-50", icon: "/imgs/tech_skills.svg", title: "Software Development", desc: "Custom software solutions tailored to meet specific business needs.", link: "/services/software-development", other: ["Web Development", "App Development"] },
@@ -109,7 +109,7 @@ function App() {
               <div className='space-y-3'>
                 <h1 className='text-koyya2 md:3xl text-2xl font-semibold'>Educational Services </h1>
               </div>
-              <div className='grid grid-cols-1 md:grid-cols-3 gap-14 mt-8'>
+              <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-8'>
                 {[
                   { bg: "bg-[#FFFBEB]", icon: "/imgs/teacher.svg", title: "Academic Workshops", desc: "Interactive workshops designed to enhance learning experiences and develop practical skills for students and faculty.", link: "/services/academic-workshops" },
                   { bg: "bg-[#EEF2FF]", icon: "/imgs/breifcaselogo.svg", title: "GRIP Program", desc: "Graduate Readiness and Industry Preparedness program bridging academia and industry gaps.", link: "/services/grip" },
@@ -139,10 +139,10 @@ function App() {
                     </div>
                   </Link>))}
               </div>
-              <div className='space-y-3'>
+              <div className='space-y-1'>
                 <h1 className='text-koyya2 md:3xl text-2xl font-semibold'>Agricultural Technology </h1>
               </div>
-              <div className='grid grid-cols-1 md:grid-cols-3 gap-14 mt-8'>
+              <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-8'>
                 {[
                   { bg: "bg-[#F3F2FD]", icon: "/imgs/savetreelogo.svg", title: "Krissaco Sleek", desc: "A SaaS solution for the food processing industry to optimise the operations driven by data.", link: "/services/krissaco-sleek" },
                   { bg: "bg-[#F0FDFA]", icon: "/imgs/mobilewithplantlogo.svg", title: "Krissaco Drip", desc: "The farmer friendly IOT system is your own lab. Measure the important soil parameters like a pro.", link: "/services/krissaco-drip" },

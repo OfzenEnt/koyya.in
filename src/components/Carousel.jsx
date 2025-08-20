@@ -54,7 +54,7 @@ const Carousel = () => {
         {slides.map((slide, index) => (
           <div
             key={index}
-            className="w-full md:h-[85vh] h-full flex-shrink-0 relative"
+            className="w-full md:h-[94vh] h-full flex-shrink-0 relative"
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
           >

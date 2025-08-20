@@ -23,7 +23,8 @@ const assetsToLoad = [
   "/imgs/graduationcap.gif",
   "/imgs/groppeople.svg",
   "/imgs/group_members.png",
-  "/imgs/productlog0.svg"
+  "/imgs/productlog0.svg",
+  "/imgs/home.jpg",
 ];
 
 export default function PreloadWrapper({ children }) {
